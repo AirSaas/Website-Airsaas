@@ -1,10 +1,15 @@
 {
   "nav": {
     "demo": "Reservar una demo",
+    "login": "Login",
     "solutions": "Soluciones",
     "product": "Producto",
     "resources": "Recursos",
-    "pricing": "Precios"
+    "testimonials": "Testimonios",
+    "integrations": "Integraciones",
+    "news": "Novedades",
+    "quarterPlan": "El Quarter plan",
+    "teams": "Integración teams"
   },
   "common": {
     "readMore": "Leer más",

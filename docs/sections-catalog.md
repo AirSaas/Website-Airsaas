@@ -86,7 +86,45 @@
 
 ## Solution Pages
 
-<!-- À remplir au Step 2 -->
+> Complété au Step 2. Template commun `SolutionPage` avec 12 pages `/solution/[slug]`.
+
+### Template commun
+
+Toutes les pages solution partagent ce template :
+1. **SolutionHero** — badge "SOLUTION" (optionnel) + H1 + description + CTA + hero image
+2. **SectionHeading** — H2 intro + paragraphe (centré)
+3. **FeatureSection** (réutilisé) — alternant image/texte gauche-droite
+4. **SolutionCtaMidpage** — CTA générique avec heading/description/button props
+5. **PressLogos + LinkedInTestimonials** (optionnel) — réutilisés de la homepage
+
+### Composants spécifiques
+
+| Composant | Fichier | Usage |
+|-----------|---------|-------|
+| `SolutionHero` | `sections/SolutionHero.tsx` | Hero avec badge orange, H1, description, CTA, image. Fond gradient bleu |
+| `SectionHeading` | `sections/SectionHeading.tsx` | H2 + description centré, séparateur de groupes de features |
+| `SolutionCtaMidpage` | `sections/SolutionCtaMidpage.tsx` | CTA mid-page générique avec props (heading, description, buttonText) |
+
+### Pages (12)
+
+| # | Slug | Titre | Sections | Press |
+|---|------|-------|----------|-------|
+| 1 | `management-de-portefeuille-projet` | Management de portefeuille projet : l'outil des DSI et PMO | 15 sections (hero + intro + 3 groupes features + 2 CTAs) | Oui |
+| 2 | `flash-report-projet` | L'outil de flash report projet automatisé favori des PMO et DSI | 12 sections | Oui |
+| 3 | `flash-report` | Flash report automatisé pour vos projets | 5 sections | Oui |
+| 4 | `revue-de-portefeuille` | Revue de portefeuille projet | 4 sections | Oui |
+| 5 | `portfolio-management` | Portfolio management | 4 sections | Oui |
+| 6 | `tableau-de-bord-portefeuille-de-projet` | Tableau de bord portefeuille de projet | 4 sections | Oui |
+| 7 | `tableau-de-bord-dsi` | Tableau de bord DSI | 4 sections | Non |
+| 8 | `tableau-de-bord-gestion-de-projet` | Tableau de bord gestion de projet | 4 sections | Non |
+| 9 | `gestion-portefeuille-projet` | Gestion de portefeuille projet | 4 sections | Non |
+| 10 | `outils-de-pilotage-projet` | Outils de pilotage projet | 4 sections | Non |
+| 11 | `outil-ppm` | Outil PPM nouvelle génération | 8 sections (pas de badge "SOLUTION") | Non |
+| 12 | `airsaas-et-les-experts-de-la-transfo` | AirSaas et les experts de la transformation | 4 sections | Oui |
+
+### Route
+
+`src/app/[locale]/solution/[slug]/page.tsx` — SSG avec `generateStaticParams` pour les 12 slugs. Données hardcodées dans `src/data/solutions.tsx` (sera remplacé par Strapi Collection Type `page` au Step 5).
 
 ## Produit Pages
 
