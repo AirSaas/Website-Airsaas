@@ -1,19 +1,19 @@
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 
-type SolutionCtaMidpageProps = {
+type CtaBannerProps = {
   heading: React.ReactNode;
   description: string;
   buttonText?: string;
   buttonHref?: string;
 };
 
-export function SolutionCtaMidpage({
+export function CtaBanner({
   heading,
   description,
   buttonText = "Réservez une démo",
   buttonHref = "/fr/meetings-pages",
-}: SolutionCtaMidpageProps) {
+}: CtaBannerProps) {
   return (
     <section className="relative overflow-hidden py-16">
       <Container className="text-center">

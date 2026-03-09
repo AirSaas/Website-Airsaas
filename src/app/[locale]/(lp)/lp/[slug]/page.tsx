@@ -6,8 +6,8 @@ import { LpHero } from "@/components/sections/LpHero";
 import { LpStats } from "@/components/sections/LpStats";
 import { PainPoints } from "@/components/sections/PainPoints";
 import { LpFeatureCard } from "@/components/sections/LpFeatureCard";
-import { WhyAdoptGrid } from "@/components/sections/WhyAdoptGrid";
-import { SecurityBadges } from "@/components/sections/SecurityBadges";
+import { BenefitsGrid } from "@/components/sections/BenefitsGrid";
+import { TrustBadges } from "@/components/sections/TrustBadges";
 import { HowItWorks } from "@/components/sections/HowItWorks";
 import { FaqAccordion } from "@/components/sections/FaqAccordion";
 import { LpFinalCta } from "@/components/sections/LpFinalCta";
@@ -72,13 +72,18 @@ export default async function LpPage({ params }: Props) {
         ))}
       </div>
 
-      <WhyAdoptGrid
+      <BenefitsGrid
         heading={page.whyAdopt.heading}
         description={page.whyAdopt.description}
         items={page.whyAdopt.items}
       />
 
-      <SecurityBadges />
+      <TrustBadges badges={[
+          { title: "ISO 27001", description: "Certifié" },
+          { title: "Hébergé en France", description: "Scaleway" },
+          { title: "Pentest", description: "Résultats sur demande" },
+          { title: "SSO / SAML", description: "Intégration AD" },
+        ]} />
 
       {page.howItWorks && (
         <HowItWorks

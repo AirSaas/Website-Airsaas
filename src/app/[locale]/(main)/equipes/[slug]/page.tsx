@@ -5,9 +5,10 @@ import { EQUIPES_PAGES } from "@/data/equipes";
 import { SolutionHero } from "@/components/sections/SolutionHero";
 import { SectionHeading } from "@/components/sections/SectionHeading";
 import { FeatureSection } from "@/components/sections/FeatureSection";
-import { SolutionCtaMidpage } from "@/components/sections/SolutionCtaMidpage";
-import { PressLogos } from "@/components/sections/PressLogos";
-import { LinkedInTestimonials } from "@/components/sections/LinkedInTestimonials";
+import { CtaBanner } from "@/components/sections/CtaBanner";
+import { QuoteCards } from "@/components/sections/QuoteCards";
+import { TestimonialCards } from "@/components/sections/TestimonialCards";
+import { SHARED_PRESS_ITEMS, SHARED_TESTIMONIALS } from "@/data/shared-content";
 import { Container } from "@/components/ui/Container";
 
 type Props = {
@@ -82,7 +83,7 @@ export default async function EquipesPage({ params }: Props) {
 
         if (section.type === "cta") {
           return (
-            <SolutionCtaMidpage
+            <CtaBanner
               key={i}
               heading={section.heading!}
               description={section.description as string}
@@ -113,8 +114,8 @@ export default async function EquipesPage({ params }: Props) {
 
       {page.hasPress && (
         <>
-          <PressLogos />
-          <LinkedInTestimonials />
+          <QuoteCards heading={<>Ils parlent de <strong className="font-extrabold">nous</strong></>} items={SHARED_PRESS_ITEMS} />
+          <TestimonialCards testimonials={SHARED_TESTIMONIALS} />
         </>
       )}
     </>
