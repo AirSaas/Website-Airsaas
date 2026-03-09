@@ -19,9 +19,9 @@ export function LpStats({ heading, stats }: LpStatsProps) {
             {heading}
           </h3>
         )}
-        <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
+        <div className="flex flex-wrap justify-center gap-8">
           {stats.map((stat) => (
-            <div key={stat.label} className="text-center">
+            <div key={stat.label} className="min-w-[200px] flex-1 text-center">
               <div className="text-[2.5rem] font-bold leading-tight text-primary">
                 {stat.value}
               </div>
