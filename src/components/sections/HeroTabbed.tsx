@@ -16,7 +16,7 @@ type Tab = {
   image: string;
 };
 
-type LpHeroProps = {
+type HeroTabbedProps = {
   badge: string;
   heading: React.ReactNode;
   description: string;
@@ -37,7 +37,7 @@ const DEFAULT_TABS: Tab[] = [
   { label: "Reporting", image: "/assets/images/home_app_screen-min.png" },
 ];
 
-export function LpHero({
+export function HeroTabbed({
   badge,
   heading,
   description,
@@ -47,7 +47,7 @@ export function LpHero({
   videoText,
   trustBadges,
   tabs = DEFAULT_TABS,
-}: LpHeroProps) {
+}: HeroTabbedProps) {
   const [activeTab, setActiveTab] = useState(0);
 
   return (

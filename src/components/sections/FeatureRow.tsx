@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import { cn } from "@/lib/utils";
 
-type FeatureSectionProps = {
+type FeatureRowProps = {
   heading: React.ReactNode;
   description: React.ReactNode;
   image: string;
@@ -17,14 +17,14 @@ const bgColors = {
   lavender: "bg-bg-lavender",
 };
 
-export function FeatureSection({
+export function FeatureRow({
   heading,
   description,
   image,
   imageAlt,
   reversed = false,
   bgColor = "white",
-}: FeatureSectionProps) {
+}: FeatureRowProps) {
   return (
     <section className={cn("py-16", bgColors[bgColor])}>
       <Container>

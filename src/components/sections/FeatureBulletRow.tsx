@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import { cn } from "@/lib/utils";
 
-type LpFeatureCardProps = {
+type FeatureBulletRowProps = {
   badge?: string;
   heading: React.ReactNode;
   description: string;
@@ -12,7 +12,7 @@ type LpFeatureCardProps = {
   reversed?: boolean;
 };
 
-export function LpFeatureCard({
+export function FeatureBulletRow({
   badge,
   heading,
   description,
@@ -20,7 +20,7 @@ export function LpFeatureCard({
   image,
   imageAlt,
   reversed = false,
-}: LpFeatureCardProps) {
+}: FeatureBulletRowProps) {
   return (
     <div className="py-12">
       <Container>

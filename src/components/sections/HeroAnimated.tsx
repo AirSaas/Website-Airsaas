@@ -23,7 +23,7 @@ const ROTATING_WORDS = [
   "reporting",
 ];
 
-export function HeroTabs() {
+export function HeroAnimated() {
   const [activeTab, setActiveTab] = useState(0);
   const [wordIndex, setWordIndex] = useState(0);
 

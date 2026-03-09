@@ -2,10 +2,10 @@ export const dynamic = "force-dynamic";
 
 import { notFound } from "next/navigation";
 import { LP_PAGES } from "@/data/lp";
-import { LpHero } from "@/components/sections/LpHero";
+import { HeroTabbed } from "@/components/sections/HeroTabbed";
 import { LpStats } from "@/components/sections/LpStats";
 import { PainPoints } from "@/components/sections/PainPoints";
-import { LpFeatureCard } from "@/components/sections/LpFeatureCard";
+import { FeatureBulletRow } from "@/components/sections/FeatureBulletRow";
 import { BenefitsGrid } from "@/components/sections/BenefitsGrid";
 import { TrustBadges } from "@/components/sections/TrustBadges";
 import { HowItWorks } from "@/components/sections/HowItWorks";
@@ -36,7 +36,7 @@ export default async function LpPage({ params }: Props) {
 
   return (
     <>
-      <LpHero
+      <HeroTabbed
         badge={page.hero.badge}
         heading={page.hero.heading}
         description={page.hero.description}
@@ -59,7 +59,7 @@ export default async function LpPage({ params }: Props) {
 
       <div>
         {page.features.map((feature, i) => (
-          <LpFeatureCard
+          <FeatureBulletRow
             key={i}
             badge={feature.badge}
             heading={feature.heading}
