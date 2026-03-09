@@ -49,26 +49,40 @@
 
 ## Homepage
 
-> À remplir au Step 1 — sections identifiées depuis le snapshot complet :
+> Complété au Step 1. Chaque section = un composant React dans `src/components/sections/`.
 
-| # | Section (provisoire) | Heading |
-|---|---------------------|---------|
-| S01 | Hero + Tabs produit | "La solution de [portfolio/quarter plan/...] pour aligner le top management" |
-| S02 | Press/Média logos | "Ils parlent de nous" (Alliancy, JDN, Le Point, LMI) |
-| S03 | LinkedIn testimonials | 3 citations LinkedIn (Sagnimorte, Lhomme, Royer) |
-| S04 | Stats/Chiffres | "Les chiffres qui vous feront adopter AirSaas" (80%, 100%, 30K€) |
-| S05 | Platform intro | "Une plateforme de gouvernance projet à la hauteur de vos ambitions" |
-| S06 | Feature: Roadmaps | "Partagez simplement les roadmaps à toute l'organisation" |
-| S07 | Feature: Capacity | "Un capacity planning par équipe simple et actionnable" |
-| S08 | Feature: Priorisation | "Chaque directeur définit ses prios" |
-| S09 | Feature: Cadrage | "Diffusez un cadrage projet standardisé" |
-| S10 | Feature: Newsletter sponsor | "Une newsletter sponsor que votre direction va adorer" |
-| S11 | Feature: Reporting | "Votre reporting projet en un clic" |
-| S12 | Feature: Décisions | "Fluidifiez votre prise de décisions importantes et urgentes" |
-| S13 | CTA mid-page | "Et si vous repreniez le contrôle de votre portefeuille de projets ?" |
-| S14 | Intégrations carousel | "Grâce à sa marketplace AirSaas s'intègre nativement..." |
-| S15 | Sans/Avec comparaison | "Nos clients ne peuvent plus imaginer leurs vies sans AirSaas" (7 lignes) |
-| S16 | Customer stories cards | "Laissez nos clients vous parler d'AirSaas" (9 cartes) |
+| # | Composant | Fichier | Heading | Props/Notes |
+|---|-----------|---------|---------|-------------|
+| S01 | `HeroTabs` | `HeroTabs.tsx` | "La solution de [rotating] pour aligner le top management" | Client component, 6 tabs (Portfolio, Quarter plan, Capacitaire, Priorisation, Roadmap, Reporting), mot animé toutes les 3s |
+| S02 | `PressLogos` | `PressLogos.tsx` | "Ils parlent de nous" | 4 cards (Alliancy, JDN, Le Point, LMI) avec citations + logos |
+| S03 | `LinkedInTestimonials` | `LinkedInTestimonials.tsx` | — | 3 cards LinkedIn (Sagnimorte, Lhomme, Royer), fond `bg-alt` |
+| S04 | `Stats` | `Stats.tsx` | "Les chiffres qui vous feront adopter AirSaas" | 3 stats (80%, 100%, 30K€) |
+| S05 | `PlatformIntro` | `PlatformIntro.tsx` | "Une plateforme de gouvernance projet à la hauteur de vos ambitions" | Texte centré, pas d'image |
+| S06 | `FeatureSection` | `FeatureSection.tsx` | "Partagez simplement les roadmaps à toute l'organisation" | Réutilisable : heading + description + image, `reversed`, `bgColor` |
+| S07 | `FeatureSection` | — | "Un capacity planning par équipe simple et actionnable" | bgColor=lavender, blockquotes |
+| S08 | `FeatureSection` | — | "Chaque directeur définit ses prios" | Layout normal |
+| S09 | `FeatureSection` | — | "Diffusez un cadrage projet standardisé" | reversed, bgColor=alt |
+| S10 | `FeatureNewsletter` | `FeatureNewsletter.tsx` | "Une newsletter sponsor que votre direction va adorer" | Image gauche + 3 features droite (Tendance, Projets, Retard) |
+| S11 | `FeatureSection` | — | "Votre reporting projet en un clic" | Layout normal |
+| S12 | `FeatureSection` | — | "Fluidifiez votre prise de décisions importantes et urgentes" | reversed, bgColor=alt |
+| S13 | `CtaMidpage` | `CtaMidpage.tsx` | "Et si vous repreniez le contrôle de votre portefeuille de projets ?" | CTA "Réservez une démo" |
+| S14 | `IntegrationsCarousel` | `IntegrationsCarousel.tsx` | "Grâce à sa marketplace AirSaas s'intègre nativement..." | Texte gauche + image droite |
+| S15 | `SansAvecComparison` | `SansAvecComparison.tsx` | "Nos clients ne peuvent plus imaginer leurs vies sans AirSaas" | 7 lignes Sans/Avec + CTA |
+| S16 | `CustomerStories` | `CustomerStories.tsx` | "Laissez nos clients vous parler d'AirSaas" | 9 cartes (3×3 grid), lien /temoignages |
+
+### Composants UI réutilisables
+
+| Composant | Fichier | Usage |
+|-----------|---------|-------|
+| `Container` | `ui/Container.tsx` | Max-width 1200px + padding |
+| `Button` | `ui/Button.tsx` | Variants: primary, secondary, tertiary, outline. Sizes: sm, default, lg |
+
+### Layout
+
+| Composant | Fichier | Usage |
+|-----------|---------|-------|
+| `Navbar` | `layout/Navbar.tsx` | Sticky, logo + 3 dropdowns + 5 links + langue + Login + CTA demo. Mobile hamburger |
+| `Footer` | `layout/Footer.tsx` | Fond bleu #3a51e2, 4 colonnes, bottom bar avec logo + "Made with love in France" |
 
 ## Solution Pages
 
