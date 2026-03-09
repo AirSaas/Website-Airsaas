@@ -26,16 +26,16 @@ export function FeatureSection({
   bgColor = "white",
 }: FeatureSectionProps) {
   return (
-    <section className={cn("py-20", bgColors[bgColor])}>
+    <section className={cn("py-16", bgColors[bgColor])}>
       <Container>
         <div
           className={cn(
-            "flex items-center gap-12",
+            "flex items-center gap-16",
             reversed ? "flex-col-reverse md:flex-row-reverse" : "flex-col md:flex-row",
           )}
         >
           <div className="flex-1">
-            <h3 className="text-[1.5rem] font-medium leading-[2rem]">
+            <h3 className="text-[1.5rem] font-semibold leading-[2rem]">
               {heading}
             </h3>
             <div className="mt-4 text-[17px] leading-[23px] text-text-secondary">

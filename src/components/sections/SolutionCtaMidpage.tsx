@@ -15,12 +15,12 @@ export function SolutionCtaMidpage({
   buttonHref = "/fr/meetings-pages",
 }: SolutionCtaMidpageProps) {
   return (
-    <section className="relative overflow-hidden py-24">
+    <section className="relative overflow-hidden py-16">
       <Container className="text-center">
         <h2 className="text-[2.5rem] font-bold leading-[3rem]">
           {heading}
         </h2>
-        <p className="mx-auto mt-6 max-w-[700px] text-[17px] leading-[23px] text-text-secondary">
+        <p className="mx-auto mt-6 max-w-[700px] text-[17px] leading-[27px] text-text-secondary">
           {description}
         </p>
         <div className="mt-8">
