@@ -2,14 +2,15 @@ export const dynamic = "force-dynamic";
 
 import { notFound } from "next/navigation";
 import { COMPARE_PAGES } from "@/data/compare";
-import { SolutionHero } from "@/components/sections/SolutionHero";
+import { HeroSplit } from "@/components/sections/HeroSplit";
 import { SectionHeading } from "@/components/sections/SectionHeading";
-import { FeatureSection } from "@/components/sections/FeatureSection";
-import { SolutionCtaMidpage } from "@/components/sections/SolutionCtaMidpage";
+import { FeatureRow } from "@/components/sections/FeatureRow";
+import { CtaBanner } from "@/components/sections/CtaBanner";
 import { ComparisonTable } from "@/components/sections/ComparisonTable";
 import { FaqAccordion } from "@/components/sections/FaqAccordion";
-import { PressLogos } from "@/components/sections/PressLogos";
-import { LinkedInTestimonials } from "@/components/sections/LinkedInTestimonials";
+import { QuoteCards } from "@/components/sections/QuoteCards";
+import { TestimonialCards } from "@/components/sections/TestimonialCards";
+import { SHARED_PRESS_ITEMS, SHARED_TESTIMONIALS } from "@/data/shared-content";
 
 type Props = {
   params: Promise<{ locale: string; slug: string }>;
@@ -37,7 +38,7 @@ export default async function ComparePage({ params }: Props) {
 
   return (
     <>
-      <SolutionHero
+      <HeroSplit
         heading={page.hero.heading}
         description={page.hero.description}
         image={page.hero.image}
@@ -74,7 +75,7 @@ export default async function ComparePage({ params }: Props) {
 
         if (section.type === "cta") {
           return (
-            <SolutionCtaMidpage
+            <CtaBanner
               key={i}
               heading={section.heading!}
               description={section.description as string}
@@ -88,7 +89,7 @@ export default async function ComparePage({ params }: Props) {
             section.reversed ?? featureIndex % 2 === 1;
           featureIndex++;
           return (
-            <FeatureSection
+            <FeatureRow
               key={i}
               heading={section.heading!}
               description={section.description!}
@@ -115,8 +116,8 @@ export default async function ComparePage({ params }: Props) {
 
       {page.hasPress && (
         <>
-          <PressLogos />
-          <LinkedInTestimonials />
+          <QuoteCards heading={<>Ils parlent de <strong className="font-extrabold">nous</strong></>} items={SHARED_PRESS_ITEMS} />
+          <TestimonialCards testimonials={SHARED_TESTIMONIALS} />
         </>
       )}
     </>

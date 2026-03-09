@@ -23,7 +23,7 @@ const ROTATING_WORDS = [
   "reporting",
 ];
 
-export function HeroTabs() {
+export function HeroAnimated() {
   const [activeTab, setActiveTab] = useState(0);
   const [wordIndex, setWordIndex] = useState(0);
 
@@ -38,13 +38,13 @@ export function HeroTabs() {
     <section className="relative overflow-hidden pb-16 pt-32">
       <Container>
         <div className="mx-auto max-w-[700px] text-center">
-          <h1 className="text-[4rem] font-bold leading-[4.5rem]">
+          <h1 className="text-[3rem] font-bold leading-[3.5rem] md:text-[3.5rem] md:leading-[4rem]">
             La solution de
           </h1>
-          <h2 className="text-[4rem] font-bold leading-[4.5rem] text-primary">
+          <h2 className="text-[3rem] font-bold leading-[3.5rem] md:text-[3.5rem] md:leading-[4rem] text-primary">
             {ROTATING_WORDS[wordIndex]}
           </h2>
-          <h2 className="text-[4rem] font-bold leading-[4.5rem]">
+          <h2 className="text-[3rem] font-bold leading-[3.5rem] md:text-[3.5rem] md:leading-[4rem]">
             pour aligner le top management
           </h2>
           <p className="mt-6 text-[17px] leading-[23px] text-text-secondary">

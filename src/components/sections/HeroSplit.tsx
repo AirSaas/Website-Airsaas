@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 
-type SolutionHeroProps = {
+type HeroSplitProps = {
   badge?: string;
   heading: React.ReactNode;
   description: string;
@@ -10,13 +10,13 @@ type SolutionHeroProps = {
   imageAlt: string;
 };
 
-export function SolutionHero({
+export function HeroSplit({
   badge = "SOLUTION",
   heading,
   description,
   image,
   imageAlt,
-}: SolutionHeroProps) {
+}: HeroSplitProps) {
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-primary/10 via-primary/5 to-transparent pb-12 pt-16">
       {/* Decorative circle */}
