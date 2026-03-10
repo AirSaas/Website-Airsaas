@@ -9,7 +9,7 @@ type FeatureRowProps = {
   image: string;
   imageAlt: string;
   reversed?: boolean;
-  bgColor?: "white" | "alt" | "lavender";
+  variant?: "default" | "card";
 };
 
 export function FeatureRow({
@@ -19,16 +19,17 @@ export function FeatureRow({
   image,
   imageAlt,
   reversed = false,
-  bgColor = "white",
+  variant = "default",
 }: FeatureRowProps) {
+  const isCard = variant === "card";
+
   return (
-    <section className={cn("py-8", bgColor === "alt" ? "bg-bg-alt" : "")}>
+    <section className="py-8">
       <Container>
         <div
           className={cn(
-            "flex items-center gap-12 rounded-2xl p-8 md:p-12",
-            reversed ? "bg-bg-lavender" : "bg-bg-alt",
-            bgColor === "alt" && !reversed && "bg-white",
+            "flex items-center gap-12",
+            isCard && "rounded-2xl bg-bg-lavender p-8 md:p-12",
             reversed
               ? "flex-col-reverse md:flex-row-reverse"
               : "flex-col md:flex-row",
@@ -50,7 +51,7 @@ export function FeatureRow({
             </div>
           </div>
           <div className="relative flex-1">
-            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl border border-white/50 bg-white shadow-xl">
+            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl border border-border bg-white shadow-lg">
               <Image
                 src={image}
                 alt={imageAlt}
