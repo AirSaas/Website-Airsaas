@@ -39,7 +39,7 @@ function VariantA() {
             <div key={step.title} className="text-center">
               <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-primary text-lg font-bold text-white">{i + 1}</div>
               <h3 className="text-lg font-semibold">{step.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-text-secondary">{step.description}</p>
+              <p className="mt-2 text-[15px] leading-relaxed text-foreground/70">{step.description}</p>
             </div>
           ))}
         </div>
