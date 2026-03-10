@@ -4,7 +4,7 @@ import { TestimonialCards } from "@/components/sections/TestimonialCards";
 import { Stats } from "@/components/sections/Stats";
 import { SectionHeading } from "@/components/sections/SectionHeading";
 import { FeatureRow } from "@/components/sections/FeatureRow";
-import { FeatureNewsletter } from "@/components/sections/FeatureNewsletter";
+import { FeatureNumberedList } from "@/components/sections/FeatureNumberedList";
 import { CtaBanner } from "@/components/sections/CtaBanner";
 import { ComparisonGrid } from "@/components/sections/ComparisonGrid";
 import { CustomerStories } from "@/components/sections/CustomerStories";
@@ -112,7 +112,17 @@ export default function HomePage() {
       <FeatureRow heading={<>Un <strong className="font-bold">capacity planning par équipe</strong> simple et actionnable</>} description={<><p>Visualisez en un clin d&apos;oeil si vous êtes dans les clous... ou dans les choux. Grâce à cette vue vous avez les bases d&apos;une discussion pragmatique pour prendre les décisions :</p><blockquote className="mt-3 border-l-2 border-primary pl-4 text-primary-70">Peut-on faire plus de projets ? Faut-il en enlever ?</blockquote><blockquote className="mt-2 border-l-2 border-primary pl-4 text-primary-70">Quels sont les jalons qui nous plombent ? Peut-on les découper ?</blockquote><blockquote className="mt-2 border-l-2 border-primary pl-4 text-primary-70">Doit-on recruter ou mettre l&apos;équipe en tension ? Pendant combien de temps ?</blockquote></>} image="/assets/images/Capacity screen.webp" imageAlt="Capacity Marketing" variant="card" />
       <FeatureRow heading={<><em className="not-italic">C</em>haque directeur définit <strong className="font-bold">ses prios</strong></>} description="Demandez aux directeurs de prioriser parmi les projets dont son équipe est à l'origine. Deux projets ne peuvent pas avoir la même priorité. Une fois prêts, ils valident leur choix. C'est simple, transparent et puissant." image="/assets/images/Portfolio project priority.webp" imageAlt="Priorisation options" />
       <FeatureRow heading={<><em className="not-italic">Diffusez</em> un cadrage projet <strong className="font-bold">standardisé</strong></>} description="Remplissez les fiches cadrage de projet de manière collaborative, et guidez vos collaborateurs vers un véritable niveau d'excellence en gestion de projet. A vous une culture projet homogénéisée !" image="/assets/images/Presentation cadrage screen.webp" imageAlt="Presentation scope" reversed />
-      <FeatureNewsletter />
+      <FeatureNumberedList
+        badge="NEWSLETTER"
+        heading={<>Une <strong className="font-bold">newsletter sponsor</strong> que votre direction va adorer</>}
+        image="/assets/images/Copil -  Bilan-min.png"
+        imageAlt="Bilan de santé newsletter"
+        features={[
+          { title: "Tendance des projets vitaux", description: "Un récapitulatif de la santé des projets vitaux de votre organisation pour leur permettre de \"sentir\" la tendance du moment." },
+          { title: "Tendance de leurs projets à eux", description: "Un aperçu de leurs projets, ceux en amélioration et ceux en dégradation qui nécessitent leur attention. En un clic, ils peuvent accéder à la fiche projet." },
+          { title: "Projets en retard d'actualisation", description: "Un rappel des projets qui méritent d'être mis à jour. Si cette section est vide, vous êtes tranquilles !" },
+        ]}
+      />
       <FeatureRow heading={<><em className="not-italic">Votre reporting projet</em> <strong className="font-bold">en un clic</strong></>} description={<p>Générez votre <strong className="font-semibold">reporting flash en un seul clic</strong>, et homogénéisez vos présentations, pour faciliter la prise de décision. Autant de temps gagné pour vous focaliser sur le coaching de vos chefs de projet et votre gouvernance.</p>} image="/assets/images/Flash report ppt.webp" imageAlt="Flash report ppt" />
       <FeatureRow heading={<><em className="not-italic">Fluidifiez</em> votre prise de décisions <strong className="font-bold">importantes et urgentes</strong></>} description={<p><strong className="font-semibold">Centralisez vos décisions</strong> sous forme de Kanban, et partagez-les aisément avec toutes les parties prenantes de vos projets. Finies les informations perdues dans vos mails ou flux de discussions instantanées !</p>} image="/assets/images/Portfolio decisions-min.png" imageAlt="Portfolio decisions" reversed />
       <CtaBanner heading={<>Et si vous repreniez <strong className="text-primary">le contrôle de votre portefeuille</strong> de projets ?</>} description="Adoptez dès maintenant une solution de gestion de gouvernance moderne, qui fait gagner vos projets en temps et en efficacité." />

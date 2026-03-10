@@ -5,7 +5,7 @@ import { LP_PAGES } from "@/data/lp";
 import { HeroTabbed } from "@/components/sections/HeroTabbed";
 import { LpStats } from "@/components/sections/LpStats";
 import { PainPoints } from "@/components/sections/PainPoints";
-import { FeatureBulletRow } from "@/components/sections/FeatureBulletRow";
+import { FeatureChecklist } from "@/components/sections/FeatureChecklist";
 import { BenefitsGrid } from "@/components/sections/BenefitsGrid";
 import { TrustBadges } from "@/components/sections/TrustBadges";
 import { HowItWorks } from "@/components/sections/HowItWorks";
@@ -59,7 +59,7 @@ export default async function LpPage({ params }: Props) {
 
       <div>
         {page.features.map((feature, i) => (
-          <FeatureBulletRow
+          <FeatureChecklist
             key={i}
             badge={feature.badge}
             heading={feature.heading}
