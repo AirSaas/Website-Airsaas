@@ -17,13 +17,13 @@ import { ComparisonGrid } from "@/components/sections/ComparisonGrid";
 import { QuoteCards } from "@/components/sections/QuoteCards";
 import { TestimonialCards } from "@/components/sections/TestimonialCards";
 import { CustomerStories } from "@/components/sections/CustomerStories";
-import { FeatureNewsletter } from "@/components/sections/FeatureNewsletter";
+import { FeatureNumberedList } from "@/components/sections/FeatureNumberedList";
 import { FaqAccordion } from "@/components/sections/FaqAccordion";
 import { ComparisonTable } from "@/components/sections/ComparisonTable";
 import { HeroTabbed } from "@/components/sections/HeroTabbed";
 import { LpStats } from "@/components/sections/LpStats";
 import { PainPoints } from "@/components/sections/PainPoints";
-import { FeatureBulletRow } from "@/components/sections/FeatureBulletRow";
+import { FeatureChecklist } from "@/components/sections/FeatureChecklist";
 import { BenefitsGrid } from "@/components/sections/BenefitsGrid";
 import { TrustBadges } from "@/components/sections/TrustBadges";
 import { HowItWorks } from "@/components/sections/HowItWorks";
@@ -52,14 +52,14 @@ const SECTIONS = [
   "QuoteCards",
   "TestimonialCards",
   "CustomerStories",
-  "FeatureNewsletter",
+  "FeatureNumberedList",
   "HeroSplit",
   "FaqAccordion",
   "ComparisonTable",
   "HeroTabbed",
   "LpStats",
   "PainPoints",
-  "FeatureBulletRow",
+  "FeatureChecklist",
   "BenefitsGrid",
   "TrustBadges",
   "HowItWorks",
@@ -133,8 +133,18 @@ export default function DesignSystemPage() {
       <SectionLabel name="CustomerStories" />
       <CustomerStories heading={<>Laissez <strong className="font-extrabold">nos clients</strong> vous parler</>} description="Découvrez leurs témoignages." stories={[{ name: "Laurent Citton", role: "DSI Groupe", company: "Groupe Picoty", sector: "Énergie", employees: "1300", initials: "LC", href: "#" }, { name: "Émilie Lecart", role: "CIO Office", sector: "Hôtellerie", employees: "40000", initials: "EL", href: "#" }, { name: "Sébastien Louyot", role: "Group CIO", company: "Altavia", sector: "Marketing", employees: "2800", initials: "SL", href: "#" }]} moreLink={{ text: "Voir tous les témoignages", href: "#" }} />
 
-      <SectionLabel name="FeatureNewsletter" />
-      <FeatureNewsletter />
+      <SectionLabel name="FeatureNumberedList" />
+      <FeatureNumberedList
+        badge="NEWSLETTER"
+        heading={<>Une <strong className="font-bold">newsletter sponsor</strong> que votre direction va adorer</>}
+        image="/assets/images/Copil%20-%20%20Bilan-min.png"
+        imageAlt="Bilan de santé newsletter"
+        features={[
+          { title: "Tendance des projets vitaux", description: "Un récapitulatif de la santé des projets vitaux de votre organisation." },
+          { title: "Tendance de leurs projets à eux", description: "Un aperçu de leurs projets en amélioration et dégradation." },
+          { title: "Projets en retard d'actualisation", description: "Un rappel des projets qui méritent d'être mis à jour." },
+        ]}
+      />
 
       <SectionLabel name="HeroSplit" />
       <HeroSplit badge="SOLUTION" heading={<>Pilotez votre <span className="text-primary">portefeuille de projets</span></>} description="Visualisez l'avancement de tous vos projets en un coup d'oeil." image="/assets/images/Presentation%20cadrage%20screen.webp" imageAlt="Écran cadrage projet AirSaaS" />
@@ -154,8 +164,8 @@ export default function DesignSystemPage() {
       <SectionLabel name="PainPoints" />
       <PainPoints heading="Vous reconnaissez-vous ?" items={["Trop de projets en parallèle", "Pas de visibilité pour le management", "Priorités qui changent sans cesse"]} />
 
-      <SectionLabel name="FeatureBulletRow" />
-      <FeatureBulletRow badge="PORTFOLIO" heading="Centralisez tous vos projets" description="Une vue unique pour piloter votre portefeuille." bullets={["Vue consolidée", "Indicateurs temps réel", "Alertes automatiques"]} image="/assets/images/Automation%20-%20integrations.webp" imageAlt="Intégrations et automatisations AirSaaS" />
+      <SectionLabel name="FeatureChecklist" />
+      <FeatureChecklist badge="PORTFOLIO" heading="Centralisez tous vos projets" description="Une vue unique pour piloter votre portefeuille." bullets={["Vue consolidée", "Indicateurs temps réel", "Alertes automatiques"]} image="/assets/images/Automation%20-%20integrations.webp" imageAlt="Intégrations et automatisations AirSaaS" />
 
       <SectionLabel name="BenefitsGrid" />
       <BenefitsGrid heading="Pourquoi nous choisir ?" items={[{ title: "Simplicité", description: "Prise en main en 30 minutes" }, { title: "Visibilité", description: "Dashboard temps réel pour le COMEX" }, { title: "Alignement", description: "DSI et métiers sur la même page" }, { title: "ROI", description: "Résultats mesurables en 3 mois" }]} />
