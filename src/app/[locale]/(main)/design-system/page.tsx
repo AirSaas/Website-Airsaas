@@ -72,7 +72,7 @@ const SECTIONS = [
 export default function DesignSystemPage() {
   return (
     <div>
-      <div className="bg-foreground py-12 text-white">
+      <div className="bg-primary py-12 text-white">
         <Container>
           <h1 className="text-3xl font-bold">Design System — Section Showcase</h1>
           <p className="mt-2 text-white/70">
@@ -189,7 +189,7 @@ export default function DesignSystemPage() {
       <LpStats heading="Résultats concrets" stats={[{ value: "30%", label: "de projets livrés en plus" }, { value: "2x", label: "plus rapide pour arbitrer" }, { value: "100%", label: "de visibilité portfolio" }]} />
 
       <SectionLabel name="PainPoints" />
-      <PainPoints heading="Vous reconnaissez-vous ?" items={["Trop de projets en parallèle", "Pas de visibilité pour le management", "Priorités qui changent sans cesse"]} />
+      <PainPoints badge="VOS DÉFIS" heading="Vous vous reconnaissez ?" items={[<>Votre portefeuille projets vit dans <strong>un Excel à 47 colonnes</strong> que vous seul comprenez</>, <>Vous passez <strong>2 jours à produire des PowerPoints</strong> qui sont obsolètes le lendemain</>, <>Le COMEX demande une roadmap, vous avez <strong>une liste de 47 projets sans priorité claire</strong></>, <>On empile les projets alors que certaines équipes sont <strong>à 200% de capacité</strong>. Mais personne ne le voit.</>]} />
 
       <SectionLabel name="FeatureChecklist" />
       <FeatureChecklist badge="PORTFOLIO" heading="Centralisez tous vos projets" description="Une vue unique pour piloter votre portefeuille." bullets={["Vue consolidée", "Indicateurs temps réel", "Alertes automatiques"]} image="/assets/images/Automation%20-%20integrations.webp" imageAlt="Intégrations et automatisations AirSaaS" />
