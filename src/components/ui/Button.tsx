@@ -33,7 +33,7 @@ export function Button({
     <Link
       href={href}
       className={cn(
-        "inline-flex items-center justify-center rounded-[10px] font-medium transition-colors",
+        "inline-flex items-center justify-center rounded-[10px] font-medium transition-all duration-200 hover:scale-[1.02] hover:shadow-md",
         variants[variant],
         sizes[size],
         className,
