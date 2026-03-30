@@ -64,5 +64,8 @@ next-env.d.ts
 /backend/public/uploads/*
 !/backend/public/uploads/.gitkeep
 
+# migration data (extracted from Webflow, large JSON files)
+scripts/migrate/data/
+
 # conductor
 .context/

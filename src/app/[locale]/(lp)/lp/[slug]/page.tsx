@@ -2,15 +2,15 @@ export const dynamic = "force-dynamic";
 
 import { notFound } from "next/navigation";
 import { LP_PAGES } from "@/data/lp";
-import { HeroTabbed } from "@/components/sections/HeroTabbed";
-import { LpStats } from "@/components/sections/LpStats";
-import { PainPoints } from "@/components/sections/PainPoints";
-import { FeatureChecklist } from "@/components/sections/FeatureChecklist";
-import { BenefitsGrid } from "@/components/sections/BenefitsGrid";
-import { TrustBadges } from "@/components/sections/TrustBadges";
-import { HowItWorks } from "@/components/sections/HowItWorks";
-import { FaqAccordion } from "@/components/sections/FaqAccordion";
-import { LpFinalCta } from "@/components/sections/LpFinalCta";
+import { HeroTabbed } from "@/components/_legacy/sections/HeroTabbed";
+import { LpStats } from "@/components/_legacy/sections/LpStats";
+import { PainPoints } from "@/components/_legacy/sections/PainPoints";
+import { FeatureChecklist } from "@/components/_legacy/sections/FeatureChecklist";
+import { BenefitsGrid } from "@/components/_legacy/sections/BenefitsGrid";
+import { TrustBadges } from "@/components/_legacy/sections/TrustBadges";
+import { HowItWorks } from "@/components/_legacy/sections/HowItWorks";
+import { FaqAccordion } from "@/components/_legacy/sections/FaqAccordion";
+import { LpFinalCta } from "@/components/_legacy/sections/LpFinalCta";
 
 type Props = {
   params: Promise<{ locale: string; slug: string }>;

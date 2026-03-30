@@ -1,5 +1,5 @@
-import { Navbar } from "@/components/layout/Navbar";
-import { Footer } from "@/components/layout/Footer";
+import { Navbar } from "@/components/_legacy/layout/Navbar";
+import { Footer } from "@/components/_legacy/layout/Footer";
 
 export default function MainLayout({
   children,
