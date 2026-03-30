@@ -7,31 +7,31 @@ export const metadata: Metadata = {
   robots: { index: false, follow: false },
 };
 
-import { HeroAnimated } from "@/components/sections/HeroAnimated";
-import { HeroSplit } from "@/components/sections/HeroSplit";
-import { SectionHeading } from "@/components/sections/SectionHeading";
-import { FeatureRow } from "@/components/sections/FeatureRow";
-import { CtaBanner } from "@/components/sections/CtaBanner";
-import { Stats } from "@/components/sections/Stats";
-import { ComparisonGrid } from "@/components/sections/ComparisonGrid";
-import { QuoteCards } from "@/components/sections/QuoteCards";
-import { TestimonialCards } from "@/components/sections/TestimonialCards";
-import { CustomerStories } from "@/components/sections/CustomerStories";
-import { FeatureNumberedList } from "@/components/sections/FeatureNumberedList";
-import { FaqAccordion } from "@/components/sections/FaqAccordion";
-import { ComparisonTable } from "@/components/sections/ComparisonTable";
-import { HeroTabbed } from "@/components/sections/HeroTabbed";
-import { LpStats } from "@/components/sections/LpStats";
-import { PainPoints } from "@/components/sections/PainPoints";
-import { FeatureChecklist } from "@/components/sections/FeatureChecklist";
-import { BenefitsGrid } from "@/components/sections/BenefitsGrid";
-import { TrustBadges } from "@/components/sections/TrustBadges";
-import { HowItWorks } from "@/components/sections/HowItWorks";
-import { LpFinalCta } from "@/components/sections/LpFinalCta";
-import { LogoBar } from "@/components/sections/LogoBar";
-import { Container } from "@/components/ui/Container";
-import { Button } from "@/components/ui/Button";
-import { FadeIn } from "@/components/ui/FadeIn";
+import { HeroAnimated } from "@/components/_legacy/sections/HeroAnimated";
+import { HeroSplit } from "@/components/_legacy/sections/HeroSplit";
+import { SectionHeading } from "@/components/_legacy/sections/SectionHeading";
+import { FeatureRow } from "@/components/_legacy/sections/FeatureRow";
+import { CtaBanner } from "@/components/_legacy/sections/CtaBanner";
+import { Stats } from "@/components/_legacy/sections/Stats";
+import { ComparisonGrid } from "@/components/_legacy/sections/ComparisonGrid";
+import { QuoteCards } from "@/components/_legacy/sections/QuoteCards";
+import { TestimonialCards } from "@/components/_legacy/sections/TestimonialCards";
+import { CustomerStories } from "@/components/_legacy/sections/CustomerStories";
+import { FeatureNumberedList } from "@/components/_legacy/sections/FeatureNumberedList";
+import { FaqAccordion } from "@/components/_legacy/sections/FaqAccordion";
+import { ComparisonTable } from "@/components/_legacy/sections/ComparisonTable";
+import { HeroTabbed } from "@/components/_legacy/sections/HeroTabbed";
+import { LpStats } from "@/components/_legacy/sections/LpStats";
+import { PainPoints } from "@/components/_legacy/sections/PainPoints";
+import { FeatureChecklist } from "@/components/_legacy/sections/FeatureChecklist";
+import { BenefitsGrid } from "@/components/_legacy/sections/BenefitsGrid";
+import { TrustBadges } from "@/components/_legacy/sections/TrustBadges";
+import { HowItWorks } from "@/components/_legacy/sections/HowItWorks";
+import { LpFinalCta } from "@/components/_legacy/sections/LpFinalCta";
+import { LogoBar } from "@/components/_legacy/sections/LogoBar";
+import { Container } from "@/components/_legacy/ui/Container";
+import { Button } from "@/components/_legacy/ui/Button";
+import { FadeIn } from "@/components/_legacy/ui/FadeIn";
 
 function SectionLabel({ name }: { name: string }) {
   return (

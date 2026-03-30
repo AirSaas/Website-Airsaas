@@ -2,14 +2,14 @@ export const dynamic = "force-dynamic";
 
 import { notFound } from "next/navigation";
 import { EQUIPES_PAGES } from "@/data/equipes";
-import { HeroSplit } from "@/components/sections/HeroSplit";
-import { SectionHeading } from "@/components/sections/SectionHeading";
-import { FeatureRow } from "@/components/sections/FeatureRow";
-import { CtaBanner } from "@/components/sections/CtaBanner";
-import { QuoteCards } from "@/components/sections/QuoteCards";
-import { TestimonialCards } from "@/components/sections/TestimonialCards";
+import { HeroSplit } from "@/components/_legacy/sections/HeroSplit";
+import { SectionHeading } from "@/components/_legacy/sections/SectionHeading";
+import { FeatureRow } from "@/components/_legacy/sections/FeatureRow";
+import { CtaBanner } from "@/components/_legacy/sections/CtaBanner";
+import { QuoteCards } from "@/components/_legacy/sections/QuoteCards";
+import { TestimonialCards } from "@/components/_legacy/sections/TestimonialCards";
 import { SHARED_PRESS_ITEMS, SHARED_TESTIMONIALS } from "@/data/shared-content";
-import { Container } from "@/components/ui/Container";
+import { Container } from "@/components/_legacy/ui/Container";
 
 type Props = {
   params: Promise<{ locale: string; slug: string }>;

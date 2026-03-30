@@ -1,5 +1,5 @@
-import { LpNavbar } from "@/components/layout/LpNavbar";
-import { LpFooter } from "@/components/layout/LpFooter";
+import { LpNavbar } from "@/components/_legacy/layout/LpNavbar";
+import { LpFooter } from "@/components/_legacy/layout/LpFooter";
 
 export default function LpLayout({
   children,

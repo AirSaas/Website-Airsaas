@@ -1,13 +1,13 @@
-import { HeroAnimated } from "@/components/sections/HeroAnimated";
-import { QuoteCards } from "@/components/sections/QuoteCards";
-import { TestimonialCards } from "@/components/sections/TestimonialCards";
-import { Stats } from "@/components/sections/Stats";
-import { SectionHeading } from "@/components/sections/SectionHeading";
-import { FeatureRow } from "@/components/sections/FeatureRow";
-import { FeatureNumberedList } from "@/components/sections/FeatureNumberedList";
-import { CtaBanner } from "@/components/sections/CtaBanner";
-import { ComparisonGrid } from "@/components/sections/ComparisonGrid";
-import { CustomerStories } from "@/components/sections/CustomerStories";
+import { HeroAnimated } from "@/components/_legacy/sections/HeroAnimated";
+import { QuoteCards } from "@/components/_legacy/sections/QuoteCards";
+import { TestimonialCards } from "@/components/_legacy/sections/TestimonialCards";
+import { Stats } from "@/components/_legacy/sections/Stats";
+import { SectionHeading } from "@/components/_legacy/sections/SectionHeading";
+import { FeatureRow } from "@/components/_legacy/sections/FeatureRow";
+import { FeatureNumberedList } from "@/components/_legacy/sections/FeatureNumberedList";
+import { CtaBanner } from "@/components/_legacy/sections/CtaBanner";
+import { ComparisonGrid } from "@/components/_legacy/sections/ComparisonGrid";
+import { CustomerStories } from "@/components/_legacy/sections/CustomerStories";
 
 const PRESS_ITEMS = [
   {
