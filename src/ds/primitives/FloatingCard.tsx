@@ -1,49 +1,38 @@
 import { cn } from "@/ds/utils";
+import { BullseyeIcon } from "@/ds/primitives/icons/floating-card-icons";
 
 interface FloatingCardProps {
   children?: React.ReactNode;
   icon?: React.ReactNode;
-  lines?: number;
   className?: string;
   style?: React.CSSProperties;
 }
 
-function PlaceholderContent({ icon, lines = 2 }: { icon?: React.ReactNode; lines?: number }) {
+function PlaceholderContent({ icon }: { icon?: React.ReactNode }) {
   return (
-    <div className="flex items-center gap-[0.75rem] p-[0.875rem]">
-      {/* Icon placeholder */}
-      {icon ? (
-        <div className="shrink-0">{icon}</div>
-      ) : (
-        <div className="h-[2.5rem] w-[2.5rem] shrink-0 rounded-[0.5rem] bg-primary-5" />
-      )}
-      {/* Text placeholder lines */}
-      <div className="flex flex-1 flex-col gap-[0.375rem]">
-        {Array.from({ length: lines }).map((_, i) => (
-          <div
-            key={i}
-            className="h-[0.375rem] rounded-full bg-border"
-            style={{ width: i === lines - 1 ? "60%" : "90%" }}
-          />
-        ))}
+    <div className="flex items-center gap-[0.888rem] p-[0.9375rem]">
+      <div className="flex h-[3.198rem] w-[3.198rem] shrink-0 items-center justify-center rounded-[0.888rem] bg-primary-5">
+        {icon ?? <BullseyeIcon />}
+      </div>
+      <div className="flex w-[7.9375rem] flex-col gap-[0.5625rem]">
+        <div className="h-[0.6875rem] w-full rounded-full bg-border" />
+        <div className="h-[0.6875rem] w-[5rem] rounded-full bg-bg-alt" />
       </div>
     </div>
   );
 }
 
-export function FloatingCard({ children, icon, lines = 2, className, style }: FloatingCardProps) {
-  const hasContent = children || icon;
-
+export function FloatingCard({ children, icon, className, style }: FloatingCardProps) {
   return (
     <div
       aria-hidden="true"
       className={cn(
-        "bg-white rounded-[20px] shadow-[0px_6px_34px_0px_rgba(0,0,0,0.08)]",
+        "bg-white rounded-[1.2435rem] shadow-[0px_5.685px_34.108px_0px_rgba(0,0,0,0.08)]",
         className,
       )}
       style={style}
     >
-      {children ? children : <PlaceholderContent icon={icon} lines={lines} />}
+      {children ?? <PlaceholderContent icon={icon} />}
     </div>
   );
 }

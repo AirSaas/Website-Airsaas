@@ -8,6 +8,7 @@ import { IllustrationFrame } from "@/ds/primitives/IllustrationFrame";
 import { EllipseBackground } from "@/ds/primitives/EllipseBackground";
 import { GradientBackground } from "@/ds/primitives/GradientBackground";
 import { Navbar } from "@/ds/primitives/Navbar";
+import { BullseyeIcon, BriefcaseIcon, CalendarIcon } from "@/ds/primitives/icons/floating-card-icons";
 
 interface HeroButton {
   label: string;
@@ -171,15 +172,18 @@ export function Hero({
         )}
       </div>
 
-      {/* Floating cards — positioned per Figma absolute coords */}
+      {/* Floating cards — in the margins, outside the 1500px content zone */}
       <FloatingCard
-        className="absolute left-[calc(50%-50.549rem)] top-[31.4375rem] w-[13.898rem] h-[5.073rem] hidden xl:block"
+        className="absolute z-20 right-[2%] top-[8rem] hidden xl:block"
+        icon={<BullseyeIcon />}
       />
       <FloatingCard
-        className="absolute left-[calc(50%-43.8rem)] top-[59.625rem] w-[13.898rem] h-[5.073rem] hidden xl:block"
+        className="absolute z-20 left-[2%] top-[38.875rem] hidden xl:block"
+        icon={<BriefcaseIcon />}
       />
       <FloatingCard
-        className="absolute left-[calc(50%+36.875rem)] top-[9.8125rem] w-[13.898rem] h-[5.073rem] hidden xl:block"
+        className="absolute z-20 left-[2%] top-[55rem] hidden xl:block"
+        icon={<CalendarIcon />}
       />
     </section>
   );
