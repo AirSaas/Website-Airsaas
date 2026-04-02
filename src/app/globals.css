@@ -1,5 +1,38 @@
 @import "tailwindcss";
 
+/* Product Sans font faces */
+@font-face {
+  font-family: "Product Sans";
+  src: url("/fonts/ProductSans-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Product Sans";
+  src: url("/fonts/ProductSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Product Sans";
+  src: url("/fonts/ProductSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Product Sans";
+  src: url("/fonts/ProductSans-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme inline {
   /* Brand colors */
   --color-primary: #3a51e2;
@@ -19,12 +52,19 @@
   /* Functional colors */
   --color-royal-blue: #475ce9;
   --color-orange: #e58d05;
+  --color-orange-bright: #ff922b;
   --color-crimson: #f11444;
   --color-sky-blue: #2db5e6;
   --color-green: #5ec045;
   --color-orchid: #b75dda;
   --color-turquoise: #0fd6de;
   --color-medium-blue: #13397a;
+  --color-primary-dark: #3547c6;
+
+  /* Success / Warning / Status */
+  --color-success-10: #e6fcf0;
+  --color-success-text: #2d8a4e;
+  --color-warning-text: #8a6d00;
 
   /* Backgrounds */
   --color-background: #ffffff;
@@ -47,7 +87,21 @@
   --radius-full: 9999px;
 
   /* Font family */
-  --font-sans: var(--font-raleway), system-ui, sans-serif;
+  --font-sans: "Product Sans", system-ui, sans-serif;
+
+  /* Typography scale */
+  --text-h1: clamp(2.5rem, 5vw, 5.9375rem);
+  --text-h2: clamp(2rem, 4vw, 4.5rem);
+  --text-h3: clamp(1.75rem, 3.5vw, 4.375rem);
+  --text-h4: clamp(1.5rem, 2.5vw, 2.5rem);
+  --text-paragraph: clamp(1.125rem, 1.5vw, 1.5625rem);
+  --text-small: 1rem;
+
+  /* Gradients */
+  --gradient-dark-to-primary: linear-gradient(36deg, var(--color-foreground) 20%, var(--color-primary) 124%);
+  --gradient-primary: linear-gradient(55deg, var(--color-primary) 20%, var(--color-primary-dark) 124%);
+  --gradient-hero-bg: linear-gradient(187deg, var(--color-background) 22%, var(--color-orange-bright) 62%, var(--color-primary-60) 88%);
+  --gradient-cta-bg: linear-gradient(187deg, var(--color-background) 42%, var(--color-orange-bright) 62%, var(--color-primary-60) 88%);
 }
 
 /* Scroll animations */
