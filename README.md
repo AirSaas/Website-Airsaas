@@ -2,7 +2,7 @@
 
 Migration of [airsaas.io](https://www.airsaas.io) from Webflow to **Next.js 15** (App Router) + **Strapi 5** (headless CMS).
 
-## Stack
+## Stack 
 
 | Layer | Technology |
 |-------|-----------|
