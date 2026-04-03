@@ -19,6 +19,7 @@ function DemoCard({ label }: { label: string }) {
 }
 
 export const AllAnimations: Story = {
+  args: { children: null },
   render: () => (
     <div className="flex flex-col gap-[6rem] p-10 max-w-[60rem] mx-auto">
       <div className="text-center py-20">

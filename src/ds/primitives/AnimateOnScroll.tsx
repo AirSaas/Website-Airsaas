@@ -25,7 +25,7 @@ interface AnimateOnScrollProps {
   /** Play on mount (no scroll trigger) */
   onMount?: boolean;
   className?: string;
-  as?: keyof JSX.IntrinsicElements;
+  as?: React.ElementType;
 }
 
 const animationStyles: Record<Animation, { from: string; to: string }> = {
@@ -133,7 +133,6 @@ export function AnimateOnScroll({
   const style = animationStyles[animation];
 
   return (
-    // @ts-expect-error — dynamic tag
     <Tag
       ref={ref}
       className={cn(

@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "prebuild": "node scripts/download-assets.mjs",
     "build": "next build",
+    "deploy": "next build && npx gh-pages -d out -r https://github.com/marisellaext-cmyk/Website-Airsaas.git --nojekyll",
     "start": "next start",
     "lint": "eslint",
     "storybook": "storybook dev -p 6006",
