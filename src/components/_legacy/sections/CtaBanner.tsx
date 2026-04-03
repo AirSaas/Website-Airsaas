@@ -1,0 +1,32 @@
+import { Container } from "@/components/_legacy/ui/Container";
+import { Button } from "@/components/_legacy/ui/Button";
+
+type CtaBannerProps = {
+  heading: React.ReactNode;
+  description: string;
+  buttonText?: string;
+  buttonHref?: string;
+};
+
+export function CtaBanner({
+  heading,
+  description,
+  buttonText = "Réservez une démo",
+  buttonHref = "/fr/meetings-pages",
+}: CtaBannerProps) {
+  return (
+    <section className="relative overflow-hidden py-16">
+      <Container className="text-center">
+        <h2 className="text-[2.5rem] font-bold leading-[3rem]">
+          {heading}
+        </h2>
+        <p className="mx-auto mt-6 max-w-[700px] text-[17px] leading-[27px] text-text-secondary">
+          {description}
+        </p>
+        <div className="mt-8">
+          <Button href={buttonHref}>{buttonText}</Button>
+        </div>
+      </Container>
+    </section>
+  );
+}

@@ -1,0 +1,110 @@
+[
+  {
+    "canonicalName": "author",
+    "webflowCollectionId": "609552290d93fd17fc0f08ac",
+    "outputFile": "author.json",
+    "expectedCount": 6,
+    "i18n": "translated",
+    "dependsOn": [],
+    "requiredFields": ["name", "slug"]
+  },
+  {
+    "canonicalName": "speaker",
+    "webflowCollectionId": "609552290d93fd003b0f09e4",
+    "outputFile": "speaker.json",
+    "expectedCount": 111,
+    "i18n": "fr-only",
+    "dependsOn": [],
+    "requiredFields": ["name", "slug"]
+  },
+  {
+    "canonicalName": "integration-category",
+    "webflowCollectionId": "63219e602ab71d28e949d55e",
+    "outputFile": "integration-category.json",
+    "expectedCount": 6,
+    "i18n": "translated",
+    "dependsOn": [],
+    "requiredFields": ["name", "slug"]
+  },
+  {
+    "canonicalName": "testimonial-quote",
+    "webflowCollectionId": "66154a7de9562713bf394af2",
+    "outputFile": "testimonial-quote.json",
+    "expectedCount": 29,
+    "i18n": "translated",
+    "dependsOn": [],
+    "requiredFields": ["name", "slug"]
+  },
+  {
+    "canonicalName": "newsletter-cio",
+    "webflowCollectionId": "6206338acb640505cd6e9947",
+    "outputFile": "newsletter-cio.json",
+    "expectedCount": 21,
+    "i18n": "fr-only",
+    "dependsOn": [],
+    "requiredFields": ["name", "slug"]
+  },
+  {
+    "canonicalName": "product-update",
+    "webflowCollectionId": "63886c0276d96edead685e01",
+    "outputFile": "product-update.json",
+    "expectedCount": 32,
+    "i18n": "fr-only",
+    "dependsOn": [],
+    "requiredFields": ["name", "slug"]
+  },
+  {
+    "canonicalName": "legal-page",
+    "webflowCollectionId": "668d42473323d5f4a940e544",
+    "outputFile": "legal-page.json",
+    "expectedCount": 1,
+    "i18n": "translated",
+    "dependsOn": [],
+    "requiredFields": ["name", "slug"]
+  },
+  {
+    "canonicalName": "quote",
+    "webflowCollectionId": "62c1684cefce297293ce0619",
+    "outputFile": "quote.json",
+    "expectedCount": 31,
+    "i18n": "translated",
+    "dependsOn": ["speaker", "customer-story"],
+    "requiredFields": ["name", "slug", "quote"]
+  },
+  {
+    "canonicalName": "article",
+    "webflowCollectionId": "609552290d93fd13100f0992",
+    "outputFile": "article.json",
+    "expectedCount": 61,
+    "i18n": "fr-only",
+    "dependsOn": ["author", "speaker", "quote"],
+    "requiredFields": ["name", "slug", "post-body"]
+  },
+  {
+    "canonicalName": "podcast-episode",
+    "webflowCollectionId": "609552290d93fd787f0f098b",
+    "outputFile": "podcast-episode.json",
+    "expectedCount": 97,
+    "i18n": "fr-only",
+    "dependsOn": ["speaker", "quote"],
+    "requiredFields": ["name", "slug"]
+  },
+  {
+    "canonicalName": "customer-story",
+    "webflowCollectionId": "631747feee1d6362717fefda",
+    "outputFile": "customer-story.json",
+    "expectedCount": 9,
+    "i18n": "translated",
+    "dependsOn": ["author", "speaker", "quote"],
+    "requiredFields": ["name", "slug", "post-body"]
+  },
+  {
+    "canonicalName": "integration",
+    "webflowCollectionId": "63219e49a075f5ae23319823",
+    "outputFile": "integration.json",
+    "expectedCount": 19,
+    "i18n": "translated",
+    "dependsOn": ["integration-category"],
+    "requiredFields": ["name", "slug"]
+  }
+]

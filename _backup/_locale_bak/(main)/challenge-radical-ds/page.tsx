@@ -1,7 +1,7 @@
 export const dynamic = "force-dynamic";
 
 import type { Metadata } from "next";
-import { ChallengeRadicalDesignSystem } from "@/components/challenge-ds/ChallengeRadicalDesignSystem";
+import { ChallengeRadicalDesignSystem } from "@/components/_legacy/challenge-ds/ChallengeRadicalDesignSystem";
 
 export const metadata: Metadata = {
   title: "Challenge Radical DS — Design exploration (internal)",

@@ -1,7 +1,7 @@
 export const dynamic = "force-dynamic";
 
 import type { Metadata } from "next";
-import { DesignSystemV2 } from "@/components/design-system-v2/DesignSystemV2";
+import { DesignSystemV2 } from "@/components/_legacy/design-system-v2/DesignSystemV2";
 
 export const metadata: Metadata = {
   title: "Design System V2 — Design exploration (internal)",
