@@ -24,12 +24,12 @@ export function LogosBar({
         "flex w-full items-center justify-center gap-[0.625rem] border-y border-primary-60",
         className
       )}
-      style={{ height: "3.5rem" }}
+      style={{ height: "5rem" }}
     >
       {/* Label */}
       <span
-        className="shrink-0 text-border font-light whitespace-nowrap"
-        style={{ fontSize: "var(--text-paragraph)" }}
+        className="shrink-0 font-light whitespace-nowrap"
+        style={{ color: "#63606e", fontSize: "var(--text-paragraph)" }}
       >
         {label}
       </span>
@@ -42,7 +42,7 @@ export function LogosBar({
       />
 
       {/* Logos */}
-      <div className="flex items-center gap-[0.6875rem]">
+      <div className="flex items-center gap-[0.8rem]">
         {logos.map((logo) => (
           <img
             key={logo.alt}
@@ -50,7 +50,7 @@ export function LogosBar({
             alt={logo.alt}
             width={logo.width}
             height={logo.height}
-            className="h-[1.875rem] w-auto object-contain"
+            className="h-[3rem] w-auto object-contain grayscale opacity-70"
             loading="lazy"
           />
         ))}

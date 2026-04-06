@@ -31,7 +31,8 @@ export function FeatureCard({
       <p
         className="font-bold bg-clip-text text-transparent"
         style={{
-          fontSize: "4.0625rem",
+          fontSize: "2.8rem",
+          lineHeight: "3.1rem",
           backgroundImage: "var(--gradient-primary)",
           WebkitBackgroundClip: "text",
         }}
@@ -43,7 +44,8 @@ export function FeatureCard({
         <p
           className="font-bold bg-clip-text text-transparent"
           style={{
-            fontSize: "2.5rem",
+            fontSize: "2rem",
+            lineHeight: "2rem",
             backgroundImage: "var(--gradient-primary)",
             WebkitBackgroundClip: "text",
           }}
@@ -55,7 +57,7 @@ export function FeatureCard({
       {description && (
         <p
           className="font-light text-foreground"
-          style={{ fontSize: "1.6875rem", lineHeight: "1.42" }}
+          style={{ fontSize: "1.4rem", lineHeight: "1.42" }}
         >
           {description}
         </p>

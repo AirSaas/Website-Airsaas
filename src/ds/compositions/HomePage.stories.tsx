@@ -39,9 +39,9 @@ const navItems = [
 ];
 
 const logos = [
-  { src: "/assets/logos/kiabi.svg", alt: "Kiabi", width: 96, height: 40 },
-  { src: "/assets/logos/valrhona.svg", alt: "Valrhona", width: 130, height: 40 },
-  { src: "/assets/logos/intuis.svg", alt: "Intuis", width: 70, height: 40 },
+  { src: "/assets/logos/kiabi.png", alt: "Kiabi", width: 96, height: 40 },
+  { src: "/assets/logos/valrhona.png", alt: "Valrhona", width: 130, height: 40 },
+  { src: "/assets/logos/intuis.png", alt: "Intuis", width: 70, height: 40 },
   { src: "/assets/logos/altavia.svg", alt: "Altavia", width: 110, height: 40 },
   { src: "/assets/logos/sncf.svg", alt: "SNCF", width: 80, height: 40 },
 ];
