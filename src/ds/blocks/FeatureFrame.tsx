@@ -90,7 +90,6 @@ export function FeatureFrame({
       )}
       style={{
         backgroundColor: imageBgColor ?? defaultBg,
-        maxWidth: "100%",
       }}
     >
       <img

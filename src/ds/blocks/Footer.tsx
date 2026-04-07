@@ -36,7 +36,7 @@ export function Footer({
       className={cn("bg-white px-[1.5rem] py-[3rem] md:px-[3rem] md:py-[4rem] lg:px-[8.125rem] lg:py-[6.25rem]", className)}
     >
       <div
-        className="relative rounded-[1.25rem] md:rounded-[1.5625rem] bg-primary-2 px-[1.5rem] py-[2.5rem] md:px-[3rem] md:py-[3rem] lg:px-[10.625rem] lg:py-[3.375rem]"
+        className="relative rounded-[1.25rem] md:rounded-[1.5625rem] bg-primary-2 px-[1.5rem] py-[2.5rem] md:px-[3rem] md:py-[3rem] lg:px-[10.625rem] lg:py-[3.375rem] overflow-visible"
       >
         {/* Logo floating card — top left */}
         <div
@@ -76,13 +76,12 @@ export function Footer({
         {/* Bottom floating card — copyright */}
         <div className="relative mt-[2rem] lg:absolute lg:mt-0 lg:-bottom-[2.5rem] lg:right-[4rem]">
           <FloatingCard>
-            <div className="flex items-center gap-[0.888rem] p-[0.9375rem]">
-              <div className="flex h-[3.198rem] w-[3.198rem] shrink-0 items-center justify-center rounded-[0.888rem] bg-primary-5">
-                <span style={{ fontSize: "1.5rem" }}>🇫🇷</span>
+            <div className="flex items-center gap-[0.625rem] md:gap-[0.888rem] p-[0.75rem] md:p-[0.9375rem]">
+              <div className="flex h-[2.5rem] w-[2.5rem] md:h-[3.198rem] md:w-[3.198rem] shrink-0 items-center justify-center rounded-[0.625rem] md:rounded-[0.888rem] bg-primary-5">
+                <span style={{ fontSize: "1.25rem" }}>🇫🇷</span>
               </div>
               <span
-                className="text-foreground whitespace-nowrap"
-                style={{ fontSize: "1rem" }}
+                className="text-foreground whitespace-normal text-[0.8rem] md:text-[1rem] leading-[1.3]"
               >
                 {copyright}
               </span>
