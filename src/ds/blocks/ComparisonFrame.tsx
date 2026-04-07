@@ -36,11 +36,10 @@ export function ComparisonFrame({
 
       {/* Content */}
       <div
-        className="relative z-10 flex flex-col items-center gap-[3.125rem] overflow-clip"
-        style={{ padding: "6.25rem 10rem" }}
+        className="relative z-10 flex flex-col items-center gap-[2rem] px-[1.5rem] py-[3rem] md:gap-[2.5rem] md:px-[3rem] md:py-[4rem] lg:gap-[3.125rem] lg:px-[10rem] lg:py-[6.25rem] overflow-clip"
       >
         {/* Text block */}
-        <div className="flex flex-col items-center gap-[1.25rem] text-center">
+        <div className="flex flex-col items-center gap-[1rem] md:gap-[1.25rem] text-center">
           <Heading level={2} gradient="dark-to-primary" align="center">
             {emoji && <>{emoji} </>}{title}
           </Heading>

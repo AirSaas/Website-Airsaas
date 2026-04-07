@@ -22,7 +22,7 @@ export function CtaFrame({
   return (
     <section
       className={cn("relative w-full overflow-hidden", className)}
-      style={{ minHeight: "54.75rem" }}
+      style={{ minHeight: "auto" }}
     >
       {/* Gradient background */}
       <GradientBackground
@@ -32,10 +32,9 @@ export function CtaFrame({
 
       {/* Content */}
       <div
-        className="relative z-10 flex flex-col items-center gap-[3.125rem] overflow-clip"
-        style={{ padding: "6.25rem 10rem" }}
+        className="relative z-10 flex flex-col items-center gap-[2rem] px-[1.5rem] py-[3rem] md:gap-[2.5rem] md:px-[3rem] md:py-[4rem] lg:gap-[3.125rem] lg:px-[10rem] lg:py-[6.25rem] overflow-clip"
       >
-        <div className="flex flex-col items-center gap-[1.25rem] text-center">
+        <div className="flex flex-col items-center gap-[1rem] md:gap-[1.25rem] text-center">
           <Heading level={2} gradient="dark-to-primary" align="center">
             {title}
           </Heading>
@@ -46,7 +45,7 @@ export function CtaFrame({
         </div>
 
         {/* Cards container */}
-        <div className="flex gap-[0.875rem] items-stretch justify-center w-full">
+        <div className="grid grid-cols-1 gap-[0.875rem] items-stretch w-full md:grid-cols-2">
           {children}
         </div>
       </div>

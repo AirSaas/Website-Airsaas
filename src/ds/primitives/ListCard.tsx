@@ -14,10 +14,10 @@ export function ListCard({
   return (
     <article
       className={cn(
-        "flex gap-[1.4375rem] items-start rounded-[1.5625rem] border border-prevention-40 bg-white",
+        "flex gap-[0.75rem] md:gap-[1.4375rem] items-start rounded-[1.25rem] md:rounded-[1.5625rem] border border-prevention-40 bg-white",
         className
       )}
-      style={{ padding: "1.6875rem 1.375rem 1.6875rem 1.8125rem" }}
+      style={{ padding: "1.25rem 1rem 1.25rem 1.25rem" }}
     >
       <span
         className="shrink-0 font-bold bg-clip-text text-transparent"

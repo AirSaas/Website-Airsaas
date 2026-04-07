@@ -93,9 +93,9 @@ export function Navbar({
     <nav
       aria-label="Main navigation"
       className={cn(
-        "relative flex w-full max-w-[115rem] h-[6.375rem] items-center justify-between",
-        "rounded-[1.5625rem] border border-border bg-white",
-        "px-[1.875rem]",
+        "relative flex w-full max-w-[115rem] h-[4rem] md:h-[5rem] lg:h-[6.375rem] items-center justify-between",
+        "rounded-[1rem] md:rounded-[1.25rem] lg:rounded-[1.5625rem] border border-border bg-white",
+        "px-[1rem] md:px-[1.5rem] lg:px-[1.875rem]",
         "shadow-[0px_4px_50px_0px_rgba(0,0,0,0.07)]",
         className,
       )}

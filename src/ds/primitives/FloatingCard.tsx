@@ -11,7 +11,7 @@ interface FloatingCardProps {
 function PlaceholderContent({ icon }: { icon?: React.ReactNode }) {
   return (
     <div className="flex items-center gap-[0.888rem] p-[0.9375rem]">
-      <div className="flex h-[3.198rem] w-[3.198rem] shrink-0 items-center justify-center rounded-[0.888rem] bg-primary-5">
+      <div className="grid h-[3.198rem] w-[3.198rem] shrink-0 place-items-center rounded-[0.888rem] bg-primary-5">
         {icon ?? <BullseyeIcon />}
       </div>
       <div className="flex w-[7.9375rem] flex-col gap-[0.5625rem]">

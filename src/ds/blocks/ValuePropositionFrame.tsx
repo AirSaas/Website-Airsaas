@@ -29,15 +29,14 @@ export function ValuePropositionFrame({
   return (
     <section
       className={cn(
-        "flex flex-col items-center gap-[3.125rem]",
+        "flex flex-col items-center gap-[2rem] px-[1.5rem] py-[3rem] md:gap-[2.5rem] md:px-[3rem] md:py-[4rem] lg:gap-[3.125rem] lg:px-[10rem] lg:py-[6.25rem]",
         isDark ? "bg-primary-70" : "bg-white",
         className
       )}
-      style={{ padding: "6.25rem 10rem" }}
     >
       {tag && <Tag variant="muted">{tag}</Tag>}
 
-      <div className="flex flex-col items-center gap-[1.25rem] text-center">
+      <div className="flex flex-col items-center gap-[1rem] md:gap-[1.25rem] text-center">
         {isDark ? (
           <Heading level={2} gradient="none" align="center" className="text-white">
             {titleHighlight && <>{titleHighlight} </>}
@@ -80,7 +79,7 @@ export function ValuePropositionFrame({
       </div>
 
       {/* Grid of cards — passed as children for flexibility */}
-      <div className="flex gap-[1rem] items-stretch justify-center w-full max-w-[91rem]">
+      <div className="grid grid-cols-1 gap-[1rem] items-stretch justify-center w-full max-w-[91rem] sm:grid-cols-2 lg:grid-cols-4">
         {children}
       </div>
     </section>

@@ -27,10 +27,9 @@ export function TestimonialsFrame({
   return (
     <section
       className={cn(
-        "flex flex-col items-center gap-[3.125rem] bg-primary-2",
+        "flex flex-col items-center gap-[2rem] px-[1.5rem] py-[3rem] md:gap-[2.5rem] md:px-[3rem] md:py-[4rem] lg:gap-[3.125rem] lg:px-[10rem] lg:py-[6.25rem] bg-primary-2",
         className
       )}
-      style={{ padding: "6.25rem 10rem" }}
     >
       <Heading level={2} gradient="none" align="center">
         <span
@@ -53,7 +52,7 @@ export function TestimonialsFrame({
         </span>
       </Heading>
 
-      <div className="flex gap-[1rem] items-stretch justify-center w-full">
+      <div className="grid grid-cols-1 gap-[1rem] items-stretch w-full md:grid-cols-2 lg:grid-cols-3">
         {testimonials.map((t, i) => (
           <TestimonialCard
             key={i}

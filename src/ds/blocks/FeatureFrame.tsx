@@ -43,7 +43,7 @@ export function FeatureFrame({
   const defaultBg = isRight ? "var(--color-primary-5)" : "#fffbeb";
 
   const textContent = (
-    <div className="flex flex-1 flex-col gap-[1.25rem] items-start min-w-0">
+    <div className="flex flex-1 flex-col gap-[1rem] md:gap-[1.25rem] items-start min-w-0">
       {tag && <Tag variant="muted">{tag}</Tag>}
 
       <Heading level={3} gradient="none" align="left">
@@ -85,13 +85,12 @@ export function FeatureFrame({
   const illustrationContent = imageSrc && (
     <div
       className={cn(
-        "shrink-0 rounded-[2.1875rem] overflow-hidden",
-        isRight ? "pl-[2.5rem] py-[2.5rem]" : "pr-[2.5rem] py-[2.5rem]"
+        "shrink-0 rounded-[1.5rem] md:rounded-[2.1875rem] overflow-hidden w-full lg:w-[67.5rem] lg:max-w-[60%]",
+        isRight ? "p-[1.5rem] lg:pl-[2.5rem] lg:py-[2.5rem] lg:pr-0" : "p-[1.5rem] lg:pr-[2.5rem] lg:py-[2.5rem] lg:pl-0"
       )}
       style={{
         backgroundColor: imageBgColor ?? defaultBg,
-        width: "67.5rem",
-        maxWidth: "60%",
+        maxWidth: "100%",
       }}
     >
       <img
@@ -106,11 +105,12 @@ export function FeatureFrame({
   return (
     <section
       className={cn(
-        "flex items-center gap-[3.125rem] bg-white",
-        isRight ? "pl-[10rem]" : "pr-[10rem] justify-end",
+        "flex flex-col gap-[2rem] px-[1.5rem] py-[3rem] bg-white",
+        "md:px-[3rem] md:py-[4rem] md:gap-[2.5rem]",
+        "lg:flex-row lg:items-center lg:gap-[3.125rem] lg:py-[6.25rem]",
+        isRight ? "lg:pl-[10rem] lg:pr-0" : "lg:pr-[10rem] lg:pl-0 lg:justify-end",
         className
       )}
-      style={{ paddingBlock: "6.25rem" }}
     >
       {isRight ? (
         <>

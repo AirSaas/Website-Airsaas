@@ -55,30 +55,37 @@ function FaqItemComponent({
         onClick={onToggle}
         aria-expanded={isOpen}
         className={cn(
-          "flex items-center gap-[0.625rem] w-full rounded-[1.25rem] bg-white text-left transition-colors",
+          "flex items-center gap-[0.5rem] md:gap-[0.625rem] w-full rounded-[1rem] md:rounded-[1.25rem] bg-white text-left transition-colors",
           isOpen ? "border border-primary" : "border border-primary-10"
         )}
-        style={{ padding: "1.25rem 2.1875rem" }}
+        style={{ padding: "1rem 1.25rem" }}
       >
         <FaqIcon open={isOpen} />
         <span
-          className="font-bold text-primary"
-          style={{ fontSize: "1.6875rem" }}
+          className="font-bold text-primary text-[1.1rem] md:text-[1.6875rem]"
         >
           {item.question}
         </span>
       </button>
 
-      {isOpen && (
-        <div style={{ padding: "0 2.5rem" }}>
-          <p
-            className="font-light text-foreground"
-            style={{ fontSize: "var(--text-paragraph)", lineHeight: "1.4" }}
-          >
-            {item.answer}
-          </p>
+      <div
+        className="grid transition-[grid-template-rows,opacity] duration-300 ease-in-out"
+        style={{
+          gridTemplateRows: isOpen ? "1fr" : "0fr",
+          opacity: isOpen ? 1 : 0,
+        }}
+      >
+        <div className="overflow-hidden">
+          <div style={{ padding: "0 1.25rem" }}>
+            <p
+              className="font-light text-foreground"
+              style={{ fontSize: "var(--text-paragraph)", lineHeight: "1.4" }}
+            >
+              {item.answer}
+            </p>
+          </div>
         </div>
-      )}
+      </div>
     </div>
   );
 }
@@ -95,10 +102,9 @@ export function FaqFrame({
   return (
     <section
       className={cn(
-        "flex flex-col items-center gap-[3.125rem] bg-primary-2",
+        "flex flex-col items-center gap-[2rem] px-[1.5rem] py-[3rem] md:gap-[2.5rem] md:px-[3rem] md:py-[4rem] lg:gap-[3.125rem] lg:px-[10rem] lg:py-[6.25rem] bg-primary-2",
         className
       )}
-      style={{ padding: "6.25rem 10rem" }}
     >
       <Heading level={2} gradient="none" align="center">
         <span

@@ -33,16 +33,14 @@ export function Footer({
 }: FooterProps) {
   return (
     <footer
-      className={cn("bg-white", className)}
-      style={{ padding: "6.25rem 8.125rem" }}
+      className={cn("bg-white px-[1.5rem] py-[3rem] md:px-[3rem] md:py-[4rem] lg:px-[8.125rem] lg:py-[6.25rem]", className)}
     >
       <div
-        className="relative rounded-[1.5625rem] bg-primary-2"
-        style={{ padding: "3.375rem 10.625rem" }}
+        className="relative rounded-[1.25rem] md:rounded-[1.5625rem] bg-primary-2 px-[1.5rem] py-[2.5rem] md:px-[3rem] md:py-[3rem] lg:px-[10.625rem] lg:py-[3.375rem]"
       >
         {/* Logo floating card — top left */}
         <div
-          className="absolute -top-[1.875rem] -left-[3.125rem] bg-white rounded-[1.25rem] p-[1rem_1.5rem]"
+          className="absolute -top-[1.875rem] left-[1rem] md:-left-[1.5rem] lg:-left-[3.125rem] bg-white rounded-[1.25rem] p-[1rem_1.5rem]"
           style={{
             boxShadow: "0px 8px 40px 0px rgba(58, 81, 226, 0.08), 0px 2px 12px 0px rgba(0, 0, 0, 0.04)",
           }}
@@ -52,9 +50,9 @@ export function Footer({
         </div>
 
         {/* Columns */}
-        <div className="flex gap-[2.5rem] items-start">
+        <div className="grid grid-cols-1 gap-[2rem] sm:grid-cols-2 lg:grid-cols-4 lg:gap-[2.5rem] items-start mt-[1rem]">
           {columns.map((col, i) => (
-            <div key={i} className="flex-1 flex flex-col">
+            <div key={i} className="flex flex-col">
               <span
                 className="font-bold text-primary"
                 style={{ fontSize: "1.5625rem", lineHeight: "1.2", marginBottom: "0.5rem" }}
@@ -76,7 +74,7 @@ export function Footer({
         </div>
 
         {/* Bottom floating card — copyright */}
-        <div className="absolute -bottom-[2.5rem] right-[4rem]">
+        <div className="relative mt-[2rem] lg:absolute lg:mt-0 lg:-bottom-[2.5rem] lg:right-[4rem]">
           <FloatingCard>
             <div className="flex items-center gap-[0.888rem] p-[0.9375rem]">
               <div className="flex h-[3.198rem] w-[3.198rem] shrink-0 items-center justify-center rounded-[0.888rem] bg-primary-5">

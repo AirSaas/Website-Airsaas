@@ -78,16 +78,16 @@ export function Hero({
         className
       )}
     >
-      {/* Large curved arc background */}
-      <div className="absolute top-[7.5rem] right-[-12.5rem] w-[56.25rem] h-[56.25rem] rounded-full border-[5rem] border-primary-10/60 pointer-events-none z-0" aria-hidden="true" />
-      <div className="absolute top-[10rem] right-[-11.25rem] w-[51.25rem] h-[51.25rem] rounded-full border-[2.5rem] border-primary-5/40 pointer-events-none z-0" aria-hidden="true" />
+      {/* Large curved arc background — hidden on mobile/tablet */}
+      <div className="absolute top-[7.5rem] right-[-12.5rem] w-[56.25rem] h-[56.25rem] rounded-full border-[5rem] border-primary-10/60 pointer-events-none z-0 hidden lg:block" aria-hidden="true" />
+      <div className="absolute top-[10rem] right-[-11.25rem] w-[51.25rem] h-[51.25rem] rounded-full border-[2.5rem] border-primary-5/40 pointer-events-none z-0 hidden lg:block" aria-hidden="true" />
       <GradientBackground
         variant="hero"
         className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full z-0"
       />
 
       {/* Content wrapper — matches Figma "Wrapper Hero" */}
-      <div className="relative z-10 flex flex-col items-center gap-[4.375rem] px-[2.5rem] pt-[2.5rem]">
+      <div className="relative z-10 flex flex-col items-center gap-[2rem] px-[1.25rem] pt-[1.25rem] md:gap-[3rem] md:px-[2rem] md:pt-[2rem] lg:gap-[4.375rem] lg:px-[2.5rem] lg:pt-[2.5rem]">
         {/* Navbar */}
         {navItems && (
           <Navbar
@@ -100,7 +100,7 @@ export function Hero({
         )}
 
         {/* Main content — matches Figma "Cont" */}
-        <div className="flex flex-col items-center gap-[2.5rem] max-w-[93.75rem] w-full">
+        <div className="flex flex-col items-center gap-[1.5rem] md:gap-[2rem] lg:gap-[2.5rem] max-w-[93.75rem] w-full">
           {topTag && (
             <Tag variant={topTag.variant ?? "muted"}>
               {topTag.label}
@@ -108,7 +108,7 @@ export function Hero({
           )}
 
           {/* H1 — first part dark, second part gradient */}
-          <div className="w-[80%]">
+          <div className="w-full md:w-[90%] lg:w-[80%]">
           <Heading level={1} gradient="none" align="center">
             {headline}
             {headlineGradient && (
@@ -145,7 +145,7 @@ export function Hero({
 
           {/* CTA Buttons — rendered AFTER tags per reference */}
           {(primaryCta || secondaryCta) && (
-            <div className="flex items-center gap-[0.9375rem] flex-wrap justify-center">
+            <div className="flex flex-col items-center gap-[0.75rem] sm:flex-row sm:gap-[0.9375rem] flex-wrap justify-center">
               {primaryCta && (
                 <Button variant="primary" size="md" href={primaryCta.href}>
                   {primaryCta.label}

@@ -3,7 +3,7 @@ import { BullseyeArrowIcon, SuitcaseIcon, CalendarDayIcon } from "@/ds/primitive
 
 export function BullseyeIcon() {
   return (
-    <IconIllustration variant="dark" size="sm">
+    <IconIllustration variant="light" size="sm">
       <BullseyeArrowIcon />
     </IconIllustration>
   );
@@ -11,7 +11,7 @@ export function BullseyeIcon() {
 
 export function BriefcaseIcon() {
   return (
-    <IconIllustration variant="dark" size="sm">
+    <IconIllustration variant="light" size="sm">
       <SuitcaseIcon />
     </IconIllustration>
   );
@@ -19,7 +19,7 @@ export function BriefcaseIcon() {
 
 export function CalendarIcon() {
   return (
-    <IconIllustration variant="dark" size="sm">
+    <IconIllustration variant="light" size="sm">
       <CalendarDayIcon />
     </IconIllustration>
   );

@@ -14,7 +14,7 @@ function CheckCircleIcon() {
       style={{
         fontFamily: '"Font Awesome 6 Pro"',
         fontWeight: 400,
-        fontSize: "1.66rem",
+        fontSize: "1.2rem",
         lineHeight: "1.56",
         background: "linear-gradient(90deg, #03F875 0%, #A1FC92 100%)",
         WebkitBackgroundClip: "text",
@@ -34,12 +34,12 @@ export function ListInline({
 }: ListInlineProps) {
   return (
     <div
-      className={cn("flex items-center gap-[0.553rem]", className)}
+      className={cn("flex items-center gap-[0.4rem]", className)}
     >
       {icon ?? <CheckCircleIcon />}
       <span
         className="flex-1 font-light text-foreground"
-        style={{ fontSize: "1.5rem" }}
+        style={{ fontSize: "1.2rem" }}
       >
         {children}
       </span>
