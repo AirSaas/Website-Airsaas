@@ -5,10 +5,8 @@ import { LogosBar } from "@/ds/primitives/LogosBar";
 import { ValuePropositionFrame } from "@/ds/blocks/ValuePropositionFrame";
 import { FeatureFrame } from "@/ds/blocks/FeatureFrame";
 import { FeatureSectionStacked } from "@/ds/blocks/FeatureSectionStacked";
-import { CtaFrame } from "@/ds/blocks/CtaFrame";
 import { Footer } from "@/ds/blocks/Footer";
 import { FeatureCard } from "@/ds/primitives/FeatureCard";
-import { CardCta } from "@/ds/primitives/CardCta";
 import { IconIllustration } from "@/ds/primitives/IconIllustration";
 import { SectionHeading } from "@/ds/primitives/SectionHeading";
 import { TestimonialCompanyCard } from "@/ds/primitives/TestimonialCompanyCard";
@@ -21,7 +19,6 @@ import { Float } from "@/ds/primitives/Float";
 import { AnimateOnScroll } from "@/ds/primitives/AnimateOnScroll";
 import {
   CalendarDayIcon,
-  BullseyeArrowIcon,
   StopwatchIcon,
   SuitcaseIcon,
 } from "@/ds/primitives/icons/illustration-icons";
@@ -177,11 +174,10 @@ const navItems = [
 ];
 
 const logos = [
-  { src: "/assets/logos/kiabi.png", alt: "Kiabi", width: 96, height: 40 },
-  { src: "/assets/logos/valrhona.png", alt: "Valrhona", width: 130, height: 40 },
-  { src: "/assets/logos/intuis.png", alt: "Intuis", width: 70, height: 40 },
-  { src: "/assets/logos/altavia.svg", alt: "Altavia", width: 110, height: 40 },
-  { src: "/assets/logos/sncf.svg", alt: "SNCF", width: 80, height: 40 },
+  { src: "https://cdn.prod.website-files.com/609552290d93fd43ba0f0849/63d10687150c6042f155dcd4_logo-alliancy-monotone.png", alt: "Alliancy", width: 130, height: 40 },
+  { src: "https://cdn.prod.website-files.com/609552290d93fd43ba0f0849/63d106ab9c5e18b386c84505_JDN-monotone.png", alt: "JDN Journal du NET", width: 120, height: 40 },
+  { src: "https://cdn.prod.website-files.com/609552290d93fd43ba0f0849/63d10458acb275dbac3ecb65_LePoint-monotone.png", alt: "Le Point", width: 110, height: 40 },
+  { src: "https://cdn.prod.website-files.com/609552290d93fd43ba0f0849/64141ec10a541a09487cd1ec_LMI.png", alt: "Le Monde Informatique", width: 150, height: 40 },
 ];
 
 const footerColumns = [
@@ -234,44 +230,44 @@ const footerColumns = [
 const companyTestimonials = [
   {
     quote:
-      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque",
-    logoSrc: "https://placehold.co/169x65/ffffff/061333?text=Logo+1",
-    logoAlt: "Client 1",
+      "Hub de pilotage donnant le bon niveau de visibilité aux métiers, aux Codir et Comex",
+    logoSrc: "https://cdn.prod.website-files.com/609552290d93fd43ba0f0849/63d10687150c6042f155dcd4_logo-alliancy-monotone.png",
+    logoAlt: "Alliancy",
   },
   {
     quote:
-      "Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.",
-    logoSrc: "https://placehold.co/111x51/ffffff/061333?text=Logo+2",
-    logoAlt: "Client 2",
+      "AirSaas vise à rendre réel l'alignement entre les directions métiers, la DSI et la direction générale",
+    logoSrc: "https://cdn.prod.website-files.com/609552290d93fd43ba0f0849/63d106ab9c5e18b386c84505_JDN-monotone.png",
+    logoAlt: "JDN Journal du NET",
   },
   {
     quote:
-      "Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus..",
-    logoSrc: "https://placehold.co/188x44/ffffff/061333?text=Logo+3",
-    logoAlt: "Client 3",
+      "Une nouvelle manière d'embarquer les équipes",
+    logoSrc: "https://cdn.prod.website-files.com/609552290d93fd43ba0f0849/63d10458acb275dbac3ecb65_LePoint-monotone.png",
+    logoAlt: "Le Point",
   },
 ];
 
 const testimonials = [
   {
     quote:
-      "Depuis qu'on utilise AirSaas, nos comités de pilotage sont enfin productifs. On a une vue claire sur tous nos projets stratégiques.",
-    name: "Sophie Lefèvre",
-    role: "DSI @Kiabi",
+      "Super outil qui nous permet de fluidifier le pilotage de notre portefeuille projet. Je recommande !",
+    name: "Thomas Sagnimorte",
+    role: "DSI @Millet Mountain Group",
     linkedinHref: "#",
   },
   {
     quote:
-      "Depuis qu'on utilise AirSaas, nos comités de pilotage sont enfin productifs. On a une vue claire sur tous nos projets stratégiques.",
-    name: "Sophie Lefèvre",
-    role: "DSI @Kiabi",
+      "Un beau projet et vraie dynamique d'équipe transverse... Heureuse de constater la progression et premiers résultats !",
+    name: "Marie-Odile Lhomme",
+    role: "CDIO",
     linkedinHref: "#",
   },
   {
     quote:
-      "Depuis qu'on utilise AirSaas, nos comités de pilotage sont enfin productifs. On a une vue claire sur tous nos projets stratégiques.",
-    name: "Sophie Lefèvre",
-    role: "DSI @Kiabi",
+      "Avec AirSaas nous avons pu ritualiser nos réunions en supprimant les PowerPoints... Outil vraiment TOP !",
+    name: "Clément Royer",
+    role: "DSI @Chiesi France",
     linkedinHref: "#",
   },
 ];
@@ -281,8 +277,8 @@ const comparisonItemsSans = [
     value: 1,
     description: (
       <>
-        Vous avez un Excel à <strong>1200 colonnes</strong> que vous seul
-        comprenez
+        Des projets cadrés sur <strong>PowerPoint ou Excel</strong>, sans
+        collaboration et sans homogénéité
       </>
     ),
   },
@@ -290,8 +286,8 @@ const comparisonItemsSans = [
     value: 2,
     description: (
       <>
-        Vos prévisions sont <strong>précisément fausses</strong> plutôt
-        qu&apos;approximativement justes
+        Un <strong>reporting projet / CoPil à la main</strong>, qui vous prend
+        un temps significatif
       </>
     ),
   },
@@ -299,9 +295,42 @@ const comparisonItemsSans = [
     value: 3,
     description: (
       <>
-        De l&apos;idée floue à un projet positionné, ça prend{" "}
-        <strong>des mois.</strong> Réunions, allers-retours, estimations au
-        doigt mouillé...
+        Trop de <strong>micro-information dispersée</strong> entre vos
+        différents outils de gestion de tâches et de ticketing
+      </>
+    ),
+  },
+  {
+    value: 4,
+    description: (
+      <>
+        Une difficulté pour les chefs de projet à comprendre les{" "}
+        <strong>décisions prises et à prendre</strong>
+      </>
+    ),
+  },
+  {
+    value: 5,
+    description: (
+      <>
+        Un <strong>pilotage à la tâche</strong> complexe
+      </>
+    ),
+  },
+  {
+    value: 6,
+    description: (
+      <>
+        Une <strong>culture projet hétérogène</strong>, voire inexistante
+      </>
+    ),
+  },
+  {
+    value: 7,
+    description: (
+      <>
+        Du <strong>micro-management</strong> pour gérer vos différents
+        collaborateurs
       </>
     ),
   },
@@ -312,8 +341,8 @@ const comparisonItemsAvec = [
     value: 1,
     description: (
       <>
-        Les outils existants sont <strong>trop complexes</strong> → personne ne
-        les maintient
+        Un <strong>cadrage projet collaboratif</strong> et uniformisé, guidé par
+        des bonnes pratiques en la matière
       </>
     ),
   },
@@ -321,8 +350,8 @@ const comparisonItemsAvec = [
     value: 2,
     description: (
       <>
-        Impossible de répondre à :{" "}
-        <strong>&ldquo;Peut-on prendre ce projet ?&rdquo;</strong>
+        Un <strong>reporting décisionnel généré automatiquement</strong> aux
+        couleurs de votre entreprise
       </>
     ),
   },
@@ -330,8 +359,43 @@ const comparisonItemsAvec = [
     value: 3,
     description: (
       <>
-        Le PMO devrait gérer la capacité. Mais il est{" "}
-        <strong>saturé par le quotidien</strong> pour s&apos;en occuper.
+        Un focus sur les <strong>décisions et les points d&apos;attention</strong>{" "}
+        de vos projets, grâce à une gouvernance structurée
+      </>
+    ),
+  },
+  {
+    value: 4,
+    description: (
+      <>
+        Une véritable <strong>transparence</strong> de vos projets pour toutes
+        les parties prenantes de votre entreprise
+      </>
+    ),
+  },
+  {
+    value: 5,
+    description: (
+      <>
+        Un <strong>pilotage agile</strong> par les jalons de vos projets
+      </>
+    ),
+  },
+  {
+    value: 6,
+    description: (
+      <>
+        Une <strong>culture projet standardisée</strong>, qui pousse tous les
+        collaborateurs vers l&apos;excellence
+      </>
+    ),
+  },
+  {
+    value: 7,
+    description: (
+      <>
+        Une <strong>responsabilisation</strong> de chacun, grâce à une vision
+        simplifiée et collaborative de l&apos;avancement des projets
       </>
     ),
   },
@@ -340,18 +404,13 @@ const comparisonItemsAvec = [
 const sliderSlides = [
   {
     imageSrc:
-      "https://placehold.co/1380x900/e8ebfe/3C51E2?text=Marketplace+Jira",
-    imageAlt: "Intégration Jira",
+      "https://cdn.prod.website-files.com/609552290d93fd43ba0f0849/65d484f5bef7b761e48fea37_Automation%20-%20integrations.webp",
+    imageAlt: "Marketplace AirSaas - Automatisations et intégrations",
   },
   {
     imageSrc:
-      "https://placehold.co/1380x900/e8ebfe/6b7be9?text=Marketplace+Monday",
-    imageAlt: "Intégration Monday",
-  },
-  {
-    imageSrc:
-      "https://placehold.co/1380x900/e8ebfe/ff922b?text=Marketplace+Teams",
-    imageAlt: "Intégration Teams",
+      "https://cdn.prod.website-files.com/609552290d93fd43ba0f0849/65d48497b08e93531f3ba49b_Graphic%20Integrations.webp",
+    imageAlt: "Marketplace AirSaas - Intégrations graphiques",
   },
 ];
 
@@ -453,8 +512,8 @@ function NewsletterSection() {
         }}
       >
         <img
-          src="https://placehold.co/1125x974/e8eafc/3a51e2?text=Newsletter+Sponsor"
-          alt="Newsletter sponsor pour la direction"
+          src="https://cdn.prod.website-files.com/609552290d93fd43ba0f0849/66543b6b307a64952dc9c936_Control%20tower%20email%20FR-1.png"
+          alt="Control tower email - Newsletter sponsor pour la direction"
           className="w-full h-auto rounded-[0.625rem] object-cover"
           loading="lazy"
         />
@@ -536,7 +595,7 @@ function CtaGradientSection() {
             moderne, qui fait gagner vos projets en temps et en efficacité.
           </p>
 
-          <Button variant="primary" size="md" href="#">
+          <Button variant="primary" size="md" href="/fr/bookademo">
             Réservez une démo
           </Button>
         </div>
@@ -832,9 +891,9 @@ export default function HomePage() {
         headlineGradient="portfolio"
         headlineSuffix="pour aligner le top management"
         subtitle="Stop au gaspillage, à trop de projets en parallèle, trop de projets en retard, des équipes sous l'eau, un top management en tension. Votre croissance est liée à la réussite de vos projets."
-        primaryCta={{ label: "Réservez une démo", href: "#" }}
-        illustrationSrc="https://placehold.co/1457x857/e8eafc/3a51e2?text=Product+Screenshot"
-        illustrationAlt="AirSaas product screenshot"
+        primaryCta={{ label: "Réservez une démo", href: "/fr/bookademo" }}
+        illustrationSrc="https://cdn.prod.website-files.com/609552290d93fd43ba0f0849/65ce3c00c0a4886fc8e9f671_Portfolio%20project%20timeline%20view.webp"
+        illustrationAlt="AirSaas - Portfolio project timeline view"
       />
 
       {/* 2. Logos bar — "Ils parlent de nous" */}
@@ -889,25 +948,18 @@ export default function HomePage() {
         <SectionHeading
           titleGradient="Une plateforme de gouvernance projet"
           titleDark="à la hauteur de vos ambitions"
-          subtitle="Notre mission ? Vous permettre de devenir le pivot de la transformation de l'entreprise en structurant la gouvernance de tous les projets, grâce à une plateforme simple que le top management va adorer. La vôtre ? Faire passer votre entreprise à l'étape supérieure en gouvernance de projet !"
+          subtitle="Notre mission ? Vous permettre de devenir le pivot de la transformation de l'entreprise en structurant la gouvernance de tous les projets, grâce à une plateforme simple que le top management va adorer."
         />
       </AnimateOnScroll>
 
-      {/* 5. Feature Frame right — Agent IA Brief projet (intro) */}
+      {/* 5. Feature Frame right — Roadmaps */}
       <AnimateOnScroll animation="fade-right" duration={800}>
         <FeatureFrame
           imagePosition="right"
-          tag="Intelligence Artificielle"
-          titleHighlight="Agent IA"
-          title="Brief projet"
-          description='Quand une demande arrive floue ("on veut un truc"), l&apos;agent IA mène l&apos;entretien, collecte les informations critiques et transforme chaque demande en brief clair et comparable.'
-          checklist={[
-            "Entretien guidé par l'IA",
-            "Brief structuré selon vos templates",
-            "Demandes comparables entre elles",
-            "Dites non plus tôt, lancez moins de projets... mais mieux",
-          ]}
-          imageSrc="https://placehold.co/1125x696/e8eafc/3a51e2?text=Agent+IA+Brief+Intro"
+          titleHighlight="Partagez"
+          title="simplement les roadmaps à toute l'organisation"
+          description="Une roadmap, ça bouge, ça vit, c'est un élément clé pour aligner le top management en continu. Avec AirSaas, plus besoin de faire des PowerPoints à rallonge : l'information est centralisée, partageable et sympa à visualiser (parce que quand c'est beau, c'est quand même plus impactant)."
+          imageSrc="https://cdn.prod.website-files.com/609552290d93fd43ba0f0849/65ce3c00c0a4886fc8e9f671_Portfolio%20project%20timeline%20view.webp"
         />
       </AnimateOnScroll>
 
@@ -923,45 +975,30 @@ export default function HomePage() {
             "Quels sont les jalons qui nous plombent ? Peut-on les découper ?",
             "Doit-on recruter ou mettre l'équipe en tension ? Pendant combien de temps ?",
           ]}
-          imageSrc="https://placehold.co/1380x900/e8eafc/3C51E2?text=Capacity+Planning"
+          imageSrc="https://cdn.prod.website-files.com/609552290d93fd43ba0f0849/66334ee7bcfcb0aa45802537_Capacity%20screen.webp"
           imageAlt="Vue capacity planning par équipe"
         />
       </AnimateOnScroll>
 
-      {/* 7. Feature Frame right — Agent IA Brief projet */}
+      {/* 7. Feature Frame right — Priorisation */}
       <AnimateOnScroll animation="fade-right" duration={800}>
         <FeatureFrame
           imagePosition="right"
-          tag="Intelligence Artificielle"
-          titleHighlight="Agent IA"
-          title="Brief projet"
-          description='Quand une demande arrive floue ("on veut un truc"), l&apos;agent IA mène l&apos;entretien, collecte les informations critiques et transforme chaque demande en brief clair et comparable.'
-          checklist={[
-            "Entretien guidé par l'IA",
-            "Brief structuré selon vos templates",
-            "Demandes comparables entre elles",
-            "Dites non plus tôt, lancez moins de projets... mais mieux",
-          ]}
-          imageSrc="https://placehold.co/1125x696/e8eafc/3a51e2?text=Agent+IA+Brief"
+          titleHighlight="Chaque directeur définit"
+          title="ses prios"
+          description="Demandez aux directeurs de prioriser parmi les projets dont son équipe est à l'origine. Deux projets ne peuvent pas avoir la même priorité. Une fois prêts, ils valident leur choix. C'est simple, transparent et puissant."
+          imageSrc="https://cdn.prod.website-files.com/609552290d93fd43ba0f0849/663d07a346b12e77e37ddd72_Prioritization%20per%20team%20ppt%20d%26d.webp"
         />
       </AnimateOnScroll>
 
-      {/* 8. Feature Frame left — Agent IA Découpage projet */}
+      {/* 8. Feature Frame left — Cadrage projet */}
       <AnimateOnScroll animation="fade-left" duration={800}>
         <FeatureFrame
           imagePosition="left"
-          tag="Intelligence Artificielle"
-          titleHighlight="Agent IA"
-          title="Découpage projet"
-          description="L'IA découpe automatiquement vos projets par quarter et par équipe. Elle connaît vos équipes : ce qu'elles savent faire, ce qu'elles ne font pas, leur vélocité passée."
-          checklist={[
-            "Découpage par quarter et par équipe",
-            "Adapté aux compétences de chaque équipe",
-            "Basé sur la vélocité historique",
-            "Suggestions réalistes, pas théoriques",
-          ]}
-          imageSrc="https://placehold.co/1125x731/fffbeb/e58d05?text=Découpage+Projet"
-          imageBgColor="#fffbeb"
+          titleHighlight="Diffusez"
+          title="un cadrage projet standardisé"
+          description="Remplissez les fiches cadrage de projet de manière collaborative, et guidez vos collaborateurs vers un véritable niveau d'excellence en gestion de projet. À vous une culture projet homogénéisée !"
+          imageSrc="https://cdn.prod.website-files.com/609552290d93fd43ba0f0849/65d35d6a6c51a9712103f44c_Presentation-scope-slide.webp"
         />
       </AnimateOnScroll>
 
@@ -970,40 +1007,25 @@ export default function HomePage() {
         <NewsletterSection />
       </AnimateOnScroll>
 
-      {/* 10. Feature Frame left — Agent IA Découpage projet (variant) */}
+      {/* 10. Feature Frame left — Reporting projet */}
       <AnimateOnScroll animation="fade-left" duration={800}>
         <FeatureFrame
           imagePosition="left"
-          tag="Intelligence Artificielle"
-          titleHighlight="Agent IA"
-          title="Découpage projet"
-          description="L'IA découpe automatiquement vos projets par quarter et par équipe. Elle connaît vos équipes : ce qu'elles savent faire, ce qu'elles ne font pas, leur vélocité passée."
-          checklist={[
-            "Découpage par quarter et par équipe",
-            "Adapté aux compétences de chaque équipe",
-            "Basé sur la vélocité historique",
-            "Suggestions réalistes, pas théoriques",
-          ]}
-          imageSrc="https://placehold.co/1125x731/fffbeb/e58d05?text=Découpage+Projet+2"
-          imageBgColor="#fffbeb"
+          titleHighlight="Votre reporting projet"
+          title="en un clic"
+          description="Générez votre reporting flash en un seul clic, et homogénéisez vos présentations, pour faciliter la prise de décision. Autant de temps gagné pour vous focaliser sur le coaching de vos chefs de projet et votre gouvernance."
+          imageSrc="https://cdn.prod.website-files.com/609552290d93fd43ba0f0849/65d35ce9e34fd87ad7612c9d_Flash%20report%20ppt.webp"
         />
       </AnimateOnScroll>
 
-      {/* 11. Feature Frame right — Agent IA Brief projet (variant) */}
+      {/* 11. Feature Frame right — Décisions */}
       <AnimateOnScroll animation="fade-right" duration={800}>
         <FeatureFrame
           imagePosition="right"
-          tag="Intelligence Artificielle"
-          titleHighlight="Agent IA"
-          title="Brief projet"
-          description='Quand une demande arrive floue ("on veut un truc"), l&apos;agent IA mène l&apos;entretien, collecte les informations critiques et transforme chaque demande en brief clair et comparable.'
-          checklist={[
-            "Entretien guidé par l'IA",
-            "Brief structuré selon vos templates",
-            "Demandes comparables entre elles",
-            "Dites non plus tôt, lancez moins de projets... mais mieux",
-          ]}
-          imageSrc="https://placehold.co/1125x696/e8eafc/3a51e2?text=Agent+IA+Scoring"
+          titleHighlight="Fluidifiez"
+          title="votre prise de décisions importantes et urgentes"
+          description="Centralisez vos décisions sous forme de Kanban, et partagez-les aisément avec toutes les parties prenantes de vos projets. Finies les informations perdues dans vos mails ou flux de discussions instantanées !"
+          imageSrc="https://cdn.prod.website-files.com/609552290d93fd43ba0f0849/65d35c96ec9fbf11d78e4b44_Portfolio%20decisions%20(show%20projects%20title).webp"
         />
       </AnimateOnScroll>
 
