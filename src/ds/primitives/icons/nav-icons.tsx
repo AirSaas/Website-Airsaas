@@ -1,5 +1,5 @@
 /** Small 22×22 icons for Navbar dropdown items.
- *  Uses Font Awesome 6 Duotone glyphs via @font-face.
+ *  Uses Font Awesome 6 Pro Regular glyphs via @font-face.
  */
 
 interface NavIconProps {
@@ -11,8 +11,8 @@ function FANavIcon({ char, className }: NavIconProps & { char: string }) {
     <span
       className={className}
       style={{
-        fontFamily: '"Font Awesome 6 Duotone"',
-        fontWeight: 900,
+        fontFamily: '"Font Awesome 6 Pro"',
+        fontWeight: 400,
         color: "var(--color-primary)",
         lineHeight: 1,
         display: "flex",
