@@ -81,9 +81,6 @@ export function Hero({
         className
       )}
     >
-      {/* Large curved arc background — hidden on mobile/tablet */}
-      <div className="absolute top-[7.5rem] right-[-12.5rem] w-[56.25rem] h-[56.25rem] rounded-full border-[5rem] border-primary-10/60 pointer-events-none z-0 hidden lg:block" aria-hidden="true" />
-      <div className="absolute top-[10rem] right-[-11.25rem] w-[51.25rem] h-[51.25rem] rounded-full border-[2.5rem] border-primary-5/40 pointer-events-none z-0 hidden lg:block" aria-hidden="true" />
       <GradientBackground
         variant="hero"
         className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full z-0"
