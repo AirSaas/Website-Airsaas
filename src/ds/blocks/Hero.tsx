@@ -81,20 +81,18 @@ export function Hero({
         className
       )}
     >
-      {/* Ellipse background — 1250×1250, border-weight 155, centered behind content */}
+      {/* Ellipse background — subtle ring offset to the right */}
       <div
         className="absolute pointer-events-none z-0"
         aria-hidden="true"
         style={{
           width: "78.125rem",
           height: "78.125rem",
-          top: "50%",
-          left: "50%",
-          transform: "translate(-50%, -45%)",
+          top: "45%",
+          right: "-18rem",
+          transform: "translateY(-50%)",
           borderRadius: "50%",
-          border: "9.6875rem solid var(--color-primary-10, rgba(107,123,233,0.1))",
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
+          border: "9.6875rem solid rgba(107,123,233,0.06)",
         }}
       />
       <GradientBackground
