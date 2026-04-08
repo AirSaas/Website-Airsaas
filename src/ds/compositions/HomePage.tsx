@@ -25,6 +25,24 @@ import {
   StopwatchIcon,
   SuitcaseIcon,
 } from "@/ds/primitives/icons/illustration-icons";
+import {
+  NavPmoIcon,
+  NavItIcon,
+  NavComiteIcon,
+  NavDirectionIcon,
+  NavExpertIcon,
+  NavPriorisationIcon,
+  NavCapacitaireIcon,
+  NavEmailIcon,
+  NavTraductionIcon,
+  NavReportingIcon,
+  NavBudgetIcon,
+  NavCommunauteIcon,
+  NavBlogIcon,
+  NavPodcastIcon,
+  NavBootcampIcon,
+  NavEvenementsIcon,
+} from "@/ds/primitives/icons/nav-icons";
 
 function Icon({ children }: { children: React.ReactNode }) {
   return (
@@ -37,14 +55,125 @@ function Icon({ children }: { children: React.ReactNode }) {
 /* ─── Data ─── */
 
 const navItems = [
-  { label: "Solutions", hasDropdown: true },
-  { label: "Produit", hasDropdown: true },
-  { label: "Ressources", hasDropdown: true },
-  { label: "Témoignages", href: "#" },
-  { label: "Intégrations", href: "#" },
-  { label: "Nouveautés", href: "#" },
-  { label: "Le Quarter Plan", href: "#" },
-  { label: "Intégration teams", href: "#" },
+  {
+    label: "Solutions",
+    hasDropdown: true,
+    dropdownItems: [
+      {
+        icon: <NavPmoIcon />,
+        title: "PMO",
+        subtitle: "Pilotez le portefeuille de projets simplement",
+        href: "/fr/equipes/outil-pmo",
+      },
+      {
+        icon: <NavItIcon />,
+        title: "IT & Opérations",
+        subtitle: "Devenez le business partner des métiers",
+        href: "/fr/equipes/it-et-operation",
+      },
+      {
+        icon: <NavComiteIcon />,
+        title: "Comité de direction",
+        subtitle: "Obtenez une vue globale de la transformation de toute l'entreprise",
+        href: "/fr/equipes/comite-direction",
+      },
+      {
+        icon: <NavDirectionIcon />,
+        title: "Direction de la transformation",
+        subtitle: "Alignez les business units autour d'une vision commune",
+        href: "/fr/equipes/direction-de-la-transformation",
+      },
+      {
+        icon: <NavExpertIcon />,
+        title: "Experts de la Transfo.",
+        subtitle: "Indépendant(e) ? ESN spécialisée ? Nous outillons vos missions",
+        href: "/fr/solution/airsaas-et-les-experts-de-la-transfo",
+      },
+    ],
+  },
+  {
+    label: "Produit",
+    hasDropdown: true,
+    dropdownItems: [
+      {
+        icon: <NavPriorisationIcon />,
+        title: "Priorisation par équipe en demande",
+        subtitle: "Tout n'est pas prioritaire, faire un choix c'est renoncer",
+        href: "/fr/produit/priorisation-par-equipes",
+      },
+      {
+        icon: <NavCapacitaireIcon />,
+        title: "Capacitaire par équipe",
+        subtitle: "Une projection dans le futur pour savoir ce que nous pouvons faire",
+        href: "/fr/produit/capacity-planning",
+      },
+      {
+        icon: <NavEmailIcon />,
+        title: 'Email "bilan de santé" des projets',
+        subtitle: "Un email récap' de la santé de vos projets, une fois par semaine",
+        href: "/fr/produit/automatiser-la-com-projet",
+      },
+      {
+        icon: <NavTraductionIcon />,
+        title: "Traduction instantanée",
+        subtitle: "Utiliser AirSaas dans un contexte international",
+        href: "/fr/produit/traduction-one-click-avec-deepl",
+      },
+      {
+        icon: <NavReportingIcon />,
+        title: "Reporting projet",
+        subtitle: "Un rapport flash complet, homogène, à jour et surtout actionnable",
+        href: "/fr/produit/reporting-projet",
+      },
+      {
+        icon: <NavBudgetIcon />,
+        title: "Suivi budgétaire",
+        subtitle: "Gardez un œil sur l'évolution de vos budgets projets",
+        href: "/fr/produit/budget",
+      },
+    ],
+  },
+  {
+    label: "Ressources",
+    hasDropdown: true,
+    dropdownItems: [
+      {
+        icon: <NavCommunauteIcon />,
+        title: "La communauté",
+        subtitle: "Rejoignez les Pro. de la Transfo.",
+        href: "/fr/lesprodelatransfo",
+      },
+      {
+        icon: <NavBlogIcon />,
+        title: "Le blog : Les Pro. de la Transfo.",
+        subtitle: "Découvrez des contenus pragmatiques et actionnables",
+        href: "/fr/blog-2",
+      },
+      {
+        icon: <NavPodcastIcon />,
+        title: "Le podcast : CIO Révolution",
+        subtitle: "Écoutez les CIO dévoiler l'envers du décor",
+        href: "/fr/blog-3/cio-revolution",
+      },
+      {
+        icon: <NavBootcampIcon />,
+        title: "BOOTCAMP - Pro de la Transfo",
+        subtitle: "Un programme de formation pour celles et ceux qui transforment",
+        href: "/fr/bootcamp-airsaas-expert",
+      },
+      {
+        icon: <NavEvenementsIcon />,
+        title: "Évènements",
+        subtitle: "Rencontrez les Pro. de la Transfo, en ligne ou IRL",
+        href: "https://club.airsaas.io/c/le-live/",
+      },
+    ],
+  },
+  { label: "Témoignages", href: "/fr/temoignages" },
+  { label: "Intégrations", href: "/fr/les-integrations" },
+  { label: "Nouveautés", href: "/fr/les-nouveautes-produit" },
+  { label: "Le Quarter Plan", href: "/fr/quarter-plan" },
+  { label: "Intégration teams", href: "/fr/microsoft-teams-airsaas" },
 ];
 
 const logos = [
@@ -696,9 +825,9 @@ export default function HomePage() {
       <Hero
         navItems={navItems}
         navCtaLabel="Demander une démo"
-        navCtaHref="#"
+        navCtaHref="/fr/bookademo"
         loginLabel="Login"
-        loginHref="#"
+        loginHref="https://app.airsaas.io/fr/login"
         headline="La solution de"
         headlineGradient="portfolio"
         headlineSuffix="pour aligner le top management"
