@@ -40,6 +40,8 @@ export interface HeroProps {
   headline: string;
   /** Gradient-colored portion of the headline (rendered on a new line) */
   headlineGradient?: string;
+  /** Dark text appended after the gradient portion */
+  headlineSuffix?: string;
   /** Subtitle paragraph below headline */
   subtitle: string;
   /** Primary CTA button */
@@ -63,6 +65,7 @@ export function Hero({
   topTag,
   headline,
   headlineGradient,
+  headlineSuffix,
   subtitle,
   primaryCta,
   secondaryCta,
@@ -123,6 +126,12 @@ export function Hero({
                 >
                   {headlineGradient}
                 </span>
+              </>
+            )}
+            {headlineSuffix && (
+              <>
+                <br />
+                {headlineSuffix}
               </>
             )}
           </Heading>

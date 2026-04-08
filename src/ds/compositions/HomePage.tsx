@@ -633,7 +633,7 @@ function TestimonialsFullSection() {
         className="font-black leading-tight text-center"
         style={{ fontSize: "var(--text-h2)" }}
       >
-        <span className="text-foreground">Laissez nos clients vous parler d&apos;</span>
+        <span className="text-foreground">Ils parlent de </span>
         <span
           className="bg-clip-text text-transparent"
           style={{
@@ -641,7 +641,7 @@ function TestimonialsFullSection() {
             WebkitBackgroundClip: "text",
           }}
         >
-          AirSaas
+          nous
         </span>
       </h2>
 
@@ -689,6 +689,7 @@ export default function HomePage() {
         loginHref="#"
         headline="La solution de"
         headlineGradient="portfolio"
+        headlineSuffix="pour aligner le top management"
         subtitle="Stop au gaspillage, à trop de projets en parallèle, trop de projets en retard, des équipes sous l'eau, un top management en tension. Votre croissance est liée à la réussite de vos projets."
         primaryCta={{ label: "Réservez une démo", href: "#" }}
         illustrationSrc="https://placehold.co/1457x857/e8eafc/3a51e2?text=Product+Screenshot"
@@ -707,6 +708,7 @@ export default function HomePage() {
           titleHighlight="Les chiffres"
           title="qui vous feront adopter AirSaas"
           subtitle=""
+          columns={3}
         >
           <FeatureCard
             icon={
@@ -785,12 +787,31 @@ export default function HomePage() {
         />
       </AnimateOnScroll>
 
-      {/* 7. Newsletter Section */}
+      {/* 7. Feature Frame left — Agent IA Découpage projet */}
       <AnimateOnScroll animation="fade-left" duration={800}>
+        <FeatureFrame
+          imagePosition="left"
+          tag="Intelligence Artificielle"
+          titleHighlight="Agent IA"
+          title="Découpage projet"
+          description="L'IA découpe automatiquement vos projets par quarter et par équipe. Elle connaît vos équipes : ce qu'elles savent faire, ce qu'elles ne font pas, leur vélocité passée."
+          checklist={[
+            "Découpage par quarter et par équipe",
+            "Adapté aux compétences de chaque équipe",
+            "Basé sur la vélocité historique",
+            "Suggestions réalistes, pas théoriques",
+          ]}
+          imageSrc="https://placehold.co/1125x731/fffbeb/e58d05?text=Découpage+Projet"
+          imageBgColor="#fffbeb"
+        />
+      </AnimateOnScroll>
+
+      {/* 8. Newsletter Section */}
+      <AnimateOnScroll animation="fade-right" duration={800}>
         <NewsletterSection />
       </AnimateOnScroll>
 
-      {/* 8. Feature Frame right — Agent IA (variant) */}
+      {/* 9. Feature Frame right — Agent IA Brief projet (variant) */}
       <AnimateOnScroll animation="fade-right" duration={800}>
         <FeatureFrame
           imagePosition="right"
@@ -808,27 +829,46 @@ export default function HomePage() {
         />
       </AnimateOnScroll>
 
-      {/* 9. CTA Gradient — "Et si vous repreniez le contrôle..." */}
+      {/* 10. Feature Frame left — Agent IA Découpage projet (variant) */}
+      <AnimateOnScroll animation="fade-left" duration={800}>
+        <FeatureFrame
+          imagePosition="left"
+          tag="Intelligence Artificielle"
+          titleHighlight="Agent IA"
+          title="Découpage projet"
+          description="L'IA découpe automatiquement vos projets par quarter et par équipe. Elle connaît vos équipes : ce qu'elles savent faire, ce qu'elles ne font pas, leur vélocité passée."
+          checklist={[
+            "Découpage par quarter et par équipe",
+            "Adapté aux compétences de chaque équipe",
+            "Basé sur la vélocité historique",
+            "Suggestions réalistes, pas théoriques",
+          ]}
+          imageSrc="https://placehold.co/1125x731/fffbeb/e58d05?text=Découpage+Projet+2"
+          imageBgColor="#fffbeb"
+        />
+      </AnimateOnScroll>
+
+      {/* 11. CTA Gradient — "Et si vous repreniez le contrôle..." */}
       <AnimateOnScroll animation="scale-up" duration={800}>
         <CtaGradientSection />
       </AnimateOnScroll>
 
-      {/* 10. Marketplace + Slider */}
+      {/* 12. Marketplace + Slider */}
       <AnimateOnScroll animation="fade-up" duration={700}>
         <MarketplaceSliderSection />
       </AnimateOnScroll>
 
-      {/* 11. Comparison Dual — "Nos clients ne peuvent plus imaginer..." */}
+      {/* 13. Comparison Dual — "Nos clients ne peuvent plus imaginer..." */}
       <AnimateOnScroll animation="fade-up" duration={700}>
         <ComparisonDualSection />
       </AnimateOnScroll>
 
-      {/* 12. Testimonials — "Laissez nos clients vous parler d'AirSaas" */}
+      {/* 14. Testimonials — "Ils parlent de nous" */}
       <AnimateOnScroll animation="fade-up" duration={700}>
         <TestimonialsFullSection />
       </AnimateOnScroll>
 
-      {/* 13. Footer */}
+      {/* 15. Footer */}
       <AnimateOnScroll animation="fade-up" duration={600}>
         <Footer columns={footerColumns} />
       </AnimateOnScroll>

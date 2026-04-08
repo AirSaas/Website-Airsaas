@@ -11,6 +11,8 @@ interface ValuePropositionFrameProps {
   /** Second part of the title — rendered in dark-to-primary gradient (light) or white (dark) */
   title: string;
   subtitle: string;
+  /** Number of columns at lg breakpoint (default 4) */
+  columns?: 3 | 4;
   children: React.ReactNode;
   className?: string;
 }
@@ -21,6 +23,7 @@ export function ValuePropositionFrame({
   titleHighlight,
   title,
   subtitle,
+  columns = 4,
   children,
   className,
 }: ValuePropositionFrameProps) {
@@ -79,7 +82,10 @@ export function ValuePropositionFrame({
       </div>
 
       {/* Grid of cards — passed as children for flexibility */}
-      <div className="grid grid-cols-1 gap-[1rem] items-stretch justify-center w-full max-w-[91rem] sm:grid-cols-2 lg:grid-cols-4">
+      <div className={cn(
+        "grid grid-cols-1 gap-[1rem] items-stretch justify-center w-full max-w-[91rem] sm:grid-cols-2",
+        columns === 3 ? "lg:grid-cols-3" : "lg:grid-cols-4",
+      )}>
         {children}
       </div>
     </section>
