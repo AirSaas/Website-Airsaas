@@ -884,8 +884,8 @@ export default function HomePage() {
         headlineSuffix="pour aligner le top management"
         subtitle="Stop au gaspillage, à trop de projets en parallèle, trop de projets en retard, des équipes sous l'eau, un top management en tension. Votre croissance est liée à la réussite de vos projets."
         primaryCta={{ label: "Réservez une démo", href: "/fr/bookademo" }}
-        illustrationSrc="https://cdn.prod.website-files.com/609552290d93fd43ba0f0849/65ce3c00c0a4886fc8e9f671_Portfolio%20project%20timeline%20view.webp"
-        illustrationAlt="AirSaas - Portfolio project timeline view"
+        illustrationSrc="/assets/screenshots/hero-dashboard.png"
+        illustrationAlt="AirSaas - Quarter Plan Dashboard Q1 2025"
       />
 
       {/* 2. Value Proposition — "Les chiffres qui vous feront adopter AirSaas" */}
