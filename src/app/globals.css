@@ -139,6 +139,7 @@
   --color-prevention-40: #fcd977;
   --gradient-orange: linear-gradient(90deg, var(--color-orange-bright) 27.9%, #ffbe80 100%);
   --gradient-hero-bg: linear-gradient(187deg, var(--color-background) 22%, var(--color-orange-bright) 62%, var(--color-primary-60) 88%);
+  --gradient-hero-dark-bg: linear-gradient(187deg, var(--color-primary-70) 4%, var(--color-orange-bright) 100%);
   --gradient-cta-bg: linear-gradient(187deg, var(--color-background) 42%, var(--color-orange-bright) 62%, var(--color-primary-60) 88%);
 }
 
