@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/nextjs-vite";
 import { TestimonialsFrame } from "./TestimonialsFrame";
 
 const meta = {
-  title: "Sections/TestimonialsFrame",
+  title: "Sections/Highlight Sections/TestimonialsFrame",
   component: TestimonialsFrame,
   parameters: { layout: "fullscreen" },
 } satisfies Meta<typeof TestimonialsFrame>;

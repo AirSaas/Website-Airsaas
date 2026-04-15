@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/nextjs-vite";
 import { FeatureFrame } from "./FeatureFrame";
 
 const meta = {
-  title: "Sections/FeatureFrame/Default",
+  title: "Sections/Features Sections/FeatureFrame/Default",
   component: FeatureFrame,
   parameters: { layout: "fullscreen" },
 } satisfies Meta<typeof FeatureFrame>;

@@ -7,7 +7,7 @@ import { FeatureFrame } from "./FeatureFrame";
  * headings, lists, and links.
  */
 const meta = {
-  title: "Sections/FeatureFrame/Rich Text",
+  title: "Sections/Features Sections/FeatureFrame/Rich Text",
   component: FeatureFrame,
   parameters: { layout: "fullscreen" },
 } satisfies Meta<typeof FeatureFrame>;

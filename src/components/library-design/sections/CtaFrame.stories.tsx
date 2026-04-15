@@ -3,7 +3,7 @@ import { CtaFrame } from "./CtaFrame";
 import { CardCta } from "@/components/library-design/ui/CardCta";
 
 const meta = {
-  title: "Sections/CtaFrame",
+  title: "Sections/Call to Action/CtaFrame",
   component: CtaFrame,
   parameters: { layout: "fullscreen" },
 } satisfies Meta<typeof CtaFrame>;

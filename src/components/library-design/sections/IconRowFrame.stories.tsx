@@ -25,7 +25,7 @@ function Icon({
 }
 
 const meta = {
-  title: "Sections/ValuePropositionFrame/Icons",
+  title: "Sections/Value Proposition Sections/ValuePropositionFrame/Icons",
   component: IconRowFrame,
   parameters: { layout: "fullscreen" },
 } satisfies Meta<typeof IconRowFrame>;

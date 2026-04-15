@@ -83,6 +83,11 @@ export function CircleCheckIcon(props: FAIconProps) {
   return <FADuotoneChar char={"\uF058"} {...props} />;
 }
 
+/** U+F057 — circle-xmark */
+export function CircleXmarkIcon(props: FAIconProps) {
+  return <FADuotoneChar char={"\uF057"} {...props} />;
+}
+
 /** U+F05E — ban (used for "drop" / "stop") */
 export function BanIcon(props: FAIconProps) {
   return <FADuotoneChar char={"\uF05E"} {...props} />;

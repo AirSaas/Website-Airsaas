@@ -23,7 +23,7 @@ function LgIcon({
 }
 
 const meta = {
-  title: "Sections/ValuePropositionFrame/Pillars",
+  title: "Sections/Value Proposition Sections/ValuePropositionFrame/Pillars",
   component: PillarFrame,
   parameters: { layout: "fullscreen" },
 } satisfies Meta<typeof PillarFrame>;
