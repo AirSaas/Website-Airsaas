@@ -41,12 +41,20 @@ export const Stacked: Story = {
     subtitle:
       "Découvrez comment AirSaas simplifie votre capacity planning. AirSaas libère le PMO des tâches administratives pour qu'il puisse enfin se concentrer sur la stratégie.",
     children: (
-      <CardCta
-        title="Réserver une démo"
-        description='AirSaas vous donne une vue capacitaire claire et actionnable. Enfin un outil pour dire "non" avec des données, pas au feeling.'
-        ctaLabel="Réservez une démo"
-        className="w-full"
-      />
+      <div
+        style={{
+          gridColumn: "1 / -1",
+          width: "70%",
+          margin: "0 auto",
+        }}
+      >
+        <CardCta
+          title="Réserver une démo"
+          description='AirSaas vous donne une vue capacitaire claire et actionnable. Enfin un outil pour dire "non" avec des données, pas au feeling.'
+          ctaLabel="Réservez une démo"
+          className="w-full"
+        />
+      </div>
     ),
   },
 };
