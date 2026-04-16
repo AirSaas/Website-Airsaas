@@ -49,7 +49,7 @@ export function HighlightFrame({
             <span
               className="bg-clip-text text-transparent"
               style={{
-                backgroundImage: "linear-gradient(90deg, #3aa832 0%, #5ec045 50%, #8be068 100%)",
+                backgroundImage: "linear-gradient(90deg, #03e26b 0%, #94d5c1 100%)",
                 WebkitBackgroundClip: "text",
               }}
             >
@@ -99,7 +99,7 @@ function HighlightRow({
           fontSize: "5.5rem",
           lineHeight: 1,
           minWidth: "5rem",
-          backgroundImage: "linear-gradient(90deg, #3aa832 0%, #5ec045 50%, #8be068 100%)",
+          backgroundImage: "linear-gradient(90deg, #03e26b 0%, #94d5c1 100%)",
           WebkitBackgroundClip: "text",
         }}
       >

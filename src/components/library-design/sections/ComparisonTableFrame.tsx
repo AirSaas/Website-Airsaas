@@ -266,11 +266,11 @@ function ComparisonValue({ value }: { value: ComparisonCell }) {
           width: "2rem",
           height: "2rem",
           fontSize: "2rem",
-          color: "#f11444",
+          color: "#ff0a55",
           lineHeight: 1,
         }}
       >
-        <CircleXmarkIcon color="#f11444" />
+        <CircleXmarkIcon color="#ff0a55" />
       </span>
     );
   }
