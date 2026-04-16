@@ -11,6 +11,7 @@ import { IconIllustration } from "@/components/library-design/ui/IconIllustratio
 import { SectionHeading } from "@/components/library-design/ui/SectionHeading";
 import { TestimonialCompanyCard } from "@/components/library-design/ui/TestimonialCompanyCard";
 import { TestimonialCard } from "@/components/library-design/ui/TestimonialCard";
+import { ClientCard } from "@/components/library-design/ui/ClientCard";
 import { Slider } from "@/components/library-design/ui/Slider";
 import { Button } from "@/components/library-design/ui/Button";
 import { GradientBackground } from "@/components/library-design/ui/GradientBackground";
@@ -239,6 +240,12 @@ const companyTestimonials = [
     logoSrc: "https://cdn.prod.website-files.com/609552290d93fd43ba0f0849/63d10458acb275dbac3ecb65_LePoint-monotone.png",
     logoAlt: "Le Point",
   },
+  {
+    quote:
+      "la DSI a choisi de mettre en place deux solutions complémentaires : AirSaas pour le pilotage stratégique et Asana pour la gestion opérationnelle des projets",
+    logoSrc: "https://cdn.prod.website-files.com/609552290d93fd43ba0f0849/64141ec10a541a09487cd1ec_LMI.png",
+    logoAlt: "Le Monde Informatique",
+  },
 ];
 
 const testimonials = [
@@ -262,6 +269,72 @@ const testimonials = [
     name: "Clément Royer",
     role: "DSI @Chiesi France",
     linkedinHref: "#",
+  },
+];
+
+const customerCards = [
+  {
+    name: "Laurent Citton",
+    jobTitle: "Directeur des Systèmes d'Information Groupe",
+    companyName: "Picoty",
+    sector: "Énergie et combustibles",
+    employees: "1 300",
+  },
+  {
+    name: "Émilie Lecart",
+    jobTitle: "CIO Office",
+    companyName: "Pierre & Vacances",
+    sector: "Hôtellerie & loisirs",
+    employees: "40 000",
+  },
+  {
+    name: "Sébastien Louyot",
+    jobTitle: "Group CIO",
+    companyName: "Altavia",
+    sector: "Communication et marketing",
+    employees: "2 800",
+  },
+  {
+    name: "David Langlade",
+    jobTitle: "Conseil / DSI de transition",
+    companyName: "Dynamical",
+    sector: "Conseil",
+    employees: "2",
+  },
+  {
+    name: "Clément Royer",
+    jobTitle: "DSI - ICT MANAGER",
+    companyName: "Chiesi France",
+    sector: "Santé-Pharma",
+    employees: "6 500",
+  },
+  {
+    name: "Aurore Butrot",
+    jobTitle: "DSI Intuis (Ex Groupe Muller)",
+    companyName: "Groupe Intuis",
+    sector: "Industrie",
+    employees: "1 000",
+  },
+  {
+    name: "Stephan Boisson",
+    jobTitle: "Group Chief Digital & Information Officer",
+    companyName: "Comexposium",
+    sector: "Événementiel",
+    employees: "900",
+  },
+  {
+    name: "Sylvain Bourdette",
+    jobTitle: "DSI/CTO/Pro de la transfo",
+    companyName: "Indexia Groupe",
+    sector: "Assurance et Distribution",
+    employees: "3 000",
+  },
+  {
+    name: "Vincent Potel",
+    jobTitle: "Directeur Général de transition",
+    companyName: "Caduciel",
+    sector: "Santé - Editeur de logiciel",
+    employees: "50",
   },
 ];
 
@@ -723,7 +796,49 @@ export default function HomePage() {
         illustrationAlt="AirSaas - Quarter Plan Dashboard Q1 2025"
       />
 
-      {/* 2. Value Proposition — "Les chiffres qui vous feront adopter AirSaas" */}
+      {/* 2. Press Testimonials — "Ils parlent de nous" */}
+      <AnimateOnScroll animation="fade-up" duration={700}>
+        <TestimonialsFrame
+          title="Ils parlent de"
+          titleHighlight="nous"
+        >
+          <div className="grid grid-cols-1 gap-[1rem] items-start w-full sm:grid-cols-2 lg:grid-cols-4">
+            {companyTestimonials.map((t, i) => (
+              <TestimonialCompanyCard
+                key={i}
+                quote={t.quote}
+                logoSrc={t.logoSrc}
+                logoAlt={t.logoAlt}
+                className="flex-1 !w-auto"
+                style={i % 2 === 1 ? { marginTop: "2.5rem" } : undefined}
+              />
+            ))}
+          </div>
+        </TestimonialsFrame>
+      </AnimateOnScroll>
+
+      {/* 3. LinkedIn Testimonials */}
+      <AnimateOnScroll animation="fade-up" duration={700}>
+        <TestimonialsFrame
+          title="Ils ont simplifié leur"
+          titleHighlight="gouvernance projet"
+        >
+          <div className="grid grid-cols-1 gap-[1rem] items-stretch w-full md:grid-cols-2 lg:grid-cols-3">
+            {testimonials.map((t, i) => (
+              <TestimonialCard
+                key={i}
+                quote={t.quote}
+                name={t.name}
+                role={t.role}
+                linkedinHref={t.linkedinHref}
+                className="flex-1"
+              />
+            ))}
+          </div>
+        </TestimonialsFrame>
+      </AnimateOnScroll>
+
+      {/* 4. Value Proposition — "Les chiffres qui vous feront adopter AirSaas" */}
       <AnimateOnScroll animation="fade-up" duration={700}>
         <ValuePropositionFrame
           variant="light"
@@ -894,42 +1009,93 @@ export default function HomePage() {
         <ComparisonDualSection />
       </AnimateOnScroll>
 
-      {/* 15. Testimonials — "Ils parlent de nous" */}
+      {/* 16. Customer Cards — "Laissez nos clients vous parler d'AirSaas" */}
       <AnimateOnScroll animation="fade-up" duration={700}>
-        <TestimonialsFrame
-          title="Ils parlent de"
-          titleHighlight="nous"
+        <section
+          className="flex flex-col items-center w-full"
+          style={{
+            gap: "3.125rem",
+            paddingLeft: "clamp(1.25rem, 5vw, 5rem)",
+            paddingRight: "clamp(1.25rem, 5vw, 5rem)",
+            paddingTop: "clamp(3rem, 5.2vw, 6.25rem)",
+            paddingBottom: "clamp(3rem, 5.2vw, 6.25rem)",
+          }}
         >
-          {/* Row 1: Press / Company testimonials */}
-          <div className="grid grid-cols-1 gap-[1rem] items-stretch w-full md:grid-cols-2 lg:grid-cols-3">
-            {companyTestimonials.map((t, i) => (
-              <TestimonialCompanyCard
+          <h2
+            className="font-black leading-tight text-center"
+            style={{ fontSize: "var(--text-h2)" }}
+          >
+            <span
+              className="bg-clip-text text-transparent"
+              style={{
+                backgroundImage: "var(--gradient-dark-to-primary)",
+                WebkitBackgroundClip: "text",
+              }}
+            >
+              Laissez nos clients vous parler d&apos;
+            </span>
+            <span
+              className="bg-clip-text text-transparent"
+              style={{
+                backgroundImage: "var(--gradient-primary)",
+                WebkitBackgroundClip: "text",
+              }}
+            >
+              AirSaas
+            </span>
+          </h2>
+
+          <div className="grid grid-cols-1 gap-[1rem] items-stretch w-full sm:grid-cols-2 lg:grid-cols-3">
+            {customerCards.map((c, i) => (
+              <ClientCard
                 key={i}
-                quote={t.quote}
-                logoSrc={t.logoSrc}
-                logoAlt={t.logoAlt}
+                avatarSrc={`https://placehold.co/90x90/e8eafc/3a51e2?text=${c.name.split(" ").map(n => n[0]).join("")}`}
+                name={c.name}
+                jobTitle={c.jobTitle}
+                companyName={c.companyName}
+                infoRows={[
+                  {
+                    icon: <span style={{ fontFamily: '"Font Awesome 6 Duotone"', fontWeight: 900 }}>{"\uF275"}</span>,
+                    label: "Secteur",
+                    value: c.sector,
+                  },
+                  {
+                    icon: <span style={{ fontFamily: '"Font Awesome 6 Duotone"', fontWeight: 900 }}>{"\uF0C0"}</span>,
+                    label: "Collaborateurs",
+                    value: c.employees,
+                  },
+                ]}
                 className="flex-1 !w-auto"
               />
             ))}
           </div>
-
-          {/* Row 2: Personal testimonials */}
-          <div className="grid grid-cols-1 gap-[1rem] items-stretch w-full md:grid-cols-2 lg:grid-cols-3">
-            {testimonials.map((t, i) => (
-              <TestimonialCard
-                key={i}
-                quote={t.quote}
-                name={t.name}
-                role={t.role}
-                linkedinHref={t.linkedinHref}
-                className="flex-1"
-              />
-            ))}
-          </div>
-        </TestimonialsFrame>
+        </section>
       </AnimateOnScroll>
 
-      {/* 16. Footer */}
+      {/* 17. Replay CTA — "Le replay à ne pas manquer !" */}
+      <AnimateOnScroll animation="fade-left" duration={800}>
+        <FeatureFrame
+          imagePosition="left"
+          titleHighlight="Le replay"
+          title="à ne pas manquer !"
+          richContent={
+            <>
+              <p>
+                <strong>Aurore Butrot</strong>, DSI du groupe Intuis nous explique
+                comment elle combine l&apos;utilisation <strong>d&apos;AirSaas et
+                d&apos;Asana</strong> pour piloter respectivement la gouvernance et
+                l&apos;exécution de ses projets.
+              </p>
+            </>
+          }
+          ctaLabel="Voir le replay"
+          ctaHref="#"
+          imageSrc="https://cdn.prod.website-files.com/609552290d93fd43ba0f0849/65cb473140ab42c1871d2d0a_Call%20to%20action%20-%20Intuis-Asana%20event.png"
+          imageAlt="Replay Intuis x Asana - Comment combiner AirSaas et Asana"
+        />
+      </AnimateOnScroll>
+
+      {/* 18. Footer */}
       <AnimateOnScroll animation="fade-up" duration={600}>
         <Footer columns={footerColumns} />
       </AnimateOnScroll>

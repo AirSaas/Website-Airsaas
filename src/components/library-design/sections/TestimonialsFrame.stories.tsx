@@ -98,7 +98,7 @@ export const MixedPressAndPersonal: Story = {
   ),
 };
 
-/** Company cards only — press mentions */
+/** Company cards only — press mentions (3 columns) */
 export const CompanyOnly: Story = {
   args: {
     title: "La presse parle de",
@@ -124,6 +124,46 @@ export const CompanyOnly: Story = {
           logoSrc="https://cdn.prod.website-files.com/609552290d93fd43ba0f0849/63d10458acb275dbac3ecb65_LePoint-monotone.png"
           logoAlt="Le Point"
           className="flex-1 !w-auto"
+        />
+      </div>
+    </TestimonialsFrame>
+  ),
+};
+
+/** Company cards zigzag — 4 columns with staggered layout */
+export const CompanyZigzag: Story = {
+  args: {
+    title: "Ils parlent de",
+    titleHighlight: "nous",
+  },
+  render: (args) => (
+    <TestimonialsFrame {...args}>
+      <div className="grid grid-cols-1 gap-[1rem] items-start w-full sm:grid-cols-2 lg:grid-cols-4">
+        <TestimonialCompanyCard
+          quote="Hub de pilotage donnant le bon niveau de visibilité aux métiers, aux Codir et Comex"
+          logoSrc="https://cdn.prod.website-files.com/609552290d93fd43ba0f0849/63d10687150c6042f155dcd4_logo-alliancy-monotone.png"
+          logoAlt="Alliancy"
+          className="flex-1 !w-auto"
+        />
+        <TestimonialCompanyCard
+          quote="AirSaas vise à rendre réel l'alignement entre les directions métiers, la DSI et la direction générale"
+          logoSrc="https://cdn.prod.website-files.com/609552290d93fd43ba0f0849/63d106ab9c5e18b386c84505_JDN-monotone.png"
+          logoAlt="JDN Journal du NET"
+          className="flex-1 !w-auto"
+          style={{ marginTop: "2.5rem" }}
+        />
+        <TestimonialCompanyCard
+          quote="Une nouvelle manière d'embarquer les équipes"
+          logoSrc="https://cdn.prod.website-files.com/609552290d93fd43ba0f0849/63d10458acb275dbac3ecb65_LePoint-monotone.png"
+          logoAlt="Le Point"
+          className="flex-1 !w-auto"
+        />
+        <TestimonialCompanyCard
+          quote="la DSI a choisi de mettre en place deux solutions complémentaires : AirSaas pour le pilotage stratégique et Asana pour la gestion opérationnelle des projets"
+          logoSrc="https://cdn.prod.website-files.com/609552290d93fd43ba0f0849/64141ec10a541a09487cd1ec_LMI.png"
+          logoAlt="Le Monde Informatique"
+          className="flex-1 !w-auto"
+          style={{ marginTop: "2.5rem" }}
         />
       </div>
     </TestimonialsFrame>

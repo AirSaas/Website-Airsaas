@@ -58,7 +58,7 @@ export function TestimonialCard({
       {/* Quote */}
       <p
         className="font-light text-foreground"
-        style={{ fontSize: "1.4rem", lineHeight: "1.42" }}
+        style={{ fontSize: "1.15rem", lineHeight: "1.45" }}
       >
         {quote}
       </p>
