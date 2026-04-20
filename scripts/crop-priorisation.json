@@ -1,0 +1,20 @@
+[
+  {
+    "input": "public/assets/images/priorisation-par-equipes/_originals/feature-prioritization-dnd.webp",
+    "output": "public/assets/images/priorisation-par-equipes/feature-prioritization-dnd.webp",
+    "bottom": 12,
+    "right": 5
+  },
+  {
+    "input": "public/assets/images/priorisation-par-equipes/_originals/feature-prioritization-notification.webp",
+    "output": "public/assets/images/priorisation-par-equipes/feature-prioritization-notification.webp",
+    "bottom": 12,
+    "right": 5
+  },
+  {
+    "input": "public/assets/images/priorisation-par-equipes/_originals/feature-portfolio-project-priority.webp",
+    "output": "public/assets/images/priorisation-par-equipes/feature-portfolio-project-priority.webp",
+    "bottom": 10,
+    "right": 5
+  }
+]
