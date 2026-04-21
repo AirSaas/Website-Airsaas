@@ -9,6 +9,9 @@ import { Footer } from "@/components/library-design/sections/Footer";
 import { FeatureCard } from "@/components/library-design/ui/FeatureCard";
 import { IconIllustration } from "@/components/library-design/ui/IconIllustration";
 import { SectionHeading } from "@/components/library-design/ui/SectionHeading";
+import { Heading } from "@/components/library-design/ui/Heading";
+import { Text } from "@/components/library-design/ui/Text";
+import { GradientText } from "@/components/library-design/ui/GradientText";
 import { TestimonialCompanyCard } from "@/components/library-design/ui/TestimonialCompanyCard";
 import { TestimonialCard } from "@/components/library-design/ui/TestimonialCard";
 import { ClientCard } from "@/components/library-design/ui/ClientCard";
@@ -500,60 +503,26 @@ function CtaGradientSection() {
           paddingBottom: "clamp(3rem, 5.2vw, 6.25rem)",
         }}
       >
-        <h2
-          className="font-black leading-tight max-w-[78.125rem]"
-          style={{ fontSize: "var(--text-h2)" }}
-        >
-          <span
-            className="bg-clip-text text-transparent"
-            style={{
-              backgroundImage:
-                "linear-gradient(41deg, #061333 20%, #3C51E2 124%)",
-              WebkitBackgroundClip: "text",
-            }}
-          >
-            Et si vous repreniez l
-          </span>
-          <span
-            className="bg-clip-text text-transparent"
-            style={{
-              backgroundImage: "var(--gradient-primary)",
-              WebkitBackgroundClip: "text",
-            }}
-          >
-            e contrôle de votre portefeuille
-          </span>
-          <span
-            className="bg-clip-text text-transparent"
-            style={{
-              backgroundImage:
-                "linear-gradient(41deg, #061333 20%, #3C51E2 124%)",
-              WebkitBackgroundClip: "text",
-            }}
-          >
-            {" "}
-            de projets ?
-          </span>
-        </h2>
+        <Heading level={2} gradient="none" align="center" className="max-w-[78.125rem]">
+          <GradientText gradient="dark-to-primary">Et si vous repreniez l</GradientText>
+          <GradientText gradient="primary">e contrôle de votre portefeuille</GradientText>
+          <GradientText gradient="dark-to-primary"> de projets ?</GradientText>
+        </Heading>
 
         {/* White card wrapping subtitle + CTA */}
         <div
-          className="flex flex-col items-center gap-[1.25rem] bg-white"
+          className="flex flex-col items-center gap-[1.25rem] bg-white w-full"
           style={{
             borderRadius: "1.5625rem",
             padding: "clamp(1.5rem, 2.5vw, 2.5rem) clamp(2rem, 5vw, 5rem)",
             maxWidth: "53rem",
-            width: "100%",
-            boxShadow: "0px 4px 50px 0px rgba(0,0,0,0.07)",
+            boxShadow: "var(--shadow-floating)",
           }}
         >
-          <p
-            className="font-light text-foreground text-center"
-            style={{ fontSize: "var(--text-paragraph)", lineHeight: "1.4" }}
-          >
+          <Text size="md" align="center">
             Adoptez dès maintenant une solution de gestion de gouvernance
             moderne, qui fait gagner vos projets en temps et en efficacité.
-          </p>
+          </Text>
 
           <Button variant="primary" size="md" href="/fr/bookademo">
             Réservez une démo
@@ -597,34 +566,20 @@ function MarketplaceSliderSection() {
     >
       {/* Heading */}
       <div className="flex flex-col items-center gap-[1.25rem] text-center w-full">
-        <h2
-          className="font-black leading-tight"
-          style={{ fontSize: "var(--text-h2)" }}
-        >
-          <span
-            className="bg-clip-text text-transparent"
-            style={{
-              backgroundImage: "var(--gradient-primary)",
-              WebkitBackgroundClip: "text",
-            }}
-          >
-            Grâce à sa marketplace AirSaas
-          </span>
+        <Heading level={2} gradient="none" align="center">
+          <GradientText gradient="primary">Grâce à sa marketplace AirSaas</GradientText>
           <span className="text-foreground">
             {" "}
             s&apos;intègre nativement à vos outils du quotidien
           </span>
-        </h2>
+        </Heading>
 
-        <p
-          className="font-light text-foreground text-center max-w-[91rem]"
-          style={{ fontSize: "var(--text-paragraph)", lineHeight: "1.56" }}
-        >
+        <Text size="md" align="center" maxWidth="91rem">
           Centralisez toutes vos informations cruciales (tickets, jalons…)
           depuis vos outils de gestion de tâches sur AirSaas, et diffusez-les
           via vos canaux de communication interne. Tout le monde est au
           diapason, et vous gouvernez de manière optimale.
-        </p>
+        </Text>
       </div>
 
       {/* Slider */}
@@ -652,37 +607,22 @@ function ComparisonDualSection() {
         }}
       >
         {/* Title */}
-        <h2
-          className="font-bold leading-tight text-center max-w-[78.125rem]"
-          style={{ fontSize: "var(--text-h2)" }}
-        >
-          <span
-            className="bg-clip-text text-transparent"
-            style={{
-              backgroundImage:
-                "linear-gradient(41deg, #061333 20%, #3C51E2 124%)",
-              WebkitBackgroundClip: "text",
-            }}
-          >
+        <Heading level={2} gradient="none" align="center" className="max-w-[78.125rem]">
+          <GradientText gradient="dark-to-primary">
             Nos clients ne peuvent plus imaginer leurs vies sans{" "}
-          </span>
-          <span
-            className="bg-clip-text text-transparent"
-            style={{
-              backgroundImage: "var(--gradient-primary)",
-              WebkitBackgroundClip: "text",
-            }}
-          >
-            AirSaas
-          </span>
-        </h2>
+          </GradientText>
+          <GradientText gradient="primary">AirSaas</GradientText>
+        </Heading>
 
         {/* Dual column grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-[0.875rem] gap-y-[0.9375rem] w-full">
           {/* Column headers */}
           <div
             className="flex items-center gap-[0.5rem] px-[1.875rem] py-[0.125rem] rounded-[1.5625rem] self-start w-fit"
-            style={{ backgroundColor: "#FFF6D8", color: "#8A6D00" }}
+            style={{
+              backgroundColor: "var(--color-prevention-20)",
+              color: "var(--color-prevention-ink)",
+            }}
           >
             <span className="font-normal" style={{ fontSize: "1.6875rem" }}>
               Sans AirSaas
@@ -704,63 +644,42 @@ function ComparisonDualSection() {
           {comparisonItemsSans.map((item, i) => (
             <div
               key={`sans-${i}`}
-              className="flex gap-[1.4375rem] items-start bg-white rounded-[1.5625rem]"
+              className="flex gap-[1.4375rem] items-start bg-white rounded-[1.5625rem] border border-prevention-40"
               style={{
-                border: "1px solid #FCD977",
                 padding: "1.6875rem 1.375rem 1.6875rem 1.8125rem",
                 minHeight: "9.1875rem",
               }}
             >
-              <span
-                className="font-bold shrink-0 bg-clip-text text-transparent"
-                style={{
-                  fontSize: "4.8125rem",
-                  lineHeight: "normal",
-                  backgroundImage:
-                    "linear-gradient(to right, #FFBE80, #FF922B 28%)",
-                  WebkitBackgroundClip: "text",
-                }}
-              >
-                {item.value}
-              </span>
-              <p
-                className="font-light text-foreground flex-1"
-                style={{ fontSize: "var(--text-paragraph)", lineHeight: "1.4" }}
-              >
+              <GradientText gradient="orange" className="font-bold shrink-0">
+                <span style={{ fontSize: "4.8125rem", lineHeight: "normal", display: "inline-block" }}>
+                  {item.value}
+                </span>
+              </GradientText>
+              <Text size="md" align="left" className="flex-1">
                 {item.description}
-              </p>
+              </Text>
             </div>
           ))}
 
           {comparisonItemsAvec.map((item, i) => (
             <div
               key={`avec-${i}`}
-              className="flex gap-[1.4375rem] items-start bg-white rounded-[1.5625rem]"
+              className="flex gap-[1.4375rem] items-start bg-white rounded-[1.5625rem] border border-prevention-40"
               style={{
-                border: "1px solid #FCD977",
                 padding: "1.6875rem 1.375rem 1.6875rem 1.8125rem",
                 minHeight: "9.1875rem",
                 gridColumn: 2,
                 gridRow: i + 2,
               }}
             >
-              <span
-                className="font-bold shrink-0 bg-clip-text text-transparent"
-                style={{
-                  fontSize: "4.8125rem",
-                  lineHeight: "normal",
-                  backgroundImage: "var(--gradient-primary)",
-                  WebkitBackgroundClip: "text",
-                }}
-              >
-                {item.value}
-              </span>
-              <p
-                className="font-light text-foreground flex-1"
-                style={{ fontSize: "var(--text-paragraph)", lineHeight: "1.4" }}
-              >
+              <GradientText gradient="primary" className="font-bold shrink-0">
+                <span style={{ fontSize: "4.8125rem", lineHeight: "normal", display: "inline-block" }}>
+                  {item.value}
+                </span>
+              </GradientText>
+              <Text size="md" align="left" className="flex-1">
                 {item.description}
-              </p>
+              </Text>
             </div>
           ))}
         </div>
@@ -1021,29 +940,12 @@ export default function HomePage() {
             paddingBottom: "clamp(3rem, 5.2vw, 6.25rem)",
           }}
         >
-          <h2
-            className="font-black leading-tight text-center"
-            style={{ fontSize: "var(--text-h2)" }}
-          >
-            <span
-              className="bg-clip-text text-transparent"
-              style={{
-                backgroundImage: "var(--gradient-dark-to-primary)",
-                WebkitBackgroundClip: "text",
-              }}
-            >
+          <Heading level={2} gradient="none" align="center">
+            <GradientText gradient="dark-to-primary">
               Laissez nos clients vous parler d&apos;
-            </span>
-            <span
-              className="bg-clip-text text-transparent"
-              style={{
-                backgroundImage: "var(--gradient-primary)",
-                WebkitBackgroundClip: "text",
-              }}
-            >
-              AirSaas
-            </span>
-          </h2>
+            </GradientText>
+            <GradientText gradient="primary">AirSaas</GradientText>
+          </Heading>
 
           <div className="grid grid-cols-1 gap-[1rem] items-stretch w-full sm:grid-cols-2 lg:grid-cols-3">
             {customerCards.map((c, i) => (

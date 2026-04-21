@@ -157,14 +157,12 @@ const RULE_EXCEPTIONS = {
   "src/components/library-design/sections/IconRowFrame.tsx": ["no-inline-fontSize"],
   "src/components/library-design/sections/ComparisonTableFrame.tsx": ["no-inline-fontSize"],
   "src/components/library-design/sections/FaqFrame.tsx": ["no-inline-fontSize"],
-  // HomePage section components are inline one-offs awaiting extraction; skip fontSize + raw-heading + inline-gradient warnings until then
-  "src/components/pages/HomePage.tsx": [
-    "no-inline-fontSize",
-    "no-raw-heading",
-    "no-webkit-gradient-inline",
-    "no-hex-color",
-    "no-rgba-literal",
-  ],
+  // HomePage inline sections:
+  //   - no-inline-fontSize: big 4.8rem gradient numbers + 1.6875rem pill labels
+  //     (same custom fontSizes ListCard uses, accepted).
+  //   - no-raw-heading: <h5> tags used inside FeatureFrame's richContent prop
+  //     (the richContent's prose wrapper styles them via [&_h5]: selectors).
+  "src/components/pages/HomePage.tsx": ["no-inline-fontSize", "no-raw-heading"],
   // PmoToolPage / OutilsPilotageProjetPage — rich-text <h4>/<h5> used inside FeatureFrame richContent prop
   "src/components/pages/PmoToolPage.tsx": ["no-raw-heading", "no-inline-fontSize", "no-webkit-gradient-inline"],
   "src/components/pages/OutilsPilotageProjetPage.tsx": ["no-raw-heading"],
