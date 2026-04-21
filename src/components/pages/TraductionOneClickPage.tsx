@@ -5,6 +5,7 @@ import { FeatureFrame } from "@/components/library-design/sections/FeatureFrame"
 import { CtaFrame } from "@/components/library-design/sections/CtaFrame";
 import { Footer } from "@/components/library-design/sections/Footer";
 import { CardCta } from "@/components/library-design/ui/CardCta";
+import { CheckList } from "@/components/library-design/ui/CheckList";
 import { Heading } from "@/components/library-design/ui/Heading";
 import { AnimateOnScroll } from "@/components/library-design/ui/AnimateOnScroll";
 
@@ -106,7 +107,33 @@ export default function TraductionOneClickPage() {
         illustrationAlt="Interface AirSaas avec traduction multilingue Deepl"
       />
 
-      {/* 2. Value proposition — stacked rich-text FeatureFrame */}
+      {/* 2. Usage du rapport flash — stacked rich-text with bullet list */}
+      <AnimateOnScroll animation="fade-up" duration={700}>
+        <FeatureFrame
+          layout="stacked"
+          titleHighlight="Le rapport flash"
+          title="désormais en multilingue sur AirSaas"
+          richContent={
+            <>
+              <CheckList
+                items={[
+                  "Aligner toute une audience sur le sujet dont nous parlons.",
+                  "Rappeler les ordres de grandeur d'un projet et les équipes à bord.",
+                  "Donner du contexte temporel grâce aux jalons clés.",
+                  "Engager la conversation sur l'essentiel, l'information de la santé, les décisions à prendre ou les points d'attention à partager.",
+                ]}
+              />
+              <p>
+                C&apos;est l&apos;usage d&apos;un rapport flash projet ou
+                programme dans AirSaas. Découvrez la puissance de la
+                traduction one-click intégrée avec <strong>Deepl</strong>.
+              </p>
+            </>
+          }
+        />
+      </AnimateOnScroll>
+
+      {/* 3. Value proposition — stacked rich-text FeatureFrame */}
       <AnimateOnScroll animation="fade-up" duration={700}>
         <FeatureFrame
           layout="stacked"
@@ -123,9 +150,7 @@ export default function TraductionOneClickPage() {
               <p>
                 Lorsqu&apos;il faut traduire ces contenus pour un autre public,
                 l&apos;efficacité de l&apos;équipe et l&apos;engagement
-                diminuent. C&apos;est l&apos;usage d&apos;un rapport flash
-                projet ou programme dans AirSaas. Découvrez la puissance de la
-                traduction one-click intégrée avec <strong>Deepl</strong>.
+                diminuent.
               </p>
             </>
           }
