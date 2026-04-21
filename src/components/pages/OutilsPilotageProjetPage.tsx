@@ -193,7 +193,7 @@ export function OutilsPilotageProjetPage() {
           title="de projet par la valeur"
           description="Tous les projets ne se valent pas. En tant que partenaire business, vous devez proposer une méthode pour piloter les projets IT suivant des indicateurs-clés. AirSaas propose une vue filtrable avec toutes les informations consolidées pour prendre des décisions avisées."
           imageSrc="https://placehold.co/1125x731/fffbeb/e58d05?text=Pilotage+Valeur"
-          imageBgColor="#fffbeb"
+          imageBgColor="var(--color-prevention-10)"
         />
       </AnimateOnScroll>
 
@@ -216,7 +216,7 @@ export function OutilsPilotageProjetPage() {
           title="de la hauteur"
           description="Rien ne vous échappe grâce à la vue timeline. Prenez de la hauteur et profitez d'un panorama sur tous les projets en cours et leurs jalons associés. Déplacez les éléments grâce au cliquer-glisser et testez des nouveaux arrangements en fonction des disponibilités des parties prenantes et de l'urgence des projets."
           imageSrc="https://placehold.co/1125x731/fffbeb/e58d05?text=Timeline+Projets"
-          imageBgColor="#fffbeb"
+          imageBgColor="var(--color-prevention-10)"
         />
       </AnimateOnScroll>
 
@@ -291,7 +291,7 @@ export function OutilsPilotageProjetPage() {
             </p>
           }
           imageSrc="https://placehold.co/600x400/fffbeb/e58d05?text=Réussite+Projet"
-          imageBgColor="#fffbeb"
+          imageBgColor="var(--color-prevention-10)"
         />
       </AnimateOnScroll>
 
@@ -431,7 +431,7 @@ export function OutilsPilotageProjetPage() {
             </>
           }
           imageSrc="https://placehold.co/600x400/fffbeb/e58d05?text=Portefeuille+Projets"
-          imageBgColor="#fffbeb"
+          imageBgColor="var(--color-prevention-10)"
         />
       </AnimateOnScroll>
 
@@ -481,7 +481,7 @@ export function OutilsPilotageProjetPage() {
             </p>
           }
           imageSrc="https://placehold.co/600x400/fffbeb/e58d05?text=Évolution+Outils"
-          imageBgColor="#fffbeb"
+          imageBgColor="var(--color-prevention-10)"
         />
       </AnimateOnScroll>
 
@@ -549,7 +549,7 @@ export function OutilsPilotageProjetPage() {
             </p>
           }
           imageSrc="https://placehold.co/600x400/fffbeb/e58d05?text=Intégrations"
-          imageBgColor="#fffbeb"
+          imageBgColor="var(--color-prevention-10)"
         />
       </AnimateOnScroll>
 
@@ -664,7 +664,7 @@ export function OutilsPilotageProjetPage() {
             </>
           }
           imageSrc="https://placehold.co/600x400/fffbeb/e58d05?text=All-in-one+vs+Spécialisé"
-          imageBgColor="#fffbeb"
+          imageBgColor="var(--color-prevention-10)"
         />
       </AnimateOnScroll>
 
@@ -714,7 +714,7 @@ export function OutilsPilotageProjetPage() {
             </p>
           }
           imageSrc="https://placehold.co/600x400/fffbeb/e58d05?text=UX+Focus"
-          imageBgColor="#fffbeb"
+          imageBgColor="var(--color-prevention-10)"
         />
       </AnimateOnScroll>
 
@@ -766,7 +766,7 @@ export function OutilsPilotageProjetPage() {
             </>
           }
           imageSrc="https://placehold.co/600x400/fffbeb/e58d05?text=Changement+Culture"
-          imageBgColor="#fffbeb"
+          imageBgColor="var(--color-prevention-10)"
         />
       </AnimateOnScroll>
 
@@ -848,7 +848,7 @@ export function OutilsPilotageProjetPage() {
             </>
           }
           imageSrc="https://placehold.co/600x400/fffbeb/e58d05?text=Méthodologie+Collaborative"
-          imageBgColor="#fffbeb"
+          imageBgColor="var(--color-prevention-10)"
         />
       </AnimateOnScroll>
 

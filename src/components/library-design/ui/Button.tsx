@@ -1,4 +1,8 @@
 import { cn } from "@/lib/utils";
+import {
+  assertMaxLength,
+  assertNoClassNameOverride,
+} from "@/lib/ds-validators";
 
 /**
  * Button
@@ -105,6 +109,19 @@ export function Button({
   "aria-label": ariaLabel,
   className,
 }: ButtonProps) {
+  if (typeof children === "string") {
+    assertMaxLength("Button", "children", children, 30);
+  }
+  assertNoClassNameOverride("Button", className, [
+    "bg-",
+    "text-",
+    "font-",
+    "p-",
+    "px-",
+    "py-",
+    "rounded-",
+  ]);
+
   const classes = cn(
     baseStyles,
     variantStyles[variant],

@@ -6,6 +6,29 @@ import { Button } from "@/components/library-design/ui/Button";
 import { ListInline } from "@/components/library-design/ui/ListInline";
 import { GradientText } from "@/components/library-design/ui/GradientText";
 
+/**
+ * FeatureFrame
+ *
+ * @purpose    Single feature section: title + description + checklist / rich content
+ *             + optional image (side-by-side or stacked) + optional CTA.
+ * @useWhen    Showcasing one feature or concept per section. The workhorse of the
+ *             marketing page — most body sections below Hero use this.
+ * @dontUse    For a metrics grid (use <ValuePropositionFrame>), for testimonials
+ *             (use <TestimonialsFrame>), or for FAQs (use <FaqFrame>).
+ *
+ * @limits
+ *   - title: max 120 chars (ReactNode allows spans; plain string best < 80)
+ *   - titleHighlight: max 40 chars
+ *   - description: max 300 chars (ignored when richContent is provided)
+ *   - checklist: 2–6 items
+ *   - ctaLabel: max 24 chars
+ *   - richContent: prefer 1–4 paragraphs; the prose wrapper handles lists/links
+ *
+ * @forbidden
+ *   - Do NOT mix `description`, `richContent`, and `checklist` — pick one
+ *     content strategy per instance
+ *   - Do NOT use `imageSize="narrow"` with `layout="stacked"` (no effect)
+ */
 interface FeatureFrameProps {
   /** Layout — "inline" (default, text + image side by side) or "stacked" (text centered on top, image below) */
   layout?: "inline" | "stacked";

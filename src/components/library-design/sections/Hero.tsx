@@ -27,6 +27,29 @@ interface NavItem {
   hasDropdown?: boolean;
 }
 
+/**
+ * Hero
+ *
+ * @purpose    First section of a page: navbar + headline + subtitle + CTAs + illustration.
+ * @useWhen    Top of every marketing / product / solution page.
+ * @dontUse    As a mid-page section — that's what FeatureFrame / ValuePropositionFrame are for.
+ *             Only one <Hero> per page.
+ *
+ * @limits
+ *   - headline: max 60 chars
+ *   - headlineGradient: max 30 chars
+ *   - headlineSuffix: max 30 chars
+ *   - subtitle: max 220 chars
+ *   - eyebrow: max 30 chars (uppercase, tracking)
+ *   - navItems: 2–7 top-level items
+ *   - bottomTags: 0–4
+ *
+ * @forbidden
+ *   - Do NOT render multiple <Hero> on a single page
+ *   - Do NOT pass className that changes the min-h-screen or background
+ *
+ * @figma node-id 115-12821 (typography scale) + site templates
+ */
 export interface HeroProps {
   /** Visual variant — light (default) renders on white, dark renders on primary-70 */
   variant?: "light" | "dark";

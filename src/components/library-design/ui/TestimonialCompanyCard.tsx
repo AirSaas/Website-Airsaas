@@ -68,7 +68,7 @@ export function TestimonialCompanyCard({
     <article
       className={cn(
         "flex flex-col justify-between bg-white rounded-[1.5625rem] overflow-clip",
-        "transition-shadow duration-300 hover:shadow-[0_4px_24px_rgba(0,0,0,0.05)]",
+        "transition-shadow duration-300 hover:shadow-card-hover",
         className,
       )}
       style={{

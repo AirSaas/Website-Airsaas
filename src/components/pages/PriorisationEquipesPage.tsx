@@ -156,7 +156,7 @@ export default function PriorisationEquipesPage() {
           description="Gardez vos équipes alignées sur ce qui est prioritaire. Lorsqu'une priorité change, toute personne participant aux projets reçoit l'information."
           imageSrc="/assets/images/priorisation-par-equipes/feature-prioritization-notification.webp"
           imageAlt="Notifications de changement de priorités"
-          imageBgColor="#fffbeb"
+          imageBgColor="var(--color-prevention-10)"
         />
       </AnimateOnScroll>
 

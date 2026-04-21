@@ -9,6 +9,21 @@ interface ComparisonItem {
   description: React.ReactNode;
 }
 
+/**
+ * ComparisonFrame
+ *
+ * @purpose    "Avec / sans" style numbered-list section showing pain points OR gains.
+ * @useWhen    Driving contrast between old-way and new-way (before/after) on a single page.
+ *             Typically used twice on the same page — one red/orange "sans" block + one green "avec" block.
+ * @dontUse    For side-by-side feature comparison tables (use <ComparisonTableFrame>).
+ *
+ * @limits
+ *   - title: max 80 chars
+ *   - subtitle: max 220 chars
+ *   - items: 4–8 (visual rhythm breaks outside this range)
+ *   - items[].description: max 220 chars
+ *   - emoji: 1–2 chars
+ */
 interface ComparisonFrameProps {
   emoji?: string;
   title: string;

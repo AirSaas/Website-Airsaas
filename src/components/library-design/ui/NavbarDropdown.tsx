@@ -22,9 +22,9 @@ export function NavbarDropdown({ items, className }: NavbarDropdownProps) {
       className={cn(
         "flex flex-col gap-[0.5625rem] p-[0.5625rem] min-w-[16.95rem]",
         "rounded-[0.9375rem] border border-border bg-white",
-        "shadow-[0px_4px_50px_0px_rgba(0,0,0,0.07)]",
         className,
       )}
+      style={{ boxShadow: "var(--shadow-floating)" }}
     >
       {items.map((item, i) => (
         <a

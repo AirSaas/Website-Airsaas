@@ -184,6 +184,8 @@
   --shadow-elevation-lg: 0px 8px 40px 0px rgba(58, 81, 226, 0.08), 0px 2px 12px 0px rgba(0, 0, 0, 0.04);
   /* Wide soft shadow for floating navbars, mobile menus, popovers */
   --shadow-floating: 0px 4px 50px 0px rgba(0, 0, 0, 0.07);
+  /* Card hover shadow — subtle lift on hover for feature/testimonial/cta cards */
+  --shadow-card-hover: 0px 4px 24px 0px rgba(0, 0, 0, 0.05);
 }
 
 /* Floating decorative animations */

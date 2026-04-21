@@ -10,6 +10,24 @@ interface FaqItem {
   answer: string;
 }
 
+/**
+ * FaqFrame
+ *
+ * @purpose    Expandable FAQ section with a highlighted title and accordion items.
+ * @useWhen    The page needs to surface common objections / pricing questions
+ *             / setup steps before conversion.
+ * @dontUse    For a short list of 2–3 hints (use inline <details> or custom block).
+ *
+ * @limits
+ *   - title: max 40 chars (plain dark-to-primary portion)
+ *   - titleHighlight: max 40 chars (gradient portion)
+ *   - items: 3–12 (past 12, split into multiple FAQs or a dedicated page)
+ *   - items[].question: max 120 chars
+ *   - items[].answer: max 500 chars
+ *
+ * @forbidden
+ *   - Do NOT nest FAQs (no accordion inside an answer)
+ */
 interface FaqFrameProps {
   title?: string;
   titleHighlight?: string;

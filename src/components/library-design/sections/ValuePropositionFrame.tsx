@@ -4,6 +4,25 @@ import { Heading } from "@/components/library-design/ui/Heading";
 import { Text } from "@/components/library-design/ui/Text";
 import { GradientText } from "@/components/library-design/ui/GradientText";
 
+/**
+ * ValuePropositionFrame
+ *
+ * @purpose    Section with title + subtitle + a 3- or 4-column grid of child cards
+ *             (usually <FeatureCard> or custom).
+ * @useWhen    Presenting 3–4 equal-weight benefits / value props / metrics.
+ * @dontUse    For a narrative "feature + image" flow (use <FeatureFrame>).
+ *             For a listing of 6+ items (use <PillarFrame> or <HighlightFrame>).
+ *
+ * @limits
+ *   - title: max 80 chars
+ *   - titleHighlight: max 40 chars
+ *   - subtitle: max 250 chars
+ *   - children: 3 or 4 cards (matches `columns` prop)
+ *   - tag: max 24 chars
+ *
+ * @forbidden
+ *   - Do NOT mix different card components as children (visual consistency)
+ */
 interface ValuePropositionFrameProps {
   variant?: "light" | "dark";
   tag?: string;

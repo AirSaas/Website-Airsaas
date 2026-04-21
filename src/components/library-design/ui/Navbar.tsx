@@ -224,7 +224,7 @@ export function Navbar({
 
       {/* Right section: flag → login → CTA */}
       <div className="hidden items-center gap-[0.75rem] xl:flex shrink-0">
-        {flagIcon && <span className="text-[1.25rem]">{flagIcon}</span>}
+        {flagIcon && <span style={{ fontSize: "1.25rem" }}>{flagIcon}</span>}
         {loginLabel && (
           <Button variant="tertiary" size="sm" href={loginHref}>
             {loginLabel}

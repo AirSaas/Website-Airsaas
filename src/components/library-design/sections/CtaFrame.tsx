@@ -5,6 +5,22 @@ import { GradientBackground } from "@/components/library-design/ui/GradientBackg
 import { FloatingCard } from "@/components/library-design/ui/FloatingCard";
 import { Float } from "@/components/library-design/ui/Float";
 
+/**
+ * CtaFrame
+ *
+ * @purpose    End-of-page conversion block: large gradient heading + subtitle + 2 CTA cards.
+ * @useWhen    Closing a page that wants a direct conversion action (demo + newsletter, etc.).
+ * @dontUse    Mid-page — this is designed to be the last visual beat before the footer.
+ *
+ * @limits
+ *   - title: max 80 chars (fits Heading level 2 in 2 lines)
+ *   - subtitle: max 220 chars
+ *   - children: 2 <CardCta> components side by side (1 column on mobile)
+ *
+ * @forbidden
+ *   - Do NOT pass more than 2 cards — layout is grid-cols-2 at md+
+ *   - Do NOT override gradient via className
+ */
 interface CtaFrameProps {
   title: string;
   subtitle: string;

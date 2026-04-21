@@ -1,4 +1,8 @@
 import { cn } from "@/lib/utils";
+import {
+  assertMaxLength,
+  assertNoClassNameOverride,
+} from "@/lib/ds-validators";
 
 /**
  * Tag
@@ -104,6 +108,19 @@ export function Tag({
   icon,
   className,
 }: TagProps) {
+  if (typeof children === "string") {
+    assertMaxLength("Tag", "children", children, 30);
+  }
+  assertNoClassNameOverride("Tag", className, [
+    "bg-",
+    "text-",
+    "font-",
+    "rounded-",
+    "p-",
+    "px-",
+    "py-",
+  ]);
+
   const showDefaultIcon = variant === "success" && icon === undefined;
 
   return (

@@ -91,7 +91,7 @@ export function TestimonialCard({
   return (
     <article
       className={cn(
-        "flex flex-col justify-between rounded-[1.25rem] md:rounded-[1.5625rem] border border-primary-10 bg-white transition-shadow duration-300 hover:shadow-[0_4px_24px_rgba(0,0,0,0.05)]",
+        "flex flex-col justify-between rounded-[1.25rem] md:rounded-[1.5625rem] border border-primary-10 bg-white transition-shadow duration-300 hover:shadow-card-hover",
         className
       )}
       style={{ padding: "1.5rem", minHeight: "auto", rowGap: "0.8rem" }}

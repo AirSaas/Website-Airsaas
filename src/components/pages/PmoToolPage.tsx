@@ -336,7 +336,7 @@ export default function PmoToolPage() {
             "Doit-on recruter ou mettre l'équipe en tension ? Pendant combien de temps ?",
           ]}
           imageSrc="https://placehold.co/1125x731/fffbeb/e58d05?text=Capacity+Marketing"
-          imageBgColor="#fffbeb"
+          imageBgColor="var(--color-prevention-10)"
         />
       </AnimateOnScroll>
 
@@ -357,7 +357,7 @@ export default function PmoToolPage() {
           title="Diffusez un cadrage projet standardisé"
           description="Remplissez les fiches cadrage de projet de manière collaborative, et guidez vos collaborateurs vers un véritable niveau d'excellence en gestion de projet. À vous une culture projet homogénéisée !"
           imageSrc="https://placehold.co/1125x731/fffbeb/e58d05?text=Cadrage+Projet"
-          imageBgColor="#fffbeb"
+          imageBgColor="var(--color-prevention-10)"
         />
       </AnimateOnScroll>
 
@@ -409,7 +409,7 @@ export default function PmoToolPage() {
           title="Fluidifiez votre prise de décisions importantes et urgentes"
           description="Centralisez vos décisions sous forme de Kanban, et partagez-les aisément avec toutes les parties prenantes de vos projets. Finies les informations perdues dans vos mails ou flux de discussions instantanées !"
           imageSrc="https://placehold.co/1125x731/fffbeb/e58d05?text=Portfolio+Decisions"
-          imageBgColor="#fffbeb"
+          imageBgColor="var(--color-prevention-10)"
         />
       </AnimateOnScroll>
 
@@ -430,7 +430,7 @@ export default function PmoToolPage() {
           title="Animez clairement et simplement vos CoPil"
           description="Pilotez par la décision : pendant votre comité de pilotage vous aurez accès à toutes les décisions à prendre et historiques clés. Vous ne serez plus pris de court parce que vous n'avez pas la bonne information."
           imageSrc="https://placehold.co/1125x731/fffbeb/e58d05?text=CoPil+Decisions"
-          imageBgColor="#fffbeb"
+          imageBgColor="var(--color-prevention-10)"
         />
       </AnimateOnScroll>
 

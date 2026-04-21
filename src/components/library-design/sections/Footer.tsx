@@ -12,6 +12,24 @@ interface FooterColumn {
   sections?: FooterSection[];
 }
 
+/**
+ * Footer
+ *
+ * @purpose    Page footer — 4 columns of navigation links + floating logo + copyright card.
+ * @useWhen    Last element on every page. Pass localized copy via `columns` + `copyright`.
+ * @dontUse    As an in-page card — this is designed as a full-width section.
+ *
+ * @limits
+ *   - columns: exactly 4 (matches the lg grid; fewer renders unbalanced)
+ *   - column.title: max 30 chars
+ *   - column.links[]: 3–10 per column
+ *   - link.label: max 50 chars
+ *   - copyright: max 220 chars
+ *
+ * @forbidden
+ *   - Do NOT hardcode text inside Footer — all copy comes from `columns` + `copyright`
+ *     (callers load it from next-intl / CMS)
+ */
 interface FooterProps {
   columns: FooterColumn[];
   copyright?: string;

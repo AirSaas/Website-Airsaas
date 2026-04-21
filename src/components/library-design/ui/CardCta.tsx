@@ -52,7 +52,7 @@ export function CardCta({
   return (
     <article
       className={cn(
-        "flex flex-col gap-[0.75rem] md:gap-[0.9375rem] items-center justify-center rounded-[1.25rem] md:rounded-[1.5625rem] border border-primary-40 bg-white p-6 transition-shadow duration-300 hover:shadow-[0_4px_24px_rgba(0,0,0,0.05)]",
+        "flex flex-col gap-[0.75rem] md:gap-[0.9375rem] items-center justify-center rounded-[1.25rem] md:rounded-[1.5625rem] border border-primary-40 bg-white p-6 transition-shadow duration-300 hover:shadow-card-hover",
         className,
       )}
     >

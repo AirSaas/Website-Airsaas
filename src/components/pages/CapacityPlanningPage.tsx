@@ -163,7 +163,7 @@ export default function CapacityPlanningPage() {
           ]}
           ctaLabel="En savoir plus"
           imageSrc="https://placehold.co/1125x731/fffbeb/e58d05?text=Agent+IA+Découpage"
-          imageBgColor="#fffbeb"
+          imageBgColor="var(--color-prevention-10)"
         />
       </AnimateOnScroll>
 
@@ -215,7 +215,7 @@ export default function CapacityPlanningPage() {
             "Suggestions réalistes, pas théoriques",
           ]}
           imageSrc="https://placehold.co/1125x731/fffbeb/e58d05?text=Découpage+Projet"
-          imageBgColor="#fffbeb"
+          imageBgColor="var(--color-prevention-10)"
         />
       </AnimateOnScroll>
 
@@ -252,7 +252,7 @@ export default function CapacityPlanningPage() {
             "Suggestions réalistes, pas théoriques",
           ]}
           imageSrc="https://placehold.co/1125x731/fffbeb/e58d05?text=Découpage+Projet"
-          imageBgColor="#fffbeb"
+          imageBgColor="var(--color-prevention-10)"
         />
       </AnimateOnScroll>
 

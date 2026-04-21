@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import { assertMaxLength, assertNoClassNameOverride } from "@/lib/ds-validators";
 
 /**
  * Heading
@@ -51,6 +52,8 @@ const gradientMap: Record<string, string> = {
   primary: "var(--gradient-primary)",
 };
 
+const HEADING_MAX: Record<HeadingLevel, number> = { 1: 60, 2: 80, 3: 80, 4: 100 };
+
 export function Heading({
   level = 2,
   children,
@@ -58,6 +61,31 @@ export function Heading({
   align = "center",
   className,
 }: HeadingProps) {
+  if (typeof children === "string") {
+    assertMaxLength(`Heading(${level})`, "children", children, HEADING_MAX[level]);
+  }
+  // `text-white` / `text-foreground` are legitimate color overrides (dark variants);
+  // only fontSize / fontWeight / lineHeight overrides break the Heading contract.
+  assertNoClassNameOverride(`Heading(${level})`, className, [
+    "text-[",
+    "text-xs",
+    "text-sm",
+    "text-base",
+    "text-lg",
+    "text-xl",
+    "text-2xl",
+    "text-3xl",
+    "text-4xl",
+    "text-5xl",
+    "text-6xl",
+    "text-7xl",
+    "font-black",
+    "font-bold",
+    "font-semibold",
+    "font-medium",
+    "leading-",
+  ]);
+
   const Tag = `h${level}` as const;
   // Level 4 never uses gradient (Figma spec: H4 is solid secondary)
   const useGradient = gradient !== "none" && level !== 4;

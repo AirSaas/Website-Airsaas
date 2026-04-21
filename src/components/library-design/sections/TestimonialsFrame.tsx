@@ -10,6 +10,22 @@ interface Testimonial {
   avatarSrc?: string;
 }
 
+/**
+ * TestimonialsFrame
+ *
+ * @purpose    Section wrapper for testimonial cards: gradient heading + 3-col grid.
+ * @useWhen    Surfacing 3–6 customer quotes on a marketing page.
+ * @dontUse    For a single hero testimonial — just render a <TestimonialCard> inline.
+ *             For company-logo-based testimonials, prefer <TestimonialCompanyCard>.
+ *
+ * @limits
+ *   - title: max 40 chars (gradient dark-to-primary)
+ *   - titleHighlight: max 40 chars (gradient primary)
+ *   - testimonials: 3–6 items (renders in grid-cols-3 at lg)
+ *
+ * @forbidden
+ *   - Do NOT mix testimonials prop AND children — children wins, testimonials ignored
+ */
 interface TestimonialsFrameProps {
   /** Dark-to-primary gradient part of the title */
   title: string;
