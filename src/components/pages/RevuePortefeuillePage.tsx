@@ -402,18 +402,21 @@ export default function RevuePortefeuillePage() {
           titleHighlight="Ritualiser"
           title="votre revue de portefeuille"
           description="Organisez vos revues à échéances fixes, en fonction des besoins de votre organisation. La plupart des PMO et DSI. font une revue de portefeuille de projets mensuelle. Organisez également cette revue après les autres types de réunions liées à votre gouvernance de portfolio de projets (après vos réunions d'avancement hebdomadaires avec les chefs de projets, et après votre réunion de coordination des ressources bi-mensuelle avec les chefs d'équipes. Ainsi, vous êtes sûr d'avoir toutes les informations nécessaires à la revue de portefeuille, et de présenter des métriques-clés bien à jour en temps réel."
-          imageSrc="/assets/images/revue-de-portefeuille/cle-portfolio8.svg"
-          imageAlt="Illustration du rituel de revue de portefeuille AirSaas"
+          imageSrc="/assets/images/revue-de-portefeuille/cle-presentation-review.png"
+          imageAlt="Slide de revue de portefeuille rituelle générée depuis AirSaas"
         />
       </AnimateOnScroll>
 
-      {/* 13.6 Clé 6 — Aller au-delà des chiffres (stacked, no image) */}
-      <AnimateOnScroll animation="fade-up" duration={700}>
+      {/* 13.6 Clé 6 — Aller au-delà des chiffres (image right, narrow 33%) */}
+      <AnimateOnScroll animation="fade-right" duration={700}>
         <FeatureFrame
-          layout="stacked"
+          imagePosition="right"
+          imageSize="narrow"
           titleHighlight="Aller au-delà"
           title="des chiffres"
           description="Ne vous focalisez pas uniquement sur les métriques-clés liées à vos projets. Les chiffres parlent autant que les retours des équipes elles-mêmes - y compris du chef de projet en charge d'un projet spécifique. Dédiez toujours un temps de parole aux différents responsables, ou incluez à vos présentations des verbatims pour mobiliser l'attention des différents décideurs pendant la revue de portefeuille."
+          imageSrc="/assets/images/revue-de-portefeuille/cle-portfolio8.svg"
+          imageAlt="Illustration d'équipe et verbatims AirSaas"
         />
       </AnimateOnScroll>
 

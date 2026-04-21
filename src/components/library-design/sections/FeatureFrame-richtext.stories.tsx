@@ -90,3 +90,31 @@ export const ImageLeft: Story = {
     imageBgColor: "#fffbeb",
   },
 };
+
+export const NarrowImageRight: Story = {
+  args: {
+    imagePosition: "right",
+    imageSize: "narrow",
+    titleHighlight: "Aller au-delà",
+    title: "des chiffres",
+    description:
+      "Ne vous focalisez pas uniquement sur les métriques-clés liées à vos projets. Les chiffres parlent autant que les retours des équipes elles-mêmes. Dédiez toujours un temps de parole aux différents responsables, ou incluez à vos présentations des verbatims pour mobiliser l'attention des décideurs.",
+    imageSrc:
+      "https://placehold.co/600x800/e8ebfe/3c51e2?text=Narrow+%7E33%25",
+    imageAlt: "Narrow illustration",
+  },
+};
+
+export const NarrowImageLeft: Story = {
+  args: {
+    imagePosition: "left",
+    imageSize: "narrow",
+    titleHighlight: "Inviter",
+    title: "les bonnes personnes",
+    description:
+      "Invitez uniquement les personnes qui peuvent prendre des décisions et qui permettent d'éclairer le processus décisionnel. Vous pouvez ainsi focaliser l'attention sur l'essentiel : les sponsors, les gestionnaires de projet à risque, et le Codir si nécessaire.",
+    imageSrc:
+      "https://placehold.co/600x800/e8ebfe/3c51e2?text=Narrow+%7E33%25",
+    imageAlt: "Narrow illustration",
+  },
+};

@@ -14,8 +14,10 @@ interface FeatureFrameProps {
    * Size of the illustration column (inline layout only).
    * - "default" (60% width) — the main product shot layout.
    * - "compact" (~40% width) — smaller illustration, leaves more room for rich text content.
+   * - "narrow" (~33% width) — the thinnest variant, used when the illustration
+   *   is secondary to the text (e.g. long-form tips, sub-features).
    */
-  imageSize?: "default" | "compact";
+  imageSize?: "default" | "compact" | "narrow";
   tag?: string;
   /** Gradient-colored part of the title */
   titleHighlight?: string;
@@ -66,6 +68,8 @@ export function FeatureFrame({
   const isStacked = layout === "stacked";
   const isRight = imagePosition === "right";
   const isCompact = imageSize === "compact";
+  const isNarrow = imageSize === "narrow";
+  const isSmall = isCompact || isNarrow;
   const defaultBg = isStacked
     ? "var(--color-primary-5)"
     : isRight
@@ -169,14 +173,16 @@ export function FeatureFrame({
           ? "w-full max-w-[75rem] p-[1.5rem] md:p-[2.5rem]"
           : cn(
               "w-full",
-              isCompact
-                ? "lg:w-[36rem] lg:max-w-[40%] p-[1.5rem] md:p-[2rem] lg:p-[2.5rem]"
-                : cn(
-                    "lg:w-[67.5rem] lg:max-w-[60%]",
-                    isRight
-                      ? "p-[1.5rem] lg:pl-[2.5rem] lg:py-[2.5rem] lg:pr-0"
-                      : "p-[1.5rem] lg:pr-[2.5rem] lg:py-[2.5rem] lg:pl-0",
-                  ),
+              isNarrow
+                ? "lg:w-[26rem] lg:max-w-[33.333%] p-[1.5rem] md:p-[2rem] lg:p-[2.5rem]"
+                : isCompact
+                  ? "lg:w-[36rem] lg:max-w-[40%] p-[1.5rem] md:p-[2rem] lg:p-[2.5rem]"
+                  : cn(
+                      "lg:w-[67.5rem] lg:max-w-[60%]",
+                      isRight
+                        ? "p-[1.5rem] lg:pl-[2.5rem] lg:py-[2.5rem] lg:pr-0"
+                        : "p-[1.5rem] lg:pr-[2.5rem] lg:py-[2.5rem] lg:pl-0",
+                    ),
             ),
       )}
       style={{
@@ -214,8 +220,8 @@ export function FeatureFrame({
         "flex flex-col gap-[2rem] px-[1.5rem] py-[3rem] bg-white",
         "md:px-[3rem] md:py-[4rem] md:gap-[2.5rem]",
         "lg:flex-row lg:gap-[3.125rem] lg:py-[6.25rem]",
-        isCompact ? "lg:items-start" : "lg:items-center",
-        isCompact
+        isSmall ? "lg:items-start" : "lg:items-center",
+        isSmall
           ? "lg:px-[6.25rem] xl:px-[10rem]"
           : isRight
             ? "lg:pl-[10rem] lg:pr-0"
