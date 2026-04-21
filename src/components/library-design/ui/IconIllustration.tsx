@@ -47,7 +47,7 @@ export function IconIllustration({
           style={{
             width: "100%",
             height: "100%",
-            backgroundColor: "#8A97EE",
+            backgroundColor: "var(--color-primary-60)",
             filter: "blur(0.8rem)",
           }}
         />

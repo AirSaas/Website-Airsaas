@@ -29,7 +29,7 @@ export function LogosBar({
       {/* Label */}
       <span
         className="shrink-0 font-light whitespace-nowrap text-center"
-        style={{ color: "#63606e", fontSize: "1.2rem" }}
+        style={{ color: "var(--color-text-muted)", fontSize: "1.2rem" }}
       >
         {label}
       </span>

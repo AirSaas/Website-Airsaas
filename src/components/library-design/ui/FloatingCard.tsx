@@ -27,10 +27,10 @@ export function FloatingCard({ children, icon, className, style }: FloatingCardP
     <div
       aria-hidden="true"
       className={cn(
-        "bg-white rounded-[1.2435rem] shadow-[0px_5.685px_34.108px_0px_rgba(0,0,0,0.08)]",
+        "bg-white rounded-[1.2435rem]",
         className,
       )}
-      style={style}
+      style={{ boxShadow: "var(--shadow-elevation-md)", ...style }}
     >
       {children ?? <PlaceholderContent icon={icon} />}
     </div>

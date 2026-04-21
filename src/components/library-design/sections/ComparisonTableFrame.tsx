@@ -116,7 +116,7 @@ export function ComparisonTableFrame({
           }
         }
         .cmp-cell {
-          background: #ffffff;
+          background: var(--color-background);
           border: 1px solid var(--color-border);
           border-radius: 1.25rem;
           padding: 1.25rem 1.5rem;
@@ -238,11 +238,11 @@ function ComparisonValue({ value }: { value: ComparisonCell }) {
           width: "2rem",
           height: "2rem",
           fontSize: "2rem",
-          color: "#2d8a4e",
+          color: "var(--color-success-text)",
           lineHeight: 1,
         }}
       >
-        <CircleCheckIcon color="#2d8a4e" />
+        <CircleCheckIcon color="var(--color-success-text)" />
       </span>
     );
   }
@@ -257,11 +257,11 @@ function ComparisonValue({ value }: { value: ComparisonCell }) {
           width: "2rem",
           height: "2rem",
           fontSize: "2rem",
-          color: "#ff0a55",
+          color: "var(--color-warning)",
           lineHeight: 1,
         }}
       >
-        <CircleXmarkIcon color="#ff0a55" />
+        <CircleXmarkIcon color="var(--color-warning)" />
       </span>
     );
   }

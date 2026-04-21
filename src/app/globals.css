@@ -159,6 +159,12 @@
   --text-paragraph: clamp(1.125rem, 1.5vw, 1.5625rem);
   --text-small: 1rem;
 
+  /* Footer micro-typography (scale below --text-small, reverse-engineered from live site) */
+  --text-footer-title: clamp(1.02rem, 1.2vw, 1.33rem);
+  --text-footer-section: clamp(0.935rem, 1.1vw, 1.148rem);
+  --text-footer-link: clamp(0.765rem, 0.9vw, 0.956rem);
+  --text-footer-caption: clamp(0.68rem, 0.8vw, 0.85rem);
+
   /* Gradients */
   --gradient-dark-to-primary: linear-gradient(36deg, var(--color-foreground) 20%, var(--color-primary) 124%);
   --gradient-primary: linear-gradient(55deg, var(--color-primary) 20%, var(--color-primary-dark) 124%);

@@ -60,7 +60,7 @@ export function Footer({
           {columns.map((col, i) => (
             <div key={i} className="flex flex-col">
               <span
-                className="font-bold text-primary text-[1.02rem] md:text-[1.33rem]"
+                className="font-bold text-primary text-footer-title"
                 style={{ lineHeight: "1.2", marginBottom: "0.5rem" }}
               >
                 {col.title}
@@ -69,7 +69,7 @@ export function Footer({
                 <a
                   key={j}
                   href={link.href ?? "#"}
-                  className="font-light text-foreground transition-colors hover:text-primary text-[0.765rem] md:text-[0.956rem]"
+                  className="font-light text-foreground transition-colors hover:text-primary text-footer-link"
                   style={{ lineHeight: "2.04" }}
                 >
                   {link.label}
@@ -78,7 +78,7 @@ export function Footer({
               {col.sections?.map((section, s) => (
                 <div key={s} className="flex flex-col" style={{ marginTop: "1rem" }}>
                   <span
-                    className="font-bold text-primary text-[0.935rem] md:text-[1.148rem]"
+                    className="font-bold text-primary text-footer-section"
                     style={{ lineHeight: "1.2", marginBottom: "0.5rem" }}
                   >
                     {section.title}
@@ -87,7 +87,7 @@ export function Footer({
                     <a
                       key={j}
                       href={link.href ?? "#"}
-                      className="font-light text-foreground transition-colors hover:text-primary text-[0.765rem] md:text-[0.956rem]"
+                      className="font-light text-foreground transition-colors hover:text-primary text-footer-link"
                       style={{ lineHeight: "2.04" }}
                     >
                       {link.label}
@@ -107,7 +107,7 @@ export function Footer({
                 <span style={{ fontSize: "1.25rem" }}>🇫🇷</span>
               </div>
               <span
-                className="text-foreground whitespace-normal text-[0.68rem] md:text-[0.85rem] leading-[1.3]"
+                className="text-foreground whitespace-normal text-footer-caption leading-[1.3]"
               >
                 {copyright}
               </span>

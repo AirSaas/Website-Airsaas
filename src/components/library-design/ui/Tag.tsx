@@ -43,8 +43,8 @@ function CheckCircleIcon() {
           y2="11.2219"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#03F875" />
-          <stop offset="1" stopColor="#A1FC92" />
+          <stop style={{ stopColor: "var(--color-success)" }} />
+          <stop offset="1" style={{ stopColor: "var(--color-success-40)" }} />
         </linearGradient>
       </defs>
     </svg>
