@@ -1,23 +1,49 @@
 import { cn } from "@/lib/utils";
 
+/**
+ * Heading
+ *
+ * @purpose    Canonical headline component for all H1 / H2 / H3 / H4 in the product.
+ * @useWhen    Any headline on a page. Always prefer this over raw <h1-h4>.
+ * @dontUse    Inside body copy — use <Text> with `font-bold` if you need emphasis.
+ *
+ * @limits
+ *   - level 1: max ~40 chars on 1 line (clamp 40 → 95px)
+ *   - level 2: max ~60 chars on 1 line (clamp 32 → 72px)
+ *   - level 3: max ~60 chars on 1 line (clamp 28 → 70px)
+ *   - level 4: max ~80 chars on 1 line (clamp 24 → 40px)
+ *
+ * @forbidden
+ *   - Do NOT pass fontSize / fontWeight via `className` — use `level`
+ *   - Do NOT override font-family — Product Sans only (enforced in globals.css)
+ *   - Do NOT use `gradient` on level 4 (by design: body-adjacent headings stay solid)
+ *
+ * @figma node-id 115-12821
+ */
+
+type HeadingLevel = 1 | 2 | 3 | 4;
+
 interface HeadingProps {
-  level?: 1 | 2 | 3;
+  level?: HeadingLevel;
   children: React.ReactNode;
   gradient?: "dark-to-primary" | "primary" | "none";
   align?: "center" | "left";
   className?: string;
 }
 
-const levelClasses: Record<1 | 2 | 3, string> = {
+// Levels 1-3 are Black (900), level 4 is Bold (700) per Figma spec.
+const levelClasses: Record<HeadingLevel, string> = {
   1: "font-black leading-[0.95]",
   2: "font-black leading-tight",
   3: "font-black leading-[1.18]",
+  4: "font-bold leading-[1.2]",
 };
 
-const levelFontSize: Record<1 | 2 | 3, string> = {
+const levelFontSize: Record<HeadingLevel, string> = {
   1: "var(--text-h1)",
   2: "var(--text-h2)",
   3: "var(--text-h3)",
+  4: "var(--text-h4)",
 };
 
 const gradientMap: Record<string, string> = {
@@ -33,7 +59,8 @@ export function Heading({
   className,
 }: HeadingProps) {
   const Tag = `h${level}` as const;
-  const useGradient = gradient !== "none";
+  // Level 4 never uses gradient (Figma spec: H4 is solid secondary)
+  const useGradient = gradient !== "none" && level !== 4;
 
   return (
     <Tag

@@ -1,6 +1,8 @@
 import { cn } from "@/lib/utils";
-import { SectionHeading } from "@/components/library-design/ui/SectionHeading";
 import { ListEmphasized } from "@/components/library-design/ui/ListEmphasized";
+import { Heading } from "@/components/library-design/ui/Heading";
+import { Text } from "@/components/library-design/ui/Text";
+import { GradientText } from "@/components/library-design/ui/GradientText";
 
 interface FeatureSectionStackedProps {
   /** Gradient-colored portion of the H2 */
@@ -48,34 +50,20 @@ export function FeatureSectionStacked({
     >
       {/* Section heading */}
       <div className="flex flex-col items-center gap-[1.25rem] text-center w-full">
-        <h2
-          className="font-black leading-tight"
-          style={{ fontSize: "var(--text-h2)" }}
-        >
+        <Heading level={2} gradient="none" align="center">
           {titleDarkPrefix && (
             <span className="text-foreground">{titleDarkPrefix} </span>
           )}
-          <span
-            className="bg-clip-text text-transparent"
-            style={{
-              backgroundImage: "var(--gradient-primary)",
-              WebkitBackgroundClip: "text",
-            }}
-          >
-            {titleGradient}
-          </span>
+          <GradientText gradient="primary">{titleGradient}</GradientText>
           {titleDark && (
             <span className="text-foreground">{` ${titleDark}`}</span>
           )}
-        </h2>
+        </Heading>
 
         {subtitle && (
-          <p
-            className="font-light text-foreground text-center max-w-[91rem]"
-            style={{ fontSize: "var(--text-paragraph)", lineHeight: "1.56" }}
-          >
+          <Text size="md" align="center" maxWidth="91rem">
             {subtitle}
-          </p>
+          </Text>
         )}
       </div>
 

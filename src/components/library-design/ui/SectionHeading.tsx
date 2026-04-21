@@ -1,4 +1,25 @@
 import { cn } from "@/lib/utils";
+import { Heading } from "./Heading";
+import { Text } from "./Text";
+import { GradientText } from "./GradientText";
+
+/**
+ * SectionHeading
+ *
+ * @purpose    Standalone centered H2 + subtitle block used to introduce a section.
+ * @useWhen    A section needs a highlighted title (with gradient portion) + short paragraph,
+ *             and no further custom content in the heading area.
+ * @dontUse    When the section has a more complex heading (custom CTA row, tags, eyebrow) —
+ *             compose `<Heading>` + `<Text>` directly instead.
+ *
+ * @limits
+ *   - titleGradient: max ~30 chars
+ *   - titleDark: max ~40 chars
+ *   - subtitle: max ~200 chars
+ *
+ * @forbidden
+ *   - Do NOT pass className with typography overrides — use Heading / Text props instead
+ */
 
 interface SectionHeadingProps {
   /** Gradient-colored portion of the title */
@@ -25,35 +46,15 @@ export function SectionHeading({
       )}
     >
       <div className="flex flex-col items-center gap-[1.25rem] text-center">
-        {/* H2 — gradient + dark */}
-        <h2
-          className="font-black leading-tight"
-          style={{ fontSize: "var(--text-h2)" }}
-        >
-          <span
-            className="bg-clip-text text-transparent"
-            style={{
-              backgroundImage: "var(--gradient-primary)",
-              WebkitBackgroundClip: "text",
-            }}
-          >
-            {titleGradient}
-          </span>
-          {titleDark && (
-            <span className="text-foreground">
-              {` ${titleDark}`}
-            </span>
-          )}
-        </h2>
+        <Heading level={2} gradient="none" align="center">
+          <GradientText gradient="primary">{titleGradient}</GradientText>
+          {titleDark && <span className="text-foreground">{` ${titleDark}`}</span>}
+        </Heading>
 
-        {/* Paragraph */}
         {subtitle && (
-          <p
-            className="font-light text-foreground text-center max-w-[91rem]"
-            style={{ fontSize: "var(--text-paragraph)", lineHeight: "1.56" }}
-          >
+          <Text size="md" align="center" maxWidth="91rem">
             {subtitle}
-          </p>
+          </Text>
         )}
       </div>
     </div>
