@@ -59,6 +59,13 @@ export interface HeroProps {
   /** Product screenshot/illustration path */
   illustrationSrc?: string;
   illustrationAlt?: string;
+  /** Optional Tailwind className override for the IllustrationFrame element.
+   *  Default: "max-w-[94.8125rem] w-full". */
+  illustrationClassName?: string;
+  /** Optional extra Tailwind classes for the wrapper around the illustration.
+   *  Use this to add lateral padding so the white frame sits inside the gradient
+   *  with margin from the screen edges (e.g. "px-4 md:px-10 lg:px-20"). */
+  illustrationWrapperClassName?: string;
   className?: string;
 }
 
@@ -81,6 +88,8 @@ export function Hero({
   bottomTags,
   illustrationSrc,
   illustrationAlt = "",
+  illustrationClassName = "max-w-[94.8125rem] w-full",
+  illustrationWrapperClassName = "px-4 md:px-8 lg:px-16",
   className,
 }: HeroProps) {
   const isDark = variant === "dark";
@@ -322,11 +331,11 @@ export function Hero({
 
             {/* Illustration */}
             {illustrationSrc && (
-              <div className="w-full flex justify-center">
+              <div className={cn("w-full flex justify-center", illustrationWrapperClassName)}>
                 <IllustrationFrame
                   src={illustrationSrc}
                   alt={illustrationAlt}
-                  className="max-w-[94.8125rem] w-full"
+                  className={illustrationClassName}
                 />
               </div>
             )}
