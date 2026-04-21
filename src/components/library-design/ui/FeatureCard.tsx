@@ -20,13 +20,22 @@ import { GradientText } from "./GradientText";
  *
  * @forbidden
  *   - Do NOT pass className with typography overrides — use Text / Heading props
+ *   - Do NOT mix different `gradient` colors in the same grid (visual noise)
  */
+
+type FeatureCardGradient = "primary" | "orange" | "green" | "dark-to-primary" | "none";
 
 interface FeatureCardProps {
   icon?: React.ReactNode;
   title: string;
   subtitle?: string;
   description?: string;
+  /**
+   * Gradient applied to the title (and subtitle if present).
+   * Use "none" to render title in solid `text-foreground`.
+   * @default "primary"
+   */
+  gradient?: FeatureCardGradient;
   className?: string;
 }
 
@@ -35,8 +44,11 @@ export function FeatureCard({
   title,
   subtitle,
   description,
+  gradient = "primary",
   className,
 }: FeatureCardProps) {
+  const useGradient = gradient !== "none";
+
   return (
     <article
       className={cn(
@@ -51,12 +63,12 @@ export function FeatureCard({
       )}
 
       <Heading level={4} gradient="none" align="left">
-        <GradientText gradient="primary">{title}</GradientText>
+        {useGradient ? <GradientText gradient={gradient}>{title}</GradientText> : title}
       </Heading>
 
       {subtitle && (
         <Text size="lg" align="left" className="font-bold">
-          <GradientText gradient="primary">{subtitle}</GradientText>
+          {useGradient ? <GradientText gradient={gradient}>{subtitle}</GradientText> : subtitle}
         </Text>
       )}
 

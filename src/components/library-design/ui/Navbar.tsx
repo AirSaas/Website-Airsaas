@@ -2,8 +2,33 @@
 
 import { useState, useRef, useEffect } from "react";
 import { cn } from "@/lib/utils";
-import { Button } from "@/components/library-design/ui/Button";
+import { Button, type ButtonVariant } from "@/components/library-design/ui/Button";
 import { NavbarDropdown, type NavbarDropdownItem } from "@/components/library-design/ui/NavbarDropdown";
+
+/**
+ * Navbar
+ *
+ * @purpose    Top-of-page navigation. Logo + links (flat or with dropdown) + optional
+ *             flag / locale / login / CTA.
+ * @useWhen    On every marketing / product page as the first interactive element.
+ *             Mount inside a `<Hero>` so it picks up the hero background gradient.
+ * @dontUse    For in-app chrome / admin layouts — build a dedicated component.
+ *
+ * @limits
+ *   - items: 2–7 top-level items (past that the nav overflows on desktop)
+ *   - dropdownItems per menu: 2–10
+ *   - ctaLabel: max 24 chars
+ *   - loginLabel: max 12 chars
+ *
+ * @forbidden
+ *   - Do NOT hardcode text inside the Navbar file — all copy comes from props
+ *     (callers pass translated strings via next-intl / CMS)
+ *   - Do NOT override typography / color via className — extend the DS if needed
+ *   - Do NOT pass an image `<img>` as `logo` — use an inline SVG so it adopts
+ *     currentColor and scales cleanly
+ *
+ * @figma node-id 123-55815
+ */
 
 export interface NavItem {
   label: string;
@@ -14,13 +39,32 @@ export interface NavItem {
 }
 
 interface NavbarProps {
+  /** Brand logo node. Use an inline SVG for best quality. Falls back to the AirSaas logo. */
   logo?: React.ReactNode;
+  /** Href the logo links to. Defaults to "/". */
+  logoHref?: string;
+  /** Accessible label for the logo link. */
+  logoAriaLabel?: string;
+
+  /** Navigation items (required) */
   items: NavItem[];
+
+  /** Primary CTA in the right section. Rendered when `ctaLabel` is provided. */
   ctaLabel?: string;
   ctaHref?: string;
+  /** Button variant for the CTA. Defaults to "primary". */
+  ctaVariant?: ButtonVariant;
+
+  /** Optional secondary login / quiet link before the CTA */
   loginLabel?: string;
   loginHref?: string;
+
+  /** Locale flag or selector. Pass any React node. */
   flagIcon?: React.ReactNode;
+
+  /** ARIA label for the <nav> element. */
+  ariaLabel?: string;
+
   className?: string;
 }
 
@@ -80,14 +124,20 @@ function CloseIcon() {
   );
 }
 
+const NAV_LINK_CLASSES = "font-normal text-sm whitespace-nowrap transition-colors duration-150";
+
 export function Navbar({
   logo,
+  logoHref = "/",
+  logoAriaLabel = "Home",
   items,
-  ctaLabel = "Demander une démo",
+  ctaLabel,
   ctaHref = "#",
+  ctaVariant = "primary",
   loginLabel,
   loginHref = "#",
-  flagIcon = <span aria-label="Français">🇫🇷</span>,
+  flagIcon,
+  ariaLabel = "Main navigation",
   className,
 }: NavbarProps) {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -108,17 +158,17 @@ export function Navbar({
   return (
     <nav
       ref={navRef}
-      aria-label="Main navigation"
+      aria-label={ariaLabel}
       className={cn(
         "relative flex w-full max-w-[115rem] h-[4rem] md:h-[5rem] lg:h-[6.375rem] items-center justify-between",
         "rounded-[1rem] md:rounded-[1.25rem] lg:rounded-[1.5625rem] border border-border bg-white",
         "px-[1rem] md:px-[1.5rem] lg:px-[1.875rem]",
-        "shadow-[0px_4px_50px_0px_rgba(0,0,0,0.07)]",
         className,
       )}
+      style={{ boxShadow: "var(--shadow-floating)" }}
     >
       {/* Logo */}
-      <a href="/" aria-label="AirSaas" className="shrink-0">
+      <a href={logoHref} aria-label={logoAriaLabel} className="shrink-0">
         {logo ?? <AirSaasLogo />}
       </a>
 
@@ -134,10 +184,10 @@ export function Navbar({
                   aria-haspopup="true"
                   aria-expanded={openDropdown === item.label}
                   className={cn(
-                    "inline-flex items-center gap-[0.375rem] font-normal transition-colors duration-150 whitespace-nowrap",
+                    NAV_LINK_CLASSES,
+                    "inline-flex items-center gap-[0.375rem]",
                     openDropdown === item.label ? "text-primary" : "text-foreground hover:text-primary",
                   )}
-                  style={{ fontSize: "0.875rem" }}
                   onClick={() =>
                     setOpenDropdown((prev) =>
                       prev === item.label ? null : item.label
@@ -163,8 +213,7 @@ export function Navbar({
               <a
                 href={item.href ?? "#"}
                 role="menuitem"
-                className="font-normal text-foreground transition-colors duration-150 hover:text-primary whitespace-nowrap"
-                style={{ fontSize: "0.875rem" }}
+                className={cn(NAV_LINK_CLASSES, "text-foreground hover:text-primary")}
               >
                 {item.label}
               </a>
@@ -175,17 +224,17 @@ export function Navbar({
 
       {/* Right section: flag → login → CTA */}
       <div className="hidden items-center gap-[0.75rem] xl:flex shrink-0">
-        {flagIcon && (
-          <span className="text-[1.25rem]">{flagIcon}</span>
-        )}
+        {flagIcon && <span className="text-[1.25rem]">{flagIcon}</span>}
         {loginLabel && (
           <Button variant="tertiary" size="sm" href={loginHref}>
             {loginLabel}
           </Button>
         )}
-        <Button variant="primary" size="sm" href={ctaHref}>
-          {ctaLabel}
-        </Button>
+        {ctaLabel && (
+          <Button variant={ctaVariant} size="sm" href={ctaHref}>
+            {ctaLabel}
+          </Button>
+        )}
       </div>
 
       {/* Mobile hamburger */}
@@ -207,9 +256,10 @@ export function Navbar({
           className={cn(
             "absolute left-0 top-full z-50 mt-2 w-full",
             "rounded-[1.5625rem] border border-border bg-white",
-            "p-[1.5rem] shadow-[0px_4px_50px_0px_rgba(0,0,0,0.07)]",
+            "p-[1.5rem]",
             "xl:hidden",
           )}
+          style={{ boxShadow: "var(--shadow-floating)" }}
         >
           <ul className="flex flex-col gap-[1rem]" role="menu">
             {items.map((item) => (
@@ -222,10 +272,10 @@ export function Navbar({
                       aria-haspopup="true"
                       aria-expanded={openDropdown === item.label}
                       className={cn(
-                        "inline-flex w-full items-center gap-[0.375rem] font-normal transition-colors duration-150",
+                        NAV_LINK_CLASSES,
+                        "inline-flex w-full items-center gap-[0.375rem]",
                         openDropdown === item.label ? "text-primary" : "text-foreground hover:text-primary",
                       )}
-                      style={{ fontSize: "0.875rem" }}
                       onClick={() =>
                         setOpenDropdown((prev) =>
                           prev === item.label ? null : item.label
@@ -250,8 +300,7 @@ export function Navbar({
                   <a
                     href={item.href ?? "#"}
                     role="menuitem"
-                    className="block font-normal text-foreground transition-colors duration-150 hover:text-primary"
-                    style={{ fontSize: "0.875rem" }}
+                    className={cn(NAV_LINK_CLASSES, "block text-foreground hover:text-primary")}
                   >
                     {item.label}
                   </a>
@@ -265,9 +314,11 @@ export function Navbar({
                 {loginLabel}
               </Button>
             )}
-            <Button variant="primary" size="sm" href={ctaHref} className="w-full">
-              {ctaLabel}
-            </Button>
+            {ctaLabel && (
+              <Button variant={ctaVariant} size="sm" href={ctaHref} className="w-full">
+                {ctaLabel}
+              </Button>
+            )}
           </div>
         </div>
       )}

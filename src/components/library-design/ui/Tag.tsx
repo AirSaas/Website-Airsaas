@@ -1,22 +1,69 @@
 import { cn } from "@/lib/utils";
 
+/**
+ * Tag
+ *
+ * @purpose    Small inline pill/badge used for categories, status indicators,
+ *             eyebrow labels, and filter chips.
+ * @useWhen    Labeling content with a short category or status. Always inline.
+ * @dontUse    For CTAs (use <Button>), for long descriptions (use <Text>),
+ *             or for decorative pills inside complex layouts — extract the
+ *             specific need first.
+ *
+ * @limits
+ *   - children (label text): max 30 chars. Past that the pill breaks on 2 lines.
+ *   - icon: 1 inline element, rendered before children.
+ *
+ * @forbidden
+ *   - Do NOT pass className with typography / color overrides — use `variant`.
+ *   - Do NOT nest <Tag> inside <Tag>.
+ *
+ * @figma node-id 120-48047
+ */
+
+// Semantic variants (status-flavored) and Figma custom 1-12.
+export type TagVariant =
+  | "muted"       // brand blue — eyebrow / default
+  | "default"     // Figma Tag/Default — secondary text on light neutral bg
+  | "success"     // success state, auto-renders CheckCircleIcon if no icon passed
+  | "warning"     // warning / prevention state
+  | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12;
+
 interface TagProps {
   children: React.ReactNode;
-  variant?: "muted" | "success" | "warning";
+  variant?: TagVariant;
   icon?: React.ReactNode;
+  /** @forbidden typography / color overrides — use `variant`. */
   className?: string;
 }
 
-const variantStyles: Record<NonNullable<TagProps["variant"]>, string> = {
+/** Style map — keeps each variant declaration isolated. */
+const variantClass: Record<Exclude<TagVariant, number>, string> = {
   muted: "bg-primary-5 text-primary rounded-[1.5625rem]",
+  default: "bg-tag-default-bg text-tag-default-text rounded-full",
   success: "bg-success-10 text-foreground rounded-full",
   warning: "bg-bg-warning text-warning-text rounded-full",
 };
 
-const variantPadding: Record<NonNullable<TagProps["variant"]>, React.CSSProperties> = {
-  muted: { padding: "0.1875rem 0.9rem", fontSize: "1.2rem", width: "fit-content" },
-  success: { padding: "0.125rem 0.9rem", fontSize: "1.2rem", width: "fit-content" },
-  warning: { padding: "0.125rem 0.9rem", fontSize: "1.2rem", width: "fit-content" },
+/** Figma Tag/Custom 1-12: each has a text color token + bg color token. */
+function customTagClass(n: number): string {
+  return `bg-tag-${n}-bg text-tag-${n}-text rounded-full`;
+}
+
+function variantToClass(variant: TagVariant): string {
+  return typeof variant === "number" ? customTagClass(variant) : variantClass[variant];
+}
+
+const BASE_PADDING_STYLE: React.CSSProperties = {
+  padding: "0.125rem 0.9rem",
+  fontSize: "1.2rem",
+  width: "fit-content",
+};
+
+const MUTED_PADDING_STYLE: React.CSSProperties = {
+  padding: "0.1875rem 0.9rem",
+  fontSize: "1.2rem",
+  width: "fit-content",
 };
 
 function CheckCircleIcon() {
@@ -63,10 +110,10 @@ export function Tag({
     <span
       className={cn(
         "inline-flex items-center gap-[0.5rem] font-normal",
-        variantStyles[variant],
-        className
+        variantToClass(variant),
+        className,
       )}
-      style={variantPadding[variant]}
+      style={variant === "muted" ? MUTED_PADDING_STYLE : BASE_PADDING_STYLE}
     >
       {showDefaultIcon && <CheckCircleIcon />}
       {icon}

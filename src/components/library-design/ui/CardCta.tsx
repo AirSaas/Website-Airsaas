@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import { Button } from "@/components/library-design/ui/Button";
+import { Button, type ButtonVariant, type ButtonSize } from "@/components/library-design/ui/Button";
 import { Heading } from "./Heading";
 import { Text } from "./Text";
 import { GradientText } from "./GradientText";
@@ -21,11 +21,19 @@ import { GradientText } from "./GradientText";
  *   - Do NOT pass typography className overrides
  */
 
+type CardCtaGradient = "primary" | "orange" | "green" | "dark-to-primary" | "none";
+
 interface CardCtaProps {
   title: string;
   description: string;
   ctaLabel: string;
   ctaHref?: string;
+  /** Gradient applied to the title. Defaults to "primary". Use "none" for solid title. */
+  gradient?: CardCtaGradient;
+  /** CTA button variant. Defaults to "primary". */
+  ctaVariant?: ButtonVariant;
+  /** CTA button size. Defaults to "sm". */
+  ctaSize?: ButtonSize;
   className?: string;
 }
 
@@ -34,8 +42,13 @@ export function CardCta({
   description,
   ctaLabel,
   ctaHref = "#",
+  gradient = "primary",
+  ctaVariant = "primary",
+  ctaSize = "sm",
   className,
 }: CardCtaProps) {
+  const useGradient = gradient !== "none";
+
   return (
     <article
       className={cn(
@@ -44,14 +57,14 @@ export function CardCta({
       )}
     >
       <Heading level={4} gradient="none" align="center">
-        <GradientText gradient="primary">{title}</GradientText>
+        {useGradient ? <GradientText gradient={gradient}>{title}</GradientText> : title}
       </Heading>
 
       <Text size="md" align="center">
         {description}
       </Text>
 
-      <Button variant="primary" size="sm" href={ctaHref}>
+      <Button variant={ctaVariant} size={ctaSize} href={ctaHref}>
         {ctaLabel}
       </Button>
     </article>

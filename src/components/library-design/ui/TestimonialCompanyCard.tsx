@@ -1,4 +1,23 @@
 import { cn } from "@/lib/utils";
+import { type CSSProperties } from "react";
+import { Text } from "./Text";
+
+/**
+ * TestimonialCompanyCard
+ *
+ * @purpose    Company-facing testimonial: quote + company logo, framed by an
+ *             asymmetric primary border.
+ * @useWhen    Press quotes, company endorsements, partner testimonials.
+ * @dontUse    For a person-level testimonial — use `<TestimonialCard>` (keeps
+ *             avatar + name + role + LinkedIn pattern).
+ *
+ * @limits
+ *   - quote: max 220 chars (matches TestimonialCard quote limit)
+ *   - logoSrc: should be an SVG or transparent PNG. Fixed logo box: 2.25 × 6.5 rem.
+ *
+ * @forbidden
+ *   - Do NOT pass className with typography / color overrides — use props
+ */
 
 interface TestimonialCompanyCardProps {
   /** Testimonial quote text */
@@ -7,8 +26,15 @@ interface TestimonialCompanyCardProps {
   logoSrc: string;
   /** Company logo alt text */
   logoAlt?: string;
+  /**
+   * Card width. Accepts any CSS length.
+   * @default "100%" (fills the parent cell, capped by `maxWidth`)
+   */
+  width?: CSSProperties["width"];
+  /** @default "29.375rem" */
+  maxWidth?: CSSProperties["maxWidth"];
   className?: string;
-  style?: React.CSSProperties;
+  style?: CSSProperties;
 }
 
 function QuoteIcon() {
@@ -33,6 +59,8 @@ export function TestimonialCompanyCard({
   quote,
   logoSrc,
   logoAlt = "",
+  width = "100%",
+  maxWidth = "29.375rem",
   className,
   style: externalStyle,
 }: TestimonialCompanyCardProps) {
@@ -49,7 +77,8 @@ export function TestimonialCompanyCard({
         borderBottom: "5px solid var(--color-primary-20)",
         borderRight: "5px solid var(--color-primary-20)",
         padding: "1.25rem 1.5rem 1.25rem 1.5rem",
-        width: "29.375rem",
+        width,
+        maxWidth,
         minHeight: "auto",
         ...externalStyle,
       }}
@@ -57,12 +86,7 @@ export function TestimonialCompanyCard({
       {/* Top content: quote icon + text */}
       <div className="flex flex-col gap-[1rem]" style={{ paddingBottom: "1.25rem" }}>
         <QuoteIcon />
-        <p
-          className="font-light text-foreground"
-          style={{ fontSize: "1.15rem", lineHeight: "1.45" }}
-        >
-          {quote}
-        </p>
+        <Text size="md" align="left">{quote}</Text>
       </div>
 
       {/* Company logo */}

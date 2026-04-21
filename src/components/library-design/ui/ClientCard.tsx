@@ -1,5 +1,23 @@
 import { cn } from "@/lib/utils";
-import { type ReactNode } from "react";
+import { type ReactNode, type CSSProperties } from "react";
+
+/**
+ * ClientCard
+ *
+ * @purpose    Two-section card showcasing a client: avatar + name + role on top,
+ *             company name + metadata rows on a tinted bottom section.
+ * @useWhen    Grids of anonymous/public client cards (e.g. "Ils parlent de nous").
+ * @dontUse    For a testimonial with a quote (use <TestimonialCard>).
+ *
+ * @limits
+ *   - name: max 30 chars (wraps past that)
+ *   - jobTitle: max 45 chars
+ *   - companyName: max 30 chars
+ *   - infoRows: 2–5 items
+ *
+ * @forbidden
+ *   - Do NOT pass className with typography / color overrides — use the props
+ */
 
 export interface ClientCardInfoRow {
   /** FA Duotone icon node */
@@ -23,6 +41,17 @@ export interface ClientCardProps {
   companyName: string;
   /** Info rows displayed in the company section (e.g. employees, sector) */
   infoRows?: ClientCardInfoRow[];
+  /**
+   * Explicit card width. Accepts any CSS length.
+   * Defaults to `100%` (fills the parent grid cell responsively, capped by `maxWidth`).
+   */
+  width?: CSSProperties["width"];
+  /**
+   * Maximum width when `width` is left at default. Keeps cards from stretching
+   * beyond the intended design size in large containers.
+   * @default "29.8333rem"
+   */
+  maxWidth?: CSSProperties["maxWidth"];
   className?: string;
 }
 
@@ -33,18 +62,17 @@ export function ClientCard({
   jobTitle,
   companyName,
   infoRows = [],
+  width = "100%",
+  maxWidth = "29.8333rem",
   className,
 }: ClientCardProps) {
   return (
     <article
       className={cn(
-        "flex flex-col rounded-[1.5625rem] overflow-clip",
+        "flex flex-col rounded-[1.5625rem] overflow-clip border border-primary-10",
         className,
       )}
-      style={{
-        border: "1.2px solid var(--color-primary-10)",
-        width: "29.8333rem",
-      }}
+      style={{ width, maxWidth }}
     >
       {/* ── Client section (white) ── */}
       <div
