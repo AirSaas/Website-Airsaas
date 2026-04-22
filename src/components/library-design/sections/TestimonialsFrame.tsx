@@ -1,6 +1,7 @@
 import { cn } from "@/lib/utils";
 import { Heading } from "@/components/library-design/ui/Heading";
 import { TestimonialCard } from "@/components/library-design/ui/TestimonialCard";
+import { GradientText } from "@/components/library-design/ui/GradientText";
 
 interface Testimonial {
   quote: string;
@@ -9,6 +10,22 @@ interface Testimonial {
   avatarSrc?: string;
 }
 
+/**
+ * TestimonialsFrame
+ *
+ * @purpose    Section wrapper for testimonial cards: gradient heading + 3-col grid.
+ * @useWhen    Surfacing 3–6 customer quotes on a marketing page.
+ * @dontUse    For a single hero testimonial — just render a <TestimonialCard> inline.
+ *             For company-logo-based testimonials, prefer <TestimonialCompanyCard>.
+ *
+ * @limits
+ *   - title: max 40 chars (gradient dark-to-primary)
+ *   - titleHighlight: max 40 chars (gradient primary)
+ *   - testimonials: 3–6 items (renders in grid-cols-3 at lg)
+ *
+ * @forbidden
+ *   - Do NOT mix testimonials prop AND children — children wins, testimonials ignored
+ */
 interface TestimonialsFrameProps {
   /** Dark-to-primary gradient part of the title */
   title: string;
@@ -36,24 +53,8 @@ export function TestimonialsFrame({
       )}
     >
       <Heading level={2} gradient="none" align="center">
-        <span
-          className="bg-clip-text text-transparent"
-          style={{
-            backgroundImage: "var(--gradient-dark-to-primary)",
-            WebkitBackgroundClip: "text",
-          }}
-        >
-          {title}
-        </span>{" "}
-        <span
-          className="bg-clip-text text-transparent"
-          style={{
-            backgroundImage: "var(--gradient-primary)",
-            WebkitBackgroundClip: "text",
-          }}
-        >
-          {titleHighlight}
-        </span>
+        <GradientText gradient="dark-to-primary">{title}</GradientText>{" "}
+        <GradientText gradient="primary">{titleHighlight}</GradientText>
       </Heading>
 
       {children ?? (

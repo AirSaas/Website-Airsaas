@@ -16,15 +16,25 @@ interface NavbarDropdownProps {
   className?: string;
 }
 
+/**
+ * NavbarDropdown
+ *
+ * @purpose    Floating menu panel containing a vertical list of icon + title + subtitle links — the reusable body of navbar mega-menus.
+ * @useWhen    Desktop navbar dropdown panels (Solutions, Produit, Ressources…) where each entry needs an icon, bold title, and light subtitle.
+ * @dontUse    For mobile navigation — use a dedicated mobile drawer. For plain anchor lists (footer columns), use simple <a> lists.
+ *
+ * @limits
+ *   - items: each entry must provide { icon, title, subtitle }; `href` defaults to "#" when omitted
+ */
 export function NavbarDropdown({ items, className }: NavbarDropdownProps) {
   return (
     <div
       className={cn(
         "flex flex-col gap-[0.5625rem] p-[0.5625rem] min-w-[16.95rem]",
         "rounded-[0.9375rem] border border-border bg-white",
-        "shadow-[0px_4px_50px_0px_rgba(0,0,0,0.07)]",
         className,
       )}
+      style={{ boxShadow: "var(--shadow-floating)" }}
     >
       {items.map((item, i) => (
         <a

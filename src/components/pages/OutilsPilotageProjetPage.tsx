@@ -129,12 +129,12 @@ export function OutilsPilotageProjetPage() {
         loginLabel="Login"
         loginHref="#"
         topTag={{ label: "Outils de pilotage projet", variant: "muted" }}
-        headline="Une nouvelle manière de voir les"
-        headlineGradient="outils de pilotage projet"
+        title="Une nouvelle manière de voir les"
+        titleHighlight="outils de pilotage projet"
         subtitle="Parce que la gestion ne se résume pas à un Gantt, AirSaas propose un outil de pilotage de projet qui simplifie votre reporting, votre gouvernance et votre communication projet"
         primaryCta={{ label: "Réservez une démo", href: "#" }}
-        illustrationSrc="https://placehold.co/1457x857/e8eafc/3a51e2?text=Dashboard+Pilotage"
-        illustrationAlt="Dashboard pilotage projet AirSaas"
+        imageSrc="https://placehold.co/1457x857/e8eafc/3a51e2?text=Dashboard+Pilotage"
+        imageAlt="Dashboard pilotage projet AirSaas"
       />
 
       {/* ——— 2. VALUE PROPOSITION — 3 piliers ——— */}
@@ -180,8 +180,8 @@ export function OutilsPilotageProjetPage() {
           imagePosition="right"
           titleHighlight="Accompagnez"
           title="le cadrage des projets"
-          description="Un bon projet est un projet bien préparé. Pourtant, 90% des fiches de cadrage sont incomplètes. Sur AirSaas, nous guidons vos collaborateurs dans le remplissage des informations essentielles à un bon cadrage. Les fiches de cadrage sont dynamiques et collaboratives. Vos équipes peuvent itérer ensemble jusqu'à que le projet soit validé."
-          imageSrc="https://placehold.co/1125x731/e8eafc/3a51e2?text=Cadrage+Projet"
+          subtitle="Un bon projet est un projet bien préparé. Pourtant, 90% des fiches de cadrage sont incomplètes. Sur AirSaas, nous guidons vos collaborateurs dans le remplissage des informations essentielles à un bon cadrage. Les fiches de cadrage sont dynamiques et collaboratives. Vos équipes peuvent itérer ensemble jusqu'à que le projet soit validé."
+          imageSrc="https://placehold.co/1125x731/e8eafc/3a51e2?text=Cadrage+Projet" imageAlt=""
         />
       </AnimateOnScroll>
 
@@ -191,9 +191,9 @@ export function OutilsPilotageProjetPage() {
           imagePosition="left"
           titleHighlight="Le pilotage"
           title="de projet par la valeur"
-          description="Tous les projets ne se valent pas. En tant que partenaire business, vous devez proposer une méthode pour piloter les projets IT suivant des indicateurs-clés. AirSaas propose une vue filtrable avec toutes les informations consolidées pour prendre des décisions avisées."
-          imageSrc="https://placehold.co/1125x731/fffbeb/e58d05?text=Pilotage+Valeur"
-          imageBgColor="#fffbeb"
+          subtitle="Tous les projets ne se valent pas. En tant que partenaire business, vous devez proposer une méthode pour piloter les projets IT suivant des indicateurs-clés. AirSaas propose une vue filtrable avec toutes les informations consolidées pour prendre des décisions avisées."
+          imageSrc="https://placehold.co/1125x731/fffbeb/e58d05?text=Pilotage+Valeur" imageAlt=""
+          imageBgColor="var(--color-prevention-10)"
         />
       </AnimateOnScroll>
 
@@ -203,8 +203,8 @@ export function OutilsPilotageProjetPage() {
           imagePosition="right"
           titleHighlight="Reportez"
           title="en un clic"
-          description="Vous êtes au centre des attentions et devez tenir au courant les responsables métiers et votre direction de l'avancée des projets. Pour cela, nous avons créé les rapports flash automatisés. En un clic, générez un rapport (.ppt, .pdf, url) avec les détails d'avancée des projets, les points d'attention et tous les indicateurs à jour."
-          imageSrc="https://placehold.co/1125x731/e8eafc/3a51e2?text=Flash+Report"
+          subtitle="Vous êtes au centre des attentions et devez tenir au courant les responsables métiers et votre direction de l'avancée des projets. Pour cela, nous avons créé les rapports flash automatisés. En un clic, générez un rapport (.ppt, .pdf, url) avec les détails d'avancée des projets, les points d'attention et tous les indicateurs à jour."
+          imageSrc="https://placehold.co/1125x731/e8eafc/3a51e2?text=Flash+Report" imageAlt=""
         />
       </AnimateOnScroll>
 
@@ -214,9 +214,9 @@ export function OutilsPilotageProjetPage() {
           imagePosition="left"
           titleHighlight="Prenez"
           title="de la hauteur"
-          description="Rien ne vous échappe grâce à la vue timeline. Prenez de la hauteur et profitez d'un panorama sur tous les projets en cours et leurs jalons associés. Déplacez les éléments grâce au cliquer-glisser et testez des nouveaux arrangements en fonction des disponibilités des parties prenantes et de l'urgence des projets."
-          imageSrc="https://placehold.co/1125x731/fffbeb/e58d05?text=Timeline+Projets"
-          imageBgColor="#fffbeb"
+          subtitle="Rien ne vous échappe grâce à la vue timeline. Prenez de la hauteur et profitez d'un panorama sur tous les projets en cours et leurs jalons associés. Déplacez les éléments grâce au cliquer-glisser et testez des nouveaux arrangements en fonction des disponibilités des parties prenantes et de l'urgence des projets."
+          imageSrc="https://placehold.co/1125x731/fffbeb/e58d05?text=Timeline+Projets" imageAlt=""
+          imageBgColor="var(--color-prevention-10)"
         />
       </AnimateOnScroll>
 
@@ -269,7 +269,7 @@ export function OutilsPilotageProjetPage() {
               d&apos;avancer plus sereinement.
             </p>
           }
-          imageSrc="https://placehold.co/600x400/e8eafc/3a51e2?text=Métier+IT"
+          imageSrc="https://placehold.co/600x400/e8eafc/3a51e2?text=Métier+IT" imageAlt=""
         />
       </AnimateOnScroll>
 
@@ -290,8 +290,8 @@ export function OutilsPilotageProjetPage() {
               des collaborateurs et l&apos;adoption du client final.
             </p>
           }
-          imageSrc="https://placehold.co/600x400/fffbeb/e58d05?text=Réussite+Projet"
-          imageBgColor="#fffbeb"
+          imageSrc="https://placehold.co/600x400/fffbeb/e58d05?text=Réussite+Projet" imageAlt=""
+          imageBgColor="var(--color-prevention-10)"
         />
       </AnimateOnScroll>
 
@@ -313,7 +313,7 @@ export function OutilsPilotageProjetPage() {
               automatique est votre meilleur allié !
             </p>
           }
-          imageSrc="https://placehold.co/600x400/e8eafc/3a51e2?text=Communication"
+          imageSrc="https://placehold.co/600x400/e8eafc/3a51e2?text=Communication" imageAlt=""
         />
       </AnimateOnScroll>
 
@@ -386,7 +386,7 @@ export function OutilsPilotageProjetPage() {
               </ul>
             </>
           }
-          imageSrc="https://placehold.co/600x400/e8eafc/3a51e2?text=Projet+Unique"
+          imageSrc="https://placehold.co/600x400/e8eafc/3a51e2?text=Projet+Unique" imageAlt=""
         />
       </AnimateOnScroll>
 
@@ -430,8 +430,8 @@ export function OutilsPilotageProjetPage() {
               </ul>
             </>
           }
-          imageSrc="https://placehold.co/600x400/fffbeb/e58d05?text=Portefeuille+Projets"
-          imageBgColor="#fffbeb"
+          imageSrc="https://placehold.co/600x400/fffbeb/e58d05?text=Portefeuille+Projets" imageAlt=""
+          imageBgColor="var(--color-prevention-10)"
         />
       </AnimateOnScroll>
 
@@ -453,7 +453,7 @@ export function OutilsPilotageProjetPage() {
               problématiques.
             </p>
           }
-          imageSrc="https://placehold.co/600x400/e8eafc/3a51e2?text=Timeline+Historique"
+          imageSrc="https://placehold.co/600x400/e8eafc/3a51e2?text=Timeline+Historique" imageAlt=""
         />
       </AnimateOnScroll>
 
@@ -480,8 +480,8 @@ export function OutilsPilotageProjetPage() {
               unique, ou au niveau plus global du portefeuille de projets.
             </p>
           }
-          imageSrc="https://placehold.co/600x400/fffbeb/e58d05?text=Évolution+Outils"
-          imageBgColor="#fffbeb"
+          imageSrc="https://placehold.co/600x400/fffbeb/e58d05?text=Évolution+Outils" imageAlt=""
+          imageBgColor="var(--color-prevention-10)"
         />
       </AnimateOnScroll>
 
@@ -521,7 +521,7 @@ export function OutilsPilotageProjetPage() {
               pilotage de projets ont donc beaucoup évolué.
             </p>
           }
-          imageSrc="https://placehold.co/600x400/e8eafc/3a51e2?text=Manager"
+          imageSrc="https://placehold.co/600x400/e8eafc/3a51e2?text=Manager" imageAlt=""
         />
       </AnimateOnScroll>
 
@@ -548,8 +548,8 @@ export function OutilsPilotageProjetPage() {
               matière d&apos;outil de pilotage de projet&nbsp;!
             </p>
           }
-          imageSrc="https://placehold.co/600x400/fffbeb/e58d05?text=Intégrations"
-          imageBgColor="#fffbeb"
+          imageSrc="https://placehold.co/600x400/fffbeb/e58d05?text=Intégrations" imageAlt=""
+          imageBgColor="var(--color-prevention-10)"
         />
       </AnimateOnScroll>
 
@@ -580,7 +580,7 @@ export function OutilsPilotageProjetPage() {
               </p>
             </>
           }
-          imageSrc="https://placehold.co/600x400/e8eafc/3a51e2?text=Pyramide+Maslow"
+          imageSrc="https://placehold.co/600x400/e8eafc/3a51e2?text=Pyramide+Maslow" imageAlt=""
         />
       </AnimateOnScroll>
 
@@ -634,7 +634,7 @@ export function OutilsPilotageProjetPage() {
               </p>
             </>
           }
-          imageSrc="https://placehold.co/600x400/e8eafc/3a51e2?text=Classification+Outils"
+          imageSrc="https://placehold.co/600x400/e8eafc/3a51e2?text=Classification+Outils" imageAlt=""
         />
       </AnimateOnScroll>
 
@@ -663,8 +663,8 @@ export function OutilsPilotageProjetPage() {
               </p>
             </>
           }
-          imageSrc="https://placehold.co/600x400/fffbeb/e58d05?text=All-in-one+vs+Spécialisé"
-          imageBgColor="#fffbeb"
+          imageSrc="https://placehold.co/600x400/fffbeb/e58d05?text=All-in-one+vs+Spécialisé" imageAlt=""
+          imageBgColor="var(--color-prevention-10)"
         />
       </AnimateOnScroll>
 
@@ -688,7 +688,7 @@ export function OutilsPilotageProjetPage() {
               facilitée.
             </p>
           }
-          imageSrc="https://placehold.co/600x400/e8eafc/3a51e2?text=Feed+Collaboratif"
+          imageSrc="https://placehold.co/600x400/e8eafc/3a51e2?text=Feed+Collaboratif" imageAlt=""
         />
       </AnimateOnScroll>
 
@@ -713,8 +713,8 @@ export function OutilsPilotageProjetPage() {
               prenantes.
             </p>
           }
-          imageSrc="https://placehold.co/600x400/fffbeb/e58d05?text=UX+Focus"
-          imageBgColor="#fffbeb"
+          imageSrc="https://placehold.co/600x400/fffbeb/e58d05?text=UX+Focus" imageAlt=""
+          imageBgColor="var(--color-prevention-10)"
         />
       </AnimateOnScroll>
 
@@ -736,7 +736,7 @@ export function OutilsPilotageProjetPage() {
               influence sur vos collaborateurs.
             </p>
           }
-          imageSrc="https://placehold.co/600x400/e8eafc/3a51e2?text=Méthodologie"
+          imageSrc="https://placehold.co/600x400/e8eafc/3a51e2?text=Méthodologie" imageAlt=""
         />
       </AnimateOnScroll>
 
@@ -765,8 +765,8 @@ export function OutilsPilotageProjetPage() {
               </p>
             </>
           }
-          imageSrc="https://placehold.co/600x400/fffbeb/e58d05?text=Changement+Culture"
-          imageBgColor="#fffbeb"
+          imageSrc="https://placehold.co/600x400/fffbeb/e58d05?text=Changement+Culture" imageAlt=""
+          imageBgColor="var(--color-prevention-10)"
         />
       </AnimateOnScroll>
 
@@ -810,7 +810,7 @@ export function OutilsPilotageProjetPage() {
               </p>
             </>
           }
-          imageSrc="https://placehold.co/600x400/e8eafc/3a51e2?text=Intégrations"
+          imageSrc="https://placehold.co/600x400/e8eafc/3a51e2?text=Intégrations" imageAlt=""
         />
       </AnimateOnScroll>
 
@@ -847,8 +847,8 @@ export function OutilsPilotageProjetPage() {
               </p>
             </>
           }
-          imageSrc="https://placehold.co/600x400/fffbeb/e58d05?text=Méthodologie+Collaborative"
-          imageBgColor="#fffbeb"
+          imageSrc="https://placehold.co/600x400/fffbeb/e58d05?text=Méthodologie+Collaborative" imageAlt=""
+          imageBgColor="var(--color-prevention-10)"
         />
       </AnimateOnScroll>
 

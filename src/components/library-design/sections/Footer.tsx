@@ -12,6 +12,24 @@ interface FooterColumn {
   sections?: FooterSection[];
 }
 
+/**
+ * Footer
+ *
+ * @purpose    Page footer — 4 columns of navigation links + floating logo + copyright card.
+ * @useWhen    Last element on every page. Pass localized copy via `columns` + `copyright`.
+ * @dontUse    As an in-page card — this is designed as a full-width section.
+ *
+ * @limits
+ *   - columns: exactly 4 (matches the lg grid; fewer renders unbalanced)
+ *   - column.title: max 30 chars
+ *   - column.links[]: 3–10 per column
+ *   - link.label: max 50 chars
+ *   - copyright: max 220 chars
+ *
+ * @forbidden
+ *   - Do NOT hardcode text inside Footer — all copy comes from `columns` + `copyright`
+ *     (callers load it from next-intl / CMS)
+ */
 interface FooterProps {
   columns: FooterColumn[];
   copyright?: string;
@@ -48,7 +66,7 @@ export function Footer({
         <div
           className="absolute -top-[1.875rem] left-[1rem] md:-left-[1.5rem] lg:-left-[3.125rem] bg-white rounded-[1.25rem] p-[1rem_1.5rem]"
           style={{
-            boxShadow: "0px 8px 40px 0px rgba(58, 81, 226, 0.08), 0px 2px 12px 0px rgba(0, 0, 0, 0.04)",
+            boxShadow: "var(--shadow-elevation-lg)",
           }}
           aria-hidden="true"
         >
@@ -60,7 +78,7 @@ export function Footer({
           {columns.map((col, i) => (
             <div key={i} className="flex flex-col">
               <span
-                className="font-bold text-primary text-[1.02rem] md:text-[1.33rem]"
+                className="font-bold text-primary text-micro-xl"
                 style={{ lineHeight: "1.2", marginBottom: "0.5rem" }}
               >
                 {col.title}
@@ -69,7 +87,7 @@ export function Footer({
                 <a
                   key={j}
                   href={link.href ?? "#"}
-                  className="font-light text-foreground transition-colors hover:text-primary text-[0.765rem] md:text-[0.956rem]"
+                  className="font-light text-foreground transition-colors hover:text-primary text-micro-md"
                   style={{ lineHeight: "2.04" }}
                 >
                   {link.label}
@@ -78,7 +96,7 @@ export function Footer({
               {col.sections?.map((section, s) => (
                 <div key={s} className="flex flex-col" style={{ marginTop: "1rem" }}>
                   <span
-                    className="font-bold text-primary text-[0.935rem] md:text-[1.148rem]"
+                    className="font-bold text-primary text-micro-lg"
                     style={{ lineHeight: "1.2", marginBottom: "0.5rem" }}
                   >
                     {section.title}
@@ -87,7 +105,7 @@ export function Footer({
                     <a
                       key={j}
                       href={link.href ?? "#"}
-                      className="font-light text-foreground transition-colors hover:text-primary text-[0.765rem] md:text-[0.956rem]"
+                      className="font-light text-foreground transition-colors hover:text-primary text-micro-md"
                       style={{ lineHeight: "2.04" }}
                     >
                       {link.label}
@@ -107,7 +125,7 @@ export function Footer({
                 <span style={{ fontSize: "1.25rem" }}>🇫🇷</span>
               </div>
               <span
-                className="text-foreground whitespace-normal text-[0.68rem] md:text-[0.85rem] leading-[1.3]"
+                className="text-foreground whitespace-normal text-micro-sm leading-[1.3]"
               >
                 {copyright}
               </span>

@@ -1,6 +1,7 @@
 import { cn } from "@/lib/utils";
 import { Heading } from "@/components/library-design/ui/Heading";
 import { Text } from "@/components/library-design/ui/Text";
+import { GradientText } from "@/components/library-design/ui/GradientText";
 import {
   CircleCheckIcon,
   CircleXmarkIcon,
@@ -45,12 +46,30 @@ interface ComparisonTableFrameProps {
 }
 
 /**
- * Comparison table — feature comparison grid.
+ * ComparisonTableFrame
  *
- * Layout: each row is a separate rounded card spanning the full width,
- * split into a wide "feature" cell on the left and N narrower value cells
- * on the right (one per column). The highlighted column gets a soft
- * primary tint and a primary-coloured header.
+ * @purpose    Feature comparison grid — one card per row, one wide "feature" cell
+ *             on the left, N narrower value cells on the right (one per column).
+ *             Supports boolean (check/X), string, or custom ReactNode cell content.
+ * @useWhen    Competitor comparisons, plan/pricing feature matrices, "Avec vs sans
+ *             vs autre" tables. The highlighted column (primary tint) is typically
+ *             AirSaas itself.
+ * @dontUse    For side-by-side narrative lists (use <ComparisonFrame> or
+ *             <ComparisonDualFrame>). For 2+ features needing heavy copy, prefer
+ *             stacked feature sections.
+ *
+ * @limits
+ *   - title: max 80 chars
+ *   - titleHighlight: max 40 chars
+ *   - subtitle: max 260 chars
+ *   - columns: 2–4 (past 4 the grid overflows on desktop)
+ *   - rows: 3–15 (past 15 the page gets heavy — split into multiple tables)
+ *   - row.label: max 80 chars
+ *   - cell string values: max 40 chars
+ *
+ * @forbidden
+ *   - Do NOT mix boolean + string cells in the same column (visual inconsistency)
+ *   - Do NOT use for "avec / sans" paired narrative — use <ComparisonDualFrame>
  */
 export function ComparisonTableFrame({
   titleHighlight,
@@ -78,17 +97,7 @@ export function ComparisonTableFrame({
         <div className="flex flex-col items-center gap-[1rem] md:gap-[1.25rem] text-center">
           {(titleHighlight || title) && (
             <Heading level={2} gradient="none" align="center">
-              {titleHighlight && (
-                <span
-                  className="bg-clip-text text-transparent"
-                  style={{
-                    backgroundImage: "var(--gradient-primary)",
-                    WebkitBackgroundClip: "text",
-                  }}
-                >
-                  {titleHighlight}
-                </span>
-              )}
+              {titleHighlight && <GradientText gradient="primary">{titleHighlight}</GradientText>}
               {titleHighlight && title && " "}
               {title}
             </Heading>
@@ -125,7 +134,7 @@ export function ComparisonTableFrame({
           }
         }
         .cmp-cell {
-          background: #ffffff;
+          background: var(--color-background);
           border: 1px solid var(--color-border);
           border-radius: 1.25rem;
           padding: 1.25rem 1.5rem;
@@ -247,11 +256,11 @@ function ComparisonValue({ value }: { value: ComparisonCell }) {
           width: "2rem",
           height: "2rem",
           fontSize: "2rem",
-          color: "#2d8a4e",
+          color: "var(--color-success-text)",
           lineHeight: 1,
         }}
       >
-        <CircleCheckIcon color="#2d8a4e" />
+        <CircleCheckIcon color="var(--color-success-text)" />
       </span>
     );
   }
@@ -266,11 +275,11 @@ function ComparisonValue({ value }: { value: ComparisonCell }) {
           width: "2rem",
           height: "2rem",
           fontSize: "2rem",
-          color: "#ff0a55",
+          color: "var(--color-warning)",
           lineHeight: 1,
         }}
       >
-        <CircleXmarkIcon color="#ff0a55" />
+        <CircleXmarkIcon color="var(--color-warning)" />
       </span>
     );
   }

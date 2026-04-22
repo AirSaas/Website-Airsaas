@@ -1,7 +1,30 @@
 import { cn } from "@/lib/utils";
-import { SectionHeading } from "@/components/library-design/ui/SectionHeading";
 import { ListEmphasized } from "@/components/library-design/ui/ListEmphasized";
+import { Heading } from "@/components/library-design/ui/Heading";
+import { Text } from "@/components/library-design/ui/Text";
+import { GradientText } from "@/components/library-design/ui/GradientText";
 
+/**
+ * FeatureSectionStacked
+ *
+ * @purpose    Centered title + subtitle + orange-bordered item list, with an
+ *             illustration image that bleeds from the bottom into the next section.
+ * @useWhen    Mid-page feature moment where text is stacked on top and the
+ *             screenshot/illustration anchors below (e.g. "Un capacity planning par
+ *             équipe simple et actionnable" on HomePage).
+ * @dontUse    For feature + image side-by-side (use <FeatureFrame>). For a
+ *             numbered "avec/sans" list (use <ComparisonFrame>).
+ *
+ * @limits
+ *   - titleGradient: max 40 chars (primary gradient portion)
+ *   - titleDark: max 60 chars
+ *   - titleDarkPrefix: max 20 chars
+ *   - subtitle: max 260 chars
+ *   - listItems: 3–6 strings (past 6 the list looks cluttered)
+ *
+ * @forbidden
+ *   - Do NOT use without an image — the design expects the bleed illustration
+ */
 interface FeatureSectionStackedProps {
   /** Gradient-colored portion of the H2 */
   titleGradient: string;
@@ -15,7 +38,7 @@ interface FeatureSectionStackedProps {
   listItems?: string[];
   /** Illustration/screenshot image source */
   imageSrc?: string;
-  imageAlt?: string;
+  imageAlt: string;
   /** Background variant */
   variant?: "default" | "primary2";
   className?: string;
@@ -28,7 +51,7 @@ export function FeatureSectionStacked({
   subtitle,
   listItems,
   imageSrc,
-  imageAlt = "",
+  imageAlt,
   variant = "default",
   className,
 }: FeatureSectionStackedProps) {
@@ -48,34 +71,20 @@ export function FeatureSectionStacked({
     >
       {/* Section heading */}
       <div className="flex flex-col items-center gap-[1.25rem] text-center w-full">
-        <h2
-          className="font-black leading-tight"
-          style={{ fontSize: "var(--text-h2)" }}
-        >
+        <Heading level={2} gradient="none" align="center">
           {titleDarkPrefix && (
             <span className="text-foreground">{titleDarkPrefix} </span>
           )}
-          <span
-            className="bg-clip-text text-transparent"
-            style={{
-              backgroundImage: "var(--gradient-primary)",
-              WebkitBackgroundClip: "text",
-            }}
-          >
-            {titleGradient}
-          </span>
+          <GradientText gradient="primary">{titleGradient}</GradientText>
           {titleDark && (
             <span className="text-foreground">{` ${titleDark}`}</span>
           )}
-        </h2>
+        </Heading>
 
         {subtitle && (
-          <p
-            className="font-light text-foreground text-center max-w-[91rem]"
-            style={{ fontSize: "var(--text-paragraph)", lineHeight: "1.56" }}
-          >
+          <Text size="md" align="center" maxWidth="91rem">
             {subtitle}
-          </p>
+          </Text>
         )}
       </div>
 
@@ -89,7 +98,7 @@ export function FeatureSectionStacked({
         <div
           className="w-full overflow-clip"
           style={{
-            backgroundColor: "var(--color-primary-5, #f3f3fc)",
+            backgroundColor: "var(--color-primary-5)",
             borderTopLeftRadius: "2.1875rem",
             borderTopRightRadius: "2.1875rem",
             padding: "2.5rem 2.5rem 0",

@@ -9,6 +9,7 @@ import { GradientBackground } from "@/components/library-design/ui/GradientBackg
 import { Navbar } from "@/components/library-design/ui/Navbar";
 import { BullseyeIcon, BriefcaseIcon, CalendarIcon } from "@/components/library-design/ui/icons/floating-card-icons";
 import { Float } from "@/components/library-design/ui/Float";
+import { GradientText } from "@/components/library-design/ui/GradientText";
 
 interface HeroButton {
   label: string;
@@ -26,12 +27,35 @@ interface NavItem {
   hasDropdown?: boolean;
 }
 
+/**
+ * Hero
+ *
+ * @purpose    First section of a page: navbar + title + subtitle + CTAs + illustration.
+ * @useWhen    Top of every marketing / product / solution page.
+ * @dontUse    As a mid-page section — that's what FeatureFrame / ValuePropositionFrame are for.
+ *             Only one <Hero> per page.
+ *
+ * @limits
+ *   - title: max 60 chars
+ *   - titleHighlight: max 30 chars
+ *   - titleSuffix: max 30 chars
+ *   - subtitle: max 220 chars
+ *   - eyebrow: max 30 chars (uppercase, tracking)
+ *   - navItems: 2–7 top-level items
+ *   - bottomTags: 0–4
+ *
+ * @forbidden
+ *   - Do NOT render multiple <Hero> on a single page
+ *   - Do NOT pass className that changes the min-h-screen or background
+ *
+ * @figma node-id 115-12821 (typography scale) + site templates
+ */
 export interface HeroProps {
   /** Visual variant — light (default) renders on white, dark renders on primary-70 */
   variant?: "light" | "dark";
   /** Layout — centered (default, stacked) or split (text left, illustration right) */
   layout?: "centered" | "split";
-  /** Small uppercase label above the headline (e.g. "SOLUTION") with an orange accent */
+  /** Small uppercase label above the title (e.g. "SOLUTION") with an orange accent */
   eyebrow?: string;
   /** Navbar items */
   navItems?: NavItem[];
@@ -40,15 +64,15 @@ export interface HeroProps {
   /** Login button in navbar */
   loginLabel?: string;
   loginHref?: string;
-  /** Pill tag above the headline */
+  /** Pill tag above the title */
   topTag?: HeroTag;
-  /** Main headline — dark colored portion */
-  headline: string;
-  /** Gradient-colored portion of the headline (rendered on a new line) */
-  headlineGradient?: string;
+  /** Main title — dark colored portion */
+  title: string;
+  /** Gradient-colored portion of the title (rendered on a new line) */
+  titleHighlight?: string;
   /** Dark text appended after the gradient portion */
-  headlineSuffix?: string;
-  /** Subtitle paragraph below headline */
+  titleSuffix?: string;
+  /** Subtitle paragraph below title */
   subtitle: string;
   /** Primary CTA button */
   primaryCta?: HeroButton;
@@ -57,15 +81,15 @@ export interface HeroProps {
   /** Tags displayed below subtitle (before buttons) */
   bottomTags?: HeroTag[];
   /** Product screenshot/illustration path */
-  illustrationSrc?: string;
-  illustrationAlt?: string;
+  imageSrc?: string;
+  imageAlt: string;
   /** Optional Tailwind className override for the IllustrationFrame element.
    *  Default: "max-w-[94.8125rem] w-full". */
-  illustrationClassName?: string;
+  imageClassName?: string;
   /** Optional extra Tailwind classes for the wrapper around the illustration.
    *  Use this to add lateral padding so the white frame sits inside the gradient
    *  with margin from the screen edges (e.g. "px-4 md:px-10 lg:px-20"). */
-  illustrationWrapperClassName?: string;
+  imageWrapperClassName?: string;
   className?: string;
 }
 
@@ -79,17 +103,17 @@ export function Hero({
   loginLabel,
   loginHref,
   topTag,
-  headline,
-  headlineGradient,
-  headlineSuffix,
+  title,
+  titleHighlight,
+  titleSuffix,
   subtitle,
   primaryCta,
   secondaryCta,
   bottomTags,
-  illustrationSrc,
-  illustrationAlt = "",
-  illustrationClassName = "max-w-[94.8125rem] w-full",
-  illustrationWrapperClassName = "px-4 md:px-8 lg:px-16",
+  imageSrc,
+  imageAlt,
+  imageClassName = "max-w-[94.8125rem] w-full",
+  imageWrapperClassName = "px-4 md:px-8 lg:px-16",
   className,
 }: HeroProps) {
   const isDark = variant === "dark";
@@ -115,8 +139,8 @@ export function Hero({
           transform: "translateY(-50%)",
           borderRadius: "50%",
           border: isDark
-            ? "9.6875rem solid rgba(255,255,255,0.06)"
-            : "9.6875rem solid rgba(107,123,233,0.06)",
+            ? "9.6875rem solid var(--color-white-alpha-6)"
+            : "9.6875rem solid var(--color-primary-70-alpha-6)",
         }}
       />
       <GradientBackground
@@ -172,29 +196,21 @@ export function Hero({
                 align="left"
                 className={isDark ? "text-white" : undefined}
               >
-                {headline}
-                {headlineGradient && (
+                {title}
+                {titleHighlight && (
                   <>
                     {" "}
                     {isDark ? (
-                      headlineGradient
+                      titleHighlight
                     ) : (
-                      <span
-                        className="bg-clip-text text-transparent"
-                        style={{
-                          backgroundImage: "var(--gradient-primary)",
-                          WebkitBackgroundClip: "text",
-                        }}
-                      >
-                        {headlineGradient}
-                      </span>
+                      <GradientText gradient="primary">{titleHighlight}</GradientText>
                     )}
                   </>
                 )}
-                {headlineSuffix && (
+                {titleSuffix && (
                   <>
                     {" "}
-                    {headlineSuffix}
+                    {titleSuffix}
                   </>
                 )}
               </Heading>
@@ -236,11 +252,11 @@ export function Hero({
             {/* Illustration column — bleeds aggressively past the right edge (print-style sangrado).
                 The frame is oversized relative to its column and starts at the column's left edge,
                 so its right portion is clipped by the section's overflow-hidden boundary. */}
-            {illustrationSrc && (
+            {imageSrc && (
               <div className="w-full flex justify-center lg:block lg:mr-[-4rem] xl:mr-[-8rem] 2xl:mr-[-12rem]">
                 <IllustrationFrame
-                  src={illustrationSrc}
-                  alt={illustrationAlt}
+                  src={imageSrc}
+                  alt={imageAlt}
                   shape="contained"
                   className="w-full lg:w-[105%] xl:w-[115%] 2xl:w-[125%] lg:max-w-none shrink-0"
                 />
@@ -264,29 +280,21 @@ export function Hero({
                 align="center"
                 className={isDark ? "text-white" : undefined}
               >
-                {headline}
-                {headlineGradient && (
+                {title}
+                {titleHighlight && (
                   <>
                     <br />
                     {isDark ? (
-                      headlineGradient
+                      titleHighlight
                     ) : (
-                      <span
-                        className="bg-clip-text text-transparent"
-                        style={{
-                          backgroundImage: "var(--gradient-primary)",
-                          WebkitBackgroundClip: "text",
-                        }}
-                      >
-                        {headlineGradient}
-                      </span>
+                      <GradientText gradient="primary">{titleHighlight}</GradientText>
                     )}
                   </>
                 )}
-                {headlineSuffix && (
+                {titleSuffix && (
                   <>
                     <br />
-                    {headlineSuffix}
+                    {titleSuffix}
                   </>
                 )}
               </Heading>
@@ -330,12 +338,12 @@ export function Hero({
             </div>
 
             {/* Illustration */}
-            {illustrationSrc && (
-              <div className={cn("w-full flex justify-center", illustrationWrapperClassName)}>
+            {imageSrc && (
+              <div className={cn("w-full flex justify-center", imageWrapperClassName)}>
                 <IllustrationFrame
-                  src={illustrationSrc}
-                  alt={illustrationAlt}
-                  className={illustrationClassName}
+                  src={imageSrc}
+                  alt={imageAlt}
+                  className={imageClassName}
                 />
               </div>
             )}

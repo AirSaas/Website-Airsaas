@@ -73,3 +73,8 @@ scripts/migrate/data/
 
 # conductor
 .context/
+# Playwright artifacts
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/

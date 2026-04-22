@@ -4,7 +4,31 @@ import { Heading } from "@/components/library-design/ui/Heading";
 import { Text } from "@/components/library-design/ui/Text";
 import { Button } from "@/components/library-design/ui/Button";
 import { ListInline } from "@/components/library-design/ui/ListInline";
+import { GradientText } from "@/components/library-design/ui/GradientText";
 
+/**
+ * FeatureFrame
+ *
+ * @purpose    Single feature section: title + subtitle + checklist / rich content
+ *             + optional image (side-by-side or stacked) + optional CTA.
+ * @useWhen    Showcasing one feature or concept per section. The workhorse of the
+ *             marketing page — most body sections below Hero use this.
+ * @dontUse    For a metrics grid (use <ValuePropositionFrame>), for testimonials
+ *             (use <TestimonialsFrame>), or for FAQs (use <FaqFrame>).
+ *
+ * @limits
+ *   - title: max 120 chars (ReactNode allows spans; plain string best < 80)
+ *   - titleHighlight: max 40 chars
+ *   - subtitle: max 300 chars (ignored when richContent is provided)
+ *   - checklist: 2–6 items
+ *   - ctaLabel: max 24 chars
+ *   - richContent: prefer 1–4 paragraphs; the prose wrapper handles lists/links
+ *
+ * @forbidden
+ *   - Do NOT mix `subtitle`, `richContent`, and `checklist` — pick one
+ *     content strategy per instance
+ *   - Do NOT use `imageSize="narrow"` with `layout="stacked"` (no effect)
+ */
 interface FeatureFrameProps {
   /** Layout — "inline" (default, text + image side by side) or "stacked" (text centered on top, image below) */
   layout?: "inline" | "stacked";
@@ -27,10 +51,10 @@ interface FeatureFrameProps {
    *  (e.g. "Vos chefs de projets et PO vont adorer" where "vont adorer"
    *  is the emphasized tail). Default: false (highlight first). */
   titleHighlightAtEnd?: boolean;
-  /** Simple description paragraph. Ignored when `richContent` is provided. */
-  description?: React.ReactNode;
+  /** Simple subtitle paragraph. Ignored when `richContent` is provided. */
+  subtitle?: React.ReactNode;
   /**
-   * Rich text / React content — replaces the description + checklist block entirely.
+   * Rich text / React content — replaces the subtitle + checklist block entirely.
    * Rendered inside a prose-styled wrapper that handles <p>, <ul>, <ol>, <strong>,
    * <em> and <a>. Use this when the frame needs more editorial content
    * (multiple paragraphs, links, lists, etc.).
@@ -41,7 +65,7 @@ interface FeatureFrameProps {
   ctaHref?: string;
   /** Screenshot/illustration source */
   imageSrc?: string;
-  imageAlt?: string;
+  imageAlt: string;
   /** Background color of the illustration frame */
   imageBgColor?: string;
   className?: string;
@@ -55,13 +79,13 @@ export function FeatureFrame({
   titleHighlight,
   title,
   titleHighlightAtEnd = false,
-  description,
+  subtitle,
   richContent,
   checklist,
   ctaLabel,
   ctaHref = "#",
   imageSrc,
-  imageAlt = "",
+  imageAlt,
   imageBgColor,
   className,
 }: FeatureFrameProps) {
@@ -74,7 +98,7 @@ export function FeatureFrame({
     ? "var(--color-primary-5)"
     : isRight
       ? "var(--color-primary-5)"
-      : "#fffbeb";
+      : "var(--color-prevention-10)";
 
   const textContent = (
     <div
@@ -89,29 +113,13 @@ export function FeatureFrame({
 
       <Heading level={3} gradient="none" align={isStacked ? "center" : "left"}>
         {titleHighlight && !titleHighlightAtEnd && (
-          <span
-            className="bg-clip-text text-transparent"
-            style={{
-              backgroundImage: "var(--gradient-primary)",
-              WebkitBackgroundClip: "text",
-            }}
-          >
-            {titleHighlight}
-          </span>
+          <GradientText gradient="primary">{titleHighlight}</GradientText>
         )}
         {titleHighlight && !titleHighlightAtEnd && " "}
         {title}
         {titleHighlight && titleHighlightAtEnd && " "}
         {titleHighlight && titleHighlightAtEnd && (
-          <span
-            className="bg-clip-text text-transparent"
-            style={{
-              backgroundImage: "var(--gradient-primary)",
-              WebkitBackgroundClip: "text",
-            }}
-          >
-            {titleHighlight}
-          </span>
+          <GradientText gradient="primary">{titleHighlight}</GradientText>
         )}
       </Heading>
 
@@ -134,9 +142,9 @@ export function FeatureFrame({
         </div>
       ) : (
         <>
-          {description && (
+          {subtitle && (
             <Text size="md" align={isStacked ? "center" : "left"}>
-              {description}
+              {subtitle}
             </Text>
           )}
 

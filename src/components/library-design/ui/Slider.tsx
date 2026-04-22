@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { cn } from "@/lib/utils";
 
-interface SliderSlide {
+export interface SliderSlide {
   /** Image source */
   imageSrc: string;
   imageAlt?: string;
@@ -30,6 +30,17 @@ function ChevronRightIcon() {
   );
 }
 
+/**
+ * Slider
+ *
+ * @purpose    Minimal image carousel with prev/next chevron buttons and a lavender top-framed illustration well.
+ * @useWhen    Section-level image showcases that cycle through 2+ product screenshots (feature walkthroughs, before/after, dashboard variants).
+ * @dontUse    For a single static image — use <IllustrationFrame>. For rich multi-content slides with captions/CTAs, build a dedicated section.
+ *
+ * @limits
+ *   - slides: array of { imageSrc, imageAlt? } — returns null when empty
+ *   - no autoplay, no dots; navigation is prev/next only
+ */
 export function Slider({ slides, className }: SliderProps) {
   const [current, setCurrent] = useState(0);
 
@@ -51,7 +62,7 @@ export function Slider({ slides, className }: SliderProps) {
           onClick={prev}
           className="flex items-center justify-center rounded-full transition-opacity hover:opacity-80"
           style={{
-            backgroundColor: "var(--color-primary, #3c51e2)",
+            backgroundColor: "var(--color-primary)",
             width: "2.71rem",
             height: "2.71rem",
           }}
@@ -64,7 +75,7 @@ export function Slider({ slides, className }: SliderProps) {
           onClick={next}
           className="flex items-center justify-center rounded-full transition-opacity hover:opacity-80"
           style={{
-            backgroundColor: "var(--color-primary, #3c51e2)",
+            backgroundColor: "var(--color-primary)",
             width: "2.71rem",
             height: "2.71rem",
           }}
@@ -77,7 +88,7 @@ export function Slider({ slides, className }: SliderProps) {
       <div
         className="w-full relative"
         style={{
-          backgroundColor: "var(--color-primary-5, #f3f3fc)",
+          backgroundColor: "var(--color-primary-5)",
           borderTopLeftRadius: "2.1875rem",
           borderTopRightRadius: "2.1875rem",
           padding: "2.5rem 2.5rem 0",

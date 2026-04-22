@@ -13,6 +13,17 @@ interface LogosBarProps {
   className?: string;
 }
 
+/**
+ * LogosBar
+ *
+ * @purpose    Horizontal bar of grayscale customer/partner logos with a leading label and divider.
+ * @useWhen    Social-proof strip under a hero ("Ils gèrent leur capacité avec AirSaas") or above/below a CTA section.
+ * @dontUse    As a full case-studies section — use a dedicated logo grid or testimonials section. For a single featured logo, use a plain <img>.
+ *
+ * @limits
+ *   - logos: array of { src, alt, width?, height? } — rendered grayscale at 70% opacity
+ *   - label: defaults to the FR social-proof string; override per locale
+ */
 export function LogosBar({
   label = "Ils gèrent leur capacité avec AirSaas",
   logos,
@@ -29,7 +40,7 @@ export function LogosBar({
       {/* Label */}
       <span
         className="shrink-0 font-light whitespace-nowrap text-center"
-        style={{ color: "#63606e", fontSize: "1.2rem" }}
+        style={{ color: "var(--color-text-muted)", fontSize: "1.2rem" }}
       >
         {label}
       </span>

@@ -164,13 +164,13 @@ export default function RevuePortefeuillePage() {
         loginLabel="Login"
         loginHref="#"
         topTag={{ label: "Revue de portefeuille", variant: "muted" }}
-        headline="L'outil de revue de"
-        headlineGradient="portefeuille projets moderne"
-        headlineSuffix=" qui simplifie votre gouvernance"
+        title="L'outil de revue de"
+        titleHighlight="portefeuille projets moderne"
+        titleSuffix=" qui simplifie votre gouvernance"
         subtitle="Parce que la revue de portefeuille est au cœur de votre process de transformation d'entreprise, AirSaas simplifie leur planification et leur préparation, en vous proposant des tableaux de bord consolidés et un reporting automatisé."
         primaryCta={{ label: "Réservez une démo", href: "#" }}
-        illustrationSrc="/assets/images/revue-de-portefeuille/feature-portfolio-timeline.webp"
-        illustrationAlt="Vue timeline du portefeuille projet AirSaas"
+        imageSrc="/assets/images/revue-de-portefeuille/feature-portfolio-timeline.webp"
+        imageAlt="Vue timeline du portefeuille projet AirSaas"
       />
 
       {/* 2. Value proposition — 3 feature cards */}
@@ -206,7 +206,7 @@ export default function RevuePortefeuillePage() {
           imagePosition="right"
           titleHighlight="Vos données"
           title="consolidées dans une seule plateforme"
-          description="Grâce à AirSaas, visualisez toutes les données dont vous avez besoin pour préparer vos revues de portefeuille, sans avoir besoin d'aller les chercher à droite et à gauche."
+          subtitle="Grâce à AirSaas, visualisez toutes les données dont vous avez besoin pour préparer vos revues de portefeuille, sans avoir besoin d'aller les chercher à droite et à gauche."
           imageSrc="/assets/images/revue-de-portefeuille/feature-portfolio-decisions.webp"
           imageAlt="Vue décisions du portefeuille AirSaas"
         />
@@ -218,7 +218,7 @@ export default function RevuePortefeuillePage() {
           layout="stacked"
           titleHighlight="Des vues personnalisables"
           title="pour mieux classifier vos projets"
-          description="Sur AirSaas, visualisez vos projets en fonction de leur niveau de risque, de leur météo, ou encore de leur statut."
+          subtitle="Sur AirSaas, visualisez vos projets en fonction de leur niveau de risque, de leur météo, ou encore de leur statut."
         />
       </AnimateOnScroll>
 
@@ -228,7 +228,7 @@ export default function RevuePortefeuillePage() {
           imagePosition="left"
           titleHighlight="Votre reporting flash"
           title="automatisé"
-          description="Parce que le reporting est un moment-phare de toute gestion de portefeuille de projets, automatisez-le grâce à AirSaas, pour vous focaliser sur le pilotage de vos programmes de transformation."
+          subtitle="Parce que le reporting est un moment-phare de toute gestion de portefeuille de projets, automatisez-le grâce à AirSaas, pour vous focaliser sur le pilotage de vos programmes de transformation."
           imageSrc="/assets/images/revue-de-portefeuille/feature-flash-report.webp"
           imageAlt="Rapport flash PPT exporté depuis AirSaas"
         />
@@ -240,7 +240,7 @@ export default function RevuePortefeuillePage() {
           layout="stacked"
           titleHighlight="Une expérience utilisateur"
           title="moderne et fluide"
-          description="Les PMO et DSI qui nous ont aidé à concevoir AirSaas nous l'ont dit : bon nombre d'outils de gestion de portefeuille projets sont trop complexes, trop peu lisibles et personnalisables."
+          subtitle="Les PMO et DSI qui nous ont aidé à concevoir AirSaas nous l'ont dit : bon nombre d'outils de gestion de portefeuille projets sont trop complexes, trop peu lisibles et personnalisables."
         />
       </AnimateOnScroll>
 
@@ -267,7 +267,7 @@ export default function RevuePortefeuillePage() {
           layout="stacked"
           titleHighlight="Fluidifiez votre gouvernance projet"
           title="grâce à votre outil PPM nouvelle génération"
-          description="Plus qu'un simple outil de revue de portefeuille, AirSaas est une véritable solution de gestion de portfolio de projets, qui vous accompagne dans chacune de vos missions, depuis la planification stratégique au Copil."
+          subtitle="Plus qu'un simple outil de revue de portefeuille, AirSaas est une véritable solution de gestion de portfolio de projets, qui vous accompagne dans chacune de vos missions, depuis la planification stratégique au Copil."
         />
       </AnimateOnScroll>
 
@@ -277,7 +277,7 @@ export default function RevuePortefeuillePage() {
           imagePosition="right"
           titleHighlight="Collaborez"
           title="lors de la création de vos fiches de cadrage de projet"
-          description="Rassemblez vos chefs de projet et métiers dans votre logiciel de gestion de portfolio, pour co-créer avec eux les fiches de cadrage de vos projets."
+          subtitle="Rassemblez vos chefs de projet et métiers dans votre logiciel de gestion de portfolio, pour co-créer avec eux les fiches de cadrage de vos projets."
           imageSrc="/assets/images/revue-de-portefeuille/feature-presentation-scope.webp"
           imageAlt="Fiche de cadrage projet collaborative AirSaas"
         />
@@ -289,7 +289,7 @@ export default function RevuePortefeuillePage() {
           layout="stacked"
           titleHighlight="Générez vos bilans de projets"
           title="en quelques clics"
-          description="Un projet est finalisé ? Il est temps d'en faire le bilan auprès de vos différentes parties prenantes grâce à AirSaas."
+          subtitle="Un projet est finalisé ? Il est temps d'en faire le bilan auprès de vos différentes parties prenantes grâce à AirSaas."
         />
       </AnimateOnScroll>
 
@@ -299,7 +299,7 @@ export default function RevuePortefeuillePage() {
           imagePosition="left"
           titleHighlight="Synchronisez vos outils préférés"
           title="grâce à nos intégrations natives"
-          description="Fini le temps passé à reporter à la main des informations d'une plateforme à une autre !"
+          subtitle="Fini le temps passé à reporter à la main des informations d'une plateforme à une autre !"
           imageSrc="/assets/images/revue-de-portefeuille/feature-portfolio-integrated.webp"
           imageAlt="Intégrations natives AirSaas avec Jira, Asana, Monday, Teams"
         />
@@ -328,7 +328,7 @@ export default function RevuePortefeuillePage() {
           layout="stacked"
           titleHighlight="6 clés"
           title="pour rendre vos revues de portefeuille de projet plus efficaces"
-          description="Préparation, priorisation et arbitrage : voici les trois maîtres-mots d'une bonne revue de portefeuille projets."
+          subtitle="Préparation, priorisation et arbitrage : voici les trois maîtres-mots d'une bonne revue de portefeuille projets."
         />
       </AnimateOnScroll>
 
@@ -338,7 +338,7 @@ export default function RevuePortefeuillePage() {
           imagePosition="right"
           titleHighlight="Prioriser"
           title="les sujets à aborder"
-          description="Appliquez une priorisation des sujets à aborder lors de votre revue en fonction de leur alignement par rapport aux objectifs stratégiques et organisationnels. L'idée ? Faire en sorte d'aborder les sujets les plus importants en premier - soit ceux qui apportent le plus de valeur à l'organisation, et qui sont les plus à risques au moment de la revue de portefeuille. Privilégiez le fait de retarder ou rejeter un projet à faible valeur ajoutée pour l'entreprise, plutôt qu'un projet-phare qui permet de lui donner un nouvel avantage concurrentiel ou une nouvelle innovation."
+          subtitle="Appliquez une priorisation des sujets à aborder lors de votre revue en fonction de leur alignement par rapport aux objectifs stratégiques et organisationnels. L'idée ? Faire en sorte d'aborder les sujets les plus importants en premier - soit ceux qui apportent le plus de valeur à l'organisation, et qui sont les plus à risques au moment de la revue de portefeuille. Privilégiez le fait de retarder ou rejeter un projet à faible valeur ajoutée pour l'entreprise, plutôt qu'un projet-phare qui permet de lui donner un nouvel avantage concurrentiel ou une nouvelle innovation."
           imageSrc="/assets/images/revue-de-portefeuille/cle-portfolio-kanban.webp"
           imageAlt="Vue kanban du portefeuille de projets AirSaas"
         />
@@ -350,7 +350,7 @@ export default function RevuePortefeuillePage() {
           imagePosition="left"
           titleHighlight="Inviter"
           title="les bonnes personnes à votre revue de portefeuille"
-          description="Invitez à vos revues de portefeuille de projets uniquement les personnes qui peuvent prendre des décisions et qui permettent d'éclairer le processus décisionnel. Vous pouvez ainsi focaliser l'attention sur le fait de faire avancer votre portfolio project management, et de resserrer les débats autour de l'essentiel. L'idéal ? Inviter le Codir, les sponsors des différents programmes (les directions), et éventuellement les gestionnaires des projets des projets à risques sur le moment."
+          subtitle="Invitez à vos revues de portefeuille de projets uniquement les personnes qui peuvent prendre des décisions et qui permettent d'éclairer le processus décisionnel. Vous pouvez ainsi focaliser l'attention sur le fait de faire avancer votre portfolio project management, et de resserrer les débats autour de l'essentiel. L'idéal ? Inviter le Codir, les sponsors des différents programmes (les directions), et éventuellement les gestionnaires des projets des projets à risques sur le moment."
           imageSrc="/assets/images/revue-de-portefeuille/cle-modal-people.webp"
           imageAlt="Modale des personnes impliquées dans un projet AirSaas"
         />
@@ -389,7 +389,7 @@ export default function RevuePortefeuillePage() {
           imagePosition="left"
           titleHighlight="Adopter"
           title="une structure claire pour votre revue de portfolio"
-          description="Mettez toujours en place la même structure de présentation, et un ordre du jour bien structuré : état d'avancement des projets, achèvement des projets finalisés, décisions à venir, gestion des ressources nécessaire, et informations sur les nouveaux projets à venir. Votre flash report multi-projets doit lui-même toujours adopter le même format pour être vraiment efficace."
+          subtitle="Mettez toujours en place la même structure de présentation, et un ordre du jour bien structuré : état d'avancement des projets, achèvement des projets finalisés, décisions à venir, gestion des ressources nécessaire, et informations sur les nouveaux projets à venir. Votre flash report multi-projets doit lui-même toujours adopter le même format pour être vraiment efficace."
           imageSrc="/assets/images/revue-de-portefeuille/feature-flash-report.webp"
           imageAlt="Structure type d'un flash report AirSaas"
         />
@@ -401,7 +401,7 @@ export default function RevuePortefeuillePage() {
           imagePosition="right"
           titleHighlight="Ritualiser"
           title="votre revue de portefeuille"
-          description="Organisez vos revues à échéances fixes, en fonction des besoins de votre organisation. La plupart des PMO et DSI. font une revue de portefeuille de projets mensuelle. Organisez également cette revue après les autres types de réunions liées à votre gouvernance de portfolio de projets (après vos réunions d'avancement hebdomadaires avec les chefs de projets, et après votre réunion de coordination des ressources bi-mensuelle avec les chefs d'équipes. Ainsi, vous êtes sûr d'avoir toutes les informations nécessaires à la revue de portefeuille, et de présenter des métriques-clés bien à jour en temps réel."
+          subtitle="Organisez vos revues à échéances fixes, en fonction des besoins de votre organisation. La plupart des PMO et DSI. font une revue de portefeuille de projets mensuelle. Organisez également cette revue après les autres types de réunions liées à votre gouvernance de portfolio de projets (après vos réunions d'avancement hebdomadaires avec les chefs de projets, et après votre réunion de coordination des ressources bi-mensuelle avec les chefs d'équipes. Ainsi, vous êtes sûr d'avoir toutes les informations nécessaires à la revue de portefeuille, et de présenter des métriques-clés bien à jour en temps réel."
           imageSrc="/assets/images/revue-de-portefeuille/cle-presentation-review.png"
           imageAlt="Slide de revue de portefeuille rituelle générée depuis AirSaas"
         />
@@ -414,7 +414,7 @@ export default function RevuePortefeuillePage() {
           imageSize="narrow"
           titleHighlight="Aller au-delà"
           title="des chiffres"
-          description="Ne vous focalisez pas uniquement sur les métriques-clés liées à vos projets. Les chiffres parlent autant que les retours des équipes elles-mêmes - y compris du chef de projet en charge d'un projet spécifique. Dédiez toujours un temps de parole aux différents responsables, ou incluez à vos présentations des verbatims pour mobiliser l'attention des différents décideurs pendant la revue de portefeuille."
+          subtitle="Ne vous focalisez pas uniquement sur les métriques-clés liées à vos projets. Les chiffres parlent autant que les retours des équipes elles-mêmes - y compris du chef de projet en charge d'un projet spécifique. Dédiez toujours un temps de parole aux différents responsables, ou incluez à vos présentations des verbatims pour mobiliser l'attention des différents décideurs pendant la revue de portefeuille."
           imageSrc="/assets/images/revue-de-portefeuille/cle-portfolio8.svg"
           imageAlt="Illustration d'équipe et verbatims AirSaas"
         />

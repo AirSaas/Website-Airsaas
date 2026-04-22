@@ -6,17 +6,18 @@ import { FeatureFrame } from "@/components/library-design/sections/FeatureFrame"
 import { FeatureSectionStacked } from "@/components/library-design/sections/FeatureSectionStacked";
 import { TestimonialsFrame } from "@/components/library-design/sections/TestimonialsFrame";
 import { Footer } from "@/components/library-design/sections/Footer";
+import { CtaHighlightFrame } from "@/components/library-design/sections/CtaHighlightFrame";
+import { SliderFrame } from "@/components/library-design/sections/SliderFrame";
+import { ComparisonDualFrame } from "@/components/library-design/sections/ComparisonDualFrame";
 import { FeatureCard } from "@/components/library-design/ui/FeatureCard";
 import { IconIllustration } from "@/components/library-design/ui/IconIllustration";
 import { SectionHeading } from "@/components/library-design/ui/SectionHeading";
+import { Heading } from "@/components/library-design/ui/Heading";
+import { Text } from "@/components/library-design/ui/Text";
+import { GradientText } from "@/components/library-design/ui/GradientText";
 import { TestimonialCompanyCard } from "@/components/library-design/ui/TestimonialCompanyCard";
 import { TestimonialCard } from "@/components/library-design/ui/TestimonialCard";
 import { ClientCard } from "@/components/library-design/ui/ClientCard";
-import { Slider } from "@/components/library-design/ui/Slider";
-import { Button } from "@/components/library-design/ui/Button";
-import { GradientBackground } from "@/components/library-design/ui/GradientBackground";
-import { FloatingCard } from "@/components/library-design/ui/FloatingCard";
-import { Float } from "@/components/library-design/ui/Float";
 import { AnimateOnScroll } from "@/components/library-design/ui/AnimateOnScroll";
 import {
   CalendarDayIcon,
@@ -480,300 +481,7 @@ const sliderSlides = [
   },
 ];
 
-/* NewsletterSection — replaced by FeatureFrame Rich inline (section 9) */
-
-/* ─── Inline Section: CTA with gradient ─── */
-
-function CtaGradientSection() {
-  return (
-    <section className="relative w-full overflow-hidden">
-      <GradientBackground
-        variant="cta"
-        className="absolute inset-0 w-full"
-      />
-      <div
-        className="relative z-10 flex flex-col items-center gap-[1.25rem] text-center overflow-clip"
-        style={{
-          paddingLeft: "clamp(1.25rem, 12vw, 14.375rem)",
-          paddingRight: "clamp(1.25rem, 12vw, 14.375rem)",
-          paddingTop: "clamp(3rem, 5.2vw, 6.25rem)",
-          paddingBottom: "clamp(3rem, 5.2vw, 6.25rem)",
-        }}
-      >
-        <h2
-          className="font-black leading-tight max-w-[78.125rem]"
-          style={{ fontSize: "var(--text-h2)" }}
-        >
-          <span
-            className="bg-clip-text text-transparent"
-            style={{
-              backgroundImage:
-                "linear-gradient(41deg, #061333 20%, #3C51E2 124%)",
-              WebkitBackgroundClip: "text",
-            }}
-          >
-            Et si vous repreniez l
-          </span>
-          <span
-            className="bg-clip-text text-transparent"
-            style={{
-              backgroundImage: "var(--gradient-primary)",
-              WebkitBackgroundClip: "text",
-            }}
-          >
-            e contrôle de votre portefeuille
-          </span>
-          <span
-            className="bg-clip-text text-transparent"
-            style={{
-              backgroundImage:
-                "linear-gradient(41deg, #061333 20%, #3C51E2 124%)",
-              WebkitBackgroundClip: "text",
-            }}
-          >
-            {" "}
-            de projets ?
-          </span>
-        </h2>
-
-        {/* White card wrapping subtitle + CTA */}
-        <div
-          className="flex flex-col items-center gap-[1.25rem] bg-white"
-          style={{
-            borderRadius: "1.5625rem",
-            padding: "clamp(1.5rem, 2.5vw, 2.5rem) clamp(2rem, 5vw, 5rem)",
-            maxWidth: "53rem",
-            width: "100%",
-            boxShadow: "0px 4px 50px 0px rgba(0,0,0,0.07)",
-          }}
-        >
-          <p
-            className="font-light text-foreground text-center"
-            style={{ fontSize: "var(--text-paragraph)", lineHeight: "1.4" }}
-          >
-            Adoptez dès maintenant une solution de gestion de gouvernance
-            moderne, qui fait gagner vos projets en temps et en efficacité.
-          </p>
-
-          <Button variant="primary" size="md" href="/fr/bookademo">
-            Réservez une démo
-          </Button>
-        </div>
-      </div>
-
-      {/* Floating cards */}
-      <Float
-        variant={3}
-        duration={3.5}
-        delay={0}
-        className="absolute z-20 left-[2%] top-[17rem] hidden xl:block"
-      >
-        <FloatingCard />
-      </Float>
-      <Float
-        variant={1}
-        duration={4}
-        delay={1.5}
-        className="absolute z-20 right-[2%] top-[6rem] hidden xl:block"
-      >
-        <FloatingCard />
-      </Float>
-    </section>
-  );
-}
-
-/* ─── Inline Section: Marketplace + Slider ─── */
-
-function MarketplaceSliderSection() {
-  return (
-    <section
-      className="flex flex-col items-center w-full"
-      style={{
-        gap: "3.125rem",
-        paddingLeft: "clamp(1.25rem, 12vw, 14.375rem)",
-        paddingRight: "clamp(1.25rem, 12vw, 14.375rem)",
-        paddingTop: "clamp(3rem, 5.2vw, 6.25rem)",
-      }}
-    >
-      {/* Heading */}
-      <div className="flex flex-col items-center gap-[1.25rem] text-center w-full">
-        <h2
-          className="font-black leading-tight"
-          style={{ fontSize: "var(--text-h2)" }}
-        >
-          <span
-            className="bg-clip-text text-transparent"
-            style={{
-              backgroundImage: "var(--gradient-primary)",
-              WebkitBackgroundClip: "text",
-            }}
-          >
-            Grâce à sa marketplace AirSaas
-          </span>
-          <span className="text-foreground">
-            {" "}
-            s&apos;intègre nativement à vos outils du quotidien
-          </span>
-        </h2>
-
-        <p
-          className="font-light text-foreground text-center max-w-[91rem]"
-          style={{ fontSize: "var(--text-paragraph)", lineHeight: "1.56" }}
-        >
-          Centralisez toutes vos informations cruciales (tickets, jalons…)
-          depuis vos outils de gestion de tâches sur AirSaas, et diffusez-les
-          via vos canaux de communication interne. Tout le monde est au
-          diapason, et vous gouvernez de manière optimale.
-        </p>
-      </div>
-
-      {/* Slider */}
-      <Slider slides={sliderSlides} />
-    </section>
-  );
-}
-
-/* ─── Inline Section: Comparison (dual column) ─── */
-
-function ComparisonDualSection() {
-  return (
-    <section className="relative w-full overflow-hidden">
-      <GradientBackground
-        variant="comparison"
-        className="absolute inset-0 w-full"
-      />
-      <div
-        className="relative z-10 flex flex-col items-center gap-[3.125rem] overflow-clip"
-        style={{
-          paddingLeft: "clamp(1.25rem, 12vw, 14.375rem)",
-          paddingRight: "clamp(1.25rem, 12vw, 14.375rem)",
-          paddingTop: "clamp(3rem, 5.2vw, 6.25rem)",
-          paddingBottom: "clamp(3rem, 5.2vw, 6.25rem)",
-        }}
-      >
-        {/* Title */}
-        <h2
-          className="font-bold leading-tight text-center max-w-[78.125rem]"
-          style={{ fontSize: "var(--text-h2)" }}
-        >
-          <span
-            className="bg-clip-text text-transparent"
-            style={{
-              backgroundImage:
-                "linear-gradient(41deg, #061333 20%, #3C51E2 124%)",
-              WebkitBackgroundClip: "text",
-            }}
-          >
-            Nos clients ne peuvent plus imaginer leurs vies sans{" "}
-          </span>
-          <span
-            className="bg-clip-text text-transparent"
-            style={{
-              backgroundImage: "var(--gradient-primary)",
-              WebkitBackgroundClip: "text",
-            }}
-          >
-            AirSaas
-          </span>
-        </h2>
-
-        {/* Dual column grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-[0.875rem] gap-y-[0.9375rem] w-full">
-          {/* Column headers */}
-          <div
-            className="flex items-center gap-[0.5rem] px-[1.875rem] py-[0.125rem] rounded-[1.5625rem] self-start w-fit"
-            style={{ backgroundColor: "#FFF6D8", color: "#8A6D00" }}
-          >
-            <span className="font-normal" style={{ fontSize: "1.6875rem" }}>
-              Sans AirSaas
-            </span>
-          </div>
-          <div
-            className="flex items-center gap-[0.5rem] px-[1.875rem] py-[0.125rem] rounded-[1.5625rem] self-start w-fit"
-            style={{
-              backgroundColor: "var(--color-primary-5, #F3F3FC)",
-              color: "var(--color-primary, #3C51E2)",
-            }}
-          >
-            <span className="font-normal" style={{ fontSize: "1.6875rem" }}>
-              Avec AirSaas
-            </span>
-          </div>
-
-          {/* Items */}
-          {comparisonItemsSans.map((item, i) => (
-            <div
-              key={`sans-${i}`}
-              className="flex gap-[1.4375rem] items-start bg-white rounded-[1.5625rem]"
-              style={{
-                border: "1px solid #FCD977",
-                padding: "1.6875rem 1.375rem 1.6875rem 1.8125rem",
-                minHeight: "9.1875rem",
-              }}
-            >
-              <span
-                className="font-bold shrink-0 bg-clip-text text-transparent"
-                style={{
-                  fontSize: "4.8125rem",
-                  lineHeight: "normal",
-                  backgroundImage:
-                    "linear-gradient(to right, #FFBE80, #FF922B 28%)",
-                  WebkitBackgroundClip: "text",
-                }}
-              >
-                {item.value}
-              </span>
-              <p
-                className="font-light text-foreground flex-1"
-                style={{ fontSize: "var(--text-paragraph)", lineHeight: "1.4" }}
-              >
-                {item.description}
-              </p>
-            </div>
-          ))}
-
-          {comparisonItemsAvec.map((item, i) => (
-            <div
-              key={`avec-${i}`}
-              className="flex gap-[1.4375rem] items-start bg-white rounded-[1.5625rem]"
-              style={{
-                border: "1px solid #FCD977",
-                padding: "1.6875rem 1.375rem 1.6875rem 1.8125rem",
-                minHeight: "9.1875rem",
-                gridColumn: 2,
-                gridRow: i + 2,
-              }}
-            >
-              <span
-                className="font-bold shrink-0 bg-clip-text text-transparent"
-                style={{
-                  fontSize: "4.8125rem",
-                  lineHeight: "normal",
-                  backgroundImage: "var(--gradient-primary)",
-                  WebkitBackgroundClip: "text",
-                }}
-              >
-                {item.value}
-              </span>
-              <p
-                className="font-light text-foreground flex-1"
-                style={{ fontSize: "var(--text-paragraph)", lineHeight: "1.4" }}
-              >
-                {item.description}
-              </p>
-            </div>
-          ))}
-        </div>
-
-        <Button variant="primary" size="md" href="#">
-          Réservez une démo
-        </Button>
-      </div>
-    </section>
-  );
-}
-
-/* TestimonialsFullSection — replaced by TestimonialsFrame with children (section 15) */
+/* NewsletterSection — uses FeatureFrame Rich inline in the main composition */
 
 /* ─── Main Composition ─── */
 
@@ -787,13 +495,13 @@ export default function HomePage() {
         navCtaHref="/fr/bookademo"
         loginLabel="Login"
         loginHref="https://app.airsaas.io/fr/login"
-        headline="La solution de"
-        headlineGradient="portfolio"
-        headlineSuffix="pour aligner le top management"
+        title="La solution de"
+        titleHighlight="portfolio"
+        titleSuffix="pour aligner le top management"
         subtitle="Stop au gaspillage, à trop de projets en parallèle, trop de projets en retard, des équipes sous l'eau, un top management en tension. Votre croissance est liée à la réussite de vos projets."
         primaryCta={{ label: "Réservez une démo", href: "/fr/bookademo" }}
-        illustrationSrc="/assets/screenshots/hero-dashboard.png"
-        illustrationAlt="AirSaas - Quarter Plan Dashboard Q1 2025"
+        imageSrc="/assets/screenshots/hero-dashboard.png"
+        imageAlt="AirSaas - Quarter Plan Dashboard Q1 2025"
       />
 
       {/* 2. Press Testimonials — "Ils parlent de nous" */}
@@ -895,8 +603,8 @@ export default function HomePage() {
           imagePosition="right"
           titleHighlight="Partagez"
           title="simplement les roadmaps à toute l'organisation"
-          description="Une roadmap, ça bouge, ça vit, c'est un élément clé pour aligner le top management en continu. Avec AirSaas, plus besoin de faire des PowerPoints à rallonge : l'information est centralisée, partageable et sympa à visualiser (parce que quand c'est beau, c'est quand même plus impactant)."
-          imageSrc="/assets/screenshots/1_timeline.webp"
+          subtitle="Une roadmap, ça bouge, ça vit, c'est un élément clé pour aligner le top management en continu. Avec AirSaas, plus besoin de faire des PowerPoints à rallonge : l'information est centralisée, partageable et sympa à visualiser (parce que quand c'est beau, c'est quand même plus impactant)."
+          imageSrc="/assets/screenshots/1_timeline.webp" imageAlt=""
         />
       </AnimateOnScroll>
 
@@ -924,8 +632,8 @@ export default function HomePage() {
           imagePosition="right"
           titleHighlight="Chaque directeur définit"
           title="ses prios"
-          description="Demandez aux directeurs de prioriser parmi les projets dont son équipe est à l'origine. Deux projets ne peuvent pas avoir la même priorité. Une fois prêts, ils valident leur choix. C'est simple, transparent et puissant."
-          imageSrc="/assets/screenshots/3_prioritization.webp"
+          subtitle="Demandez aux directeurs de prioriser parmi les projets dont son équipe est à l'origine. Deux projets ne peuvent pas avoir la même priorité. Une fois prêts, ils valident leur choix. C'est simple, transparent et puissant."
+          imageSrc="/assets/screenshots/3_prioritization.webp" imageAlt=""
         />
       </AnimateOnScroll>
 
@@ -935,8 +643,8 @@ export default function HomePage() {
           imagePosition="left"
           titleHighlight="Diffusez"
           title="un cadrage projet standardisé"
-          description="Remplissez les fiches cadrage de projet de manière collaborative, et guidez vos collaborateurs vers un véritable niveau d'excellence en gestion de projet. À vous une culture projet homogénéisée !"
-          imageSrc="/assets/screenshots/4_scope.webp"
+          subtitle="Remplissez les fiches cadrage de projet de manière collaborative, et guidez vos collaborateurs vers un véritable niveau d'excellence en gestion de projet. À vous une culture projet homogénéisée !"
+          imageSrc="/assets/screenshots/4_scope.webp" imageAlt=""
         />
       </AnimateOnScroll>
 
@@ -978,8 +686,8 @@ export default function HomePage() {
           imagePosition="left"
           titleHighlight="Votre reporting projet"
           title="en un clic"
-          description="Générez votre reporting flash en un seul clic, et homogénéisez vos présentations, pour faciliter la prise de décision. Autant de temps gagné pour vous focaliser sur le coaching de vos chefs de projet et votre gouvernance."
-          imageSrc="/assets/screenshots/5_flash_report.webp"
+          subtitle="Générez votre reporting flash en un seul clic, et homogénéisez vos présentations, pour faciliter la prise de décision. Autant de temps gagné pour vous focaliser sur le coaching de vos chefs de projet et votre gouvernance."
+          imageSrc="/assets/screenshots/5_flash_report.webp" imageAlt=""
         />
       </AnimateOnScroll>
 
@@ -989,24 +697,45 @@ export default function HomePage() {
           imagePosition="right"
           titleHighlight="Fluidifiez"
           title="votre prise de décisions importantes et urgentes"
-          description="Centralisez vos décisions sous forme de Kanban, et partagez-les aisément avec toutes les parties prenantes de vos projets. Finies les informations perdues dans vos mails ou flux de discussions instantanées !"
-          imageSrc="/assets/screenshots/6_decisions.webp"
+          subtitle="Centralisez vos décisions sous forme de Kanban, et partagez-les aisément avec toutes les parties prenantes de vos projets. Finies les informations perdues dans vos mails ou flux de discussions instantanées !"
+          imageSrc="/assets/screenshots/6_decisions.webp" imageAlt=""
         />
       </AnimateOnScroll>
 
-      {/* 12. CTA Gradient — "Et si vous repreniez le contrôle..." */}
+      {/* 12. CTA Highlight — "Et si vous repreniez le contrôle..." */}
       <AnimateOnScroll animation="scale-up" duration={800}>
-        <CtaGradientSection />
+        <CtaHighlightFrame
+          titlePrefix="Et si vous repreniez l"
+          titleHighlight="e contrôle de votre portefeuille"
+          titleSuffix=" de projets ?"
+          subtitle="Adoptez dès maintenant une solution de gestion de gouvernance moderne, qui fait gagner vos projets en temps et en efficacité."
+          ctaLabel="Réservez une démo"
+          ctaHref="/fr/bookademo"
+        />
       </AnimateOnScroll>
 
       {/* 13. Marketplace + Slider */}
       <AnimateOnScroll animation="fade-up" duration={700}>
-        <MarketplaceSliderSection />
+        <SliderFrame
+          titleHighlight="Grâce à sa marketplace AirSaas"
+          titleRest="s'intègre nativement à vos outils du quotidien"
+          subtitle="Centralisez toutes vos informations cruciales (tickets, jalons…) depuis vos outils de gestion de tâches sur AirSaas, et diffusez-les via vos canaux de communication interne. Tout le monde est au diapason, et vous gouvernez de manière optimale."
+          slides={sliderSlides}
+        />
       </AnimateOnScroll>
 
       {/* 14. Comparison Dual — "Nos clients ne peuvent plus imaginer..." */}
       <AnimateOnScroll animation="fade-up" duration={700}>
-        <ComparisonDualSection />
+        <ComparisonDualFrame
+          titlePrefix="Nos clients ne peuvent plus imaginer leurs vies sans "
+          titleHighlight="AirSaas"
+          sansLabel="Sans AirSaas"
+          avecLabel="Avec AirSaas"
+          sansItems={comparisonItemsSans}
+          avecItems={comparisonItemsAvec}
+          ctaLabel="Réservez une démo"
+          ctaHref="/fr/bookademo"
+        />
       </AnimateOnScroll>
 
       {/* 16. Customer Cards — "Laissez nos clients vous parler d'AirSaas" */}
@@ -1021,35 +750,18 @@ export default function HomePage() {
             paddingBottom: "clamp(3rem, 5.2vw, 6.25rem)",
           }}
         >
-          <h2
-            className="font-black leading-tight text-center"
-            style={{ fontSize: "var(--text-h2)" }}
-          >
-            <span
-              className="bg-clip-text text-transparent"
-              style={{
-                backgroundImage: "var(--gradient-dark-to-primary)",
-                WebkitBackgroundClip: "text",
-              }}
-            >
+          <Heading level={2} gradient="none" align="center">
+            <GradientText gradient="dark-to-primary">
               Laissez nos clients vous parler d&apos;
-            </span>
-            <span
-              className="bg-clip-text text-transparent"
-              style={{
-                backgroundImage: "var(--gradient-primary)",
-                WebkitBackgroundClip: "text",
-              }}
-            >
-              AirSaas
-            </span>
-          </h2>
+            </GradientText>
+            <GradientText gradient="primary">AirSaas</GradientText>
+          </Heading>
 
           <div className="grid grid-cols-1 gap-[1rem] items-stretch w-full sm:grid-cols-2 lg:grid-cols-3">
             {customerCards.map((c, i) => (
               <ClientCard
                 key={i}
-                avatarSrc={`https://placehold.co/90x90/e8eafc/3a51e2?text=${c.name.split(" ").map(n => n[0]).join("")}`}
+                avatarSrc={`https://placehold.co/90x90/e8eafc/3a51e2?text=${c.name.split(" ").map(n => n[0]).join("")} avatarAlt=""`}
                 name={c.name}
                 jobTitle={c.jobTitle}
                 companyName={c.companyName}

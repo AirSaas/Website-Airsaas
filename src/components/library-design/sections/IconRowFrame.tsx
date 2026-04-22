@@ -2,6 +2,7 @@ import { cn } from "@/lib/utils";
 import { Tag } from "@/components/library-design/ui/Tag";
 import { Heading } from "@/components/library-design/ui/Heading";
 import { Text } from "@/components/library-design/ui/Text";
+import { GradientText } from "@/components/library-design/ui/GradientText";
 
 export interface IconRowItem {
   /** Pre-rendered icon node — typically an <IconBadge> */
@@ -10,6 +11,28 @@ export interface IconRowItem {
   label: string;
 }
 
+/**
+ * IconRowFrame
+ *
+ * @purpose    Horizontal row of icon + label pairs (integrations, tech stack,
+ *             trusted-by logos rendered as iconography). Icons sit above labels.
+ * @useWhen    Displaying 4–8 tools / integrations / ecosystems on a single
+ *             visual strip (e.g. "Ils s'intègrent à votre stack").
+ * @dontUse    For brand logos (use <LogosBar>). For a grid with richer content
+ *             per item (use <ValuePropositionFrame> + <FeatureCard>).
+ *
+ * @limits
+ *   - titleHighlight / title: max 40 / 80 chars
+ *   - singleTitle: max 80 chars (alternative to titleHighlight + title)
+ *   - subtitle: max 260 chars
+ *   - items: 4–8 (past 8 the row wraps awkwardly on tablet)
+ *   - item.label: max 24 chars
+ *   - tag: max 24 chars
+ *
+ * @forbidden
+ *   - Do NOT mix singleTitle with titleHighlight/title — pick one strategy
+ *   - Do NOT use emoji as item.icon — use <IconBadge> for consistency
+ */
 interface IconRowFrameProps {
   variant?: "light" | "dark";
   tag?: string;
@@ -75,29 +98,9 @@ export function IconRowFrame({
           </Heading>
         ) : (
           <Heading level={2} gradient="none" align="center">
-            {titleHighlight && (
-              <span
-                className="bg-clip-text text-transparent"
-                style={{
-                  backgroundImage: "var(--gradient-primary)",
-                  WebkitBackgroundClip: "text",
-                }}
-              >
-                {titleHighlight}
-              </span>
-            )}
+            {titleHighlight && <GradientText gradient="primary">{titleHighlight}</GradientText>}
             {titleHighlight && title && " "}
-            {title && (
-              <span
-                className="bg-clip-text text-transparent"
-                style={{
-                  backgroundImage: "var(--gradient-dark-to-primary)",
-                  WebkitBackgroundClip: "text",
-                }}
-              >
-                {title}
-              </span>
-            )}
+            {title && <GradientText gradient="dark-to-primary">{title}</GradientText>}
           </Heading>
         )}
 

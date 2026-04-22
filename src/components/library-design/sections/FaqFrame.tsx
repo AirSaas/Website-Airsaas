@@ -3,12 +3,31 @@
 import { useState } from "react";
 import { cn } from "@/lib/utils";
 import { Heading } from "@/components/library-design/ui/Heading";
+import { GradientText } from "@/components/library-design/ui/GradientText";
 
 interface FaqItem {
   question: string;
   answer: string;
 }
 
+/**
+ * FaqFrame
+ *
+ * @purpose    Expandable FAQ section with a highlighted title and accordion items.
+ * @useWhen    The page needs to surface common objections / pricing questions
+ *             / setup steps before conversion.
+ * @dontUse    For a short list of 2–3 hints (use inline <details> or custom block).
+ *
+ * @limits
+ *   - title: max 40 chars (plain dark-to-primary portion)
+ *   - titleHighlight: max 40 chars (gradient portion)
+ *   - items: 3–12 (past 12, split into multiple FAQs or a dedicated page)
+ *   - items[].question: max 120 chars
+ *   - items[].answer: max 500 chars
+ *
+ * @forbidden
+ *   - Do NOT nest FAQs (no accordion inside an answer)
+ */
 interface FaqFrameProps {
   title?: string;
   titleHighlight?: string;
@@ -107,24 +126,8 @@ export function FaqFrame({
       )}
     >
       <Heading level={2} gradient="none" align="center">
-        <span
-          className="bg-clip-text text-transparent"
-          style={{
-            backgroundImage: "var(--gradient-dark-to-primary)",
-            WebkitBackgroundClip: "text",
-          }}
-        >
-          {title}
-        </span>{" "}
-        <span
-          className="bg-clip-text text-transparent"
-          style={{
-            backgroundImage: "var(--gradient-primary)",
-            WebkitBackgroundClip: "text",
-          }}
-        >
-          {titleHighlight}
-        </span>
+        <GradientText gradient="dark-to-primary">{title}</GradientText>{" "}
+        <GradientText gradient="primary">{titleHighlight}</GradientText>
       </Heading>
 
       <div className="flex flex-col gap-[0.9375rem] w-full">

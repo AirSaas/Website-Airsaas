@@ -12,6 +12,8 @@ import { CardCta } from "@/components/library-design/ui/CardCta";
 import { ClientCard } from "@/components/library-design/ui/ClientCard";
 import { IconIllustration } from "@/components/library-design/ui/IconIllustration";
 import { Heading } from "@/components/library-design/ui/Heading";
+import { Text } from "@/components/library-design/ui/Text";
+import { GradientText } from "@/components/library-design/ui/GradientText";
 import { AnimateOnScroll } from "@/components/library-design/ui/AnimateOnScroll";
 import {
   CalendarDayIcon,
@@ -249,12 +251,12 @@ export default function PmoToolPage() {
         loginLabel="Login"
         loginHref="#"
         topTag={{ label: "Outil PPM pour PMO moderne", variant: "muted" }}
-        headline="L'outil PPM pour"
-        headlineGradient="un PMO moderne"
+        title="L'outil PPM pour"
+        titleHighlight="un PMO moderne"
         subtitle="AirSaas c'est la solution la plus simple pour avoir une vue macro consolidée du portefeuille projet. Avec AirSaas vous n'aurez plus besoin de faire des PowerPoints et de courir après les chefs de projets pour avoir les informations clefs. Et oui un PPM peut avoir une UX au top."
         primaryCta={{ label: "Réservez une démo", href: "#" }}
-        illustrationSrc="https://placehold.co/1457x857/e8eafc/3a51e2?text=Portfolio+AirSaas"
-        illustrationAlt="Portfolio AirSaas"
+        imageSrc="https://placehold.co/1457x857/e8eafc/3a51e2?text=Portfolio+AirSaas"
+        imageAlt="Portfolio AirSaas"
       />
 
       {/* 2. Ils parlent de nous — press mentions */}
@@ -310,7 +312,7 @@ export default function PmoToolPage() {
         <FeatureFrame
           layout="stacked"
           title="Une plateforme de gouvernance projet à la hauteur de vos ambitions"
-          description="Notre mission ? Vous permettre de devenir le pivot de la transformation de l'entreprise en structurant la gouvernance de tous les projets, grâce à une plateforme simple que le top management va adorer. La vôtre ? Faire passer votre entreprise à l'étape supérieure en gouvernance de projet !"
+          subtitle="Notre mission ? Vous permettre de devenir le pivot de la transformation de l'entreprise en structurant la gouvernance de tous les projets, grâce à une plateforme simple que le top management va adorer. La vôtre ? Faire passer votre entreprise à l'étape supérieure en gouvernance de projet !"
         />
       </AnimateOnScroll>
 
@@ -319,8 +321,8 @@ export default function PmoToolPage() {
         <FeatureFrame
           imagePosition="right"
           title="Partagez simplement les roadmaps à toute l'organisation"
-          description="Une roadmap, ça bouge, ça vit, c'est un élément clé pour aligner le top management en continu. Avec AirSaas, plus besoin de faire des PowerPoints à rallonge : l'information est centralisée, partageable et sympa à visualiser (parce que quand c'est beau, c'est quand même plus impactant)."
-          imageSrc="https://placehold.co/1125x696/e8eafc/3a51e2?text=Portfolio+Timeline"
+          subtitle="Une roadmap, ça bouge, ça vit, c'est un élément clé pour aligner le top management en continu. Avec AirSaas, plus besoin de faire des PowerPoints à rallonge : l'information est centralisée, partageable et sympa à visualiser (parce que quand c'est beau, c'est quand même plus impactant)."
+          imageSrc="https://placehold.co/1125x696/e8eafc/3a51e2?text=Portfolio+Timeline" imageAlt=""
         />
       </AnimateOnScroll>
 
@@ -329,14 +331,14 @@ export default function PmoToolPage() {
         <FeatureFrame
           imagePosition="left"
           title="Un capacity planning par équipe simple et actionnable"
-          description="Visualisez en un clin d'œil si vous êtes dans les clous… ou dans les choux. Grâce à cette vue vous avez les bases d'une discussion pragmatique pour prendre les décisions :"
+          subtitle="Visualisez en un clin d'œil si vous êtes dans les clous… ou dans les choux. Grâce à cette vue vous avez les bases d'une discussion pragmatique pour prendre les décisions :"
           checklist={[
             "Peut-on faire plus de projets ? Faut-il en enlever ?",
             "Quels sont les jalons qui nous plombent ? Peut-on les découper ?",
             "Doit-on recruter ou mettre l'équipe en tension ? Pendant combien de temps ?",
           ]}
-          imageSrc="https://placehold.co/1125x731/fffbeb/e58d05?text=Capacity+Marketing"
-          imageBgColor="#fffbeb"
+          imageSrc="https://placehold.co/1125x731/fffbeb/e58d05?text=Capacity+Marketing" imageAlt=""
+          imageBgColor="var(--color-prevention-10)"
         />
       </AnimateOnScroll>
 
@@ -345,8 +347,8 @@ export default function PmoToolPage() {
         <FeatureFrame
           imagePosition="right"
           title="Chaque directeur définit ses prios"
-          description="Demandez aux directeurs de prioriser parmi les projets dont son équipe est à l'origine. Deux projets ne peuvent pas avoir la même priorité. Une fois prêts, ils valident leur choix. C'est simple, transparent et puissant."
-          imageSrc="https://placehold.co/1125x696/e8eafc/3a51e2?text=Priorisation"
+          subtitle="Demandez aux directeurs de prioriser parmi les projets dont son équipe est à l'origine. Deux projets ne peuvent pas avoir la même priorité. Une fois prêts, ils valident leur choix. C'est simple, transparent et puissant."
+          imageSrc="https://placehold.co/1125x696/e8eafc/3a51e2?text=Priorisation" imageAlt=""
         />
       </AnimateOnScroll>
 
@@ -355,9 +357,9 @@ export default function PmoToolPage() {
         <FeatureFrame
           imagePosition="left"
           title="Diffusez un cadrage projet standardisé"
-          description="Remplissez les fiches cadrage de projet de manière collaborative, et guidez vos collaborateurs vers un véritable niveau d'excellence en gestion de projet. À vous une culture projet homogénéisée !"
-          imageSrc="https://placehold.co/1125x731/fffbeb/e58d05?text=Cadrage+Projet"
-          imageBgColor="#fffbeb"
+          subtitle="Remplissez les fiches cadrage de projet de manière collaborative, et guidez vos collaborateurs vers un véritable niveau d'excellence en gestion de projet. À vous une culture projet homogénéisée !"
+          imageSrc="https://placehold.co/1125x731/fffbeb/e58d05?text=Cadrage+Projet" imageAlt=""
+          imageBgColor="var(--color-prevention-10)"
         />
       </AnimateOnScroll>
 
@@ -388,7 +390,7 @@ export default function PmoToolPage() {
               </p>
             </>
           }
-          imageSrc="https://placehold.co/1125x731/e8eafc/3a51e2?text=Newsletter+Sponsor"
+          imageSrc="https://placehold.co/1125x731/e8eafc/3a51e2?text=Newsletter+Sponsor" imageAlt=""
         />
       </AnimateOnScroll>
 
@@ -397,8 +399,8 @@ export default function PmoToolPage() {
         <FeatureFrame
           imagePosition="right"
           title="Votre reporting projet en un clic"
-          description="Générez votre reporting flash en un seul clic, et homogénéisez vos présentations, pour faciliter la prise de décision. Autant de temps gagné pour vous focaliser sur le coaching de vos chefs de projet et votre gouvernance."
-          imageSrc="https://placehold.co/1125x696/e8eafc/3a51e2?text=Flash+Report"
+          subtitle="Générez votre reporting flash en un seul clic, et homogénéisez vos présentations, pour faciliter la prise de décision. Autant de temps gagné pour vous focaliser sur le coaching de vos chefs de projet et votre gouvernance."
+          imageSrc="https://placehold.co/1125x696/e8eafc/3a51e2?text=Flash+Report" imageAlt=""
         />
       </AnimateOnScroll>
 
@@ -407,9 +409,9 @@ export default function PmoToolPage() {
         <FeatureFrame
           imagePosition="left"
           title="Fluidifiez votre prise de décisions importantes et urgentes"
-          description="Centralisez vos décisions sous forme de Kanban, et partagez-les aisément avec toutes les parties prenantes de vos projets. Finies les informations perdues dans vos mails ou flux de discussions instantanées !"
-          imageSrc="https://placehold.co/1125x731/fffbeb/e58d05?text=Portfolio+Decisions"
-          imageBgColor="#fffbeb"
+          subtitle="Centralisez vos décisions sous forme de Kanban, et partagez-les aisément avec toutes les parties prenantes de vos projets. Finies les informations perdues dans vos mails ou flux de discussions instantanées !"
+          imageSrc="https://placehold.co/1125x731/fffbeb/e58d05?text=Portfolio+Decisions" imageAlt=""
+          imageBgColor="var(--color-prevention-10)"
         />
       </AnimateOnScroll>
 
@@ -418,8 +420,8 @@ export default function PmoToolPage() {
         <FeatureFrame
           imagePosition="right"
           title="Impliquez simplement les chefs de projet"
-          description='En 5 minutes par semaine par projet, les chefs de projets remontent les informations cruciales pour le suivi : jalon, décision à prendre, point d&apos;attention. Évitez les réunions « informationnelles » et les rush de dernière minute pour faire un reporting.'
-          imageSrc="https://placehold.co/1125x696/e8eafc/3a51e2?text=Project+Page"
+          subtitle='En 5 minutes par semaine par projet, les chefs de projets remontent les informations cruciales pour le suivi : jalon, décision à prendre, point d&apos;attention. Évitez les réunions « informationnelles » et les rush de dernière minute pour faire un reporting.'
+          imageSrc="https://placehold.co/1125x696/e8eafc/3a51e2?text=Project+Page" imageAlt=""
         />
       </AnimateOnScroll>
 
@@ -428,9 +430,9 @@ export default function PmoToolPage() {
         <FeatureFrame
           imagePosition="left"
           title="Animez clairement et simplement vos CoPil"
-          description="Pilotez par la décision : pendant votre comité de pilotage vous aurez accès à toutes les décisions à prendre et historiques clés. Vous ne serez plus pris de court parce que vous n'avez pas la bonne information."
-          imageSrc="https://placehold.co/1125x731/fffbeb/e58d05?text=CoPil+Decisions"
-          imageBgColor="#fffbeb"
+          subtitle="Pilotez par la décision : pendant votre comité de pilotage vous aurez accès à toutes les décisions à prendre et historiques clés. Vous ne serez plus pris de court parce que vous n'avez pas la bonne information."
+          imageSrc="https://placehold.co/1125x731/fffbeb/e58d05?text=CoPil+Decisions" imageAlt=""
+          imageBgColor="var(--color-prevention-10)"
         />
       </AnimateOnScroll>
 
@@ -462,8 +464,8 @@ export default function PmoToolPage() {
         <FeatureFrame
           imagePosition="right"
           title="Grâce à sa marketplace AirSaas s'intègre nativement à vos outils du quotidien"
-          description="Centralisez toutes vos informations cruciales (tickets, jalons…) depuis vos outils de gestion de tâches sur AirSaas, et diffusez-les via vos canaux de communication interne. Tout le monde est au diapason, et vous gouvernez de manière optimale."
-          imageSrc="https://placehold.co/1125x696/e8eafc/3a51e2?text=Automation+Integrations"
+          subtitle="Centralisez toutes vos informations cruciales (tickets, jalons…) depuis vos outils de gestion de tâches sur AirSaas, et diffusez-les via vos canaux de communication interne. Tout le monde est au diapason, et vous gouvernez de manière optimale."
+          imageSrc="https://placehold.co/1125x696/e8eafc/3a51e2?text=Automation+Integrations" imageAlt=""
         />
       </AnimateOnScroll>
 
@@ -536,28 +538,12 @@ export default function PmoToolPage() {
         <section className="flex flex-col items-center gap-[2rem] px-[1.5rem] py-[3rem] md:gap-[2.5rem] md:px-[3rem] md:py-[4rem] lg:gap-[3.125rem] lg:px-[10rem] lg:py-[6.25rem] bg-primary-2">
           <div className="flex flex-col items-center gap-[1rem] md:gap-[1.25rem] text-center">
             <Heading level={2} gradient="none" align="center">
-              <span
-                className="bg-clip-text text-transparent"
-                style={{
-                  backgroundImage: "var(--gradient-dark-to-primary)",
-                  WebkitBackgroundClip: "text",
-                }}
-              >
-                Laissez nos clients
-              </span>{" "}
-              <span
-                className="bg-clip-text text-transparent"
-                style={{
-                  backgroundImage: "var(--gradient-primary)",
-                  WebkitBackgroundClip: "text",
-                }}
-              >
-                vous parler d&apos;AirSaas
-              </span>
+              <GradientText gradient="dark-to-primary">Laissez nos clients</GradientText>{" "}
+              <GradientText gradient="primary">vous parler d&apos;AirSaas</GradientText>
             </Heading>
-            <p className="text-center max-w-[60rem] font-light text-foreground" style={{ fontSize: "1.125rem", lineHeight: 1.5 }}>
+            <Text size="md" align="center" maxWidth="60rem">
               Qui de mieux pour vous parler de la plateforme que ceux qui l&apos;utilisent au quotidien pour améliorer la gestion de leurs projets de transformation ?
-            </p>
+            </Text>
           </div>
 
           <div className="grid grid-cols-1 gap-[1.5rem] items-stretch w-full md:grid-cols-2 lg:grid-cols-3">

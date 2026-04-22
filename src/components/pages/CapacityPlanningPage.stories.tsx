@@ -162,8 +162,8 @@ function CapacityPlanningPage() {
         loginLabel="Login"
         loginHref="#"
         topTag={{ label: "Capacity Planning simplifié", variant: "muted" }}
-        headline="Vos équipes sont surchargées ? C'est normal :"
-        headlineGradient="personne ne sait ce qu'elles peuvent vraiment faire."
+        title="Vos équipes sont surchargées ? C'est normal :"
+        titleHighlight="personne ne sait ce qu'elles peuvent vraiment faire."
         subtitle='AirSaas vous donne une vue capacitaire claire et actionnable. Enfin un outil pour dire "non" avec des données, pas au feeling.'
         bottomTags={[
           { label: "Opérationnel en 1 mois", variant: "success" },
@@ -174,8 +174,8 @@ function CapacityPlanningPage() {
           label: "Découvrir l'outil PPM en vidéo (5 min)",
           href: "#",
         }}
-        illustrationSrc="https://placehold.co/1457x857/e8eafc/3a51e2?text=Capacity+Planning+Screenshot"
-        illustrationAlt="AirSaas Capacity Planning screenshot"
+        imageSrc="https://placehold.co/1457x857/e8eafc/3a51e2?text=Capacity+Planning+Screenshot"
+        imageAlt="AirSaas Capacity Planning screenshot"
       />
 
       {/* Logos bar */}
@@ -292,7 +292,7 @@ function CapacityPlanningPage() {
           tag="Intelligence Artificielle"
           titleHighlight="Agent IA"
           title="Brief projet"
-          description='Quand une demande arrive floue ("on veut un truc"), l&apos;agent IA mène l&apos;entretien, collecte les informations critiques et transforme chaque demande en brief clair et comparable.'
+          subtitle='Quand une demande arrive floue ("on veut un truc"), l&apos;agent IA mène l&apos;entretien, collecte les informations critiques et transforme chaque demande en brief clair et comparable.'
           checklist={[
             "Entretien guidé par l'IA",
             "Brief structuré selon vos templates",
@@ -300,7 +300,7 @@ function CapacityPlanningPage() {
             "Dites non plus tôt, lancez moins de projets... mais mieux",
           ]}
           ctaLabel="Découvrir"
-          imageSrc="https://placehold.co/1125x696/e8eafc/3a51e2?text=Agent+IA+Brief"
+          imageSrc="https://placehold.co/1125x696/e8eafc/3a51e2?text=Agent+IA+Brief" imageAlt=""
         />
       </AnimateOnScroll>
 
@@ -311,7 +311,7 @@ function CapacityPlanningPage() {
           tag="Intelligence Artificielle"
           titleHighlight="Agent IA"
           title="Découpage projet"
-          description="L'IA découpe automatiquement vos projets par quarter et par équipe. Elle connaît vos équipes : ce qu'elles savent faire, ce qu'elles ne font pas, leur vélocité passée."
+          subtitle="L'IA découpe automatiquement vos projets par quarter et par équipe. Elle connaît vos équipes : ce qu'elles savent faire, ce qu'elles ne font pas, leur vélocité passée."
           checklist={[
             "Découpage par quarter et par équipe",
             "Adapté aux compétences de chaque équipe",
@@ -319,8 +319,8 @@ function CapacityPlanningPage() {
             "Suggestions réalistes, pas théoriques",
           ]}
           ctaLabel="En savoir plus"
-          imageSrc="https://placehold.co/1125x731/fffbeb/e58d05?text=Agent+IA+Découpage"
-          imageBgColor="#fffbeb"
+          imageSrc="https://placehold.co/1125x731/fffbeb/e58d05?text=Agent+IA+Découpage" imageAlt=""
+          imageBgColor="var(--color-prevention-10)"
         />
       </AnimateOnScroll>
 
@@ -366,14 +366,14 @@ function CapacityPlanningPage() {
           tag="Clarté immédiate"
           titleHighlight="Vue capacitaire"
           title="par équipe"
-          description="En un clin d'œil, voyez si vos équipes sont dans les clous ou dans les choux. La base d'une discussion pragmatique pour arbitrer."
+          subtitle="En un clin d'œil, voyez si vos équipes sont dans les clous ou dans les choux. La base d'une discussion pragmatique pour arbitrer."
           checklist={[
             "Vue par équipe et par trimestre",
             "Alerte surcharge automatique",
             "Drill-down par projet",
             "Comparaison capacité vs charge",
           ]}
-          imageSrc="https://placehold.co/1125x696/e8eafc/3a51e2?text=Vue+Capacitaire"
+          imageSrc="https://placehold.co/1125x696/e8eafc/3a51e2?text=Vue+Capacitaire" imageAlt=""
         />
       </AnimateOnScroll>
 
@@ -384,15 +384,15 @@ function CapacityPlanningPage() {
           tag="Intelligence Artificielle"
           titleHighlight="Agent IA"
           title="Découpage projet"
-          description="L'IA découpe automatiquement vos projets par quarter et par équipe. Elle connaît vos équipes : ce qu'elles savent faire, ce qu'elles ne font pas, leur vélocité passée."
+          subtitle="L'IA découpe automatiquement vos projets par quarter et par équipe. Elle connaît vos équipes : ce qu'elles savent faire, ce qu'elles ne font pas, leur vélocité passée."
           checklist={[
             "Découpage par quarter et par équipe",
             "Adapté aux compétences de chaque équipe",
             "Basé sur la vélocité historique",
             "Suggestions réalistes, pas théoriques",
           ]}
-          imageSrc="https://placehold.co/1125x731/fffbeb/e58d05?text=Découpage+Projet"
-          imageBgColor="#fffbeb"
+          imageSrc="https://placehold.co/1125x731/fffbeb/e58d05?text=Découpage+Projet" imageAlt=""
+          imageBgColor="var(--color-prevention-10)"
         />
       </AnimateOnScroll>
 
@@ -403,14 +403,14 @@ function CapacityPlanningPage() {
           tag="Clarté immédiate"
           titleHighlight="Vue capacitaire"
           title="par équipe"
-          description="En un clin d'œil, voyez si vos équipes sont dans les clous ou dans les choux. La base d'une discussion pragmatique pour arbitrer."
+          subtitle="En un clin d'œil, voyez si vos équipes sont dans les clous ou dans les choux. La base d'une discussion pragmatique pour arbitrer."
           checklist={[
             "Vue par équipe et par trimestre",
             "Alerte surcharge automatique",
             "Drill-down par projet",
             "Comparaison capacité vs charge",
           ]}
-          imageSrc="https://placehold.co/1125x696/e8eafc/3a51e2?text=Vue+Capacitaire"
+          imageSrc="https://placehold.co/1125x696/e8eafc/3a51e2?text=Vue+Capacitaire" imageAlt=""
         />
       </AnimateOnScroll>
 
@@ -421,15 +421,15 @@ function CapacityPlanningPage() {
           tag="Intelligence Artificielle"
           titleHighlight="Agent IA"
           title="Découpage projet"
-          description="L'IA découpe automatiquement vos projets par quarter et par équipe. Elle connaît vos équipes : ce qu'elles savent faire, ce qu'elles ne font pas, leur vélocité passée."
+          subtitle="L'IA découpe automatiquement vos projets par quarter et par équipe. Elle connaît vos équipes : ce qu'elles savent faire, ce qu'elles ne font pas, leur vélocité passée."
           checklist={[
             "Découpage par quarter et par équipe",
             "Adapté aux compétences de chaque équipe",
             "Basé sur la vélocité historique",
             "Suggestions réalistes, pas théoriques",
           ]}
-          imageSrc="https://placehold.co/1125x731/fffbeb/e58d05?text=Découpage+Projet"
-          imageBgColor="#fffbeb"
+          imageSrc="https://placehold.co/1125x731/fffbeb/e58d05?text=Découpage+Projet" imageAlt=""
+          imageBgColor="var(--color-prevention-10)"
         />
       </AnimateOnScroll>
 
@@ -440,14 +440,14 @@ function CapacityPlanningPage() {
           tag="Clarté immédiate"
           titleHighlight="Vue capacitaire"
           title="par équipe"
-          description="En un clin d'œil, voyez si vos équipes sont dans les clous ou dans les choux. La base d'une discussion pragmatique pour arbitrer."
+          subtitle="En un clin d'œil, voyez si vos équipes sont dans les clous ou dans les choux. La base d'une discussion pragmatique pour arbitrer."
           checklist={[
             "Vue par équipe et par trimestre",
             "Alerte surcharge automatique",
             "Drill-down par projet",
             "Comparaison capacité vs charge",
           ]}
-          imageSrc="https://placehold.co/1125x696/e8eafc/3a51e2?text=Vue+Capacitaire"
+          imageSrc="https://placehold.co/1125x696/e8eafc/3a51e2?text=Vue+Capacitaire" imageAlt=""
         />
       </AnimateOnScroll>
 

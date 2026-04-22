@@ -34,8 +34,8 @@ export const Default: Story = {
       label: "Capacity Planning simplifié",
       variant: "muted",
     },
-    headline: "Vos équipes sont surchargées ? C'est normal :",
-    headlineGradient: "personne ne sait ce qu'elles peuvent vraiment faire.",
+    title: "Vos équipes sont surchargées ? C'est normal :",
+    titleHighlight: "personne ne sait ce qu'elles peuvent vraiment faire.",
     subtitle:
       'AirSaas vous donne une vue capacitaire claire et actionnable. Enfin un outil pour dire "non" avec des données, pas au feeling.',
     primaryCta: {
@@ -50,16 +50,16 @@ export const Default: Story = {
       { label: "Opérationnel en 1 mois", variant: "success" },
       { label: "Accompagnement premium inclus", variant: "success" },
     ],
-    illustrationSrc:
+    imageSrc:
       "https://placehold.co/1457x857/e8eafc/3a51e2?text=Product+Screenshot",
-    illustrationAlt: "AirSaas product screenshot",
+    imageAlt: "AirSaas product screenshot",
   },
 };
 
 export const Minimal: Story = {
   args: {
-    headline: "Build better products with",
-    headlineGradient: "capacity planning that works.",
+    title: "Build better products with",
+    titleHighlight: "capacity planning that works.",
     subtitle:
       "Get a clear, actionable view of your team capacity. Finally say no with data, not gut feeling.",
     primaryCta: {
@@ -79,17 +79,17 @@ export const Split: Story = {
     loginLabel: "Login",
     loginHref: "#",
     eyebrow: "Solution",
-    headline: "The project portfolio management tool",
-    headlineGradient: "that revolutionizes your governance",
+    title: "The project portfolio management tool",
+    titleHighlight: "that revolutionizes your governance",
     subtitle:
       "AirSaas a été conçu pour vous aider à transformer votre entreprise de manière efficace, en vous faisant gagner en temps et en visibilité sur votre portfolio. Révolutionnez votre management de portefeuille de projet en gardant une vision précise de vos priorités, des décisions à prendre, et en communiquant mieux au quotidien.",
     primaryCta: {
       label: "Book a demo",
       href: "#",
     },
-    illustrationSrc:
+    imageSrc:
       "https://placehold.co/960x720/e8eafc/3a51e2?text=Product+Screenshot",
-    illustrationAlt: "AirSaas product screenshot",
+    imageAlt: "AirSaas product screenshot",
   },
 };
 
@@ -103,16 +103,16 @@ export const SplitDark: Story = {
     loginLabel: "Login",
     loginHref: "#",
     eyebrow: "Solution",
-    headline: "The project portfolio management tool that revolutionizes your governance",
+    title: "The project portfolio management tool that revolutionizes your governance",
     subtitle:
       "AirSaas a été conçu pour vous aider à transformer votre entreprise de manière efficace, en vous faisant gagner en temps et en visibilité sur votre portfolio. Révolutionnez votre management de portefeuille de projet en gardant une vision précise de vos priorités, des décisions à prendre, et en communiquant mieux au quotidien.",
     primaryCta: {
       label: "Book a demo",
       href: "#",
     },
-    illustrationSrc:
+    imageSrc:
       "https://placehold.co/960x720/e8eafc/3a51e2?text=Product+Screenshot",
-    illustrationAlt: "AirSaas product screenshot",
+    imageAlt: "AirSaas product screenshot",
   },
 };
 
@@ -128,8 +128,8 @@ export const Dark: Story = {
       label: "Capacity Planning simplifié",
       variant: "muted",
     },
-    headline: "Capacity planning:",
-    headlineGradient: "can you really carry out these projects?",
+    title: "Capacity planning:",
+    titleHighlight: "can you really carry out these projects?",
     subtitle:
       'AirSaas vous donne une vue capacitaire claire et actionnable. Enfin un outil pour dire "non" avec des données, pas au feeling.',
     primaryCta: {
@@ -144,8 +144,8 @@ export const Dark: Story = {
       { label: "Opérationnel en 1 mois", variant: "success" },
       { label: "Accompagnement premium inclus", variant: "success" },
     ],
-    illustrationSrc:
+    imageSrc:
       "https://placehold.co/1457x857/e8eafc/3a51e2?text=Product+Screenshot",
-    illustrationAlt: "AirSaas product screenshot",
+    imageAlt: "AirSaas product screenshot",
   },
 };

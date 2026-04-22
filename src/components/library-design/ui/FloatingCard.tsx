@@ -22,15 +22,26 @@ function PlaceholderContent({ icon }: { icon?: React.ReactNode }) {
   );
 }
 
+/**
+ * FloatingCard
+ *
+ * @purpose    Small rounded white card with soft elevation, used as a decorative satellite around hero illustrations.
+ * @useWhen    Floating mini-cards that orbit a hero visual (KPI snippets, status pills, feature teasers) — typically wrapped in <Float>.
+ * @dontUse    As a real content card — it's `aria-hidden` and decorative. For interactive/readable cards, use <FeatureCard> or a section-level card.
+ *
+ * @limits
+ *   - children: optional — when omitted, a placeholder (icon + 2 skeleton bars) renders
+ *   - icon: only used by the placeholder; ignored when `children` is provided
+ */
 export function FloatingCard({ children, icon, className, style }: FloatingCardProps) {
   return (
     <div
       aria-hidden="true"
       className={cn(
-        "bg-white rounded-[1.2435rem] shadow-[0px_5.685px_34.108px_0px_rgba(0,0,0,0.08)]",
+        "bg-white rounded-[1.2435rem]",
         className,
       )}
-      style={style}
+      style={{ boxShadow: "var(--shadow-elevation-md)", ...style }}
     >
       {children ?? <PlaceholderContent icon={icon} />}
     </div>

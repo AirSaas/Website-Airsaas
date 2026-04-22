@@ -1,22 +1,89 @@
 import { cn } from "@/lib/utils";
+import {
+  assertMaxLength,
+  assertNoClassNameOverride,
+} from "@/lib/ds-validators";
+
+/**
+ * Tag
+ *
+ * @purpose    Small inline pill/badge used for categories, status indicators,
+ *             eyebrow labels, and filter chips.
+ * @useWhen    Labeling content with a short category or status. Always inline.
+ * @dontUse    For CTAs (use <Button>), for long descriptions (use <Text>),
+ *             or for decorative pills inside complex layouts — extract the
+ *             specific need first.
+ *
+ * @limits
+ *   - children (label text): max 30 chars. Past that the pill breaks on 2 lines.
+ *   - icon: 1 inline element, rendered before children.
+ *
+ * @forbidden
+ *   - Do NOT pass className with typography / color overrides — use `variant`.
+ *   - Do NOT nest <Tag> inside <Tag>.
+ *
+ * @figma node-id 120-48047
+ */
+
+// Semantic variants (status-flavored) and Figma custom 1-12.
+export type TagVariant =
+  | "muted"       // brand blue — eyebrow / default
+  | "default"     // Figma Tag/Default — secondary text on light neutral bg
+  | "success"     // success state, auto-renders CheckCircleIcon if no icon passed
+  | "warning"     // warning / prevention state
+  | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12;
 
 interface TagProps {
   children: React.ReactNode;
-  variant?: "muted" | "success" | "warning";
+  variant?: TagVariant;
   icon?: React.ReactNode;
+  /** @forbidden typography / color overrides — use `variant`. */
   className?: string;
 }
 
-const variantStyles: Record<NonNullable<TagProps["variant"]>, string> = {
+/**
+ * Static class map for semantic variants. Using literal classes (not string
+ * interpolation) so Tailwind's scanner picks them up.
+ */
+const VARIANT_CLASS: Record<Exclude<TagVariant, number>, string> = {
   muted: "bg-primary-5 text-primary rounded-[1.5625rem]",
+  default: "rounded-full",
   success: "bg-success-10 text-foreground rounded-full",
   warning: "bg-bg-warning text-warning-text rounded-full",
 };
 
-const variantPadding: Record<NonNullable<TagProps["variant"]>, React.CSSProperties> = {
-  muted: { padding: "0.1875rem 0.9rem", fontSize: "1.2rem", width: "fit-content" },
-  success: { padding: "0.125rem 0.9rem", fontSize: "1.2rem", width: "fit-content" },
-  warning: { padding: "0.125rem 0.9rem", fontSize: "1.2rem", width: "fit-content" },
+/**
+ * Figma Tag/Custom 1-12: each variant uses `var(--color-tag-N-bg)` and
+ * `var(--color-tag-N-text)` via inline style. Static Tailwind utilities
+ * can't cover these because `bg-tag-N-bg` would be interpolated at runtime
+ * and Tailwind v4's scanner doesn't pick up dynamic class names.
+ */
+function tagColorStyle(variant: TagVariant): React.CSSProperties {
+  if (variant === "default") {
+    return {
+      backgroundColor: "var(--color-tag-default-bg)",
+      color: "var(--color-tag-default-text)",
+    };
+  }
+  if (typeof variant === "number") {
+    return {
+      backgroundColor: `var(--color-tag-${variant}-bg)`,
+      color: `var(--color-tag-${variant}-text)`,
+    };
+  }
+  return {};
+}
+
+const BASE_SIZE_STYLE: React.CSSProperties = {
+  padding: "0.125rem 0.9rem",
+  fontSize: "1.2rem",
+  width: "fit-content",
+};
+
+const MUTED_SIZE_STYLE: React.CSSProperties = {
+  padding: "0.1875rem 0.9rem",
+  fontSize: "1.2rem",
+  width: "fit-content",
 };
 
 function CheckCircleIcon() {
@@ -43,8 +110,8 @@ function CheckCircleIcon() {
           y2="11.2219"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#03F875" />
-          <stop offset="1" stopColor="#A1FC92" />
+          <stop style={{ stopColor: "var(--color-success)" }} />
+          <stop offset="1" style={{ stopColor: "var(--color-success-40)" }} />
         </linearGradient>
       </defs>
     </svg>
@@ -57,16 +124,33 @@ export function Tag({
   icon,
   className,
 }: TagProps) {
+  if (typeof children === "string") {
+    assertMaxLength("Tag", "children", children, 30);
+  }
+  assertNoClassNameOverride("Tag", className, [
+    "bg-",
+    "text-",
+    "font-",
+    "rounded-",
+    "p-",
+    "px-",
+    "py-",
+  ]);
+
   const showDefaultIcon = variant === "success" && icon === undefined;
+  const variantStyles = typeof variant === "number" ? "" : VARIANT_CLASS[variant];
+  const sizeStyle = variant === "muted" ? MUTED_SIZE_STYLE : BASE_SIZE_STYLE;
 
   return (
     <span
       className={cn(
         "inline-flex items-center gap-[0.5rem] font-normal",
-        variantStyles[variant],
-        className
+        // Numeric (custom) variants still need rounded-full — statically included.
+        typeof variant === "number" && "rounded-full",
+        variantStyles,
+        className,
       )}
-      style={variantPadding[variant]}
+      style={{ ...sizeStyle, ...tagColorStyle(variant) }}
     >
       {showDefaultIcon && <CheckCircleIcon />}
       {icon}
