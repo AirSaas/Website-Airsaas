@@ -145,6 +145,15 @@ import { Inter } from "next/font/google";
 
 ---
 
+## ♿ Accessibility contract
+
+- **Focus rings** — every interactive component (`<Button>`, `<a>`, nav links) must have a visible `focus-visible` ring. The DS `<Button>` ships with `focus-visible:ring-primary` by default; keep it.
+- **Motion** — all animations use `motion-reduce:transition-none motion-reduce:hover:scale-100`. Never introduce movement without a `prefers-reduced-motion` opt-out.
+- **Color as meaning** — tag/badge colors must never be the *only* signal. The text content carries the semantic (e.g. "Opérationnel" is clear without the green). Designers validated the pastel Tag 1–12 pairs for use as category markers, not as status indicators — don't use them to communicate warnings/errors.
+- **ARIA** — Navbar exposes `aria-label`, `aria-expanded`, `aria-controls`, `role=menu`. Any new interactive section must match that baseline. Avoid `aria-hidden` except on purely decorative SVGs.
+- **Alt text** — every `<img>` has an `alt`. Decorative imagery uses `alt=""` + an explicit parent `aria-hidden="true"`.
+- **Landmarks** — one `<header>` (navbar lives inside Hero), one `<main>`, one `<footer>` per page.
+
 ## 📏 Character limits — component contracts
 
 _To be populated during Phase 5 — component-by-component character limits will live here._

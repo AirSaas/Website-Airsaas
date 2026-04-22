@@ -9,8 +9,11 @@
     "start": "next start",
     "lint": "eslint",
     "lint:ds": "node scripts/ds-audit.mjs",
+    "test:visual": "playwright test --config=playwright.config.ts",
+    "test:visual:update": "playwright test --config=playwright.config.ts --update-snapshots",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "prepare": "husky"
   },
   "dependencies": {
     "@strapi/blocks-react-renderer": "^1.0.2",
@@ -23,6 +26,7 @@
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^5.1.1",
+    "@playwright/test": "^1.59.1",
     "@storybook/addon-a11y": "^10.3.4",
     "@storybook/addon-docs": "^10.3.4",
     "@storybook/addon-onboarding": "^10.3.4",
@@ -37,6 +41,7 @@
     "eslint": "^9",
     "eslint-config-next": "16.1.6",
     "eslint-plugin-storybook": "^10.3.4",
+    "husky": "^9.1.7",
     "playwright": "^1.59.1",
     "storybook": "^10.3.4",
     "tailwindcss": "^4",

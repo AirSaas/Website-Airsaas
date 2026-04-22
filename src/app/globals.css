@@ -159,11 +159,18 @@
   --text-paragraph: clamp(1.125rem, 1.5vw, 1.5625rem);
   --text-small: 1rem;
 
-  /* Footer micro-typography (scale below --text-small, reverse-engineered from live site) */
-  --text-footer-title: clamp(1.02rem, 1.2vw, 1.33rem);
-  --text-footer-section: clamp(0.935rem, 1.1vw, 1.148rem);
-  --text-footer-link: clamp(0.765rem, 0.9vw, 0.956rem);
-  --text-footer-caption: clamp(0.68rem, 0.8vw, 0.85rem);
+  /* Micro-typography scale (below --text-small) — responsive labels, captions,
+   * footer links, meta info. Same ladder used by Footer + any component that
+   * needs sub-16px responsive text.
+   *   micro-xl  ~ 16-21 px  (section/pill titles)
+   *   micro-lg  ~ 15-18 px  (emphasized sub-labels)
+   *   micro-md  ~ 12-15 px  (links, body meta)
+   *   micro-sm  ~ 11-14 px  (captions, copyright)
+   */
+  --text-micro-xl: clamp(1.02rem, 1.2vw, 1.33rem);
+  --text-micro-lg: clamp(0.935rem, 1.1vw, 1.148rem);
+  --text-micro-md: clamp(0.765rem, 0.9vw, 0.956rem);
+  --text-micro-sm: clamp(0.68rem, 0.8vw, 0.85rem);
 
   /* Gradients */
   --gradient-dark-to-primary: linear-gradient(36deg, var(--color-foreground) 20%, var(--color-primary) 124%);
@@ -186,6 +193,42 @@
   --shadow-floating: 0px 4px 50px 0px rgba(0, 0, 0, 0.07);
   /* Card hover shadow — subtle lift on hover for feature/testimonial/cta cards */
   --shadow-card-hover: 0px 4px 24px 0px rgba(0, 0, 0, 0.05);
+}
+
+/* ============================================================
+ * Runtime-accessible tokens
+ * Tailwind v4 tree-shakes tokens not referenced by any utility class.
+ * These tag tokens are consumed via inline `style={{ backgroundColor: "var(--color-tag-N-bg)" }}`
+ * (runtime interpolation, invisible to the scanner). Declaring them on :root
+ * guarantees they're always present regardless of which variants are used on the page.
+ * ============================================================ */
+:root {
+  --color-tag-default-text: #061333;
+  --color-tag-default-bg: #eef1f4;
+  --color-tag-1-text: #e373be;
+  --color-tag-1-bg: #fff3fb;
+  --color-tag-2-text: #e87d6e;
+  --color-tag-2-bg: #fff5f3;
+  --color-tag-3-text: #e5b58e;
+  --color-tag-3-bg: #fff8f3;
+  --color-tag-4-text: #b9a55a;
+  --color-tag-4-bg: #fffdf3;
+  --color-tag-5-text: #88baa5;
+  --color-tag-5-bg: #f5fdf6;
+  --color-tag-6-text: #1fbab8;
+  --color-tag-6-bg: #f3fcfc;
+  --color-tag-7-text: #2fc492;
+  --color-tag-7-bg: #f4fcf9;
+  --color-tag-8-text: #206665;
+  --color-tag-8-bg: #f3f7f7;
+  --color-tag-9-text: #60b7e7;
+  --color-tag-9-bg: #f4fbff;
+  --color-tag-10-text: #71d7ea;
+  --color-tag-10-bg: #f4fdff;
+  --color-tag-11-text: #a296cc;
+  --color-tag-11-bg: #f6f4ff;
+  --color-tag-12-text: #5d5ea7;
+  --color-tag-12-bg: #f3f3f7;
 }
 
 /* Floating decorative animations */

@@ -129,12 +129,12 @@ export function OutilsPilotageProjetPage() {
         loginLabel="Login"
         loginHref="#"
         topTag={{ label: "Outils de pilotage projet", variant: "muted" }}
-        headline="Une nouvelle manière de voir les"
-        headlineGradient="outils de pilotage projet"
+        title="Une nouvelle manière de voir les"
+        titleHighlight="outils de pilotage projet"
         subtitle="Parce que la gestion ne se résume pas à un Gantt, AirSaas propose un outil de pilotage de projet qui simplifie votre reporting, votre gouvernance et votre communication projet"
         primaryCta={{ label: "Réservez une démo", href: "#" }}
-        illustrationSrc="https://placehold.co/1457x857/e8eafc/3a51e2?text=Dashboard+Pilotage"
-        illustrationAlt="Dashboard pilotage projet AirSaas"
+        imageSrc="https://placehold.co/1457x857/e8eafc/3a51e2?text=Dashboard+Pilotage"
+        imageAlt="Dashboard pilotage projet AirSaas"
       />
 
       {/* ——— 2. VALUE PROPOSITION — 3 piliers ——— */}

@@ -41,30 +41,46 @@ interface TagProps {
   className?: string;
 }
 
-/** Style map — keeps each variant declaration isolated. */
-const variantClass: Record<Exclude<TagVariant, number>, string> = {
+/**
+ * Static class map for semantic variants. Using literal classes (not string
+ * interpolation) so Tailwind's scanner picks them up.
+ */
+const VARIANT_CLASS: Record<Exclude<TagVariant, number>, string> = {
   muted: "bg-primary-5 text-primary rounded-[1.5625rem]",
-  default: "bg-tag-default-bg text-tag-default-text rounded-full",
+  default: "rounded-full",
   success: "bg-success-10 text-foreground rounded-full",
   warning: "bg-bg-warning text-warning-text rounded-full",
 };
 
-/** Figma Tag/Custom 1-12: each has a text color token + bg color token. */
-function customTagClass(n: number): string {
-  return `bg-tag-${n}-bg text-tag-${n}-text rounded-full`;
+/**
+ * Figma Tag/Custom 1-12: each variant uses `var(--color-tag-N-bg)` and
+ * `var(--color-tag-N-text)` via inline style. Static Tailwind utilities
+ * can't cover these because `bg-tag-N-bg` would be interpolated at runtime
+ * and Tailwind v4's scanner doesn't pick up dynamic class names.
+ */
+function tagColorStyle(variant: TagVariant): React.CSSProperties {
+  if (variant === "default") {
+    return {
+      backgroundColor: "var(--color-tag-default-bg)",
+      color: "var(--color-tag-default-text)",
+    };
+  }
+  if (typeof variant === "number") {
+    return {
+      backgroundColor: `var(--color-tag-${variant}-bg)`,
+      color: `var(--color-tag-${variant}-text)`,
+    };
+  }
+  return {};
 }
 
-function variantToClass(variant: TagVariant): string {
-  return typeof variant === "number" ? customTagClass(variant) : variantClass[variant];
-}
-
-const BASE_PADDING_STYLE: React.CSSProperties = {
+const BASE_SIZE_STYLE: React.CSSProperties = {
   padding: "0.125rem 0.9rem",
   fontSize: "1.2rem",
   width: "fit-content",
 };
 
-const MUTED_PADDING_STYLE: React.CSSProperties = {
+const MUTED_SIZE_STYLE: React.CSSProperties = {
   padding: "0.1875rem 0.9rem",
   fontSize: "1.2rem",
   width: "fit-content",
@@ -122,15 +138,19 @@ export function Tag({
   ]);
 
   const showDefaultIcon = variant === "success" && icon === undefined;
+  const variantStyles = typeof variant === "number" ? "" : VARIANT_CLASS[variant];
+  const sizeStyle = variant === "muted" ? MUTED_SIZE_STYLE : BASE_SIZE_STYLE;
 
   return (
     <span
       className={cn(
         "inline-flex items-center gap-[0.5rem] font-normal",
-        variantToClass(variant),
+        // Numeric (custom) variants still need rounded-full — statically included.
+        typeof variant === "number" && "rounded-full",
+        variantStyles,
         className,
       )}
-      style={variant === "muted" ? MUTED_PADDING_STYLE : BASE_PADDING_STYLE}
+      style={{ ...sizeStyle, ...tagColorStyle(variant) }}
     >
       {showDefaultIcon && <CheckCircleIcon />}
       {icon}

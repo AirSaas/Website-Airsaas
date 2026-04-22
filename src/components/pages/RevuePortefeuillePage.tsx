@@ -164,13 +164,13 @@ export default function RevuePortefeuillePage() {
         loginLabel="Login"
         loginHref="#"
         topTag={{ label: "Revue de portefeuille", variant: "muted" }}
-        headline="L'outil de revue de"
-        headlineGradient="portefeuille projets moderne"
-        headlineSuffix=" qui simplifie votre gouvernance"
+        title="L'outil de revue de"
+        titleHighlight="portefeuille projets moderne"
+        titleSuffix=" qui simplifie votre gouvernance"
         subtitle="Parce que la revue de portefeuille est au cœur de votre process de transformation d'entreprise, AirSaas simplifie leur planification et leur préparation, en vous proposant des tableaux de bord consolidés et un reporting automatisé."
         primaryCta={{ label: "Réservez une démo", href: "#" }}
-        illustrationSrc="/assets/images/revue-de-portefeuille/feature-portfolio-timeline.webp"
-        illustrationAlt="Vue timeline du portefeuille projet AirSaas"
+        imageSrc="/assets/images/revue-de-portefeuille/feature-portfolio-timeline.webp"
+        imageAlt="Vue timeline du portefeuille projet AirSaas"
       />
 
       {/* 2. Value proposition — 3 feature cards */}

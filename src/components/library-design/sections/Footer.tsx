@@ -78,7 +78,7 @@ export function Footer({
           {columns.map((col, i) => (
             <div key={i} className="flex flex-col">
               <span
-                className="font-bold text-primary text-footer-title"
+                className="font-bold text-primary text-micro-xl"
                 style={{ lineHeight: "1.2", marginBottom: "0.5rem" }}
               >
                 {col.title}
@@ -87,7 +87,7 @@ export function Footer({
                 <a
                   key={j}
                   href={link.href ?? "#"}
-                  className="font-light text-foreground transition-colors hover:text-primary text-footer-link"
+                  className="font-light text-foreground transition-colors hover:text-primary text-micro-md"
                   style={{ lineHeight: "2.04" }}
                 >
                   {link.label}
@@ -96,7 +96,7 @@ export function Footer({
               {col.sections?.map((section, s) => (
                 <div key={s} className="flex flex-col" style={{ marginTop: "1rem" }}>
                   <span
-                    className="font-bold text-primary text-footer-section"
+                    className="font-bold text-primary text-micro-lg"
                     style={{ lineHeight: "1.2", marginBottom: "0.5rem" }}
                   >
                     {section.title}
@@ -105,7 +105,7 @@ export function Footer({
                     <a
                       key={j}
                       href={link.href ?? "#"}
-                      className="font-light text-foreground transition-colors hover:text-primary text-footer-link"
+                      className="font-light text-foreground transition-colors hover:text-primary text-micro-md"
                       style={{ lineHeight: "2.04" }}
                     >
                       {link.label}
@@ -125,7 +125,7 @@ export function Footer({
                 <span style={{ fontSize: "1.25rem" }}>🇫🇷</span>
               </div>
               <span
-                className="text-foreground whitespace-normal text-footer-caption leading-[1.3]"
+                className="text-foreground whitespace-normal text-micro-sm leading-[1.3]"
               >
                 {copyright}
               </span>

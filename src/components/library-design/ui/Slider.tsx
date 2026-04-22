@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { cn } from "@/lib/utils";
 
-interface SliderSlide {
+export interface SliderSlide {
   /** Image source */
   imageSrc: string;
   imageAlt?: string;

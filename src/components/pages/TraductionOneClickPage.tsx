@@ -99,12 +99,12 @@ export default function TraductionOneClickPage() {
         loginLabel="Login"
         loginHref="#"
         topTag={{ label: "Traduction one-click avec DeepL", variant: "muted" }}
-        headline="Le rapport flash désormais en"
-        headlineGradient="multilingue sur AirSaas"
+        title="Le rapport flash désormais en"
+        titleHighlight="multilingue sur AirSaas"
         subtitle="Présenter simplement ses projets, ses programmes et son portefeuille, c'est toujours un casse-tête dans les organisations multilingues. Un établissement aux US ? Votre maison mère en Allemagne ? Marre de passer des heures à sécuriser des traductions en amont de vos réunions ?"
         primaryCta={{ label: "Je veux une démo", href: "#" }}
-        illustrationSrc="/assets/images/traduction-one-click-avec-deepl/hero-copil-deepl-illustration.webp"
-        illustrationAlt="Interface AirSaas avec traduction multilingue Deepl"
+        imageSrc="/assets/images/traduction-one-click-avec-deepl/hero-copil-deepl-illustration.webp"
+        imageAlt="Interface AirSaas avec traduction multilingue Deepl"
       />
 
       {/* 2. Usage du rapport flash — stacked rich-text with bullet list */}

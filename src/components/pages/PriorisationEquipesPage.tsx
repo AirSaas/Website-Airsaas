@@ -117,12 +117,12 @@ export default function PriorisationEquipesPage() {
         loginLabel="Login"
         loginHref="#"
         topTag={{ label: "Priorisation par équipes", variant: "muted" }}
-        headline="La priorisation des projets,"
-        headlineGradient="par équipe en demande"
+        title="La priorisation des projets,"
+        titleHighlight="par équipe en demande"
         subtitle="Lorsqu'en Codir il faut prioriser les 125 projets du portfolio, c'est un peu dur de s'y retrouver. Tout le monde y va de ses projets « urgentissimes », et remplir la roadmap des prochains trimestres se fait finalement en fonction de celui qui parle le plus fort ou celui le plus copain avec le DG."
         primaryCta={{ label: "Je veux une démo", href: "#" }}
-        illustrationSrc="/assets/images/priorisation-par-equipes/hero-prioritization-ppt.webp"
-        illustrationAlt="Interface de priorisation AirSaas"
+        imageSrc="/assets/images/priorisation-par-equipes/hero-prioritization-ppt.webp"
+        imageAlt="Interface de priorisation AirSaas"
       />
 
       {/* 2. Main value proposition — stacked FeatureFrame */}

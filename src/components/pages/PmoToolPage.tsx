@@ -249,12 +249,12 @@ export default function PmoToolPage() {
         loginLabel="Login"
         loginHref="#"
         topTag={{ label: "Outil PPM pour PMO moderne", variant: "muted" }}
-        headline="L'outil PPM pour"
-        headlineGradient="un PMO moderne"
+        title="L'outil PPM pour"
+        titleHighlight="un PMO moderne"
         subtitle="AirSaas c'est la solution la plus simple pour avoir une vue macro consolidée du portefeuille projet. Avec AirSaas vous n'aurez plus besoin de faire des PowerPoints et de courir après les chefs de projets pour avoir les informations clefs. Et oui un PPM peut avoir une UX au top."
         primaryCta={{ label: "Réservez une démo", href: "#" }}
-        illustrationSrc="https://placehold.co/1457x857/e8eafc/3a51e2?text=Portfolio+AirSaas"
-        illustrationAlt="Portfolio AirSaas"
+        imageSrc="https://placehold.co/1457x857/e8eafc/3a51e2?text=Portfolio+AirSaas"
+        imageAlt="Portfolio AirSaas"
       />
 
       {/* 2. Ils parlent de nous — press mentions */}

@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+# Design System audit — blocks commits that introduce DS violations.
+# Rules live in docs/ds-rules.md; enforcement in scripts/ds-audit.mjs.
+npm run lint:ds

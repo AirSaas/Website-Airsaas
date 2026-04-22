@@ -6,6 +6,9 @@ import { FeatureFrame } from "@/components/library-design/sections/FeatureFrame"
 import { FeatureSectionStacked } from "@/components/library-design/sections/FeatureSectionStacked";
 import { TestimonialsFrame } from "@/components/library-design/sections/TestimonialsFrame";
 import { Footer } from "@/components/library-design/sections/Footer";
+import { CtaHighlightFrame } from "@/components/library-design/sections/CtaHighlightFrame";
+import { SliderFrame } from "@/components/library-design/sections/SliderFrame";
+import { ComparisonDualFrame } from "@/components/library-design/sections/ComparisonDualFrame";
 import { FeatureCard } from "@/components/library-design/ui/FeatureCard";
 import { IconIllustration } from "@/components/library-design/ui/IconIllustration";
 import { SectionHeading } from "@/components/library-design/ui/SectionHeading";
@@ -15,11 +18,6 @@ import { GradientText } from "@/components/library-design/ui/GradientText";
 import { TestimonialCompanyCard } from "@/components/library-design/ui/TestimonialCompanyCard";
 import { TestimonialCard } from "@/components/library-design/ui/TestimonialCard";
 import { ClientCard } from "@/components/library-design/ui/ClientCard";
-import { Slider } from "@/components/library-design/ui/Slider";
-import { Button } from "@/components/library-design/ui/Button";
-import { GradientBackground } from "@/components/library-design/ui/GradientBackground";
-import { FloatingCard } from "@/components/library-design/ui/FloatingCard";
-import { Float } from "@/components/library-design/ui/Float";
 import { AnimateOnScroll } from "@/components/library-design/ui/AnimateOnScroll";
 import {
   CalendarDayIcon,
@@ -483,216 +481,7 @@ const sliderSlides = [
   },
 ];
 
-/* NewsletterSection — replaced by FeatureFrame Rich inline (section 9) */
-
-/* ─── Inline Section: CTA with gradient ─── */
-
-function CtaGradientSection() {
-  return (
-    <section className="relative w-full overflow-hidden">
-      <GradientBackground
-        variant="cta"
-        className="absolute inset-0 w-full"
-      />
-      <div
-        className="relative z-10 flex flex-col items-center gap-[1.25rem] text-center overflow-clip"
-        style={{
-          paddingLeft: "clamp(1.25rem, 12vw, 14.375rem)",
-          paddingRight: "clamp(1.25rem, 12vw, 14.375rem)",
-          paddingTop: "clamp(3rem, 5.2vw, 6.25rem)",
-          paddingBottom: "clamp(3rem, 5.2vw, 6.25rem)",
-        }}
-      >
-        <Heading level={2} gradient="none" align="center" className="max-w-[78.125rem]">
-          <GradientText gradient="dark-to-primary">Et si vous repreniez l</GradientText>
-          <GradientText gradient="primary">e contrôle de votre portefeuille</GradientText>
-          <GradientText gradient="dark-to-primary"> de projets ?</GradientText>
-        </Heading>
-
-        {/* White card wrapping subtitle + CTA */}
-        <div
-          className="flex flex-col items-center gap-[1.25rem] bg-white w-full"
-          style={{
-            borderRadius: "1.5625rem",
-            padding: "clamp(1.5rem, 2.5vw, 2.5rem) clamp(2rem, 5vw, 5rem)",
-            maxWidth: "53rem",
-            boxShadow: "var(--shadow-floating)",
-          }}
-        >
-          <Text size="md" align="center">
-            Adoptez dès maintenant une solution de gestion de gouvernance
-            moderne, qui fait gagner vos projets en temps et en efficacité.
-          </Text>
-
-          <Button variant="primary" size="md" href="/fr/bookademo">
-            Réservez une démo
-          </Button>
-        </div>
-      </div>
-
-      {/* Floating cards */}
-      <Float
-        variant={3}
-        duration={3.5}
-        delay={0}
-        className="absolute z-20 left-[2%] top-[17rem] hidden xl:block"
-      >
-        <FloatingCard />
-      </Float>
-      <Float
-        variant={1}
-        duration={4}
-        delay={1.5}
-        className="absolute z-20 right-[2%] top-[6rem] hidden xl:block"
-      >
-        <FloatingCard />
-      </Float>
-    </section>
-  );
-}
-
-/* ─── Inline Section: Marketplace + Slider ─── */
-
-function MarketplaceSliderSection() {
-  return (
-    <section
-      className="flex flex-col items-center w-full"
-      style={{
-        gap: "3.125rem",
-        paddingLeft: "clamp(1.25rem, 12vw, 14.375rem)",
-        paddingRight: "clamp(1.25rem, 12vw, 14.375rem)",
-        paddingTop: "clamp(3rem, 5.2vw, 6.25rem)",
-      }}
-    >
-      {/* Heading */}
-      <div className="flex flex-col items-center gap-[1.25rem] text-center w-full">
-        <Heading level={2} gradient="none" align="center">
-          <GradientText gradient="primary">Grâce à sa marketplace AirSaas</GradientText>
-          <span className="text-foreground">
-            {" "}
-            s&apos;intègre nativement à vos outils du quotidien
-          </span>
-        </Heading>
-
-        <Text size="md" align="center" maxWidth="91rem">
-          Centralisez toutes vos informations cruciales (tickets, jalons…)
-          depuis vos outils de gestion de tâches sur AirSaas, et diffusez-les
-          via vos canaux de communication interne. Tout le monde est au
-          diapason, et vous gouvernez de manière optimale.
-        </Text>
-      </div>
-
-      {/* Slider */}
-      <Slider slides={sliderSlides} />
-    </section>
-  );
-}
-
-/* ─── Inline Section: Comparison (dual column) ─── */
-
-function ComparisonDualSection() {
-  return (
-    <section className="relative w-full overflow-hidden">
-      <GradientBackground
-        variant="comparison"
-        className="absolute inset-0 w-full"
-      />
-      <div
-        className="relative z-10 flex flex-col items-center gap-[3.125rem] overflow-clip"
-        style={{
-          paddingLeft: "clamp(1.25rem, 12vw, 14.375rem)",
-          paddingRight: "clamp(1.25rem, 12vw, 14.375rem)",
-          paddingTop: "clamp(3rem, 5.2vw, 6.25rem)",
-          paddingBottom: "clamp(3rem, 5.2vw, 6.25rem)",
-        }}
-      >
-        {/* Title */}
-        <Heading level={2} gradient="none" align="center" className="max-w-[78.125rem]">
-          <GradientText gradient="dark-to-primary">
-            Nos clients ne peuvent plus imaginer leurs vies sans{" "}
-          </GradientText>
-          <GradientText gradient="primary">AirSaas</GradientText>
-        </Heading>
-
-        {/* Dual column grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-[0.875rem] gap-y-[0.9375rem] w-full">
-          {/* Column headers */}
-          <div
-            className="flex items-center gap-[0.5rem] px-[1.875rem] py-[0.125rem] rounded-[1.5625rem] self-start w-fit"
-            style={{
-              backgroundColor: "var(--color-prevention-20)",
-              color: "var(--color-prevention-ink)",
-            }}
-          >
-            <span className="font-normal" style={{ fontSize: "1.6875rem" }}>
-              Sans AirSaas
-            </span>
-          </div>
-          <div
-            className="flex items-center gap-[0.5rem] px-[1.875rem] py-[0.125rem] rounded-[1.5625rem] self-start w-fit"
-            style={{
-              backgroundColor: "var(--color-primary-5)",
-              color: "var(--color-primary)",
-            }}
-          >
-            <span className="font-normal" style={{ fontSize: "1.6875rem" }}>
-              Avec AirSaas
-            </span>
-          </div>
-
-          {/* Items */}
-          {comparisonItemsSans.map((item, i) => (
-            <div
-              key={`sans-${i}`}
-              className="flex gap-[1.4375rem] items-start bg-white rounded-[1.5625rem] border border-prevention-40"
-              style={{
-                padding: "1.6875rem 1.375rem 1.6875rem 1.8125rem",
-                minHeight: "9.1875rem",
-              }}
-            >
-              <GradientText gradient="orange" className="font-bold shrink-0">
-                <span style={{ fontSize: "4.8125rem", lineHeight: "normal", display: "inline-block" }}>
-                  {item.value}
-                </span>
-              </GradientText>
-              <Text size="md" align="left" className="flex-1">
-                {item.description}
-              </Text>
-            </div>
-          ))}
-
-          {comparisonItemsAvec.map((item, i) => (
-            <div
-              key={`avec-${i}`}
-              className="flex gap-[1.4375rem] items-start bg-white rounded-[1.5625rem] border border-prevention-40"
-              style={{
-                padding: "1.6875rem 1.375rem 1.6875rem 1.8125rem",
-                minHeight: "9.1875rem",
-                gridColumn: 2,
-                gridRow: i + 2,
-              }}
-            >
-              <GradientText gradient="primary" className="font-bold shrink-0">
-                <span style={{ fontSize: "4.8125rem", lineHeight: "normal", display: "inline-block" }}>
-                  {item.value}
-                </span>
-              </GradientText>
-              <Text size="md" align="left" className="flex-1">
-                {item.description}
-              </Text>
-            </div>
-          ))}
-        </div>
-
-        <Button variant="primary" size="md" href="#">
-          Réservez une démo
-        </Button>
-      </div>
-    </section>
-  );
-}
-
-/* TestimonialsFullSection — replaced by TestimonialsFrame with children (section 15) */
+/* NewsletterSection — uses FeatureFrame Rich inline in the main composition */
 
 /* ─── Main Composition ─── */
 
@@ -706,13 +495,13 @@ export default function HomePage() {
         navCtaHref="/fr/bookademo"
         loginLabel="Login"
         loginHref="https://app.airsaas.io/fr/login"
-        headline="La solution de"
-        headlineGradient="portfolio"
-        headlineSuffix="pour aligner le top management"
+        title="La solution de"
+        titleHighlight="portfolio"
+        titleSuffix="pour aligner le top management"
         subtitle="Stop au gaspillage, à trop de projets en parallèle, trop de projets en retard, des équipes sous l'eau, un top management en tension. Votre croissance est liée à la réussite de vos projets."
         primaryCta={{ label: "Réservez une démo", href: "/fr/bookademo" }}
-        illustrationSrc="/assets/screenshots/hero-dashboard.png"
-        illustrationAlt="AirSaas - Quarter Plan Dashboard Q1 2025"
+        imageSrc="/assets/screenshots/hero-dashboard.png"
+        imageAlt="AirSaas - Quarter Plan Dashboard Q1 2025"
       />
 
       {/* 2. Press Testimonials — "Ils parlent de nous" */}
@@ -913,19 +702,40 @@ export default function HomePage() {
         />
       </AnimateOnScroll>
 
-      {/* 12. CTA Gradient — "Et si vous repreniez le contrôle..." */}
+      {/* 12. CTA Highlight — "Et si vous repreniez le contrôle..." */}
       <AnimateOnScroll animation="scale-up" duration={800}>
-        <CtaGradientSection />
+        <CtaHighlightFrame
+          titlePrefix="Et si vous repreniez l"
+          titleHighlight="e contrôle de votre portefeuille"
+          titleSuffix=" de projets ?"
+          subtitle="Adoptez dès maintenant une solution de gestion de gouvernance moderne, qui fait gagner vos projets en temps et en efficacité."
+          ctaLabel="Réservez une démo"
+          ctaHref="/fr/bookademo"
+        />
       </AnimateOnScroll>
 
       {/* 13. Marketplace + Slider */}
       <AnimateOnScroll animation="fade-up" duration={700}>
-        <MarketplaceSliderSection />
+        <SliderFrame
+          titleHighlight="Grâce à sa marketplace AirSaas"
+          titleRest="s'intègre nativement à vos outils du quotidien"
+          subtitle="Centralisez toutes vos informations cruciales (tickets, jalons…) depuis vos outils de gestion de tâches sur AirSaas, et diffusez-les via vos canaux de communication interne. Tout le monde est au diapason, et vous gouvernez de manière optimale."
+          slides={sliderSlides}
+        />
       </AnimateOnScroll>
 
       {/* 14. Comparison Dual — "Nos clients ne peuvent plus imaginer..." */}
       <AnimateOnScroll animation="fade-up" duration={700}>
-        <ComparisonDualSection />
+        <ComparisonDualFrame
+          titlePrefix="Nos clients ne peuvent plus imaginer leurs vies sans "
+          titleHighlight="AirSaas"
+          sansLabel="Sans AirSaas"
+          avecLabel="Avec AirSaas"
+          sansItems={comparisonItemsSans}
+          avecItems={comparisonItemsAvec}
+          ctaLabel="Réservez une démo"
+          ctaHref="/fr/bookademo"
+        />
       </AnimateOnScroll>
 
       {/* 16. Customer Cards — "Laissez nos clients vous parler d'AirSaas" */}

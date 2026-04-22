@@ -162,8 +162,8 @@ function CapacityPlanningPage() {
         loginLabel="Login"
         loginHref="#"
         topTag={{ label: "Capacity Planning simplifié", variant: "muted" }}
-        headline="Vos équipes sont surchargées ? C'est normal :"
-        headlineGradient="personne ne sait ce qu'elles peuvent vraiment faire."
+        title="Vos équipes sont surchargées ? C'est normal :"
+        titleHighlight="personne ne sait ce qu'elles peuvent vraiment faire."
         subtitle='AirSaas vous donne une vue capacitaire claire et actionnable. Enfin un outil pour dire "non" avec des données, pas au feeling.'
         bottomTags={[
           { label: "Opérationnel en 1 mois", variant: "success" },
@@ -174,8 +174,8 @@ function CapacityPlanningPage() {
           label: "Découvrir l'outil PPM en vidéo (5 min)",
           href: "#",
         }}
-        illustrationSrc="https://placehold.co/1457x857/e8eafc/3a51e2?text=Capacity+Planning+Screenshot"
-        illustrationAlt="AirSaas Capacity Planning screenshot"
+        imageSrc="https://placehold.co/1457x857/e8eafc/3a51e2?text=Capacity+Planning+Screenshot"
+        imageAlt="AirSaas Capacity Planning screenshot"
       />
 
       {/* Logos bar */}

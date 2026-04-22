@@ -42,7 +42,7 @@ interface ButtonProps {
 }
 
 const baseStyles =
-  "inline-flex items-center justify-center rounded-full font-normal transition-all duration-200 hover:scale-[1.02] hover:shadow-lg motion-reduce:transition-none motion-reduce:hover:scale-100 disabled:opacity-60 disabled:pointer-events-none disabled:cursor-not-allowed aria-disabled:opacity-60 aria-disabled:pointer-events-none";
+  "inline-flex items-center justify-center rounded-full font-normal transition-all duration-200 hover:scale-[1.02] hover:shadow-lg motion-reduce:transition-none motion-reduce:hover:scale-100 disabled:opacity-60 disabled:pointer-events-none disabled:cursor-not-allowed aria-disabled:opacity-60 aria-disabled:pointer-events-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2";
 
 const variantStyles: Record<ButtonVariant, string> = {
   primary: "bg-primary border border-primary-10 text-white hover:bg-foreground",
