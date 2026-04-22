@@ -378,6 +378,7 @@ import { Inter } from "next/font/google";
 
 ## 📚 Reference files — read these when working on UI
 
+- **`docs/ds-components-reference.md`** — **READ THIS FIRST**. Every DS component's `@purpose / @useWhen / @dontUse / @limits / @forbidden` in one file. Regenerate via `python3 scripts/generate-ds-reference.py` after adding or modifying a contract.
 - `docs/ds-rules.md` — the source of truth for rules
 - `docs/decisions.md` — past architectural choices (dark mode out-of-scope, tag palette aligned Figma, etc.)
 - `docs/sections-catalog.md` — catalog of existing section patterns

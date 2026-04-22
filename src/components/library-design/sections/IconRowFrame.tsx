@@ -11,6 +11,28 @@ export interface IconRowItem {
   label: string;
 }
 
+/**
+ * IconRowFrame
+ *
+ * @purpose    Horizontal row of icon + label pairs (integrations, tech stack,
+ *             trusted-by logos rendered as iconography). Icons sit above labels.
+ * @useWhen    Displaying 4–8 tools / integrations / ecosystems on a single
+ *             visual strip (e.g. "Ils s'intègrent à votre stack").
+ * @dontUse    For brand logos (use <LogosBar>). For a grid with richer content
+ *             per item (use <ValuePropositionFrame> + <FeatureCard>).
+ *
+ * @limits
+ *   - titleHighlight / title: max 40 / 80 chars
+ *   - singleTitle: max 80 chars (alternative to titleHighlight + title)
+ *   - subtitle: max 260 chars
+ *   - items: 4–8 (past 8 the row wraps awkwardly on tablet)
+ *   - item.label: max 24 chars
+ *   - tag: max 24 chars
+ *
+ * @forbidden
+ *   - Do NOT mix singleTitle with titleHighlight/title — pick one strategy
+ *   - Do NOT use emoji as item.icon — use <IconBadge> for consistency
+ */
 interface IconRowFrameProps {
   variant?: "light" | "dark";
   tag?: string;

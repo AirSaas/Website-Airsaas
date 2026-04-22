@@ -12,7 +12,7 @@ Spec complète : `.context/attachments/SPEC_Migration_v4.0_FINAL.md`
 
 ## DS Strict Mode
 
-**AVANT** de modifier ou créer un composant / une page : **LIRE [docs/ds-rules.md](docs/ds-rules.md)**. 5 golden rules, decision tree, forbidden patterns, extension process.
+**AVANT** de modifier ou créer un composant / une page : **LIRE [docs/ds-rules.md](docs/ds-rules.md)** (5 golden rules, decision tree, forbidden patterns, extension process) + **[docs/ds-components-reference.md](docs/ds-components-reference.md)** (inventaire complet des 47 composants DS avec leurs règles `@purpose/@useWhen/@dontUse/@limits/@forbidden`). Regénérer la référence après toute modification de contract via `python3 scripts/generate-ds-reference.py`.
 
 Règles absolues :
 - **Product Sans only** — pas d'autre font family, pas de Google Fonts

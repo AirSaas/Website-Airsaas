@@ -46,12 +46,30 @@ interface ComparisonTableFrameProps {
 }
 
 /**
- * Comparison table — feature comparison grid.
+ * ComparisonTableFrame
  *
- * Layout: each row is a separate rounded card spanning the full width,
- * split into a wide "feature" cell on the left and N narrower value cells
- * on the right (one per column). The highlighted column gets a soft
- * primary tint and a primary-coloured header.
+ * @purpose    Feature comparison grid — one card per row, one wide "feature" cell
+ *             on the left, N narrower value cells on the right (one per column).
+ *             Supports boolean (check/X), string, or custom ReactNode cell content.
+ * @useWhen    Competitor comparisons, plan/pricing feature matrices, "Avec vs sans
+ *             vs autre" tables. The highlighted column (primary tint) is typically
+ *             AirSaas itself.
+ * @dontUse    For side-by-side narrative lists (use <ComparisonFrame> or
+ *             <ComparisonDualFrame>). For 2+ features needing heavy copy, prefer
+ *             stacked feature sections.
+ *
+ * @limits
+ *   - title: max 80 chars
+ *   - titleHighlight: max 40 chars
+ *   - subtitle: max 260 chars
+ *   - columns: 2–4 (past 4 the grid overflows on desktop)
+ *   - rows: 3–15 (past 15 the page gets heavy — split into multiple tables)
+ *   - row.label: max 80 chars
+ *   - cell string values: max 40 chars
+ *
+ * @forbidden
+ *   - Do NOT mix boolean + string cells in the same column (visual inconsistency)
+ *   - Do NOT use for "avec / sans" paired narrative — use <ComparisonDualFrame>
  */
 export function ComparisonTableFrame({
   titleHighlight,

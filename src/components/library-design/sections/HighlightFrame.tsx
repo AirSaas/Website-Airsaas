@@ -10,6 +10,28 @@ export interface HighlightItem {
   description: React.ReactNode;
 }
 
+/**
+ * HighlightFrame
+ *
+ * @purpose    Alternating-zigzag vertically stacked cards, each with a big green
+ *             gradient number outside the card (left on odd, right on even rows).
+ * @useWhen    Emphasizing key positive metrics or numbered gains (3–7 items) with
+ *             a success/green visual tone. Typically used after a ComparisonFrame.
+ * @dontUse    For negative / warning narratives (use <ComparisonFrame>). For
+ *             metrics grid without the zigzag (use <ValuePropositionFrame> with
+ *             <FeatureCard> children).
+ *
+ * @limits
+ *   - titleHighlight: max 40 chars (green gradient)
+ *   - title: max 80 chars
+ *   - subtitle: max 260 chars
+ *   - items: 3–7 (past 7 the zigzag rhythm breaks)
+ *   - item.value: 1–3 chars (big 5.5rem number)
+ *   - item.description: max 200 chars
+ *
+ * @forbidden
+ *   - Do NOT mix HighlightFrame with ComparisonFrame on the same page (redundant)
+ */
 interface HighlightFrameProps {
   /** First part of the title — rendered in green gradient */
   titleHighlight?: string;

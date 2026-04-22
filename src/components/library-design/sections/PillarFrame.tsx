@@ -17,6 +17,30 @@ export interface Pillar {
   exampleLabel?: string;
 }
 
+/**
+ * PillarFrame
+ *
+ * @purpose    Grid of "pillar" cards — each with a large icon illustration,
+ *             uppercase primary title, description, and an optional example note
+ *             with a left-border accent.
+ * @useWhen    Articulating 2–6 core principles / methodology steps / framework
+ *             pillars (e.g. "DROP / KEEP / ADD" methodology; 4 product pillars).
+ * @dontUse    For generic feature grids (use <ValuePropositionFrame>). For
+ *             metric-heavy cards (use <FeatureCard>).
+ *
+ * @limits
+ *   - titleHighlight: max 40 chars
+ *   - title: max 80 chars
+ *   - subtitle: max 260 chars
+ *   - pillars: 2–6 items (matches columns 2 or 3)
+ *   - pillar.title: max 20 chars (uppercase, short — "DROP", "ADD")
+ *   - pillar.description: max 220 chars
+ *   - pillar.example: max 180 chars (optional)
+ *   - tag: max 24 chars
+ *
+ * @forbidden
+ *   - Do NOT use for sequential steps (use a numbered pattern instead)
+ */
 interface PillarFrameProps {
   variant?: "light" | "dark";
   tag?: string;

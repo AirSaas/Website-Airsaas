@@ -4,6 +4,27 @@ import { Heading } from "@/components/library-design/ui/Heading";
 import { Text } from "@/components/library-design/ui/Text";
 import { GradientText } from "@/components/library-design/ui/GradientText";
 
+/**
+ * FeatureSectionStacked
+ *
+ * @purpose    Centered title + subtitle + orange-bordered item list, with an
+ *             illustration image that bleeds from the bottom into the next section.
+ * @useWhen    Mid-page feature moment where text is stacked on top and the
+ *             screenshot/illustration anchors below (e.g. "Un capacity planning par
+ *             équipe simple et actionnable" on HomePage).
+ * @dontUse    For feature + image side-by-side (use <FeatureFrame>). For a
+ *             numbered "avec/sans" list (use <ComparisonFrame>).
+ *
+ * @limits
+ *   - titleGradient: max 40 chars (primary gradient portion)
+ *   - titleDark: max 60 chars
+ *   - titleDarkPrefix: max 20 chars
+ *   - subtitle: max 260 chars
+ *   - listItems: 3–6 strings (past 6 the list looks cluttered)
+ *
+ * @forbidden
+ *   - Do NOT use without an image — the design expects the bleed illustration
+ */
 interface FeatureSectionStackedProps {
   /** Gradient-colored portion of the H2 */
   titleGradient: string;
