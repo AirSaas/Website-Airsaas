@@ -135,7 +135,7 @@ export default function CapacityPlanningPage() {
           tag="Intelligence Artificielle"
           titleHighlight="Agent IA"
           title="Brief projet"
-          description='Quand une demande arrive floue ("on veut un truc"), l&apos;agent IA mène l&apos;entretien, collecte les informations critiques et transforme chaque demande en brief clair et comparable.'
+          subtitle='Quand une demande arrive floue ("on veut un truc"), l&apos;agent IA mène l&apos;entretien, collecte les informations critiques et transforme chaque demande en brief clair et comparable.'
           checklist={[
             "Entretien guidé par l'IA",
             "Brief structuré selon vos templates",
@@ -154,7 +154,7 @@ export default function CapacityPlanningPage() {
           tag="Intelligence Artificielle"
           titleHighlight="Agent IA"
           title="Découpage projet"
-          description="L'IA découpe automatiquement vos projets par quarter et par équipe. Elle connaît vos équipes : ce qu'elles savent faire, ce qu'elles ne font pas, leur vélocité passée."
+          subtitle="L'IA découpe automatiquement vos projets par quarter et par équipe. Elle connaît vos équipes : ce qu'elles savent faire, ce qu'elles ne font pas, leur vélocité passée."
           checklist={[
             "Découpage par quarter et par équipe",
             "Adapté aux compétences de chaque équipe",
@@ -189,7 +189,7 @@ export default function CapacityPlanningPage() {
           tag="Clarté immédiate"
           titleHighlight="Vue capacitaire"
           title="par équipe"
-          description="En un clin d'œil, voyez si vos équipes sont dans les clous ou dans les choux. La base d'une discussion pragmatique pour arbitrer."
+          subtitle="En un clin d'œil, voyez si vos équipes sont dans les clous ou dans les choux. La base d'une discussion pragmatique pour arbitrer."
           checklist={[
             "Vue par équipe et par trimestre",
             "Alerte surcharge automatique",
@@ -207,7 +207,7 @@ export default function CapacityPlanningPage() {
           tag="Intelligence Artificielle"
           titleHighlight="Agent IA"
           title="Découpage projet"
-          description="L'IA découpe automatiquement vos projets par quarter et par équipe. Elle connaît vos équipes : ce qu'elles savent faire, ce qu'elles ne font pas, leur vélocité passée."
+          subtitle="L'IA découpe automatiquement vos projets par quarter et par équipe. Elle connaît vos équipes : ce qu'elles savent faire, ce qu'elles ne font pas, leur vélocité passée."
           checklist={[
             "Découpage par quarter et par équipe",
             "Adapté aux compétences de chaque équipe",
@@ -226,7 +226,7 @@ export default function CapacityPlanningPage() {
           tag="Clarté immédiate"
           titleHighlight="Vue capacitaire"
           title="par équipe"
-          description="En un clin d'œil, voyez si vos équipes sont dans les clous ou dans les choux. La base d'une discussion pragmatique pour arbitrer."
+          subtitle="En un clin d'œil, voyez si vos équipes sont dans les clous ou dans les choux. La base d'une discussion pragmatique pour arbitrer."
           checklist={[
             "Vue par équipe et par trimestre",
             "Alerte surcharge automatique",
@@ -244,7 +244,7 @@ export default function CapacityPlanningPage() {
           tag="Intelligence Artificielle"
           titleHighlight="Agent IA"
           title="Découpage projet"
-          description="L'IA découpe automatiquement vos projets par quarter et par équipe. Elle connaît vos équipes : ce qu'elles savent faire, ce qu'elles ne font pas, leur vélocité passée."
+          subtitle="L'IA découpe automatiquement vos projets par quarter et par équipe. Elle connaît vos équipes : ce qu'elles savent faire, ce qu'elles ne font pas, leur vélocité passée."
           checklist={[
             "Découpage par quarter et par équipe",
             "Adapté aux compétences de chaque équipe",
@@ -263,7 +263,7 @@ export default function CapacityPlanningPage() {
           tag="Clarté immédiate"
           titleHighlight="Vue capacitaire"
           title="par équipe"
-          description="En un clin d'œil, voyez si vos équipes sont dans les clous ou dans les choux. La base d'une discussion pragmatique pour arbitrer."
+          subtitle="En un clin d'œil, voyez si vos équipes sont dans les clous ou dans les choux. La base d'une discussion pragmatique pour arbitrer."
           checklist={[
             "Vue par équipe et par trimestre",
             "Alerte surcharge automatique",

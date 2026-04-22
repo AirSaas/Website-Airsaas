@@ -114,6 +114,35 @@ function ColorsPage() {
         ]}
       />
 
+      {/* Tags — Default + 12 custom (Figma node-id 118-35646) */}
+      <div className="flex flex-col gap-4">
+        <h3 className="text-lg font-bold text-foreground">Tags — Default + 12 custom</h3>
+        <p className="text-xs text-text-muted max-w-[60rem]">
+          Each custom tag is a pair: <span className="font-mono">tag-N-text</span> (foreground) + <span className="font-mono">tag-N-bg</span> (background).
+          Pastel pairs are designed for category markers, not status signals.
+        </p>
+        <div className="flex flex-wrap gap-3 max-w-[80rem]">
+          {(["default", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] as const).map((n) => {
+            const textVar = n === "default" ? "tag-default-text" : `tag-${n}-text`;
+            const bgVar = n === "default" ? "tag-default-bg" : `tag-${n}-bg`;
+            return (
+              <span
+                key={n}
+                className="inline-flex items-center rounded-full font-normal"
+                style={{
+                  padding: "0.25rem 1rem",
+                  fontSize: "1rem",
+                  backgroundColor: `var(--color-${bgVar})`,
+                  color: `var(--color-${textVar})`,
+                }}
+              >
+                Tag {n}
+              </span>
+            );
+          })}
+        </div>
+      </div>
+
       <div className="flex flex-col gap-4">
         <h3 className="text-lg font-bold text-foreground">Gradients</h3>
         <div className="flex flex-wrap gap-6">

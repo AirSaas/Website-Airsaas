@@ -166,7 +166,7 @@ export default function TraductionOneClickPage() {
           imagePosition="right"
           titleHighlight="Plateforme multilingue"
           title="à la maille utilisateur"
-          description="Dans AirSaas, chacun choisit sa langue d'utilisation de la solution. Anglais, Français et toute autre langue sur demande."
+          subtitle="Dans AirSaas, chacun choisit sa langue d'utilisation de la solution. Anglais, Français et toute autre langue sur demande."
           imageSrc="/assets/images/traduction-one-click-avec-deepl/feature-langue-profile.webp"
           imageAlt="Sélecteur de langue dans le profil utilisateur AirSaas"
         />
@@ -178,7 +178,7 @@ export default function TraductionOneClickPage() {
           imagePosition="left"
           titleHighlight="Écrivez dans votre langue maternelle,"
           title="on s'occupe du reste"
-          description="Écrivez tous vos contenus (compte-rendus, décisions à prendre, points d'attention, etc.) dans votre langue maternelle. AirSaas s'occupe de la traduction one-click pour vos collègues, en s'appuyant sur Deepl."
+          subtitle="Écrivez tous vos contenus (compte-rendus, décisions à prendre, points d'attention, etc.) dans votre langue maternelle. AirSaas s'occupe de la traduction one-click pour vos collègues, en s'appuyant sur Deepl."
           imageSrc="/assets/images/traduction-one-click-avec-deepl/feature-post-deepl-illustration.webp"
           imageAlt="Bouton Traduire en français sur un commentaire de projet"
         />

@@ -164,7 +164,7 @@ const RULE_EXCEPTIONS = {
   //     (the richContent's prose wrapper styles them via [&_h5]: selectors).
   "src/components/pages/HomePage.tsx": ["no-inline-fontSize", "no-raw-heading"],
   // PmoToolPage / OutilsPilotageProjetPage — rich-text <h4>/<h5> used inside FeatureFrame richContent prop
-  "src/components/pages/PmoToolPage.tsx": ["no-raw-heading", "no-inline-fontSize", "no-webkit-gradient-inline"],
+  "src/components/pages/PmoToolPage.tsx": ["no-raw-heading"],
   "src/components/pages/OutilsPilotageProjetPage.tsx": ["no-raw-heading"],
   // FeatureFrame richContent prose utility classes intentionally style rich-text h4/h5
   // with Tailwind arbitrary selectors — accept as internal rich-text styling.

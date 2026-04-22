@@ -131,7 +131,7 @@ export default function PriorisationEquipesPage() {
           layout="stacked"
           titleHighlight="La manière la plus simple"
           title="d'y voir clair"
-          description="Réduisez la complexité en demandant à chaque responsable d'équipe de prioriser de son côté. Impossible de mettre 5 projets en Top 1 : chacun a une priorité de 1 à 100 pour enfin savoir ce qui est vraiment prioritaire."
+          subtitle="Réduisez la complexité en demandant à chaque responsable d'équipe de prioriser de son côté. Impossible de mettre 5 projets en Top 1 : chacun a une priorité de 1 à 100 pour enfin savoir ce qui est vraiment prioritaire."
         />
       </AnimateOnScroll>
 
@@ -141,7 +141,7 @@ export default function PriorisationEquipesPage() {
           imagePosition="right"
           titleHighlight="Chaque équipe"
           title="définie ses prios"
-          description="Demandez aux responsables de prioriser parmi les projets dont son équipe est à l'origine. Deux projets ne peuvent pas avoir la même priorité. Une fois prêts, ils valident leur choix."
+          subtitle="Demandez aux responsables de prioriser parmi les projets dont son équipe est à l'origine. Deux projets ne peuvent pas avoir la même priorité. Une fois prêts, ils valident leur choix."
           imageSrc="/assets/images/priorisation-par-equipes/feature-prioritization-dnd.webp"
           imageAlt="Interface de priorisation par drag and drop"
         />
@@ -153,7 +153,7 @@ export default function PriorisationEquipesPage() {
           imagePosition="left"
           titleHighlight="Soyez notifié"
           title="lorsque les priorités changent"
-          description="Gardez vos équipes alignées sur ce qui est prioritaire. Lorsqu'une priorité change, toute personne participant aux projets reçoit l'information."
+          subtitle="Gardez vos équipes alignées sur ce qui est prioritaire. Lorsqu'une priorité change, toute personne participant aux projets reçoit l'information."
           imageSrc="/assets/images/priorisation-par-equipes/feature-prioritization-notification.webp"
           imageAlt="Notifications de changement de priorités"
           imageBgColor="var(--color-prevention-10)"
@@ -166,7 +166,7 @@ export default function PriorisationEquipesPage() {
           imagePosition="right"
           titleHighlight="Organisez la roadmap"
           title="de façon éclairée"
-          description="Sur vos portfolios, affichez la priorité de chaque projet validée par l'équipe en demande. Cette information, couplée aux autres données de priorisation (budget, criticité, etc.) vous permet de faire des choix éclairés."
+          subtitle="Sur vos portfolios, affichez la priorité de chaque projet validée par l'équipe en demande. Cette information, couplée aux autres données de priorisation (budget, criticité, etc.) vous permet de faire des choix éclairés."
           imageSrc="/assets/images/priorisation-par-equipes/feature-portfolio-project-priority.webp"
           imageAlt="Vue portfolio des priorités"
         />
