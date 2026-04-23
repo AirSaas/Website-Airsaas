@@ -37,7 +37,7 @@
 | 2 | Download images 26 pages | ✅ done | (à commit) | 213 images uniques. Output: `public/assets/pages/{type}/{slug}/`. Script : `scripts/download-page-images.mjs` |
 | 3.A | Build 6 Produit + verif | ✅ done | (à commit) | 6/6 pages built, DS audit clean, HTTP 200, tsc clean (hors pré-existant) |
 | 3.B | Build 4 LP + verif | ✅ done | (à commit) | 4/4 pages built, DS audit clean, HTTP 200, tsc clean. Legacy `(lp)/lp/[slug]` route group supprimé. |
-| 3.C | Build 4 Équipes + verif | ⏳ pending | — | — |
+| 3.C | Build 4 Équipes + verif | ✅ done | (à commit) | 4/4 pages built, DS audit clean, HTTP 200, tsc clean |
 | 3.D | Build 12 Solution + verif | ⏳ pending | — | — |
 | 4 | Preview local + Vercel | ⏳ pending | — | — |
 | 5 | Summary global | ⏳ pending | — | — |
@@ -69,10 +69,10 @@ Légende : ⏳ pending · 🔄 in progress · ✅ done · ⚠️ blocked · ❌ 
 ### Équipes (4)
 | Slug | Capture | Images | Build | Verif | Notes |
 |---|---|---|---|---|---|
-| `outil-pmo` | ✅ | ✅ | ⏳ | ⏳ | + highlight-zigzag |
-| `direction-de-la-transformation` | ✅ | ✅ | ⏳ | ⏳ | DAKI pattern |
-| `comite-direction` | ✅ | ✅ | ⏳ | ⏳ | — |
-| `it-et-operation` | ✅ | ✅ | ⏳ | ⏳ | + 4 podcasts |
+| `outil-pmo` | ✅ | ✅ | ✅ | ✅ | HTTP 200, ClientsFrame 9 |
+| `direction-de-la-transformation` | ✅ | ✅ | ✅ | ✅ | HTTP 200, DAKI pattern |
+| `comite-direction` | ✅ | ✅ | ✅ | ✅ | HTTP 200 |
+| `it-et-operation` | ✅ | ✅ | ✅ | ✅ | HTTP 200, 3 podcasts |
 
 ### Solution (12)
 | Slug | Sous-type | Capture | Images | Build | Verif | Notes |
