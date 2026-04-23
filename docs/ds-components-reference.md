@@ -30,7 +30,7 @@ Every entry shows its `@purpose` / `@useWhen` / `@dontUse` / `@limits` / `@forbi
 |---|---|
 | `<AnimateOnScroll>` | Wraps content in an intersection-observer driven entrance animation that replays on scroll. |
 | `<BlogAuthorTag>` | Author attribution block for blog articles: "Publié par" label + green pill with avatar + author name + "dans [catego… |
-| `<BlogCard>` | Single blog article preview card — thumbnail, publication date, title, excerpt, and a compact author byline. The enti… |
+| `<BlogCard>` | Single blog article preview card — thumbnail, publication date, title, excerpt, and a compact multi-author byline. Th… |
 | `<Button>` | Canonical interactive element for all CTAs, links-as-buttons, and actions. Renders `<a>` if `href` is provided, `<but… |
 | `<CardCta>` | Minimal card with a short gradient title, a one-line description, and a primary CTA. Usually rendered as children of … |
 | `<CheckList>` | Vertical list where each item is prefixed by a green gradient circle-check icon. |
@@ -68,8 +68,8 @@ Every entry shows its `@purpose` / `@useWhen` / `@dontUse` / `@limits` / `@forbi
 | Component | Purpose (1-line) |
 |---|---|
 | `<BlogArticleBody>` | Outer wrapper for the rich-text body of a blog article — white background, responsive side padding, 91.25rem inner ma… |
+| `<BlogCollectionFrame>` | Full-width section introducing a blog content collection — H2 title + optional subtitle + optional collection-level a… |
 | `<BlogHero>` | Article header for a single blog post: navbar + "Le Blog" tag + article title + author attribution (<BlogAuthorTag>) … |
-| `<BlogIndexGrid>` | Responsive grid of <BlogCard> previews inside a lavender panel, with an optional "see all articles" CTA below. |
 | `<ComparisonDualFrame>` | "Avec / sans" dual-column comparison: a row of numbered cards per column, each column led by a colored pill label. |
 | `<ComparisonFrame>` | "Avec / sans" style numbered-list section showing pain points OR gains. |
 | `<ComparisonTableFrame>` | Feature comparison grid — one card per row, one wide "feature" cell on the left, N narrower value cells on the right … |
@@ -139,21 +139,23 @@ Every entry shows its `@purpose` / `@useWhen` / `@dontUse` / `@limits` / `@forbi
 📄 [`src/components/library-design/ui/BlogCard.tsx`](src/components/library-design/ui/BlogCard.tsx)
 🎨 Figma `node-id 312-2107 (inside 312-2093)`
 
-**Purpose** — Single blog article preview card — thumbnail, publication date, title, excerpt, and a compact author byline. The entire card surfaces the article and the title acts as the primary link; an optional category link (e.g. a newsletter / section name) stays independently clickable.
-**Use when** — Inside <BlogIndexGrid> for blog index / listing pages, or in any CMS-driven "featured articles" section that lists thumbnails + excerpts.
-**Don't use** — For testimonial / client logos (use <TestimonialCard> / <ClientCard>). For author attribution inside an article (use <BlogAuthorTag>). For non-article content preview (use <CardCta>).
+**Purpose** — Single blog article preview card — thumbnail, publication date, title, excerpt, and a compact multi-author byline. The entire card surfaces the article and the title acts as the primary link; an optional category link (e.g. a newsletter / section name) stays independently clickable.
+**Use when** — Inside <BlogCollectionFrame> for blog index / listing pages, the homepage "featured articles" section, or any CMS-driven content grid that lists thumbnails + excerpts.
+**Don't use** — For testimonial / client logos (use <TestimonialCard> / <ClientCard>). For author attribution inside an article hero (use <BlogAuthorTag>). For non-article content preview (use <CardCta>).
 
 **Limits:**
 - title: max 120 chars (H4 wraps cleanly up to ~2 lines at that length)
 - excerpt: max 200 chars (3 lines at --text-paragraph)
 - thumbnailAlt: required. Empty string `""` only for purely decorative thumbnails (rare — blog thumbnails should describe)
-- authorName: max 40 chars (matches <BlogAuthorTag>)
+- authors: 1–4 items. Max 3 avatars shown (stacked); overflow collapses to a "+N autres" label driven by `authorsMoreLabel`
+- authors[i].name: max 40 chars
 - categoryLabel: max 60 chars (if provided)
 
 **Forbidden:**
 - Do NOT pass className that overrides bg / border / padding / rounded — the white card chrome is part of the contract
 - Do NOT nest <BlogCard> inside another card (use plain markup for inline previews)
-- Do NOT hardcode "Publié par" / "dans" — pass via props for locale
+- Do NOT hardcode any locale copy ("Publié par", "dans", "autres") — all labels are locale-driven via props
+- Do NOT omit `authors` — empty byline is unsupported (use a dedicated "anonymous" placeholder on the consumer side if truly needed)
 
 ---
 
@@ -692,12 +694,36 @@ Every entry shows its `@purpose` / `@useWhen` / `@dontUse` / `@limits` / `@forbi
 **Don't use** — As a marketing section (use <FeatureFrame> / <CtaHighlightFrame>). For non-article pages (it assumes long-form vertical rhythm and centered narrow-max-width reading flow).
 
 **Limits:**
-- children: article content — DS primitives only. No raw <h1-6> / <p>, no hardcoded colors or fonts in child markup (ESLint + ds-audit enforce this).
+- children: article content — DS primitives only. No raw heading tags (h1–h6) or paragraph tags — the ESLint + ds-audit rules enforce this; use <Heading> and <Text> instead.
 
 **Forbidden:**
 - Do NOT hardcode article content inside the component — copy flows in via children (rendered by the page, sourced from i18n / CMS)
 - Do NOT override bg / padding / max-w / gap via className — they are part of the reading-flow contract
 - Do NOT render more than one <BlogArticleBody> per page
+
+---
+
+### `<BlogCollectionFrame>`
+
+📄 [`src/components/library-design/sections/BlogCollectionFrame.tsx`](src/components/library-design/sections/BlogCollectionFrame.tsx)
+
+**Purpose** — Full-width section introducing a blog content collection — H2 title + optional subtitle + optional collection-level author (when a single person runs the whole series) + a responsive 3-col grid of <BlogCard> previews + a "see all" CTA below the grid.
+**Use when** — On the /blog index page (one frame per collection: articles / podcasts / releases), on pages that surface a related collection, or as a homepage "featured articles" block. Pair two or more frames with alternating `background="light"` / `"alt"` for visual rhythm.
+**Don't use** — For a simple single-row card grid without title/subtitle (compose <BlogCard> directly inside a <div grid>). For a paginated full archive (build a dedicated paginated listing). For mixed content (articles + testimonials) — split into separate frames.
+
+**Limits:**
+- title: max 80 chars (H2 scale)
+- titleHighlight: max 40 chars (gradient portion of the H2)
+- subtitle: max 260 chars
+- items: 1–9 (1 = featured highlight; 3 fills a row; 6/9 for longer index pages)
+- viewAllLabel: max 30 chars
+- collectionAuthor.name: max 40 chars
+
+**Forbidden:**
+- Do NOT pass className that overrides bg / padding / rounded on the outer section — use `background` prop to switch between white and bg-alt (for alternating-row pages)
+- Do NOT hardcode any locale copy (title, subtitle, viewAllLabel, collectionAuthor.label) — pass translated strings via next-intl
+- Do NOT render an empty grid (items.length must be ≥ 1)
+- Do NOT pass both `collectionAuthor` on this frame AND per-card `authors` intending them to merge — they live in different slots. If a collection has one host, set `collectionAuthor` on the frame and keep per-card `authors` too (they describe individual articles)
 
 ---
 
@@ -720,27 +746,6 @@ Every entry shows its `@purpose` / `@useWhen` / `@dontUse` / `@limits` / `@forbi
 - Do NOT render multiple <BlogHero> per page
 - Do NOT pass className that changes background / min-height — the white bg + gradient + ellipse are part of the section contract
 - Do NOT pass arbitrary color / typography overrides via className
-
----
-
-### `<BlogIndexGrid>`
-
-📄 [`src/components/library-design/sections/BlogIndexGrid.tsx`](src/components/library-design/sections/BlogIndexGrid.tsx)
-🎨 Figma `node-id 312-2093`
-
-**Purpose** — Responsive grid of <BlogCard> previews inside a lavender panel, with an optional "see all articles" CTA below.
-**Use when** — Blog index pages, homepage featured-articles section, category / tag listing pages. Pair with a preceding <SectionHeading> if the grid needs a title.
-**Don't use** — For long paginated archives (build a dedicated paginated listing with filters). For mixed content (articles + whitepapers + videos), split into multiple grids or use <ValuePropositionFrame>.
-
-**Limits:**
-- articles: 1–9 (1 for a featured highlight, 3/6/9 fill the grid cleanly at lg breakpoint). Orphan rows (4, 5, 7, 8 items) render but leave uneven columns.
-- ctaLabel: max 30 chars (matches <Button> limit)
-- ctaHref: required when ctaLabel is provided
-
-**Forbidden:**
-- Do NOT pass className that overrides bg / padding / rounded on the outer section or the lavender panel
-- Do NOT hardcode the CTA label — pass via props (locale-driven)
-- Do NOT render an empty grid (articles.length must be >= 1)
 
 ---
 
