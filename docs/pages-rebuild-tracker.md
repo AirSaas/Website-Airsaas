@@ -38,7 +38,7 @@
 | 3.A | Build 6 Produit + verif | ✅ done | (à commit) | 6/6 pages built, DS audit clean, HTTP 200, tsc clean (hors pré-existant) |
 | 3.B | Build 4 LP + verif | ✅ done | (à commit) | 4/4 pages built, DS audit clean, HTTP 200, tsc clean. Legacy `(lp)/lp/[slug]` route group supprimé. |
 | 3.C | Build 4 Équipes + verif | ✅ done | (à commit) | 4/4 pages built, DS audit clean, HTTP 200, tsc clean |
-| 3.D | Build 12 Solution + verif | ⏳ pending | — | — |
+| 3.D | Build 12 Solution + verif | ✅ done | (à commit) | 12/12 pages built, DS audit clean, HTTP 200, tsc clean |
 | 4 | Preview local + Vercel | ⏳ pending | — | — |
 | 5 | Summary global | ⏳ pending | — | — |
 
@@ -77,18 +77,18 @@ Légende : ⏳ pending · 🔄 in progress · ✅ done · ⚠️ blocked · ❌ 
 ### Solution (12)
 | Slug | Sous-type | Capture | Images | Build | Verif | Notes |
 |---|---|---|---|---|---|---|
-| `management-de-portefeuille-projet` | A | ✅ | ✅ | ⏳ | ⏳ | — |
-| `flash-report-projet` | A | ✅ | ✅ | ⏳ | ⏳ | — |
-| `flash-report` | A | ✅ | ✅ | ⏳ | ⏳ | — |
-| `revue-de-portefeuille` | A | ✅ | ✅ | ⏳ | ⏳ | — |
-| `tableau-de-bord-portefeuille-de-projet` | A | ✅ | ✅ | ⏳ | ⏳ | — |
-| `portfolio-management` | B | ✅ | ✅ | ⏳ | ⏳ | ClientsFrame 9 |
-| `tableau-de-bord-dsi` | C | ✅ | ✅ | ⏳ | ⏳ | long-form |
-| `tableau-de-bord-gestion-de-projet` | C | ✅ | ✅ | ⏳ | ⏳ | 5 cards top |
-| `gestion-portefeuille-projet` | B | ✅ | ✅ | ⏳ | ⏳ | ClientsFrame + CompareTable |
-| `outils-de-pilotage-projet` | B | ✅ | ✅ | ⏳ | ⏳ | long-form |
-| `outil-ppm` | B | ✅ | ✅ | ⏳ | ⏳ | 5 cards top |
-| `airsaas-et-les-experts-de-la-transfo` | outlier | ✅ | ✅ | ⏳ | ⏳ | 2× Slider 6 imgs |
+| `management-de-portefeuille-projet` | A | ✅ | ✅ | ✅ | ✅ | HTTP 200 |
+| `flash-report-projet` | A | ✅ | ✅ | ✅ | ✅ | HTTP 200 |
+| `flash-report` | A | ✅ | ✅ | ✅ | ✅ | HTTP 200 |
+| `revue-de-portefeuille` | A | ✅ | ✅ | ✅ | ✅ | HTTP 200, uses existing `RevuePortefeuillePage` |
+| `tableau-de-bord-portefeuille-de-projet` | A | ✅ | ✅ | ✅ | ✅ | HTTP 200 |
+| `portfolio-management` | B | ✅ | ✅ | ✅ | ✅ | HTTP 200, ClientsFrame 9 w/ infoRows |
+| `tableau-de-bord-dsi` | C | ✅ | ✅ | ✅ | ✅ | HTTP 200, long-form |
+| `tableau-de-bord-gestion-de-projet` | C | ✅ | ✅ | ✅ | ✅ | HTTP 200, 3 cards (DS contract max 4) |
+| `gestion-portefeuille-projet` | B | ✅ | ✅ | ✅ | ✅ | HTTP 200, CompareTable 5 rows |
+| `outils-de-pilotage-projet` | B | ✅ | ✅ | ✅ | ✅ | HTTP 200, uses existing `OutilsPilotageProjetPage` (named export) |
+| `outil-ppm` | B | ✅ | ✅ | ✅ | ✅ | HTTP 200, 4 cards (DS contract max 4) |
+| `airsaas-et-les-experts-de-la-transfo` | outlier | ✅ | ✅ | ✅ | ✅ | HTTP 200, 2× SliderFrame(6 imgs) + 6 LinkedIn testimonials |
 
 ---
 
