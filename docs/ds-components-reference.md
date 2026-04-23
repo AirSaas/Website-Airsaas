@@ -70,6 +70,7 @@ Every entry shows its `@purpose` / `@useWhen` / `@dontUse` / `@limits` / `@forbi
 | `<BlogArticleBody>` | Outer wrapper for the rich-text body of a blog article — white background, responsive side padding, 91.25rem inner ma… |
 | `<BlogCollectionFrame>` | Full-width section introducing a blog content collection — H2 title + optional subtitle + optional collection-level a… |
 | `<BlogHero>` | Article header for a single blog post: navbar + "Le Blog" tag + article title + author attribution (<BlogAuthorTag>) … |
+| `<ClientsFrame>` | Section wrapper for a large grid of <ClientCard> items — avatar + name + role + company + metadata rows. Dense social… |
 | `<ComparisonDualFrame>` | "Avec / sans" dual-column comparison: a row of numbered cards per column, each column led by a colored pill label. |
 | `<ComparisonFrame>` | "Avec / sans" style numbered-list section showing pain points OR gains. |
 | `<ComparisonTableFrame>` | Feature comparison grid — one card per row, one wide "feature" cell on the left, N narrower value cells on the right … |
@@ -84,7 +85,9 @@ Every entry shows its `@purpose` / `@useWhen` / `@dontUse` / `@limits` / `@forbi
 | `<IconRowFrame>` | Horizontal row of icon + label pairs (integrations, tech stack, trusted-by logos rendered as iconography). Icons sit … |
 | `<PillarFrame>` | Grid of "pillar" cards — each with a large icon illustration, uppercase primary title, description, and an optional e… |
 | `<RelatedArticlesFrame>` | "Further reading" block at the end of a blog article — centered primary-gradient title + white rounded card listing o… |
+| `<RelatedSolutionsFrame>` | Cross-sell grid — 3 image-first cards each linking to a related solution or product. Rendered at the bottom (or top) … |
 | `<SliderFrame>` | Centered title + subtitle + interactive screenshot carousel. |
+| `<StepsFrame>` | Horizontal row of numbered sequential steps — each step has a large primary-gradient number, an icon, a short title, … |
 | `<TableOfContentsFrame>` | Article-level table of contents — centered primary-gradient title + white rounded card listing anchor links to each a… |
 | `<TestimonialsFrame>` | Section wrapper for testimonial cards: gradient heading + 3-col grid. |
 | `<ValuePropositionFrame>` | Section with title + subtitle + a 3- or 4-column grid of child cards (usually <FeatureCard> or custom). |
@@ -749,6 +752,30 @@ Every entry shows its `@purpose` / `@useWhen` / `@dontUse` / `@limits` / `@forbi
 
 ---
 
+### `<ClientsFrame>`
+
+📄 [`src/components/library-design/sections/ClientsFrame.tsx`](src/components/library-design/sections/ClientsFrame.tsx)
+
+**Purpose** — Section wrapper for a large grid of <ClientCard> items — avatar + name + role + company + metadata rows. Dense social-proof block for when the page needs to show 6–9 clients at once without quotes ("Ils nous font confiance", "Laissez nos clients vous parler d'AirSaas"). Grid locked at 3 columns on desktop (lg); an optional CTA below links to the full client collection.
+**Use when** — Equipes / Solution type-B pages surfacing 6–9 client cards as a dense trust signal. Grid renders 1 col mobile → 2 col md → 3 col lg (fixed).
+**Don't use** — For fewer than 6 clients (use <TestimonialsFrame> + <TestimonialCard>). For quote-based testimonials (use <TestimonialsFrame> + <TestimonialCard>). For company-logo-only social proof with no metadata (use <LogosBar>).
+
+**Limits:**
+- titleHighlight: max 40 chars
+- title: max 80 chars
+- subtitle: max 260 chars
+- clients: 6–9 items (below 6 looks sparse; above 9 breaks the 3×3 rhythm — use the collection CTA for overflow)
+- collectionCtaLabel: max 36 chars
+
+**Forbidden:**
+- Do NOT use for fewer than 6 clients — use <TestimonialsFrame>
+- Do NOT pass className with bg / text / font / padding overrides
+- Do NOT mix clients prop AND children — children wins, clients ignored
+- Do NOT nest another ClientsFrame inside a client card
+- Do NOT hardcode collectionCtaLabel locale copy — pass via i18n
+
+---
+
 ### `<ComparisonDualFrame>`
 
 📄 [`src/components/library-design/sections/ComparisonDualFrame.tsx`](src/components/library-design/sections/ComparisonDualFrame.tsx)
@@ -1044,22 +1071,76 @@ Every entry shows its `@purpose` / `@useWhen` / `@dontUse` / `@limits` / `@forbi
 
 ---
 
+### `<RelatedSolutionsFrame>`
+
+📄 [`src/components/library-design/sections/RelatedSolutionsFrame.tsx`](src/components/library-design/sections/RelatedSolutionsFrame.tsx)
+
+**Purpose** — Cross-sell grid — 3 image-first cards each linking to a related solution or product. Rendered at the bottom (or top) of LP, Produit, and Solution pages to surface "other relevant features". Grid locked at 3 columns on desktop; optional collection CTA below links to the full platform directory.
+**Use when** — Surfacing 3 related solutions/products with a screenshot + title + short description + "Voir plus" link. Typical footer cross-sell on landing / product / solution pages.
+**Don't use** — For icon-first feature grids (use <ValuePropositionFrame> + <FeatureCard>). For blog-style previews with author bylines (use <BlogCard>). For quick CTA choices with only a button (use <CtaFrame> + <CardCta>).
+
+**Limits:**
+- tag: max 24 chars
+- titleHighlight: max 40 chars
+- title: max 80 chars
+- subtitle: max 260 chars
+- solutions: exactly 3 items (grid locked to 3 columns on desktop)
+- solution.title: max 40 chars
+- solution.description: max 120 chars
+- solution.imageAlt: required (empty `""` only for decorative)
+- linkLabel: max 18 chars
+- collectionCtaLabel: max 36 chars
+
+**Forbidden:**
+- Do NOT pass className with bg / text / font / padding overrides
+- Do NOT hardcode linkLabel / collectionCtaLabel locale copy — pass via i18n
+- Do NOT nest another RelatedSolutionsFrame inside a card
+- Do NOT pass fewer or more than 3 solutions (grid breaks)
+
+---
+
 ### `<SliderFrame>`
 
 📄 [`src/components/library-design/sections/SliderFrame.tsx`](src/components/library-design/sections/SliderFrame.tsx)
 
 **Purpose** — Centered title + subtitle + interactive screenshot carousel.
-**Use when** — Showcasing a product surface (marketplace, integrations, multi-screen flow) with 2–5 slides that the user navigates through.
+**Use when** — Showcasing a product surface (marketplace, integrations, multi-screen flow, bootcamp gallery) with 2–8 slides that the user navigates through.
 **Don't use** — For a static feature/image (use <FeatureFrame>). For a single image, no carousel wrapper needed.
 
 **Limits:**
 - titleHighlight: max 40 chars (primary gradient)
 - titleRest: max 70 chars (dark foreground)
 - subtitle: max 280 chars
-- slides: 2–5
+- slides: 2–8 (above 8, navigation feels tedious — split into 2 sections)
 
 **Forbidden:**
 - Do NOT nest another <Slider> inside this frame
+
+---
+
+### `<StepsFrame>`
+
+📄 [`src/components/library-design/sections/StepsFrame.tsx`](src/components/library-design/sections/StepsFrame.tsx)
+
+**Purpose** — Horizontal row of numbered sequential steps — each step has a large primary-gradient number, an icon, a short title, and a description. Cards are visually connected by chevron indicators between them on desktop (hidden on mobile, where steps stack).
+**Use when** — Presenting a linear deployment / onboarding / how-it-works flow of 3–5 discrete steps that must be read in order (e.g. "Lancez votre déploiement en 4 étapes").
+**Don't use** — For non-sequential principles or methodology pillars (use <PillarFrame>). For metrics / stats grids (use <ValuePropositionFrame> + <FeatureCard>). For a zigzag vertical list with big outside numbers (use <HighlightFrame>).
+
+**Limits:**
+- tag: max 24 chars
+- titleHighlight: max 40 chars
+- title: max 80 chars
+- subtitle: max 260 chars
+- steps: 3–5 items (below 3 looks sparse; above 5 the row breaks on md)
+- step.title: max 24 chars (e.g. "Kick-off", "Go live")
+- step.description: max 180 chars
+- step.number: 1–9 (auto-derived from index if omitted)
+
+**Forbidden:**
+- Do NOT use for non-sequential content — use <PillarFrame>
+- Do NOT pass className with bg / text / font / padding overrides
+- Do NOT mix items with and without explicit step.number (all or none)
+- Do NOT nest another StepsFrame inside a step card
 
 ---
 

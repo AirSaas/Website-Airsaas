@@ -9,11 +9,8 @@ import { CtaFrame } from "@/components/library-design/sections/CtaFrame";
 import { Footer } from "@/components/library-design/sections/Footer";
 import { FeatureCard } from "@/components/library-design/ui/FeatureCard";
 import { CardCta } from "@/components/library-design/ui/CardCta";
-import { ClientCard } from "@/components/library-design/ui/ClientCard";
+import { ClientsFrame } from "@/components/library-design/sections/ClientsFrame";
 import { IconIllustration } from "@/components/library-design/ui/IconIllustration";
-import { Heading } from "@/components/library-design/ui/Heading";
-import { Text } from "@/components/library-design/ui/Text";
-import { GradientText } from "@/components/library-design/ui/GradientText";
 import { AnimateOnScroll } from "@/components/library-design/ui/AnimateOnScroll";
 import {
   CalendarDayIcon,
@@ -535,35 +532,22 @@ export default function PmoToolPage() {
 
       {/* 19. Laissez nos clients vous parler d'AirSaas — 9 ClientCards */}
       <AnimateOnScroll animation="fade-up" duration={700}>
-        <section className="flex flex-col items-center gap-[2rem] px-[1.5rem] py-[3rem] md:gap-[2.5rem] md:px-[3rem] md:py-[4rem] lg:gap-[3.125rem] lg:px-[10rem] lg:py-[6.25rem] bg-primary-2">
-          <div className="flex flex-col items-center gap-[1rem] md:gap-[1.25rem] text-center">
-            <Heading level={2} gradient="none" align="center">
-              <GradientText gradient="dark-to-primary">Laissez nos clients</GradientText>{" "}
-              <GradientText gradient="primary">vous parler d&apos;AirSaas</GradientText>
-            </Heading>
-            <Text size="md" align="center" maxWidth="60rem">
-              Qui de mieux pour vous parler de la plateforme que ceux qui l&apos;utilisent au quotidien pour améliorer la gestion de leurs projets de transformation ?
-            </Text>
-          </div>
-
-          <div className="grid grid-cols-1 gap-[1.5rem] items-stretch w-full md:grid-cols-2 lg:grid-cols-3">
-            {clientProfiles.map((c, i) => (
-              <ClientCard
-                key={i}
-                avatarSrc={`https://placehold.co/180x180/e8eafc/3a51e2?text=${c.initials}`}
-                avatarAlt={c.name}
-                name={c.name}
-                jobTitle={c.jobTitle}
-                companyName={c.companyName}
-                infoRows={[
-                  { icon: <IndustryIcon />, label: "Secteur", value: c.sector },
-                  { icon: <CalendarDayIcon />, label: "Effectif", value: c.employees },
-                ]}
-                className="!w-auto flex-1"
-              />
-            ))}
-          </div>
-        </section>
+        <ClientsFrame
+          title="Laissez nos clients"
+          titleHighlight="vous parler d'AirSaas"
+          subtitle="Qui de mieux pour vous parler de la plateforme que ceux qui l'utilisent au quotidien pour améliorer la gestion de leurs projets de transformation ?"
+          clients={clientProfiles.map((c) => ({
+            avatarSrc: `https://placehold.co/180x180/e8eafc/3a51e2?text=${c.initials}`,
+            avatarAlt: c.name,
+            name: c.name,
+            jobTitle: c.jobTitle,
+            companyName: c.companyName,
+            infoRows: [
+              { icon: <IndustryIcon />, label: "Secteur", value: c.sector },
+              { icon: <CalendarDayIcon />, label: "Effectif", value: c.employees },
+            ],
+          }))}
+        />
       </AnimateOnScroll>
 
       {/* 20. Replay — Le replay à ne pas manquer ! */}
