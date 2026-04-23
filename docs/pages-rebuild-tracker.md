@@ -122,6 +122,22 @@ Légende : ⏳ pending · 🔄 in progress · ✅ done · ⚠️ blocked · ❌ 
 - Sizes : produit 3.6M, lp 4.9M, equipes 3.5M, solution 12M (total ~24MB)
 - Chaque `docs/live-captures/{type}/{slug}.json` contient maintenant `localPath` pour chaque image
 
+### 2026-04-23 — Phase 3.D DONE — 12 Solution pages — commit `36754c8`
+- 9 new Solution components + 12 routes under `/solution/{slug}`
+- Type A (5) : management-de-portefeuille-projet, flash-report, flash-report-projet, revue-de-portefeuille, tableau-de-bord-portefeuille-de-projet
+- Type B (4) : portfolio-management (ClientsFrame 9 w/ infoRows), gestion-portefeuille-projet (CompareTable 5 rows), outil-ppm (4 cards), outils-de-pilotage-projet
+- Type C (2) : tableau-de-bord-dsi, tableau-de-bord-gestion-de-projet
+- Outlier : airsaas-et-les-experts-de-la-transfo (2× SliderFrame 6 slides + 6 LinkedIn testimonials + 4 press)
+- Reuse : `RevuePortefeuillePage`, `OutilsPilotageProjetPage` (named export)
+- DS audit ✅ clean, tsc ✅ clean, **26/26 pages HTTP 200 local**
+
+### 2026-04-23 — Phase 4 DONE — Preview local + Vercel
+- Local : 26/26 HTTP 200 ✅
+- Vercel preview : branche `lp-rebuild` pushed → project `airsaas/website-airsaas` auto-deploy
+- Preview URL : `https://website-airsaas-nagmcczm0-airsaas.vercel.app` — status **Ready**, build 52s
+- SSO/password protection activée côté Vercel (renvoie 401 sans auth) → comportement normal pour preview privée, build sain
+- Pour visualiser les 26 pages : ouvrir l'URL preview dans le navigateur (auth Vercel requise)
+
 ### 2026-04-23 — Phase 0 Done (DS extensions) — commit `04117ad`
 - `StepsFrame` créé + story : 3-5 steps numérotés + connector dashed lg + dark variant
 - `RelatedSolutionsFrame` créé + story : 3-5 cards image+H4+desc+link, cols 3/4/5
