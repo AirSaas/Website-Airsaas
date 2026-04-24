@@ -37,7 +37,9 @@ For anything extra (architectural decisions, past trade-offs): [`docs/decisions.
 | Layout components | **2** (LpNavbar, LpFooter) |
 | Blueprint pages in Storybook | 10 (see `src/components/pages/`) |
 | Missing contracts | **0** |
-| Branch | `ds-site-marianela` — 17 commits ahead of `main` |
+| Branch | `ds-site-marianela` — 19 commits ahead of `main` |
+| Playwright coverage | 12 DS components + HomePage/BlogIndex snapshots (25/25 green) |
+| Overall DS score | **9/10** (production-grade, ready for handoff) |
 
 **Breadth is enough** to rebuild the 26 marketing pages + 63 blog articles without new components, except for `HubspotCtaEmbed` (deferred — see §6).
 
@@ -87,11 +89,8 @@ Some frames render primary-gradient FIRST (`PillarFrame`, `StepsFrame`, `Related
 
 **Check each frame's `@purpose` JSDoc** before composing the heading. Don't assume.
 
-### 5.3 Padding inconsistency (known debt)
-- `ValuePropositionFrame` + `TestimonialsFrame` use `lg:px-[5rem]`
-- Everyone else uses `lg:px-[10rem]`
-
-Stacking them creates a ~5rem horizontal jitter at lg+. **Pending harmonization** — flagged in Bloque B3 (deferred).
+### 5.3 Padding consistency — ✅ resolved
+All 17 content section frames now use `lg:px-[10rem]` consistently. Harmonized in commit `b5a3596` (`ValuePropositionFrame` + `TestimonialsFrame` brought from `lg:px-[5rem]` to `lg:px-[10rem]`, HomePage Playwright snapshot regenerated). If you see a frame drifting, flag it.
 
 ### 5.4 BlogRelatedFrame vs RelatedArticlesFrame (not duplicates)
 - `<BlogRelatedFrame>` — 3 cards with thumbnail + excerpt + author byline (image-first grid)
@@ -129,9 +128,9 @@ After all 4 are migrated, delete `_legacy/sections/` in a cleanup commit.
 | `HubspotCtaEmbed` | External script loader + env var dependency. Only 8 blog articles need it. | Inline: `<div id="hs-cta-wrapper-${ctaId}" />` + add the loader script `https://js.hscta.net/cta/current.js` once in `layout.tsx`. Promote to DS when ≥2 articles use it. |
 | Strapi content-type `article` | Schema not defined. Blocks content migration but not DS rebuild. | Propose schema + generate TypeScript types before wiring pages. |
 | `src/components/cms/ArticleBodyRenderer` | Blocks → DS components glue. Only needed when Strapi is wired. | Map block types (`rich-text`, `figure`, `blockquote`, etc.) to DS components (Heading, Text, IllustrationFrame, Quote, etc.). |
-| Playwright snapshots for 11 new components | Gate 6 debt. | Add `tests/visual/*.spec.ts` entries when integrating each into a real page. |
-| `B3` padding harmonize (`lg:px-[5rem]` → `10rem`) | Marginal visual regression on existing HomePage/PmoToolPage callsites. | Do in a dedicated refactor with before/after Playwright snapshots. |
-| `BlogPostPage` template swap (TOC + Related) | Visual regression on blog routes. | Validate with user/Figma first, then swap. |
+| ~~Playwright snapshots for 11 new components~~ | ✅ **Resolved (commit `b5a3596`)** | `tests/visual/ds-components-storybook.spec.ts` covers the 11 components + `LpExamplePage` blueprint. 12 baselines committed. Run `npm run test:visual` (Storybook auto-started by playwright.config webServer). |
+| ~~`B3` padding harmonize (`lg:px-[5rem]` → `10rem`)~~ | ✅ **Resolved (commit `b5a3596`)** | All 17 content section frames now use `lg:px-[10rem]`. |
+| `BlogPostPage` template swap (TOC + Related) | Visual regression on blog routes. | Validate with user/Figma first, then swap to `TocSidebar` + `BlogRelatedFrame`. |
 
 ---
 
