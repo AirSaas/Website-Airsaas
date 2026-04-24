@@ -1,5 +1,4 @@
 import { Fragment } from "react";
-import Image from "next/image";
 import { Heading } from "@/components/library-design/ui/Heading";
 import { Text } from "@/components/library-design/ui/Text";
 import { Quote } from "@/components/library-design/ui/Quote";
@@ -7,6 +6,7 @@ import { ListInline } from "@/components/library-design/ui/ListInline";
 import { TableFrame } from "@/components/library-design/ui/TableFrame";
 import { InlineCta } from "@/components/library-design/ui/InlineCta";
 import { InsightCallout } from "@/components/library-design/ui/InsightCallout";
+import { IllustrationFrame } from "@/components/library-design/ui/IllustrationFrame";
 import { Button } from "@/components/library-design/ui/Button";
 import type { BlogArticleBlock } from "@/types/blog";
 
@@ -93,26 +93,13 @@ function renderBlock(block: BlogArticleBlock, index: number): React.ReactNode {
     case "figure": {
       if (!block.src) return null;
       return (
-        <figure
+        <IllustrationFrame
           key={index}
-          className="flex flex-col items-center gap-[0.75rem] my-[1rem]"
-        >
-          <Image
-            src={block.src}
-            alt={block.alt || ""}
-            width={1200}
-            height={675}
-            className="w-full h-auto rounded-[1rem] object-cover"
-            unoptimized
-          />
-          {block.caption ? (
-            <figcaption className="italic text-center">
-              <Text size="sm" align="center" className="text-text-light italic">
-                {block.caption}
-              </Text>
-            </figcaption>
-          ) : null}
-        </figure>
+          tone="warm"
+          src={block.src}
+          alt={block.alt || ""}
+          caption={block.caption ?? undefined}
+        />
       );
     }
     case "quote": {
