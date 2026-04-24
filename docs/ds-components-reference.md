@@ -93,6 +93,7 @@ Every entry shows its `@purpose` / `@useWhen` / `@dontUse` / `@limits` / `@forbi
 | `<TableOfContentsFrame>` | Article-level table of contents — centered primary-gradient title + white rounded card listing anchor links to each a… |
 | `<TabsFrame>` | Hero-adjacent horizontal pill-tab bar — 3–6 anchor links that smooth-scroll to sections lower on the page. Active tab… |
 | `<TestimonialsFrame>` | Section wrapper for testimonial cards: gradient heading + 3-col grid. |
+| `<TocSidebar>` | Sticky left-column table of contents for long-form articles — vertical list of numbered jump links. Active item is tr… |
 | `<ValuePropositionFrame>` | Section with title + subtitle + a 2-to-6-column grid of child cards (usually <FeatureCard> or custom). |
 
 ---
@@ -1256,6 +1257,29 @@ Every entry shows its `@purpose` / `@useWhen` / `@dontUse` / `@limits` / `@forbi
 
 **Forbidden:**
 - Do NOT mix testimonials prop AND children — children wins, testimonials ignored
+
+---
+
+### `<TocSidebar>`
+
+📄 [`src/components/library-design/sections/TocSidebar.tsx`](src/components/library-design/sections/TocSidebar.tsx)
+
+**Purpose** — Sticky left-column table of contents for long-form articles — vertical list of numbered jump links. Active item is tracked automatically via IntersectionObserver as the reader scrolls through the corresponding `[id]` sections. Clicking an item smooth-scrolls to the target and updates the URL hash.
+**Use when** — Desktop-only sidebar next to <BlogArticleBody> / <ProseFrame> on long-form editorial pages (blog articles with ≥ 5 h2 sections; Solution long-form). Hidden below `lg` breakpoint — the article body takes full width on mobile / tablet.
+**Don't use** — For top-of-page article TOC that scrolls with the content (use <TableOfContentsFrame> — centered, inline, horizontal). For top-of-page anchor tabs right after the Hero (use <TabsFrame>). For short articles with fewer than 3 sections (the sidebar feels empty).
+
+**Limits:**
+- title: max 40 chars (optional label above the list, e.g. "Sommaire")
+- items: 2–30 entries
+- item.label: max 80 chars (wraps to 2 lines past that)
+- item.id: must match an [id] on the page
+- ariaLabel: max 60 chars
+
+**Forbidden:**
+- Do NOT pass className with bg / text / font / padding overrides
+- Do NOT hardcode title / ariaLabel in French — pass via next-intl
+- Do NOT render more than one TocSidebar per page
+- Do NOT mix absolute URLs in item.id — only bare ids
 
 ---
 
