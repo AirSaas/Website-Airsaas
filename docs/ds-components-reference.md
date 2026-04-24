@@ -70,7 +70,6 @@ Every entry shows its `@purpose` / `@useWhen` / `@dontUse` / `@limits` / `@forbi
 | `<BlogArticleBody>` | Outer wrapper for the rich-text body of a blog article — white background, responsive side padding, 91.25rem inner ma… |
 | `<BlogHero>` | Article header for a single blog post: navbar + "Le Blog" tag + article title + author attribution (<BlogAuthorTag>) … |
 | `<BlogIndexGrid>` | Responsive grid of <BlogCard> previews inside a lavender panel, with an optional "see all articles" CTA below. |
-| `<ClientsFrame>` | Large grid of anonymous client cards — each card shows an avatar + name + role on a white section, and the company na… |
 | `<ComparisonDualFrame>` | "Avec / sans" dual-column comparison: a row of numbered cards per column, each column led by a colored pill label. |
 | `<ComparisonFrame>` | "Avec / sans" style numbered-list section showing pain points OR gains. |
 | `<ComparisonTableFrame>` | Feature comparison grid — one card per row, one wide "feature" cell on the left, N narrower value cells on the right … |
@@ -85,9 +84,7 @@ Every entry shows its `@purpose` / `@useWhen` / `@dontUse` / `@limits` / `@forbi
 | `<IconRowFrame>` | Horizontal row of icon + label pairs (integrations, tech stack, trusted-by logos rendered as iconography). Icons sit … |
 | `<PillarFrame>` | Grid of "pillar" cards — each with a large icon illustration, uppercase primary title, description, and an optional e… |
 | `<RelatedArticlesFrame>` | "Further reading" block at the end of a blog article — centered primary-gradient title + white rounded card listing o… |
-| `<RelatedSolutionsFrame>` | Image-first cross-sell block — grid of 3–5 solution cards, each with a landscape screenshot/illustration, an H4 title… |
 | `<SliderFrame>` | Centered title + subtitle + interactive screenshot carousel. |
-| `<StepsFrame>` | Sequential numbered steps — a horizontal row of 3–5 cards, each with a large gradient number, an icon illustration, a… |
 | `<TableOfContentsFrame>` | Article-level table of contents — centered primary-gradient title + white rounded card listing anchor links to each a… |
 | `<TestimonialsFrame>` | Section wrapper for testimonial cards: gradient heading + 3-col grid. |
 | `<ValuePropositionFrame>` | Section with title + subtitle + a 3- or 4-column grid of child cards (usually <FeatureCard> or custom). |
@@ -695,7 +692,7 @@ Every entry shows its `@purpose` / `@useWhen` / `@dontUse` / `@limits` / `@forbi
 **Don't use** — As a marketing section (use <FeatureFrame> / <CtaHighlightFrame>). For non-article pages (it assumes long-form vertical rhythm and centered narrow-max-width reading flow).
 
 **Limits:**
-- children: article content — DS primitives only. No raw heading tags (h1–h6) or paragraph tags — the ESLint + ds-audit rules enforce this; use <Heading> and <Text> instead.
+- children: article content — DS primitives only. No raw <h1-6> / <p>, no hardcoded colors or fonts in child markup (ESLint + ds-audit enforce this).
 
 **Forbidden:**
 - Do NOT hardcode article content inside the component — copy flows in via children (rendered by the page, sourced from i18n / CMS)
@@ -744,28 +741,6 @@ Every entry shows its `@purpose` / `@useWhen` / `@dontUse` / `@limits` / `@forbi
 - Do NOT pass className that overrides bg / padding / rounded on the outer section or the lavender panel
 - Do NOT hardcode the CTA label — pass via props (locale-driven)
 - Do NOT render an empty grid (articles.length must be >= 1)
-
----
-
-### `<ClientsFrame>`
-
-📄 [`src/components/library-design/sections/ClientsFrame.tsx`](src/components/library-design/sections/ClientsFrame.tsx)
-
-**Purpose** — Large grid of anonymous client cards — each card shows an avatar + name + role on a white section, and the company name + metadata rows on a primary-tinted bottom section. Typically placed at the bottom of Équipes / Solution pages to showcase "who trusts us".
-**Use when** — "Ils nous font confiance" / "Les AirSaasiens" / "Nos clients" sections with 6–12 <ClientCard>. Replaces the old limit of <TestimonialsFrame> (max 6), which remains focused on quoted testimonials.
-**Don't use** — For testimonials with quotes (use <TestimonialsFrame> + <TestimonialCard>). For press citations (use <TestimonialsFrame> + <TestimonialCompanyCard>). For a simple row of logos (use <LogosBar>).
-
-**Limits:**
-- tag: max 24 chars
-- titleHighlight: max 40 chars
-- title: max 80 chars
-- subtitle: max 260 chars
-- clients: 6–12 items
-- columns: 3 | 4 (default 3)
-
-**Forbidden:**
-- Do NOT pass className that changes bg / border / padding
-- Do NOT mix <ClientCard> with other card types in the same grid
 
 ---
 
@@ -1064,32 +1039,6 @@ Every entry shows its `@purpose` / `@useWhen` / `@dontUse` / `@limits` / `@forbi
 
 ---
 
-### `<RelatedSolutionsFrame>`
-
-📄 [`src/components/library-design/sections/RelatedSolutionsFrame.tsx`](src/components/library-design/sections/RelatedSolutionsFrame.tsx)
-
-**Purpose** — Image-first cross-sell block — grid of 3–5 solution cards, each with a landscape screenshot/illustration, an H4 title, a short one-line description, and a "learn more" link. Typically sits at the bottom of a Landing / Produit / Solution page.
-**Use when** — "Découvrez toute la plateforme AirSaas" / "Nos autres fonctionnalités" / "Solutions associées" sections where we showcase 3–5 adjacent products or solutions. Also works at the top of long-form Solution pages ("Tout sur le pilotage projet").
-**Don't use** — For blog articles (use <BlogCard> inside <BlogIndexGrid>). For icon-first benefit grids (use <FeatureCard> inside <ValuePropositionFrame>). For CTAs with a button (use <CtaFrame> + <CardCta>).
-
-**Limits:**
-- tag: max 24 chars
-- titleHighlight: max 40 chars
-- title: max 80 chars
-- subtitle: max 260 chars
-- solutions: 3–5 items (below 3 looks sparse; above 5 breaks the grid)
-- solution.title: max 40 chars (2 lines of H4)
-- solution.description: max 120 chars (1–2 lines)
-- solution.linkLabel: max 24 chars (defaults to "Voir plus")
-- solution.imageAlt: required (pass "" only if image is purely decorative)
-
-**Forbidden:**
-- Do NOT pass className that changes bg / border / padding / rounded — the chrome is part of the contract
-- Do NOT use for anchor/TOC navigation (use <TableOfContentsFrame>)
-- Do NOT render more than one <RelatedSolutionsFrame> per page (cross-sell clutter)
-
----
-
 ### `<SliderFrame>`
 
 📄 [`src/components/library-design/sections/SliderFrame.tsx`](src/components/library-design/sections/SliderFrame.tsx)
@@ -1102,33 +1051,10 @@ Every entry shows its `@purpose` / `@useWhen` / `@dontUse` / `@limits` / `@forbi
 - titleHighlight: max 40 chars (primary gradient)
 - titleRest: max 70 chars (dark foreground)
 - subtitle: max 280 chars
-- slides: 2–8
+- slides: 2–5
 
 **Forbidden:**
 - Do NOT nest another <Slider> inside this frame
-
----
-
-### `<StepsFrame>`
-
-📄 [`src/components/library-design/sections/StepsFrame.tsx`](src/components/library-design/sections/StepsFrame.tsx)
-
-**Purpose** — Sequential numbered steps — a horizontal row of 3–5 cards, each with a large gradient number, an icon illustration, a title, and a short description. Steps are visually chained with a dashed connector line on lg.
-**Use when** — "How it works" / "Onboarding" / "Deployment steps" sections on landing pages and marketing pages where the order matters. Example: "Lancez votre PPM en 4 étapes".
-**Don't use** — For non-sequential principles (use <PillarFrame>). For generic feature grids (use <ValuePropositionFrame>). For zig-zag alternating highlights (use <HighlightFrame>).
-
-**Limits:**
-- tag: max 24 chars
-- titleHighlight: max 40 chars
-- title: max 80 chars
-- subtitle: max 260 chars
-- steps: 3–5 items (below 3 looks sparse; above 5 breaks the grid rhythm)
-- step.title: max 24 chars (wraps past that)
-- step.description: max 180 chars
-
-**Forbidden:**
-- Do NOT pass className with bg / color / padding overrides — the white section + primary-gradient numbers + dashed connector are part of the contract
-- Do NOT use for non-sequential content — the numbered affordance implies order
 
 ---
 
