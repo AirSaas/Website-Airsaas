@@ -7,6 +7,13 @@ const nextConfig: NextConfig = {
   turbopack: {
     root: __dirname,
   },
+  images: {
+    remotePatterns: [
+      { protocol: "https", hostname: "cdn.prod.website-files.com" },
+      { protocol: "https", hostname: "uploads-ssl.webflow.com" },
+      { protocol: "https", hostname: "placehold.co" },
+    ],
+  },
   async redirects() {
     return [
       // =============================================

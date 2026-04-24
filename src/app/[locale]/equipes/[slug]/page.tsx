@@ -4,6 +4,7 @@ import LandingSectionsPage, {
   type GenericPageData,
 } from "@/components/pages/LandingSectionsPage";
 import { EQUIPES_PAGES } from "@/data/equipes";
+import { getLandingImages } from "@/data/landings-images";
 
 type RouteParams = { locale: string; slug: string };
 
@@ -30,5 +31,11 @@ export default async function EquipesRoute({
   const { slug } = await params;
   const page = EQUIPES_PAGES.find((p) => p.slug === slug);
   if (!page) notFound();
-  return <LandingSectionsPage page={page as unknown as GenericPageData} />;
+  const images = getLandingImages("equipe", slug);
+  return (
+    <LandingSectionsPage
+      page={page as unknown as GenericPageData}
+      images={images}
+    />
+  );
 }

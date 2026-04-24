@@ -11,6 +11,7 @@ import { Heading } from "@/components/library-design/ui/Heading";
 import { Text } from "@/components/library-design/ui/Text";
 import { FeatureCard } from "@/components/library-design/ui/FeatureCard";
 import { BLOG_INDEX_DATA } from "@/data/blog";
+import type { LandingImagesEntry } from "@/data/landings-images";
 
 /**
  * LandingSectionsPage — generic landing-page template used by:
@@ -18,9 +19,9 @@ import { BLOG_INDEX_DATA } from "@/data/blog";
  *   - /solutions/[slug]
  *   - /equipes/[slug]
  *
- * Takes a page shape with { hero, intro, sections[] } and composes DS
- * section frames. A lighter alternative to LandingLpPage (which is
- * specific to the /lp/[slug] blueprint).
+ * Composes DS section frames from a generic page shape. Real images
+ * can be overridden via the `images` prop (one per feature section in
+ * visual order, parsed from Webflow HTML).
  */
 
 export type GenericSection = {
@@ -54,9 +55,18 @@ export type GenericPageData = {
   hasPress?: boolean;
 };
 
-function renderSection(section: GenericSection, index: number) {
+const PLACEHOLDER_HERO =
+  "https://placehold.co/1200x700/e8eafc/3a51e2?text=AirSaas";
+const PLACEHOLDER_SECTION =
+  "https://placehold.co/900x600/e8eafc/3a51e2?text=AirSaas";
+
+function renderSection(
+  section: GenericSection,
+  index: number,
+  featureImageForIndex: (i: number) => string,
+) {
   switch (section.type) {
-    case "feature":
+    case "feature": {
       if (!section.heading || !section.description) return null;
       return (
         <FeatureFrame
@@ -74,10 +84,11 @@ function renderSection(section: GenericSection, index: number) {
                 : section.description}
             </Text>
           }
-          imageSrc={section.image || "https://placehold.co/900x600/e8eafc/3a51e2?text=AirSaas"}
+          imageSrc={featureImageForIndex(index)}
           imageAlt={section.imageAlt || ""}
         />
       );
+    }
     case "heading":
       if (!section.heading) return null;
       return (
@@ -145,10 +156,38 @@ function renderSection(section: GenericSection, index: number) {
   }
 }
 
-export default function LandingSectionsPage({ page }: { page: GenericPageData }) {
+export default function LandingSectionsPage({
+  page,
+  images,
+}: {
+  page: GenericPageData;
+  images?: LandingImagesEntry;
+}) {
+  const heroImage = images?.hero || page.hero.image || PLACEHOLDER_HERO;
+  const sectionImages = images?.sections ?? [];
+
+  // Precompute the mapping from section index → feature-image index.
+  // Only feature sections consume an image URL.
+  const featureImageIndex = new Map<number, number>();
+  let featureCount = 0;
+  page.sections.forEach((s, i) => {
+    if (s.type === "feature") {
+      featureImageIndex.set(i, featureCount);
+      featureCount += 1;
+    }
+  });
+
+  const featureImageForIndex = (sectionIndex: number): string => {
+    const fIdx = featureImageIndex.get(sectionIndex) ?? 0;
+    const override = sectionImages[fIdx];
+    if (override) return override;
+    // fallback to section.image from data, else placeholder
+    const section = page.sections[sectionIndex];
+    return section?.image || PLACEHOLDER_SECTION;
+  };
+
   return (
     <main className="flex min-h-screen flex-col bg-background">
-      {/* 1. Hero */}
       <Hero
         layout="split"
         eyebrow={page.hero.badge}
@@ -158,12 +197,11 @@ export default function LandingSectionsPage({ page }: { page: GenericPageData })
         }
         subtitle={page.hero.description}
         primaryCta={{ label: "Réserver une démo", href: "/fr/meetings-pages" }}
-        imageSrc={page.hero.image || "https://placehold.co/1200x700/e8eafc/3a51e2?text=AirSaas"}
+        imageSrc={heroImage}
         imageAlt={page.hero.imageAlt}
         floatingCards={false}
       />
 
-      {/* 2. Intro */}
       <section className="flex flex-col items-center gap-[1.5rem] px-[1.5rem] py-[3rem] md:px-[3rem] md:py-[5rem] lg:px-[10rem] lg:py-[6.25rem] bg-white text-center">
         <Heading level={2} align="center">
           {page.intro.heading}
@@ -173,10 +211,10 @@ export default function LandingSectionsPage({ page }: { page: GenericPageData })
         </Text>
       </section>
 
-      {/* 3. Sections */}
-      {page.sections.map((section, i) => renderSection(section, i))}
+      {page.sections.map((section, i) =>
+        renderSection(section, i, featureImageForIndex),
+      )}
 
-      {/* 4. Footer */}
       <Footer
         columns={BLOG_INDEX_DATA.footerColumns}
         copyright={BLOG_INDEX_DATA.copyright}
