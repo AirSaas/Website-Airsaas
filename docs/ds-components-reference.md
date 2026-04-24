@@ -70,6 +70,7 @@ Every entry shows its `@purpose` / `@useWhen` / `@dontUse` / `@limits` / `@forbi
 | `<BlogArticleBody>` | Blog-specific alias over <ProseFrame maxWidth="wide"> that preserves the blog pipeline's public API (callsites keep `… |
 | `<BlogCollectionFrame>` | Full-width section introducing a blog content collection — H2 title + optional subtitle + optional collection-level a… |
 | `<BlogHero>` | Article header for a single blog post: navbar + "Le Blog" tag + article title + author attribution (<BlogAuthorTag>) … |
+| `<BlogRelatedFrame>` | Footer section for a blog article — grid of exactly 3 related <BlogCard> items ("Pour aller plus loin", "Ces articles… |
 | `<ClientsFrame>` | Section wrapper for a large grid of <ClientCard> items — avatar + name + role + company + metadata rows. Dense social… |
 | `<ComparisonDualFrame>` | "Avec / sans" dual-column comparison: a row of numbered cards per column, each column led by a colored pill label. |
 | `<ComparisonFrame>` | "Avec / sans" style numbered-list section showing pain points OR gains. |
@@ -760,6 +761,29 @@ Every entry shows its `@purpose` / `@useWhen` / `@dontUse` / `@limits` / `@forbi
 
 ---
 
+### `<BlogRelatedFrame>`
+
+📄 [`src/components/library-design/sections/BlogRelatedFrame.tsx`](src/components/library-design/sections/BlogRelatedFrame.tsx)
+
+**Purpose** — Footer section for a blog article — grid of exactly 3 related <BlogCard> items ("Pour aller plus loin", "Ces articles pourraient vous intéresser"). Small sibling of <BlogCollectionFrame> used on article pages rather than the index page. Optional CTA below links to the full collection.
+**Use when** — At the bottom of every blog article page, between the article body and the footer, to keep readers on-site. Typically fed 3 articles from a "related articles" Strapi relation or a category-based recommendation query.
+**Don't use** — For the blog index page — use <BlogCollectionFrame>. For non-blog cross-sells (product solutions) — use <RelatedSolutionsFrame> (image-first, no author byline).
+
+**Limits:**
+- titleHighlight: max 40 chars
+- title: max 80 chars
+- subtitle: max 260 chars
+- articles: exactly 3 items (grid locked to 3 columns on desktop)
+- collectionCtaLabel: max 36 chars
+
+**Forbidden:**
+- Do NOT use for non-blog cross-sell (use <RelatedSolutionsFrame>)
+- Do NOT pass more or fewer than 3 articles (grid breaks)
+- Do NOT hardcode collectionCtaLabel locale copy — pass via i18n
+- Do NOT pass className with bg / text / font / padding overrides
+
+---
+
 ### `<ClientsFrame>`
 
 📄 [`src/components/library-design/sections/ClientsFrame.tsx`](src/components/library-design/sections/ClientsFrame.tsx)
@@ -1067,7 +1091,7 @@ Every entry shows its `@purpose` / `@useWhen` / `@dontUse` / `@limits` / `@forbi
 **Limits:**
 - variant: "light" (default, white bg) | "tinted" (primary-2 pale lavender)
 - maxWidth: "reading" (default, 50rem ~ 65ch) | "wide" (91.25rem, blog body)
-- children: DS primitives only — no raw <h1-h6>, no raw <p> with typography classes (the ESLint + ds-audit rules enforce this)
+- children: DS primitives only — no raw heading tags (h1–h6), no raw paragraph tags with typography classes (ESLint + ds-audit enforce this)
 
 **Forbidden:**
 - Do NOT hardcode article content inside this wrapper — copy flows via children (page / i18n / CMS)

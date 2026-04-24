@@ -55,7 +55,7 @@ export interface BlogCardAuthor {
   avatarAlt?: string;
 }
 
-interface BlogCardProps {
+export interface BlogCardProps {
   /** Thumbnail image URL. */
   thumbnailSrc: string;
   /** Required alt text. Empty string `""` marks the image as decorative. */
