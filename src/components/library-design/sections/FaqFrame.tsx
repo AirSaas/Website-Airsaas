@@ -21,7 +21,7 @@ interface FaqItem {
  * @limits
  *   - title: max 40 chars (plain dark-to-primary portion)
  *   - titleHighlight: max 40 chars (gradient portion)
- *   - items: 3–12 (past 12, split into multiple FAQs or a dedicated page)
+ *   - items: 2–12 (past 12, split into multiple FAQs or a dedicated page)
  *   - items[].question: max 120 chars
  *   - items[].answer: max 500 chars
  *

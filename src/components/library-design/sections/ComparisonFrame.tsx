@@ -20,7 +20,7 @@ interface ComparisonItem {
  * @limits
  *   - title: max 80 chars
  *   - subtitle: max 220 chars
- *   - items: 4–8 (visual rhythm breaks outside this range)
+ *   - items: 3–8 (below 3 the block looks sparse; above 8 visual rhythm breaks)
  *   - items[].description: max 220 chars
  *   - emoji: 1–2 chars
  */

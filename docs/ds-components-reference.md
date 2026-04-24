@@ -90,7 +90,7 @@ Every entry shows its `@purpose` / `@useWhen` / `@dontUse` / `@limits` / `@forbi
 | `<StepsFrame>` | Horizontal row of numbered sequential steps — each step has a large primary-gradient number, an icon, a short title, … |
 | `<TableOfContentsFrame>` | Article-level table of contents — centered primary-gradient title + white rounded card listing anchor links to each a… |
 | `<TestimonialsFrame>` | Section wrapper for testimonial cards: gradient heading + 3-col grid. |
-| `<ValuePropositionFrame>` | Section with title + subtitle + a 3- or 4-column grid of child cards (usually <FeatureCard> or custom). |
+| `<ValuePropositionFrame>` | Section with title + subtitle + a 2-to-6-column grid of child cards (usually <FeatureCard> or custom). |
 
 ---
 
@@ -807,7 +807,7 @@ Every entry shows its `@purpose` / `@useWhen` / `@dontUse` / `@limits` / `@forbi
 **Limits:**
 - title: max 80 chars
 - subtitle: max 220 chars
-- items: 4–8 (visual rhythm breaks outside this range)
+- items: 3–8 (below 3 the block looks sparse; above 8 visual rhythm breaks)
 - items[].description: max 220 chars
 - emoji: 1–2 chars
 
@@ -887,7 +887,7 @@ Every entry shows its `@purpose` / `@useWhen` / `@dontUse` / `@limits` / `@forbi
 **Limits:**
 - title: max 40 chars (plain dark-to-primary portion)
 - titleHighlight: max 40 chars (gradient portion)
-- items: 3–12 (past 12, split into multiple FAQs or a dedicated page)
+- items: 2–12 (past 12, split into multiple FAQs or a dedicated page)
 - items[].question: max 120 chars
 - items[].answer: max 500 chars
 
@@ -1015,7 +1015,7 @@ Every entry shows its `@purpose` / `@useWhen` / `@dontUse` / `@limits` / `@forbi
 - titleHighlight / title: max 40 / 80 chars
 - singleTitle: max 80 chars (alternative to titleHighlight + title)
 - subtitle: max 260 chars
-- items: 4–8 (past 8 the row wraps awkwardly on tablet)
+- items: 3–8 (below 3 the row looks sparse; past 8 it wraps awkwardly on tablet)
 - item.label: max 24 chars
 - tag: max 24 chars
 
@@ -1171,13 +1171,13 @@ Every entry shows its `@purpose` / `@useWhen` / `@dontUse` / `@limits` / `@forbi
 📄 [`src/components/library-design/sections/TestimonialsFrame.tsx`](src/components/library-design/sections/TestimonialsFrame.tsx)
 
 **Purpose** — Section wrapper for testimonial cards: gradient heading + 3-col grid.
-**Use when** — Surfacing 3–6 customer quotes on a marketing page.
+**Use when** — Surfacing 2–6 customer quotes on a marketing page. 1 quote = use <TestimonialCard> inline (no frame).
 **Don't use** — For a single hero testimonial — just render a <TestimonialCard> inline. For company-logo-based testimonials, prefer <TestimonialCompanyCard>.
 
 **Limits:**
 - title: max 40 chars (gradient dark-to-primary)
 - titleHighlight: max 40 chars (gradient primary)
-- testimonials: 3–6 items (renders in grid-cols-3 at lg)
+- testimonials: 2–6 items (renders grid-cols-3 at lg — 2 items center on md+)
 
 **Forbidden:**
 - Do NOT mix testimonials prop AND children — children wins, testimonials ignored
@@ -1188,15 +1188,16 @@ Every entry shows its `@purpose` / `@useWhen` / `@dontUse` / `@limits` / `@forbi
 
 📄 [`src/components/library-design/sections/ValuePropositionFrame.tsx`](src/components/library-design/sections/ValuePropositionFrame.tsx)
 
-**Purpose** — Section with title + subtitle + a 3- or 4-column grid of child cards (usually <FeatureCard> or custom).
-**Use when** — Presenting 3–4 equal-weight benefits / value props / metrics.
-**Don't use** — For a narrative "feature + image" flow (use <FeatureFrame>). For a listing of 6+ items (use <PillarFrame> or <HighlightFrame>).
+**Purpose** — Section with title + subtitle + a 2-to-6-column grid of child cards (usually <FeatureCard> or custom).
+**Use when** — Presenting 2–6 equal-weight benefits / value props / metrics.
+**Don't use** — For a narrative "feature + image" flow (use <FeatureFrame>). For a listing of 7+ items (use <PillarFrame> or <HighlightFrame>).
 
 **Limits:**
 - title: max 80 chars
 - titleHighlight: max 40 chars
 - subtitle: max 250 chars
-- children: 3 or 4 cards (matches `columns` prop)
+- children: 2–6 cards (should match `columns` prop for visual balance)
+- columns: 2 | 3 | 4 | 5 | 6 (lg breakpoint; default 4)
 - tag: max 24 chars
 
 **Forbidden:**

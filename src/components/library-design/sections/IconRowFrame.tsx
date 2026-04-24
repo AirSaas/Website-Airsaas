@@ -25,7 +25,7 @@ export interface IconRowItem {
  *   - titleHighlight / title: max 40 / 80 chars
  *   - singleTitle: max 80 chars (alternative to titleHighlight + title)
  *   - subtitle: max 260 chars
- *   - items: 4–8 (past 8 the row wraps awkwardly on tablet)
+ *   - items: 3–8 (below 3 the row looks sparse; past 8 it wraps awkwardly on tablet)
  *   - item.label: max 24 chars
  *   - tag: max 24 chars
  *
