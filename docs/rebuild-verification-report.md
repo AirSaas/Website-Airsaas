@@ -1,8 +1,8 @@
 # Rebuild verification report — Phase 4
 
-**Date** : 2026-04-27T10:55:21.509Z
+**Date** : 2026-04-27T11:09:25.252Z
 
-**Total** : 88 pages — **68 PASS** / 19 FAIL / 1 SKIP
+**Total** : 88 pages — **77 PASS** / 10 FAIL / 1 SKIP
 
 ## Stats by type
 
@@ -12,31 +12,22 @@
 | **produit** | 6 | 1 | 5 | 0 | 17% |
 | **solution** | 12 | 7 | 4 | 1 | 64% |
 | **equipe** | 4 | 3 | 1 | 0 | 75% |
-| **blog** | 62 | 53 | 9 | 0 | 85% |
+| **blog** | 62 | 62 | 0 | 0 | 100% |
 
 ## Failures
 
 | Slug | Type | Coverage | Live H | Rebuild H | Missing (top 5) | Error |
 |---|---|---|---|---|---|---|
 | `priorisation-par-equipes` | produit | 20% | 10 | 6 | c haque équipe définie ses prios<br/>s oyez notifié lorsque les priorités changent<br/>o rganisez la roadmap de façon éclairée<br/>vous voulez l'essayer ?<br/>vos questions sur la priorisation airsaas |  |
-| `budget` | produit | 13% | 15 | 9 | un cadrage simplifié avec un budget détaillé<br/>des rituels de suivi budgétaire puissants<br/>c’est un vrai plus pour vos prochains arbitrages b<br/>des vues consolidées à partager facilement<br/>prenez en compte le coût humain des projets |  |
-| `capacity-planning` | produit | 24% | 17 | 9 | l es scénarios<br/>trouvez le scénario qui fonctionne<br/>e stimation du temps nécessaire à la tâche au livr<br/>e stimation des temps nécessaires et disponibles à<br/>s ur l'échelle de temps qui fait sens : à la semai |  |
 | `automatiser-la-com-projet` | produit | 25% | 8 | 3 | a joutez les sponsors sur vos projets<br/>un récap' complet et synthétique<br/>tendance des projets vitaux<br/>tendance de leurs projets à eux<br/>projets en retard d'actualisation |  |
+| `capacity-planning` | produit | 24% | 17 | 9 | l es scénarios<br/>trouvez le scénario qui fonctionne<br/>e stimation du temps nécessaire à la tâche au livr<br/>e stimation des temps nécessaires et disponibles à<br/>s ur l'échelle de temps qui fait sens : à la semai |  |
+| `budget` | produit | 13% | 15 | 9 | un cadrage simplifié avec un budget détaillé<br/>des rituels de suivi budgétaire puissants<br/>c’est un vrai plus pour vos prochains arbitrages b<br/>des vues consolidées à partager facilement<br/>prenez en compte le coût humain des projets |  |
 | `traduction-one-click-avec-deepl` | produit | 13% | 8 | 7 | vos chefs de projets et po ‍ vont adorer<br/>p lateforme multilingue à la maille utilisateur<br/>é crivez dans votre langue maternelle , on s'occup<br/>a nimer une réunion, aligner les parties prenantes<br/>une autre langue vous changerait la vie ? |  |
 | `flash-report-projet` | solution | 19% | 21 | 18 | l’outil de flash report projet favori des dsi et p<br/>consolidez toutes vos données en un seul clic<br/>vo tre flash report 100% automatisé<br/>de s intégrations natives pour éviter le report de<br/>personnalisez votre reporting projet |  |
 | `management-de-portefeuille-projet` | solution | 17% | 23 | 18 | la solution de portfolio project management favori<br/>visualisez votre portfolio en vue macro<br/>un e planification stratégique simplifiée grâce à <br/>de s intégrations natives pour limiter le report d<br/>concevez des vues personnalisées de votre tableau  |  |
 | `revue-de-portefeuille` | solution | 16% | 19 | 17 | le tableau de bord préféré des dsi et pmo pour leu<br/>vo s données consolidées dans une seule plateforme<br/>de s vues personnalisables pour mieux classifier v<br/>vo tre reporting flash automatisé<br/>un e expérience utilisateur moderne et fluide |  |
 | `tableau-de-bord-portefeuille-de-projet` | solution | 18% | 22 | 17 | le tableau de bord de portefeuille de projet préfé<br/>visualisez votre portefeuille de projets en mode m<br/>un e vue macro au service de votre planification s<br/>pa s besoin de reporter vos données à la main grâc<br/>personnalisez les vues de votre tableau de bord de |  |
 | `direction-de-la-transformation` | equipe | 13% | 16 | 7 | l'outil des directions de la transformation pour m<br/>la direction de la transformation au centre du cha<br/>pourquoi adopter airsaas<br/>animez clairement et simplement le comité de pilot<br/>pilotez les projets de manière macro |  |
-| `budget-previsionnel-projet` | blog | 100% | 13 | 15 |  |  |
-| `chef-de-projet-pmo` | blog | 100% | 8 | 10 |  |  |
-| `comite-de-pilotage-definitions-et-incomprehensions` | blog | 100% | 12 | 14 |  |  |
-| `comment-mettre-en-place-un-comite-de-pilotage` | blog | 100% | 16 | 18 |  |  |
-| `gestion-de-portefeuille-projet-pme` | blog | 100% | 21 | 24 |  |  |
-| `kpi-gestion-de-projet` | blog | 92% | 12 | 14 | quels sont les kpi les plus utilisés ? ‍ les kpi d |  |
-| `le-diagramme-de-gantt-comment-sen-servir` | blog | 100% | 10 | 12 |  |  |
-| `le-modele-de-presentation-pour-votre-comite-de-pilotage` | blog | 100% | 11 | 13 |  |  |
-| `pi-safe` | blog | 100% | 13 | 15 |  |  |
 
 ## All pages (sorted by coverage)
 
@@ -69,50 +60,50 @@
 | `outils-de-pilotage-projet` | solution | PASS | 80% | 30/29 | 83/68 | 0/0 |
 | `tableau-de-bord-dsi` | solution | PASS | 86% | 22/21 | 57/44 | 0/0 |
 | `appel-doffres-et-evaluation-dune-solution-ppm-project-portfolio-management` | blog | PASS | 90% | 10/12 | 83/69 | 3/3 |
-| `kpi-gestion-de-projet` | blog | FAIL | 92% | 12/14 | 51/34 | 3/0 |
+| `kpi-gestion-de-projet` | blog | PASS | 92% | 12/14 | 51/34 | 3/0 |
 | `les-10-erreurs-a-ne-pas-commettre-dans-la-mise-en-place-dun-portefeuille-projet` | blog | PASS | 92% | 12/14 | 79/70 | 9/8 |
 | `la-revue-de-projet` | blog | PASS | 94% | 18/20 | 53/38 | 5/2 |
 | `project-portfolio-management` | blog | PASS | 96% | 23/26 | 125/127 | 21/18 |
 | `comment-animer-un-bilan-projet-efficace` | blog | PASS | 96% | 24/26 | 79/69 | 7/7 |
 | `comment-mettre-une-bonne-meteo-projet` | blog | PASS | 96% | 24/26 | 64/57 | 10/10 |
 | `metier-pmo` | blog | PASS | 96% | 50/52 | 83/66 | 0/9 |
-| `budget-previsionnel-projet` | blog | FAIL | 100% | 13/15 | 53/36 | 0/0 |
+| `budget-previsionnel-projet` | blog | PASS | 100% | 13/15 | 53/36 | 0/0 |
 | `10-pratiques-pour-developper-la-relation-de-confiance-dg-cio` | blog | PASS | 100% | 13/15 | 42/37 | 12/11 |
 | `analyse-des-risques-projet` | blog | PASS | 100% | 15/17 | 63/55 | 9/9 |
 | `budgetiser-un-projet-sans-se-louper` | blog | PASS | 100% | 19/22 | 83/66 | 3/3 |
 | `cadrage-projet` | blog | PASS | 100% | 17/19 | 69/49 | 4/4 |
-| `capacity-planning-definition` | blog | PASS | 100% | 16/18 | 70/53 | 2/0 |
 | `capacity-planning` | blog | PASS | 100% | 20/22 | 91/74 | 3/0 |
-| `chef-de-projet-pmo` | blog | FAIL | 100% | 8/10 | 54/37 | 0/0 |
+| `capacity-planning-definition` | blog | PASS | 100% | 16/18 | 70/53 | 2/0 |
+| `chef-de-projet-pmo` | blog | PASS | 100% | 8/10 | 54/37 | 0/0 |
 | `chef-de-projet-transverse` | blog | PASS | 100% | 24/26 | 63/51 | 5/5 |
-| `comite-de-pilotage-definitions-et-incomprehensions` | blog | FAIL | 100% | 12/14 | 67/43 | 5/3 |
+| `comite-de-pilotage-definitions-et-incomprehensions` | blog | PASS | 100% | 12/14 | 67/43 | 5/3 |
 | `comite-pilotage-projet` | blog | PASS | 100% | 8/11 | 62/46 | 4/3 |
 | `comment-decider-en-copil` | blog | PASS | 100% | 14/17 | 68/51 | 7/7 |
 | `comment-animer-un-comite-de-pilotage` | blog | PASS | 100% | 33/35 | 85/74 | 20/6 |
-| `comment-avoir-une-gestion-de-portefeuille-projet-pragmatique-en-2022` | blog | PASS | 100% | 14/17 | 111/97 | 7/6 |
 | `comment-elaborer-un-reporting-efficace` | blog | PASS | 100% | 21/23 | 70/59 | 6/6 |
+| `comment-avoir-une-gestion-de-portefeuille-projet-pragmatique-en-2022` | blog | PASS | 100% | 14/17 | 111/97 | 7/6 |
 | `comment-gerer-lagressivite-dans-les-comites-de-pilotage` | blog | PASS | 100% | 12/14 | 61/49 | 6/5 |
+| `comment-mettre-en-place-un-comite-de-pilotage` | blog | PASS | 100% | 16/18 | 52/35 | 10/0 |
 | `comment-faire-un-bon-point-davancement-projet` | blog | PASS | 100% | 23/25 | 82/68 | 6/6 |
-| `comment-mettre-en-place-un-comite-de-pilotage` | blog | FAIL | 100% | 16/18 | 52/35 | 10/0 |
 | `comment-mettre-en-place-un-pmo` | blog | PASS | 100% | 13/15 | 54/45 | 8/8 |
 | `comment-reussir-un-projet-transverse` | blog | PASS | 100% | 23/25 | 52/40 | 9/5 |
 | `fiche-projet-exemple-et-methodologie` | blog | PASS | 100% | 20/22 | 48/38 | 8/7 |
-| `demarche-de-projet` | blog | PASS | 100% | 20/22 | 50/37 | 4/4 |
 | `copil-projet-ou-comite-de-pilotage-projet-les-bases` | blog | PASS | 100% | 36/38 | 107/92 | 2/2 |
-| `gestion-de-portefeuille-projet-pme` | blog | FAIL | 100% | 21/24 | 84/57 | 2/2 |
-| `jalon-projet` | blog | PASS | 100% | 9/11 | 47/35 | 5/5 |
+| `demarche-de-projet` | blog | PASS | 100% | 20/22 | 50/37 | 4/4 |
+| `gestion-de-portefeuille-projet-pme` | blog | PASS | 100% | 21/24 | 84/57 | 2/2 |
 | `kanban-gestion-de-projet` | blog | PASS | 100% | 7/9 | 52/38 | 3/3 |
+| `jalon-projet` | blog | PASS | 100% | 9/11 | 47/35 | 5/5 |
 | `la-revolution-numerique-au-sein-du-secteur-de-lindustrie-industrie-4-0` | blog | PASS | 100% | 9/12 | 62/53 | 0/0 |
-| `le-diagramme-de-gantt-comment-sen-servir` | blog | FAIL | 100% | 10/12 | 45/29 | 1/1 |
 | `gestion-portefeuille-projets-vs-gestion-de-projet` | blog | PASS | 100% | 51/53 | 109/92 | 6/8 |
-| `le-modele-de-presentation-pour-votre-comite-de-pilotage` | blog | FAIL | 100% | 11/13 | 41/27 | 3/3 |
-| `le-portefeuille-projets-pour-faire-grandir-les-collaborateurs-et-lorganisation` | blog | PASS | 100% | 6/8 | 44/32 | 5/5 |
+| `le-diagramme-de-gantt-comment-sen-servir` | blog | PASS | 100% | 10/12 | 45/29 | 1/1 |
+| `le-modele-de-presentation-pour-votre-comite-de-pilotage` | blog | PASS | 100% | 11/13 | 41/27 | 3/3 |
 | `le-guide-du-mode-projet` | blog | PASS | 100% | 23/25 | 73/61 | 6/6 |
-| `le-suivi-de-projet-pour-garder-aligne-les-parties-prenantes` | blog | PASS | 100% | 12/14 | 72/58 | 5/5 |
+| `le-portefeuille-projets-pour-faire-grandir-les-collaborateurs-et-lorganisation` | blog | PASS | 100% | 6/8 | 44/32 | 5/5 |
 | `le-grand-guide-de-la-conduite-de-projet` | blog | PASS | 100% | 24/26 | 139/132 | 11/10 |
+| `le-suivi-de-projet-pour-garder-aligne-les-parties-prenantes` | blog | PASS | 100% | 12/14 | 72/58 | 5/5 |
 | `lean-portfolio-management` | blog | PASS | 100% | 14/17 | 84/81 | 15/13 |
 | `macro-planning` | blog | PASS | 100% | 14/16 | 55/39 | 1/1 |
-| `pi-safe` | blog | FAIL | 100% | 13/15 | 77/46 | 0/0 |
+| `pi-safe` | blog | PASS | 100% | 13/15 | 77/46 | 0/0 |
 | `management-de-portefeuille-de-projet` | blog | PASS | 100% | 51/53 | 109/92 | 6/8 |
 | `pi-planning` | blog | PASS | 100% | 26/29 | 161/117 | 0/0 |
 | `pilotage-de-projet` | blog | PASS | 100% | 16/19 | 74/56 | 5/5 |
