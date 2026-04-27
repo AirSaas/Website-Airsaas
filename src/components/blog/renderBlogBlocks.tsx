@@ -58,12 +58,15 @@ function normalizeText(html: string): string {
 function renderBlock(block: BlogArticleBlock, index: number): React.ReactNode {
   switch (block.type) {
     case "heading": {
-      // DS Heading supports levels 1-4; clamp deeper to 4.
-      const level = Math.min(Math.max(block.level, 2), 4) as 2 | 3 | 4;
+      // Editorial body downshift: H2 source → DS level=3, H3+ → level=4.
+      // DS Heading H2 is marketing-section size (32-72px) — too big for body
+      // article context. The downshift keeps a readable hierarchy (24-40px).
+      const sourceLevel = block.level;
+      const dsLevel = (sourceLevel <= 2 ? 3 : 4) as 3 | 4;
       return (
         <Heading
           key={index}
-          level={level}
+          level={dsLevel}
           align="left"
           gradient="none"
         >

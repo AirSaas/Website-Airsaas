@@ -126,10 +126,18 @@ def extract_author(soup):
             pub_date = value
         elif label.lower() == "dans":
             category = value
+    # Author avatar: class is "author__photo" (not "author"). Multiple imgs may
+    # be present (the first one is often a Webflow CMS placeholder with empty
+    # src + class "w-dyn-bind-empty"). Pick the first with a non-empty src.
     avatar = None
-    avatar_img = soup.select_one("img.author, img.author-img, img[title='Author']")
-    if avatar_img and avatar_img.get("src"):
-        avatar = normalize_src(avatar_img.get("src"))
+    for img in soup.select("img.author__photo, img[title='Author']"):
+        cls = " ".join(img.get("class") or [])
+        if "w-dyn-bind-empty" in cls:
+            continue
+        src = img.get("src")
+        if src and src.strip():
+            avatar = normalize_src(src)
+            break
     if not name and not avatar:
         return None
     return {
@@ -256,14 +264,16 @@ def parse_block(el):
             html = inline_html(el)
             if html:
                 return {"type": "insight-callout", "html": html}
-        # HubSpot CTA embed
+        # HubSpot CTA embed: external lead-magnet popup. We can't reproduce
+        # the JS popup, so fall back to /meetings-pages (demo booking) which
+        # is the natural next-step CTA on AirSaas.
         if re.search(r"(hs-cta-embed|hbspt-cta)", classes, re.I):
             link = el.find("a")
-            return {
-                "type": "hubspot-cta",
-                "label": clean_text(link.get_text()) if link else "Télécharger",
-                "href": (link.get("href") if link else "#") or "#",
-            }
+            label = clean_text(link.get_text()) if link else "Télécharger"
+            href = link.get("href") if link else None
+            if not href or href.strip() in ("", "#"):
+                href = "/fr/meetings-pages"
+            return {"type": "hubspot-cta", "label": label, "href": href}
     return None
 
 

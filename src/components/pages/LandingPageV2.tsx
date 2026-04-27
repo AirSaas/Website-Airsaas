@@ -33,21 +33,30 @@ function RichSpan({ html }: { html: string }) {
 
 function renderSection(section: LandingSection, index: number): ReactNode {
   switch (section.type) {
-    case "hero":
+    case "hero": {
+      // If no real image, use centered text-only layout (LP-style); avoid
+      // rendering placehold.co which is jarring.
+      const hasImage = !!section.imageSrc;
       return (
         <Hero
           key={index}
-          layout="split"
+          layout={hasImage ? "split" : "centered"}
+          navItems={BLOG_INDEX_DATA.navItems}
+          navCtaLabel={BLOG_INDEX_DATA.navCtaLabel}
+          navCtaHref={BLOG_INDEX_DATA.navCtaHref}
+          loginLabel={BLOG_INDEX_DATA.loginLabel}
+          loginHref={BLOG_INDEX_DATA.loginHref}
           title={section.title}
           titleHighlight={section.titleHighlight || undefined}
           subtitle={section.subtitle || ""}
           primaryCta={section.primaryCta || undefined}
           secondaryCta={section.secondaryCta || undefined}
-          imageSrc={section.imageSrc || PLACEHOLDER_HERO}
+          imageSrc={hasImage ? section.imageSrc || undefined : undefined}
           imageAlt={section.imageAlt || ""}
           floatingCards={false}
         />
       );
+    }
 
     case "intro": {
       const level = (section.headingLevel ?? 2) as 2 | 3 | 4;
@@ -75,7 +84,26 @@ function renderSection(section: LandingSection, index: number): ReactNode {
       );
     }
 
-    case "feature-split":
+    case "feature-split": {
+      const hasImage = !!section.imageSrc;
+      // If no image, render as text-only intro variant (avoid placehold.co)
+      if (!hasImage) {
+        return (
+          <section
+            key={index}
+            className="flex flex-col items-center gap-[1rem] px-[1.5rem] py-[2.5rem] md:px-[3rem] md:py-[3.5rem] lg:px-[10rem] lg:py-[4rem] bg-white text-center"
+          >
+            <Heading level={3} align="center">
+              {section.title}
+            </Heading>
+            {section.body ? (
+              <Text size="md" align="center" maxWidth="52.9375rem">
+                <RichSpan html={section.body} />
+              </Text>
+            ) : null}
+          </section>
+        );
+      }
       return (
         <FeatureFrame
           key={index}
@@ -100,10 +128,11 @@ function renderSection(section: LandingSection, index: number): ReactNode {
               ) : null}
             </div>
           }
-          imageSrc={section.imageSrc || PLACEHOLDER_SECTION}
+          imageSrc={section.imageSrc!}
           imageAlt={section.imageAlt ?? ""}
         />
       );
+    }
 
     case "pain-points":
       return (
@@ -208,8 +237,49 @@ function renderSection(section: LandingSection, index: number): ReactNode {
         </section>
       );
 
-    case "testimonials":
+    case "testimonials": {
       if (!section.testimonials || section.testimonials.length === 0) return null;
+      // If any testimonial has href, render as clickable grid (custom wrapper),
+      // otherwise use TestimonialsFrame DS section as before.
+      const anyHref = section.testimonials.some((t) => t.href);
+      if (anyHref) {
+        return (
+          <section
+            key={index}
+            className="flex flex-col items-center gap-[2rem] px-[1.5rem] py-[3rem] md:px-[3rem] md:py-[5rem] lg:px-[10rem] lg:py-[6.25rem] bg-primary-2"
+          >
+            {section.title ? (
+              <Heading level={2} align="center">
+                {section.title}
+              </Heading>
+            ) : null}
+            <div className="grid grid-cols-1 gap-[1.5rem] md:grid-cols-2 lg:grid-cols-3 w-full max-w-[91.25rem]">
+              {section.testimonials.slice(0, 6).map((t, i) => {
+                const card = (
+                  <TestimonialCard
+                    quote={t.text}
+                    name={t.name}
+                    role={t.role || t.company || ""}
+                    readMoreLabel="Lire la suite"
+                    readLessLabel="Voir moins"
+                  />
+                );
+                return t.href ? (
+                  <a
+                    key={i}
+                    href={t.href}
+                    className="block hover:opacity-90 transition-opacity"
+                  >
+                    {card}
+                  </a>
+                ) : (
+                  <div key={i}>{card}</div>
+                );
+              })}
+            </div>
+          </section>
+        );
+      }
       return (
         <TestimonialsFrame
           key={index}
@@ -224,6 +294,7 @@ function renderSection(section: LandingSection, index: number): ReactNode {
           }))}
         />
       );
+    }
 
     case "customer-testimonials":
       if (!section.testimonials || section.testimonials.length === 0) return null;

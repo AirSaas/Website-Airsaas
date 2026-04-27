@@ -127,8 +127,10 @@ def extract_hero(soup: BeautifulSoup):
     # Use the full clean text as title — splitting strong/em is fragile
     title_full = clean_text(h1.get_text()) if h1 else ""
 
+    # subtitle: plain text only (Hero renders as Text without dangerouslySetInnerHTML,
+    # so any <br/>/<strong> would be displayed as literal text).
     subtitle_tag = hero.find("p")
-    subtitle = inline_html(subtitle_tag) if subtitle_tag else ""
+    subtitle = clean_text(subtitle_tag.get_text()) if subtitle_tag else ""
 
     # CTAs
     primary, secondary = None, None
@@ -308,15 +310,16 @@ def extract_faq(soup: BeautifulSoup):
         answer_tag = wrapper.find(class_="faq__content")
         if question_tag and answer_tag:
             q = clean_text(question_tag.get_text())
-            # Answer can have multiple paragraphs
-            answer_parts = []
+            # FaqFrame renders answers as plain text (<p>{answer}</p>) so we
+            # strip HTML and join paragraphs with double newline → readable.
+            answer_paragraphs = []
             for p in answer_tag.find_all("p"):
-                html = inline_html(p)
-                if html:
-                    answer_parts.append(html)
-            if not answer_parts:
-                answer_parts.append(clean_text(answer_tag.get_text()))
-            a = " ".join(answer_parts)
+                t = clean_text(p.get_text())
+                if t:
+                    answer_paragraphs.append(t)
+            if not answer_paragraphs:
+                answer_paragraphs.append(clean_text(answer_tag.get_text()))
+            a = " ".join(answer_paragraphs)
             if q and a:
                 items.append({"question": q, "answer": a})
     if not items:
@@ -327,7 +330,9 @@ def extract_faq(soup: BeautifulSoup):
 def extract_testimonials(soup: BeautifulSoup):
     """LinkedIn-style testimonials cards."""
     items = []
-    for card in soup.select("div.block__testimonial__home, div.testimonial-card-link, a.testimonial__link"):
+    for card in soup.select(
+        "div.block__testimonial__home, div.testimonial-card-link, a.testimonial__link"
+    ):
         text_tag = card.find(class_="block__data__testimonial") or card.find("p")
         text = clean_text(text_tag.get_text()) if text_tag else ""
         author_tag = card.find(class_="author__testimonial__home")
@@ -340,6 +345,14 @@ def extract_testimonials(soup: BeautifulSoup):
                 if len(sub) > 1:
                     role = clean_text(sub[1].get_text())
         avatar_src, _ = first_img(card)
+        # Extract href: card itself is <a> (testimonial__link) OR find inner <a>
+        href = None
+        if card.name == "a":
+            href = card.get("href")
+        else:
+            inner_a = card.find("a", href=True)
+            if inner_a:
+                href = inner_a.get("href")
         if text and name:
             items.append(
                 {
@@ -347,6 +360,7 @@ def extract_testimonials(soup: BeautifulSoup):
                     "name": name,
                     "role": role or None,
                     "avatarSrc": avatar_src,
+                    "href": href,
                 }
             )
     if len(items) < 1:

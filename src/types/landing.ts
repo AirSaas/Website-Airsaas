@@ -89,10 +89,12 @@ export interface TestimonialsSection {
   testimonials: {
     text: string;
     name: string;
-    role?: string;
-    company?: string;
+    role?: string | null;
+    company?: string | null;
     avatarSrc?: string | null;
-    linkedinUrl?: string;
+    linkedinUrl?: string | null;
+    /** Link to the full testimonial page (live: /fr/temoignages/{slug}). */
+    href?: string | null;
   }[];
 }
 
