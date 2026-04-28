@@ -8,64 +8,8 @@
     "issues": [
       {
         "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
         "raw": "/fr/video/ppm",
         "resolved": "http://localhost:3000/fr/video/ppm",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
         "status": 404,
         "severity": "P1",
         "isCta": false
@@ -81,64 +25,8 @@
     "issues": [
       {
         "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
         "raw": "/fr/video/pmo",
         "resolved": "http://localhost:3000/fr/video/pmo",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
         "status": 404,
         "severity": "P1",
         "isCta": false
@@ -154,64 +42,8 @@
     "issues": [
       {
         "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
         "raw": "/fr/livre-blanc/capacity-planning",
         "resolved": "http://localhost:3000/fr/livre-blanc/capacity-planning",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
         "status": 404,
         "severity": "P1",
         "isCta": false
@@ -227,64 +59,8 @@
     "issues": [
       {
         "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
         "raw": "/fr/video/pi-planning",
         "resolved": "http://localhost:3000/fr/video/pi-planning",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
         "status": 404,
         "severity": "P1",
         "isCta": false
@@ -297,64 +73,7 @@
     "path": "/fr/produit/automatiser-la-com-projet",
     "pageStatus": 200,
     "linkCount": 31,
-    "issues": [
-      {
-        "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      }
-    ]
+    "issues": []
   },
   {
     "slug": "budget",
@@ -362,64 +81,7 @@
     "path": "/fr/produit/budget",
     "pageStatus": 200,
     "linkCount": 36,
-    "issues": [
-      {
-        "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      }
-    ]
+    "issues": []
   },
   {
     "slug": "capacity-planning",
@@ -427,64 +89,7 @@
     "path": "/fr/produit/capacity-planning",
     "pageStatus": 200,
     "linkCount": 32,
-    "issues": [
-      {
-        "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      }
-    ]
+    "issues": []
   },
   {
     "slug": "priorisation-par-equipes",
@@ -492,64 +97,7 @@
     "path": "/fr/produit/priorisation-par-equipes",
     "pageStatus": 200,
     "linkCount": 33,
-    "issues": [
-      {
-        "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      }
-    ]
+    "issues": []
   },
   {
     "slug": "reporting-projet",
@@ -557,64 +105,7 @@
     "path": "/fr/produit/reporting-projet",
     "pageStatus": 200,
     "linkCount": 32,
-    "issues": [
-      {
-        "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      }
-    ]
+    "issues": []
   },
   {
     "slug": "traduction-one-click-avec-deepl",
@@ -622,64 +113,7 @@
     "path": "/fr/produit/traduction-one-click-avec-deepl",
     "pageStatus": 200,
     "linkCount": 31,
-    "issues": [
-      {
-        "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      }
-    ]
+    "issues": []
   },
   {
     "slug": "airsaas-et-les-experts-de-la-transfo",
@@ -687,64 +121,7 @@
     "path": "/fr/solutions/airsaas-et-les-experts-de-la-transfo",
     "pageStatus": 200,
     "linkCount": 36,
-    "issues": [
-      {
-        "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      }
-    ]
+    "issues": []
   },
   {
     "slug": "flash-report",
@@ -752,64 +129,7 @@
     "path": "/fr/solutions/flash-report",
     "pageStatus": 200,
     "linkCount": 44,
-    "issues": [
-      {
-        "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      }
-    ]
+    "issues": []
   },
   {
     "slug": "flash-report-projet",
@@ -817,64 +137,7 @@
     "path": "/fr/solutions/flash-report-projet",
     "pageStatus": 200,
     "linkCount": 49,
-    "issues": [
-      {
-        "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      }
-    ]
+    "issues": []
   },
   {
     "slug": "gestion-portefeuille-projet",
@@ -882,64 +145,7 @@
     "path": "/fr/solutions/gestion-portefeuille-projet",
     "pageStatus": 200,
     "linkCount": 54,
-    "issues": [
-      {
-        "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      }
-    ]
+    "issues": []
   },
   {
     "slug": "management-de-portefeuille-projet",
@@ -947,64 +153,7 @@
     "path": "/fr/solutions/management-de-portefeuille-projet",
     "pageStatus": 200,
     "linkCount": 53,
-    "issues": [
-      {
-        "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      }
-    ]
+    "issues": []
   },
   {
     "slug": "outil-ppm",
@@ -1012,64 +161,7 @@
     "path": "/fr/solutions/outil-ppm",
     "pageStatus": 200,
     "linkCount": 43,
-    "issues": [
-      {
-        "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      }
-    ]
+    "issues": []
   },
   {
     "slug": "outils-de-pilotage-projet",
@@ -1077,64 +169,7 @@
     "path": "/fr/solutions/outils-de-pilotage-projet",
     "pageStatus": 200,
     "linkCount": 51,
-    "issues": [
-      {
-        "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      }
-    ]
+    "issues": []
   },
   {
     "slug": "portfolio-management",
@@ -1142,64 +177,7 @@
     "path": "/fr/solutions/portfolio-management",
     "pageStatus": 200,
     "linkCount": 42,
-    "issues": [
-      {
-        "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      }
-    ]
+    "issues": []
   },
   {
     "slug": "revue-de-portefeuille",
@@ -1207,64 +185,7 @@
     "path": "/fr/solutions/revue-de-portefeuille",
     "pageStatus": 200,
     "linkCount": 49,
-    "issues": [
-      {
-        "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      }
-    ]
+    "issues": []
   },
   {
     "slug": "tableau-de-bord-dsi",
@@ -1272,64 +193,7 @@
     "path": "/fr/solutions/tableau-de-bord-dsi",
     "pageStatus": 200,
     "linkCount": 48,
-    "issues": [
-      {
-        "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      }
-    ]
+    "issues": []
   },
   {
     "slug": "tableau-de-bord-gestion-de-projet",
@@ -1337,64 +201,7 @@
     "path": "/fr/solutions/tableau-de-bord-gestion-de-projet",
     "pageStatus": 200,
     "linkCount": 43,
-    "issues": [
-      {
-        "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      }
-    ]
+    "issues": []
   },
   {
     "slug": "tableau-de-bord-portefeuille-de-projet",
@@ -1402,64 +209,7 @@
     "path": "/fr/solutions/tableau-de-bord-portefeuille-de-projet",
     "pageStatus": 200,
     "linkCount": 49,
-    "issues": [
-      {
-        "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      }
-    ]
+    "issues": []
   },
   {
     "slug": "comite-direction",
@@ -1467,64 +217,7 @@
     "path": "/fr/equipes/comite-direction",
     "pageStatus": 200,
     "linkCount": 38,
-    "issues": [
-      {
-        "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      }
-    ]
+    "issues": []
   },
   {
     "slug": "direction-de-la-transformation",
@@ -1532,64 +225,7 @@
     "path": "/fr/equipes/direction-de-la-transformation",
     "pageStatus": 200,
     "linkCount": 37,
-    "issues": [
-      {
-        "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      }
-    ]
+    "issues": []
   },
   {
     "slug": "it-et-operation",
@@ -1597,64 +233,7 @@
     "path": "/fr/equipes/it-et-operation",
     "pageStatus": 200,
     "linkCount": 39,
-    "issues": [
-      {
-        "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      }
-    ]
+    "issues": []
   },
   {
     "slug": "outil-pmo",
@@ -1662,64 +241,7 @@
     "path": "/fr/equipes/outil-pmo",
     "pageStatus": 200,
     "linkCount": 41,
-    "issues": [
-      {
-        "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      }
-    ]
+    "issues": []
   },
   {
     "slug": "10-pratiques-pour-developper-la-relation-de-confiance-dg-cio",
@@ -1727,64 +249,7 @@
     "path": "/fr/blog/10-pratiques-pour-developper-la-relation-de-confiance-dg-cio",
     "pageStatus": 200,
     "linkCount": 47,
-    "issues": [
-      {
-        "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      }
-    ]
+    "issues": []
   },
   {
     "slug": "analyse-des-risques-projet",
@@ -1795,64 +260,8 @@
     "issues": [
       {
         "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
         "raw": "/gestion-de-projet/les-jalons-projet-une-technique-pour-sequencer-vos-projets-intelligemment",
         "resolved": "http://localhost:3000/gestion-de-projet/les-jalons-projet-une-technique-pour-sequencer-vos-projets-intelligemment",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
         "status": 404,
         "severity": "P1",
         "isCta": false
@@ -1865,64 +274,7 @@
     "path": "/fr/blog/appel-doffres-et-evaluation-dune-solution-ppm-project-portfolio-management",
     "pageStatus": 200,
     "linkCount": 39,
-    "issues": [
-      {
-        "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      }
-    ]
+    "issues": []
   },
   {
     "slug": "budget-previsionnel-projet",
@@ -1930,64 +282,7 @@
     "path": "/fr/blog/budget-previsionnel-projet",
     "pageStatus": 200,
     "linkCount": 39,
-    "issues": [
-      {
-        "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      }
-    ]
+    "issues": []
   },
   {
     "slug": "budgetiser-un-projet-sans-se-louper",
@@ -1995,64 +290,7 @@
     "path": "/fr/blog/budgetiser-un-projet-sans-se-louper",
     "pageStatus": 200,
     "linkCount": 45,
-    "issues": [
-      {
-        "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      }
-    ]
+    "issues": []
   },
   {
     "slug": "cadrage-projet",
@@ -2061,38 +299,6 @@
     "pageStatus": 200,
     "linkCount": 47,
     "issues": [
-      {
-        "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
       {
         "kind": "a",
         "raw": "https://creativetech-fr.devoteam.com/2021/03/17/pre-mortem-se-projeter-dans-l-echec-du-produit-pour-mieux-l-eviter/",
@@ -2109,30 +315,6 @@
         "status": 404,
         "severity": "P1",
         "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
       }
     ]
   },
@@ -2142,64 +324,7 @@
     "path": "/fr/blog/capacity-planning",
     "pageStatus": 200,
     "linkCount": 50,
-    "issues": [
-      {
-        "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      }
-    ]
+    "issues": []
   },
   {
     "slug": "capacity-planning-definition",
@@ -2207,64 +332,7 @@
     "path": "/fr/blog/capacity-planning-definition",
     "pageStatus": 200,
     "linkCount": 46,
-    "issues": [
-      {
-        "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      }
-    ]
+    "issues": []
   },
   {
     "slug": "chef-de-projet-pmo",
@@ -2272,64 +340,7 @@
     "path": "/fr/blog/chef-de-projet-pmo",
     "pageStatus": 200,
     "linkCount": 42,
-    "issues": [
-      {
-        "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      }
-    ]
+    "issues": []
   },
   {
     "slug": "chef-de-projet-transverse",
@@ -2340,66 +351,10 @@
     "issues": [
       {
         "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
         "raw": "http://gestion-de-projet/le-guide-du-mode-projet",
         "resolved": "http://gestion-de-projet/le-guide-du-mode-projet",
         "status": 0,
         "error": "fetch failed",
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
-        "status": 404,
         "severity": "P1",
         "isCta": false
       }
@@ -2411,64 +366,7 @@
     "path": "/fr/blog/comite-de-pilotage-definitions-et-incomprehensions",
     "pageStatus": 200,
     "linkCount": 43,
-    "issues": [
-      {
-        "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      }
-    ]
+    "issues": []
   },
   {
     "slug": "comite-pilotage-projet",
@@ -2476,64 +374,7 @@
     "path": "/fr/blog/comite-pilotage-projet",
     "pageStatus": 200,
     "linkCount": 45,
-    "issues": [
-      {
-        "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      }
-    ]
+    "issues": []
   },
   {
     "slug": "comment-animer-un-bilan-projet-efficace",
@@ -2544,66 +385,10 @@
     "issues": [
       {
         "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
         "raw": "https://blog.myagilepartner.fr/index.php/2018/07/12/starfish-retrospective/",
         "resolved": "https://blog.myagilepartner.fr/index.php/2018/07/12/starfish-retrospective/",
         "status": 0,
         "error": "fetch failed",
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
-        "status": 404,
         "severity": "P1",
         "isCta": false
       }
@@ -2618,38 +403,6 @@
     "issues": [
       {
         "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
         "raw": "#",
         "classify": "EMPTY",
         "severity": "P2",
@@ -2660,30 +413,6 @@
         "raw": "#",
         "classify": "EMPTY",
         "severity": "P2",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
-        "status": 404,
-        "severity": "P1",
         "isCta": false
       }
     ]
@@ -2697,38 +426,6 @@
     "issues": [
       {
         "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
         "raw": "https://www.airsaas.io/fr/gestion-de-projet/la-methode-kanban-pour-optimiser-votre-suivi-de-projet",
         "resolved": "https://www.airsaas.io/fr/gestion-de-projet/la-methode-kanban-pour-optimiser-votre-suivi-de-projet",
         "status": 404,
@@ -2739,30 +436,6 @@
         "kind": "a",
         "raw": "/gestion-de-projet/comment-mettre-une-demarche-de-projet-dans-mon-entreprise",
         "resolved": "http://localhost:3000/gestion-de-projet/comment-mettre-une-demarche-de-projet-dans-mon-entreprise",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
         "status": 404,
         "severity": "P1",
         "isCta": false
@@ -2778,64 +451,8 @@
     "issues": [
       {
         "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
         "raw": "/gestion-de-projet/comment-bien-preparer-un-comite-de-pilotage",
         "resolved": "http://localhost:3000/gestion-de-projet/comment-bien-preparer-un-comite-de-pilotage",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
         "status": 404,
         "severity": "P1",
         "isCta": false
@@ -2851,64 +468,8 @@
     "issues": [
       {
         "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
         "raw": "/gestion-de-projet/comment-mettre-une-demarche-de-projet-dans-mon-entreprise",
         "resolved": "http://localhost:3000/gestion-de-projet/comment-mettre-une-demarche-de-projet-dans-mon-entreprise",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
         "status": 404,
         "severity": "P1",
         "isCta": false
@@ -2921,64 +482,7 @@
     "path": "/fr/blog/comment-faire-un-bon-point-davancement-projet",
     "pageStatus": 200,
     "linkCount": 47,
-    "issues": [
-      {
-        "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      }
-    ]
+    "issues": []
   },
   {
     "slug": "comment-gerer-lagressivite-dans-les-comites-de-pilotage",
@@ -2989,64 +493,8 @@
     "issues": [
       {
         "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
         "raw": "/gestion-de-projet/comment-bien-preparer-un-comite-de-pilotage",
         "resolved": "http://localhost:3000/gestion-de-projet/comment-bien-preparer-un-comite-de-pilotage",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
         "status": 404,
         "severity": "P1",
         "isCta": false
@@ -3059,64 +507,7 @@
     "path": "/fr/blog/comment-mettre-en-place-un-comite-de-pilotage",
     "pageStatus": 200,
     "linkCount": 54,
-    "issues": [
-      {
-        "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      }
-    ]
+    "issues": []
   },
   {
     "slug": "comment-mettre-en-place-un-pmo",
@@ -3124,64 +515,7 @@
     "path": "/fr/blog/comment-mettre-en-place-un-pmo",
     "pageStatus": 200,
     "linkCount": 51,
-    "issues": [
-      {
-        "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      }
-    ]
+    "issues": []
   },
   {
     "slug": "comment-mettre-une-bonne-meteo-projet",
@@ -3189,64 +523,7 @@
     "path": "/fr/blog/comment-mettre-une-bonne-meteo-projet",
     "pageStatus": 200,
     "linkCount": 50,
-    "issues": [
-      {
-        "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      }
-    ]
+    "issues": []
   },
   {
     "slug": "comment-reussir-un-projet-transverse",
@@ -3257,64 +534,8 @@
     "issues": [
       {
         "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
         "raw": "/gestion-de-projet/comment-etre-un-bon-chef-de-projet-transverse",
         "resolved": "http://localhost:3000/gestion-de-projet/comment-etre-un-bon-chef-de-projet-transverse",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
         "status": 404,
         "severity": "P1",
         "isCta": false
@@ -3330,64 +551,8 @@
     "issues": [
       {
         "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
         "raw": "/gestion-de-projet/comment-bien-preparer-un-comite-de-pilotage",
         "resolved": "http://localhost:3000/gestion-de-projet/comment-bien-preparer-un-comite-de-pilotage",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
         "status": 404,
         "severity": "P1",
         "isCta": false
@@ -3400,64 +565,7 @@
     "path": "/fr/blog/demarche-de-projet",
     "pageStatus": 200,
     "linkCount": 52,
-    "issues": [
-      {
-        "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      }
-    ]
+    "issues": []
   },
   {
     "slug": "fiche-projet-exemple-et-methodologie",
@@ -3465,64 +573,7 @@
     "path": "/fr/blog/fiche-projet-exemple-et-methodologie",
     "pageStatus": 200,
     "linkCount": 48,
-    "issues": [
-      {
-        "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      }
-    ]
+    "issues": []
   },
   {
     "slug": "gestion-de-portefeuille-projet-pme",
@@ -3533,64 +584,8 @@
     "issues": [
       {
         "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
         "raw": "https://www.airsaas.io/fr/gestion-de-projet/la-methode-kanban-pour-optimiser-votre-suivi-de-projet",
         "resolved": "https://www.airsaas.io/fr/gestion-de-projet/la-methode-kanban-pour-optimiser-votre-suivi-de-projet",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
         "status": 404,
         "severity": "P1",
         "isCta": false
@@ -3606,64 +601,8 @@
     "issues": [
       {
         "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
         "raw": "/fr/guide/cahier-des-charges-logiciel-ppm",
         "resolved": "http://localhost:3000/fr/guide/cahier-des-charges-logiciel-ppm",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
         "status": 404,
         "severity": "P1",
         "isCta": false
@@ -3676,64 +615,7 @@
     "path": "/fr/blog/jalon-projet",
     "pageStatus": 200,
     "linkCount": 45,
-    "issues": [
-      {
-        "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      }
-    ]
+    "issues": []
   },
   {
     "slug": "kanban-gestion-de-projet",
@@ -3741,64 +623,7 @@
     "path": "/fr/blog/kanban-gestion-de-projet",
     "pageStatus": 200,
     "linkCount": 43,
-    "issues": [
-      {
-        "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      }
-    ]
+    "issues": []
   },
   {
     "slug": "kpi-gestion-de-projet",
@@ -3806,64 +631,7 @@
     "path": "/fr/blog/kpi-gestion-de-projet",
     "pageStatus": 200,
     "linkCount": 43,
-    "issues": [
-      {
-        "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      }
-    ]
+    "issues": []
   },
   {
     "slug": "la-revolution-numerique-au-sein-du-secteur-de-lindustrie-industrie-4-0",
@@ -3871,64 +639,7 @@
     "path": "/fr/blog/la-revolution-numerique-au-sein-du-secteur-de-lindustrie-industrie-4-0",
     "pageStatus": 200,
     "linkCount": 50,
-    "issues": [
-      {
-        "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      }
-    ]
+    "issues": []
   },
   {
     "slug": "la-revue-de-projet",
@@ -3939,64 +650,8 @@
     "issues": [
       {
         "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
         "raw": "/gestion-de-projet/les-jalons-projet-une-technique-pour-sequencer-vos-projets-intelligemment",
         "resolved": "http://localhost:3000/gestion-de-projet/les-jalons-projet-une-technique-pour-sequencer-vos-projets-intelligemment",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
         "status": 404,
         "severity": "P1",
         "isCta": false
@@ -4012,64 +667,8 @@
     "issues": [
       {
         "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
         "raw": "/gestion-de-projet/les-jalons-projet-une-technique-pour-sequencer-vos-projets-intelligemment",
         "resolved": "http://localhost:3000/gestion-de-projet/les-jalons-projet-une-technique-pour-sequencer-vos-projets-intelligemment",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
         "status": 404,
         "severity": "P1",
         "isCta": false
@@ -4083,38 +682,6 @@
     "pageStatus": 200,
     "linkCount": 76,
     "issues": [
-      {
-        "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
       {
         "kind": "a",
         "raw": "/gestion-de-projet/comment-mettre-une-demarche-de-projet-dans-mon-entreprise",
@@ -4146,30 +713,6 @@
         "status": 404,
         "severity": "P1",
         "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
       }
     ]
   },
@@ -4179,64 +722,7 @@
     "path": "/fr/blog/le-guide-du-mode-projet",
     "pageStatus": 200,
     "linkCount": 52,
-    "issues": [
-      {
-        "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      }
-    ]
+    "issues": []
   },
   {
     "slug": "le-modele-de-presentation-pour-votre-comite-de-pilotage",
@@ -4244,64 +730,7 @@
     "path": "/fr/blog/le-modele-de-presentation-pour-votre-comite-de-pilotage",
     "pageStatus": 200,
     "linkCount": 41,
-    "issues": [
-      {
-        "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      }
-    ]
+    "issues": []
   },
   {
     "slug": "le-portefeuille-projets-pour-faire-grandir-les-collaborateurs-et-lorganisation",
@@ -4310,38 +739,6 @@
     "pageStatus": 200,
     "linkCount": 44,
     "issues": [
-      {
-        "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
       {
         "kind": "a",
         "raw": "/gestion-de-projet/portfolio-project-management-le-top-10-des-bonnes-pratiques",
@@ -4357,30 +754,6 @@
         "status": 404,
         "severity": "P1",
         "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
       }
     ]
   },
@@ -4390,64 +763,7 @@
     "path": "/fr/blog/le-suivi-de-projet-pour-garder-aligne-les-parties-prenantes",
     "pageStatus": 200,
     "linkCount": 45,
-    "issues": [
-      {
-        "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      }
-    ]
+    "issues": []
   },
   {
     "slug": "lean-portfolio-management",
@@ -4458,65 +774,9 @@
     "issues": [
       {
         "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
         "raw": "#",
         "classify": "EMPTY",
         "severity": "P2",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
-        "status": 404,
-        "severity": "P1",
         "isCta": false
       }
     ]
@@ -4530,64 +790,8 @@
     "issues": [
       {
         "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
         "raw": "/gestion-de-projet/portfolio-project-management-le-top-10-des-bonnes-pratiques",
         "resolved": "http://localhost:3000/gestion-de-projet/portfolio-project-management-le-top-10-des-bonnes-pratiques",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
         "status": 404,
         "severity": "P1",
         "isCta": false
@@ -4600,64 +804,7 @@
     "path": "/fr/blog/macro-planning",
     "pageStatus": 200,
     "linkCount": 50,
-    "issues": [
-      {
-        "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      }
-    ]
+    "issues": []
   },
   {
     "slug": "management-de-portefeuille-de-projet",
@@ -4668,64 +815,8 @@
     "issues": [
       {
         "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
         "raw": "/fr/guide/cahier-des-charges-logiciel-ppm",
         "resolved": "http://localhost:3000/fr/guide/cahier-des-charges-logiciel-ppm",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
         "status": 404,
         "severity": "P1",
         "isCta": false
@@ -4738,64 +829,7 @@
     "path": "/fr/blog/metier-pmo",
     "pageStatus": 200,
     "linkCount": 53,
-    "issues": [
-      {
-        "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      }
-    ]
+    "issues": []
   },
   {
     "slug": "pi-planning",
@@ -4803,64 +837,7 @@
     "path": "/fr/blog/pi-planning",
     "pageStatus": 200,
     "linkCount": 40,
-    "issues": [
-      {
-        "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      }
-    ]
+    "issues": []
   },
   {
     "slug": "pi-safe",
@@ -4868,64 +845,7 @@
     "path": "/fr/blog/pi-safe",
     "pageStatus": 200,
     "linkCount": 34,
-    "issues": [
-      {
-        "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      }
-    ]
+    "issues": []
   },
   {
     "slug": "pilotage-de-projet",
@@ -4936,64 +856,8 @@
     "issues": [
       {
         "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
         "raw": "/gestion-de-projet/les-jalons-projet-une-technique-pour-sequencer-vos-projets-intelligemment",
         "resolved": "http://localhost:3000/gestion-de-projet/les-jalons-projet-une-technique-pour-sequencer-vos-projets-intelligemment",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
         "status": 404,
         "severity": "P1",
         "isCta": false
@@ -5006,64 +870,7 @@
     "path": "/fr/blog/plan-capacitaire",
     "pageStatus": 200,
     "linkCount": 42,
-    "issues": [
-      {
-        "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      }
-    ]
+    "issues": []
   },
   {
     "slug": "plan-de-communication-projet",
@@ -5074,66 +881,10 @@
     "issues": [
       {
         "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
         "raw": "http://gestion-de-projet/comment-mettre-une-bonne-meteo-projet",
         "resolved": "http://gestion-de-projet/comment-mettre-une-bonne-meteo-projet",
         "status": 0,
         "error": "fetch failed",
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
-        "status": 404,
         "severity": "P1",
         "isCta": false
       }
@@ -5145,64 +896,7 @@
     "path": "/fr/blog/planification-de-la-capacite",
     "pageStatus": 200,
     "linkCount": 43,
-    "issues": [
-      {
-        "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      }
-    ]
+    "issues": []
   },
   {
     "slug": "planification-de-la-demande-capacity-planning",
@@ -5210,64 +904,7 @@
     "path": "/fr/blog/planification-de-la-demande-capacity-planning",
     "pageStatus": 200,
     "linkCount": 46,
-    "issues": [
-      {
-        "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      }
-    ]
+    "issues": []
   },
   {
     "slug": "portefeuille-projet",
@@ -5278,64 +915,8 @@
     "issues": [
       {
         "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
         "raw": "/fr/guide/cahier-des-charges-logiciel-ppm",
         "resolved": "http://localhost:3000/fr/guide/cahier-des-charges-logiciel-ppm",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
         "status": 404,
         "severity": "P1",
         "isCta": false
@@ -5348,64 +929,7 @@
     "path": "/fr/blog/pourquoi-mettre-en-place-un-pmo",
     "pageStatus": 200,
     "linkCount": 54,
-    "issues": [
-      {
-        "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      }
-    ]
+    "issues": []
   },
   {
     "slug": "pourquoi-vos-18-millions",
@@ -5413,64 +937,7 @@
     "path": "/fr/blog/pourquoi-vos-18-millions",
     "pageStatus": 200,
     "linkCount": 41,
-    "issues": [
-      {
-        "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      }
-    ]
+    "issues": []
   },
   {
     "slug": "preparer-comite-de-pilotage-d-un-projet",
@@ -5481,64 +948,8 @@
     "issues": [
       {
         "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
         "raw": "/gestion-de-projet/copil-projet-5-astuces-pour-que-tout-se-passe-bien",
         "resolved": "http://localhost:3000/gestion-de-projet/copil-projet-5-astuces-pour-que-tout-se-passe-bien",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
         "status": 404,
         "severity": "P1",
         "isCta": false
@@ -5551,64 +962,7 @@
     "path": "/fr/blog/program-increment-planning",
     "pageStatus": 200,
     "linkCount": 40,
-    "issues": [
-      {
-        "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      }
-    ]
+    "issues": []
   },
   {
     "slug": "project-portfolio-management",
@@ -5617,38 +971,6 @@
     "pageStatus": 200,
     "linkCount": 72,
     "issues": [
-      {
-        "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
       {
         "kind": "a",
         "raw": "/gestion-de-projet/le-lean-portfolio-management-pour-aligner-en-continu-la-direction-generale-lit-et-les-metiers",
@@ -5680,30 +1002,6 @@
         "status": 404,
         "severity": "P1",
         "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
       }
     ]
   },
@@ -5713,64 +1011,7 @@
     "path": "/fr/blog/reporting-pmo",
     "pageStatus": 200,
     "linkCount": 52,
-    "issues": [
-      {
-        "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      }
-    ]
+    "issues": []
   },
   {
     "slug": "retour-sur-agile-en-seine-2023",
@@ -5781,65 +1022,9 @@
     "issues": [
       {
         "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
         "raw": "https://www.linkedin.com/in/ACoAAAUinb0ByhtaIDmkR6yoTsWv1lFPacEnu2s",
         "resolved": "https://www.linkedin.com/in/ACoAAAUinb0ByhtaIDmkR6yoTsWv1lFPacEnu2s",
         "status": 999,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
-        "status": 404,
         "severity": "P1",
         "isCta": false
       }
@@ -5851,64 +1036,7 @@
     "path": "/fr/blog/role-du-pmo",
     "pageStatus": 200,
     "linkCount": 50,
-    "issues": [
-      {
-        "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      }
-    ]
+    "issues": []
   },
   {
     "slug": "tout-savoir-sur-la-note-de-cadrage-projet",
@@ -5916,64 +1044,7 @@
     "path": "/fr/blog/tout-savoir-sur-la-note-de-cadrage-projet",
     "pageStatus": 200,
     "linkCount": 56,
-    "issues": [
-      {
-        "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      }
-    ]
+    "issues": []
   },
   {
     "slug": "trois-innovations-et-tendances-qui-bousculent-la-gestion-de-portefeuille-de-projets",
@@ -5981,63 +1052,6 @@
     "path": "/fr/blog/trois-innovations-et-tendances-qui-bousculent-la-gestion-de-portefeuille-de-projets",
     "pageStatus": 200,
     "linkCount": 41,
-    "issues": [
-      {
-        "kind": "a",
-        "raw": "/fr/les-integrations",
-        "resolved": "http://localhost:3000/fr/les-integrations",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/les-nouveautes-produit",
-        "resolved": "http://localhost:3000/fr/les-nouveautes-produit",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/quarter-plan",
-        "resolved": "http://localhost:3000/fr/quarter-plan",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/microsoft-teams-airsaas",
-        "resolved": "http://localhost:3000/fr/microsoft-teams-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/pourquoi-airsaas",
-        "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/sciforma",
-        "resolved": "http://localhost:3000/fr/alternative/sciforma",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/alternative/planview",
-        "resolved": "http://localhost:3000/fr/alternative/planview",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      }
-    ]
+    "issues": []
   }
 ]

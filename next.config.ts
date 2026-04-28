@@ -82,6 +82,19 @@ const nextConfig: NextConfig = {
         destination: "/fr/mentions-legales",
         permanent: true,
       },
+      {
+        // /fr/alternative/sciforma was referenced from nav but never had a
+        // live page. Redirect to the main PPM landing until a proper
+        // comparison page ships.
+        source: "/fr/alternative/sciforma",
+        destination: "/fr/lp/ppm",
+        permanent: true,
+      },
+      {
+        source: "/fr/alternative/planview",
+        destination: "/fr/lp/ppm",
+        permanent: true,
+      },
 
       // =============================================
       // Blog URL cleanup (supprimer les -2 et -3)
