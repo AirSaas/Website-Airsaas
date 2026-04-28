@@ -62,6 +62,26 @@ const nextConfig: NextConfig = {
         destination: "/fr/blog/articles",
         permanent: true,
       },
+      {
+        // Live site canonical is /fr/legal/cookies — match it here so
+        // inbound links from old footers continue to work.
+        source: "/fr/cookies",
+        destination: "/fr/legal/cookies",
+        permanent: true,
+      },
+      {
+        // /fr/conditions and /fr/confidentialite were never live but are
+        // referenced from footers in the parsed content. Redirect them to
+        // mentions-legales (canonical legal hub) until dedicated pages ship.
+        source: "/fr/conditions",
+        destination: "/fr/mentions-legales",
+        permanent: true,
+      },
+      {
+        source: "/fr/confidentialite",
+        destination: "/fr/mentions-legales",
+        permanent: true,
+      },
 
       // =============================================
       // Blog URL cleanup (supprimer les -2 et -3)

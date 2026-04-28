@@ -80,46 +80,6 @@
       },
       {
         "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
         "raw": "/fr/temoignages",
         "resolved": "http://localhost:3000/fr/temoignages",
         "status": 404,
@@ -219,46 +179,6 @@
         "kind": "a",
         "raw": "/fr/pourquoi-airsaas",
         "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
         "status": 404,
         "severity": "P1",
         "isCta": false
@@ -370,46 +290,6 @@
       },
       {
         "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
         "raw": "/fr/temoignages",
         "resolved": "http://localhost:3000/fr/temoignages",
         "status": 404,
@@ -515,46 +395,6 @@
       },
       {
         "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
         "raw": "/fr/temoignages",
         "resolved": "http://localhost:3000/fr/temoignages",
         "status": 404,
@@ -646,46 +486,6 @@
         "kind": "a",
         "raw": "/fr/pourquoi-airsaas",
         "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
         "status": 404,
         "severity": "P1",
         "isCta": false
@@ -789,46 +589,6 @@
       },
       {
         "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
         "raw": "/fr/temoignages",
         "resolved": "http://localhost:3000/fr/temoignages",
         "status": 404,
@@ -920,46 +680,6 @@
         "kind": "a",
         "raw": "/fr/pourquoi-airsaas",
         "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
         "status": 404,
         "severity": "P1",
         "isCta": false
@@ -1063,46 +783,6 @@
       },
       {
         "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
         "raw": "/fr/temoignages",
         "resolved": "http://localhost:3000/fr/temoignages",
         "status": 404,
@@ -1194,46 +874,6 @@
         "kind": "a",
         "raw": "/fr/pourquoi-airsaas",
         "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
         "status": 404,
         "severity": "P1",
         "isCta": false
@@ -1337,46 +977,6 @@
       },
       {
         "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
         "raw": "/fr/temoignages",
         "resolved": "http://localhost:3000/fr/temoignages",
         "status": 404,
@@ -1460,46 +1060,6 @@
         "kind": "a",
         "raw": "/fr/pourquoi-airsaas",
         "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
         "status": 404,
         "severity": "P1",
         "isCta": false
@@ -1611,46 +1171,6 @@
       },
       {
         "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
         "raw": "/fr/temoignages",
         "resolved": "http://localhost:3000/fr/temoignages",
         "status": 404,
@@ -1750,46 +1270,6 @@
         "kind": "a",
         "raw": "/fr/pourquoi-airsaas",
         "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
         "status": 404,
         "severity": "P1",
         "isCta": false
@@ -1901,46 +1381,6 @@
       },
       {
         "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
         "raw": "/fr/temoignages",
         "resolved": "http://localhost:3000/fr/temoignages",
         "status": 404,
@@ -2040,46 +1480,6 @@
         "kind": "a",
         "raw": "/fr/pourquoi-airsaas",
         "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
         "status": 404,
         "severity": "P1",
         "isCta": false
@@ -2191,46 +1591,6 @@
       },
       {
         "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
         "raw": "/fr/temoignages",
         "resolved": "http://localhost:3000/fr/temoignages",
         "status": 404,
@@ -2336,46 +1696,6 @@
       },
       {
         "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
         "raw": "/fr/temoignages",
         "resolved": "http://localhost:3000/fr/temoignages",
         "status": 404,
@@ -2467,46 +1787,6 @@
         "kind": "a",
         "raw": "/fr/pourquoi-airsaas",
         "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
         "status": 404,
         "severity": "P1",
         "isCta": false
@@ -2618,46 +1898,6 @@
       },
       {
         "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
         "raw": "/fr/temoignages",
         "resolved": "http://localhost:3000/fr/temoignages",
         "status": 404,
@@ -2757,46 +1997,6 @@
         "kind": "a",
         "raw": "/fr/pourquoi-airsaas",
         "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
         "status": 404,
         "severity": "P1",
         "isCta": false
@@ -2908,46 +2108,6 @@
       },
       {
         "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
         "raw": "/fr/temoignages",
         "resolved": "http://localhost:3000/fr/temoignages",
         "status": 404,
@@ -3053,46 +2213,6 @@
       },
       {
         "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
         "raw": "/fr/temoignages",
         "resolved": "http://localhost:3000/fr/temoignages",
         "status": 404,
@@ -3184,46 +2304,6 @@
         "kind": "a",
         "raw": "/fr/pourquoi-airsaas",
         "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
         "status": 404,
         "severity": "P1",
         "isCta": false
@@ -3327,46 +2407,6 @@
       },
       {
         "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
         "raw": "/fr/temoignages",
         "resolved": "http://localhost:3000/fr/temoignages",
         "status": 404,
@@ -3458,46 +2498,6 @@
         "kind": "a",
         "raw": "/fr/pourquoi-airsaas",
         "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
         "status": 404,
         "severity": "P1",
         "isCta": false
@@ -3601,46 +2601,6 @@
       },
       {
         "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
         "raw": "/fr/temoignages",
         "resolved": "http://localhost:3000/fr/temoignages",
         "status": 404,
@@ -3732,46 +2692,6 @@
         "kind": "a",
         "raw": "/fr/pourquoi-airsaas",
         "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
         "status": 404,
         "severity": "P1",
         "isCta": false
@@ -3883,46 +2803,6 @@
       },
       {
         "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
         "raw": "/fr/temoignages",
         "resolved": "http://localhost:3000/fr/temoignages",
         "status": 404,
@@ -4014,46 +2894,6 @@
         "kind": "a",
         "raw": "/fr/pourquoi-airsaas",
         "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
         "status": 404,
         "severity": "P1",
         "isCta": false
@@ -4157,46 +2997,6 @@
       },
       {
         "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
         "raw": "/fr/temoignages",
         "resolved": "http://localhost:3000/fr/temoignages",
         "status": 404,
@@ -4288,46 +3088,6 @@
         "kind": "a",
         "raw": "/fr/pourquoi-airsaas",
         "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
         "status": 404,
         "severity": "P1",
         "isCta": false
@@ -4448,46 +3208,6 @@
       },
       {
         "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
         "raw": "/fr/temoignages",
         "resolved": "http://localhost:3000/fr/temoignages",
         "status": 404,
@@ -4601,46 +3321,6 @@
       },
       {
         "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
         "raw": "/fr/temoignages",
         "resolved": "http://localhost:3000/fr/temoignages",
         "status": 404,
@@ -4746,46 +3426,6 @@
       },
       {
         "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
         "raw": "/fr/temoignages",
         "resolved": "http://localhost:3000/fr/temoignages",
         "status": 404,
@@ -4877,46 +3517,6 @@
         "kind": "a",
         "raw": "/fr/pourquoi-airsaas",
         "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
         "status": 404,
         "severity": "P1",
         "isCta": false
@@ -5029,46 +3629,6 @@
       },
       {
         "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
         "raw": "/fr/temoignages",
         "resolved": "http://localhost:3000/fr/temoignages",
         "status": 404,
@@ -5166,46 +3726,6 @@
       },
       {
         "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
         "raw": "/fr/temoignages",
         "resolved": "http://localhost:3000/fr/temoignages",
         "status": 404,
@@ -5297,46 +3817,6 @@
         "kind": "a",
         "raw": "/fr/pourquoi-airsaas",
         "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
         "status": 404,
         "severity": "P1",
         "isCta": false
@@ -5449,46 +3929,6 @@
       },
       {
         "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
         "raw": "/fr/temoignages",
         "resolved": "http://localhost:3000/fr/temoignages",
         "status": 404,
@@ -5594,46 +4034,6 @@
         "kind": "a",
         "raw": "/fr/pourquoi-airsaas",
         "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
         "status": 404,
         "severity": "P1",
         "isCta": false
@@ -5753,46 +4153,6 @@
       },
       {
         "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
         "raw": "/fr/temoignages",
         "resolved": "http://localhost:3000/fr/temoignages",
         "status": 404,
@@ -5892,46 +4252,6 @@
         "kind": "a",
         "raw": "/fr/pourquoi-airsaas",
         "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
         "status": 404,
         "severity": "P1",
         "isCta": false
@@ -6043,46 +4363,6 @@
       },
       {
         "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
         "raw": "/fr/temoignages",
         "resolved": "http://localhost:3000/fr/temoignages",
         "status": 404,
@@ -6174,46 +4454,6 @@
         "kind": "a",
         "raw": "/fr/pourquoi-airsaas",
         "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
         "status": 404,
         "severity": "P1",
         "isCta": false
@@ -6325,46 +4565,6 @@
       },
       {
         "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
         "raw": "/fr/temoignages",
         "resolved": "http://localhost:3000/fr/temoignages",
         "status": 404,
@@ -6456,46 +4656,6 @@
         "kind": "a",
         "raw": "/fr/pourquoi-airsaas",
         "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
         "status": 404,
         "severity": "P1",
         "isCta": false
@@ -6599,46 +4759,6 @@
       },
       {
         "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
         "raw": "/fr/temoignages",
         "resolved": "http://localhost:3000/fr/temoignages",
         "status": 404,
@@ -6730,46 +4850,6 @@
         "kind": "a",
         "raw": "/fr/pourquoi-airsaas",
         "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
         "status": 404,
         "severity": "P1",
         "isCta": false
@@ -6881,46 +4961,6 @@
       },
       {
         "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
         "raw": "/fr/temoignages",
         "resolved": "http://localhost:3000/fr/temoignages",
         "status": 404,
@@ -7026,46 +5066,6 @@
       },
       {
         "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
         "raw": "/fr/temoignages",
         "resolved": "http://localhost:3000/fr/temoignages",
         "status": 404,
@@ -7163,46 +5163,6 @@
       },
       {
         "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
         "raw": "/fr/temoignages",
         "resolved": "http://localhost:3000/fr/temoignages",
         "status": 404,
@@ -7294,46 +5254,6 @@
         "kind": "a",
         "raw": "/fr/pourquoi-airsaas",
         "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
         "status": 404,
         "severity": "P1",
         "isCta": false
@@ -7445,46 +5365,6 @@
       },
       {
         "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
         "raw": "/fr/temoignages",
         "resolved": "http://localhost:3000/fr/temoignages",
         "status": 404,
@@ -7590,46 +5470,6 @@
       },
       {
         "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
         "raw": "/fr/temoignages",
         "resolved": "http://localhost:3000/fr/temoignages",
         "status": 404,
@@ -7721,46 +5561,6 @@
         "kind": "a",
         "raw": "/fr/pourquoi-airsaas",
         "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
         "status": 404,
         "severity": "P1",
         "isCta": false
@@ -7864,46 +5664,6 @@
       },
       {
         "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
         "raw": "/fr/temoignages",
         "resolved": "http://localhost:3000/fr/temoignages",
         "status": 404,
@@ -8001,46 +5761,6 @@
       },
       {
         "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
         "raw": "/fr/temoignages",
         "resolved": "http://localhost:3000/fr/temoignages",
         "status": 404,
@@ -8132,46 +5852,6 @@
         "kind": "a",
         "raw": "/fr/pourquoi-airsaas",
         "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
         "status": 404,
         "severity": "P1",
         "isCta": false
@@ -8283,46 +5963,6 @@
       },
       {
         "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
         "raw": "/fr/temoignages",
         "resolved": "http://localhost:3000/fr/temoignages",
         "status": 404,
@@ -8422,46 +6062,6 @@
         "kind": "a",
         "raw": "/fr/pourquoi-airsaas",
         "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
         "status": 404,
         "severity": "P1",
         "isCta": false
@@ -8597,46 +6197,6 @@
       },
       {
         "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
         "raw": "/fr/temoignages",
         "resolved": "http://localhost:3000/fr/temoignages",
         "status": 404,
@@ -8734,46 +6294,6 @@
       },
       {
         "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
         "raw": "/fr/temoignages",
         "resolved": "http://localhost:3000/fr/temoignages",
         "status": 404,
@@ -8865,46 +6385,6 @@
         "kind": "a",
         "raw": "/fr/pourquoi-airsaas",
         "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
         "status": 404,
         "severity": "P1",
         "isCta": false
@@ -9024,46 +6504,6 @@
       },
       {
         "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
         "raw": "/fr/temoignages",
         "resolved": "http://localhost:3000/fr/temoignages",
         "status": 404,
@@ -9155,46 +6595,6 @@
         "kind": "a",
         "raw": "/fr/pourquoi-airsaas",
         "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
         "status": 404,
         "severity": "P1",
         "isCta": false
@@ -9299,46 +6699,6 @@
         "kind": "a",
         "raw": "/fr/pourquoi-airsaas",
         "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
         "status": 404,
         "severity": "P1",
         "isCta": false
@@ -9450,46 +6810,6 @@
       },
       {
         "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
         "raw": "/fr/temoignages",
         "resolved": "http://localhost:3000/fr/temoignages",
         "status": 404,
@@ -9581,46 +6901,6 @@
         "kind": "a",
         "raw": "/fr/pourquoi-airsaas",
         "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
         "status": 404,
         "severity": "P1",
         "isCta": false
@@ -9732,46 +7012,6 @@
       },
       {
         "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
         "raw": "/fr/temoignages",
         "resolved": "http://localhost:3000/fr/temoignages",
         "status": 404,
@@ -9863,46 +7103,6 @@
         "kind": "a",
         "raw": "/fr/pourquoi-airsaas",
         "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
         "status": 404,
         "severity": "P1",
         "isCta": false
@@ -10014,46 +7214,6 @@
       },
       {
         "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
         "raw": "/fr/temoignages",
         "resolved": "http://localhost:3000/fr/temoignages",
         "status": 404,
@@ -10153,46 +7313,6 @@
         "kind": "a",
         "raw": "/fr/pourquoi-airsaas",
         "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
         "status": 404,
         "severity": "P1",
         "isCta": false
@@ -10304,46 +7424,6 @@
       },
       {
         "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
         "raw": "/fr/temoignages",
         "resolved": "http://localhost:3000/fr/temoignages",
         "status": 404,
@@ -10443,46 +7523,6 @@
         "kind": "a",
         "raw": "/fr/pourquoi-airsaas",
         "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
         "status": 404,
         "severity": "P1",
         "isCta": false
@@ -10595,46 +7635,6 @@
       },
       {
         "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
         "raw": "/fr/temoignages",
         "resolved": "http://localhost:3000/fr/temoignages",
         "status": 404,
@@ -10734,46 +7734,6 @@
         "kind": "a",
         "raw": "/fr/pourquoi-airsaas",
         "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
         "status": 404,
         "severity": "P1",
         "isCta": false
@@ -10885,46 +7845,6 @@
       },
       {
         "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
         "raw": "/fr/temoignages",
         "resolved": "http://localhost:3000/fr/temoignages",
         "status": 404,
@@ -11030,46 +7950,6 @@
       },
       {
         "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
         "raw": "/fr/temoignages",
         "resolved": "http://localhost:3000/fr/temoignages",
         "status": 404,
@@ -11167,46 +8047,6 @@
       },
       {
         "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
         "raw": "/fr/temoignages",
         "resolved": "http://localhost:3000/fr/temoignages",
         "status": 404,
@@ -11298,46 +8138,6 @@
         "kind": "a",
         "raw": "/fr/pourquoi-airsaas",
         "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
         "status": 404,
         "severity": "P1",
         "isCta": false
@@ -11449,46 +8249,6 @@
       },
       {
         "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
         "raw": "/fr/temoignages",
         "resolved": "http://localhost:3000/fr/temoignages",
         "status": 404,
@@ -11588,46 +8348,6 @@
         "kind": "a",
         "raw": "/fr/pourquoi-airsaas",
         "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
         "status": 404,
         "severity": "P1",
         "isCta": false
@@ -11763,46 +8483,6 @@
       },
       {
         "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
         "raw": "/fr/temoignages",
         "resolved": "http://localhost:3000/fr/temoignages",
         "status": 404,
@@ -11894,46 +8574,6 @@
         "kind": "a",
         "raw": "/fr/pourquoi-airsaas",
         "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
         "status": 404,
         "severity": "P1",
         "isCta": false
@@ -12045,46 +8685,6 @@
       },
       {
         "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
         "raw": "/fr/temoignages",
         "resolved": "http://localhost:3000/fr/temoignages",
         "status": 404,
@@ -12176,46 +8776,6 @@
         "kind": "a",
         "raw": "/fr/pourquoi-airsaas",
         "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
         "status": 404,
         "severity": "P1",
         "isCta": false
@@ -12319,46 +8879,6 @@
       },
       {
         "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
         "raw": "/fr/temoignages",
         "resolved": "http://localhost:3000/fr/temoignages",
         "status": 404,
@@ -12450,46 +8970,6 @@
         "kind": "a",
         "raw": "/fr/pourquoi-airsaas",
         "resolved": "http://localhost:3000/fr/pourquoi-airsaas",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/cookies",
-        "resolved": "http://localhost:3000/fr/cookies",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/conditions",
-        "resolved": "http://localhost:3000/fr/conditions",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/mentions-legales",
-        "resolved": "http://localhost:3000/fr/mentions-legales",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/confidentialite",
-        "resolved": "http://localhost:3000/fr/confidentialite",
-        "status": 404,
-        "severity": "P1",
-        "isCta": false
-      },
-      {
-        "kind": "a",
-        "raw": "/fr/plan-du-site",
-        "resolved": "http://localhost:3000/fr/plan-du-site",
         "status": 404,
         "severity": "P1",
         "isCta": false
