@@ -25,7 +25,12 @@ export const metadata: Metadata = {
   robots: { index: false, follow: false },
 };
 
-type LlmIssue = { severity: "P0" | "P1" | "P2" };
+type LlmIssue = {
+  severity: "P0" | "P1" | "P2";
+  type?: string;
+  location?: string;
+  description?: string;
+};
 type LlmRow = { slug: string; type: string; issues?: LlmIssue[] };
 
 function loadLlmData(): Map<string, LlmRow> {
@@ -39,25 +44,38 @@ function loadLlmData(): Map<string, LlmRow> {
   }
 }
 
-type Status = "PASS" | "WARN" | "BLOCK" | "—";
+// Status tiers reflect REAL severity for human review:
+// - PASS  : 0 P0, 0-1 P1 (clean or minor polish only)
+// - WARN  : 0 P0, 2-3 P1 (a few visible polish issues)
+// - HEAVY : 0 P0, ≥4 P1 (lots of visible issues — almost as bad as BLOCK)
+// - BLOCK : ≥1 P0 (broken sections, missing content, placeholder leaks)
+type Status = "PASS" | "WARN" | "HEAVY" | "BLOCK" | "—";
+
 function statusFor(row: LlmRow | undefined): Status {
   if (!row) return "—";
   const issues = row.issues || [];
   const p0 = issues.filter((i) => i.severity === "P0").length;
   const p1 = issues.filter((i) => i.severity === "P1").length;
   if (p0 > 0) return "BLOCK";
+  if (p1 >= 4) return "HEAVY";
   if (p1 > 1) return "WARN";
   return "PASS";
 }
 
-function p0CountFor(row: LlmRow | undefined): number {
-  return (row?.issues || []).filter((i) => i.severity === "P0").length;
+function counts(row: LlmRow | undefined) {
+  const issues = row?.issues || [];
+  return {
+    p0: issues.filter((i) => i.severity === "P0").length,
+    p1: issues.filter((i) => i.severity === "P1").length,
+    p2: issues.filter((i) => i.severity === "P2").length,
+  };
 }
 
-// Status badge color tokens — using DS semantic colors only (no Tailwind palette).
+// Status badge color tokens — DS semantic colors only.
 const STATUS_STYLES: Record<Status, string> = {
   PASS: "bg-success-10 text-success",
   WARN: "bg-prevention-20 text-terracotta",
+  HEAVY: "bg-prevention-30 text-terracotta",
   BLOCK: "bg-warning-10 text-warning",
   "—": "bg-secondary-5 text-text-muted",
 };
@@ -72,51 +90,100 @@ function renderRow(
 ): React.ReactNode {
   const row = llmData.get(`${type}/${slug}`);
   const status = statusFor(row);
-  const p0 = p0CountFor(row);
+  const c = counts(row);
+  const issues = row?.issues || [];
+  // Sort P0 first, then P1, then P2 ; show all so the user has the full picture.
+  const sorted = [...issues].sort((a, b) =>
+    a.severity === b.severity ? 0 : a.severity === "P0" ? -1 : b.severity === "P0" ? 1 : a.severity === "P1" ? -1 : 1,
+  );
+  const issueCountLabel =
+    c.p0 + c.p1 + c.p2 === 0 ? "—" : `P0×${c.p0} P1×${c.p1} P2×${c.p2}`;
   return (
     <li
       key={`${type}-${slug}`}
-      className="flex items-center gap-[0.75rem] py-[0.5rem] border-b border-border last:border-b-0"
+      className="flex flex-col gap-[0.5rem] py-[0.5rem] border-b border-border last:border-b-0"
     >
-      <span
-        className={`inline-block min-w-[3.5rem] text-center text-xs font-mono font-semibold px-[0.5rem] py-[0.125rem] rounded ${STATUS_STYLES[status]}`}
-      >
-        {status === "BLOCK" ? `P0×${p0}` : status}
-      </span>
-      <Link
-        href={href}
-        className="text-primary hover:underline flex-1 truncate"
-        target="_blank"
-      >
-        {title}
-      </Link>
-      <code className="text-xs text-text-muted font-mono">{href}</code>
+      <div className="flex items-center gap-[0.75rem]">
+        <span
+          className={`inline-block min-w-[4.5rem] text-center text-xs font-mono font-semibold px-[0.5rem] py-[0.125rem] rounded ${STATUS_STYLES[status]}`}
+        >
+          {status}
+        </span>
+        <span className="inline-block min-w-[8rem] text-xs font-mono text-text-muted">
+          {issueCountLabel}
+        </span>
+        <Link
+          href={href}
+          className="text-primary hover:underline flex-1 truncate"
+          target="_blank"
+        >
+          {title}
+        </Link>
+        <code className="text-xs text-text-muted font-mono">{href}</code>
+      </div>
+      {sorted.length > 0 ? (
+        <details className="ml-[12rem]">
+          <summary className="cursor-pointer text-xs text-text-muted hover:text-foreground">
+            {sorted.length} issue{sorted.length > 1 ? "s" : ""} — voir détails
+          </summary>
+          <ul className="mt-[0.5rem] flex flex-col gap-[0.5rem] pl-[1rem] border-l-2 border-border">
+            {sorted.slice(0, 8).map((iss, i) => (
+              <li key={i} className="text-xs text-foreground">
+                <span
+                  className={`inline-block min-w-[2rem] text-center font-mono font-semibold px-[0.25rem] mr-[0.5rem] rounded ${
+                    iss.severity === "P0"
+                      ? "bg-warning-10 text-warning"
+                      : iss.severity === "P1"
+                        ? "bg-prevention-20 text-terracotta"
+                        : "bg-secondary-5 text-text-muted"
+                  }`}
+                >
+                  {iss.severity}
+                </span>
+                {iss.location ? (
+                  <strong className="text-text-secondary">
+                    {iss.location} —{" "}
+                  </strong>
+                ) : null}
+                <span className="text-text-p">{iss.description}</span>
+              </li>
+            ))}
+            {sorted.length > 8 ? (
+              <li className="text-xs text-text-muted italic">
+                … +{sorted.length - 8} autres issues
+              </li>
+            ) : null}
+          </ul>
+        </details>
+      ) : null}
     </li>
   );
 }
 
-function CountBadge({ pass, warn, block, total }: {
+function CountBadge({ pass, warn, heavy, block, total }: {
   pass: number;
   warn: number;
+  heavy: number;
   block: number;
   total: number;
 }) {
   return (
     <span className="text-sm text-text-muted font-mono">
-      {total} pages · ✅ {pass} · ⚠️ {warn} · 🛑 {block}
+      {total} pages · ✅ {pass} · ⚠️ {warn} · ⚠️⚠️ {heavy} · 🛑 {block}
     </span>
   );
 }
 
 function tally(items: { type: string; slug: string }[]) {
-  let pass = 0, warn = 0, block = 0;
+  let pass = 0, warn = 0, heavy = 0, block = 0;
   for (const it of items) {
     const s = statusFor(llmData.get(`${it.type}/${it.slug}`));
     if (s === "PASS") pass++;
     else if (s === "WARN") warn++;
+    else if (s === "HEAVY") heavy++;
     else if (s === "BLOCK") block++;
   }
-  return { pass, warn, block, total: items.length };
+  return { pass, warn, heavy, block, total: items.length };
 }
 
 export default function AdminIndexRoute() {
@@ -154,12 +221,10 @@ export default function AdminIndexRoute() {
             QA Index — toutes les pages
           </Heading>
           <Text size="md" align="left">
-            {totals.total} pages QA-tracked · ✅ {totals.pass} PASS · ⚠️ {totals.warn} WARN · 🛑 {totals.block} BLOCK · plus 11 utilities ci-dessous.
+            {totals.total} pages QA-tracked · ✅ {totals.pass} PASS · ⚠️ {totals.warn} WARN · ⚠️⚠️ {totals.heavy} HEAVY · 🛑 {totals.block} BLOCK · plus 11 utilities ci-dessous.
           </Text>
           <Text size="sm" align="left" className="text-text-muted">
-            Cliquer sur un lien ouvre la page dans un nouvel onglet. Les badges P0×N
-            indiquent le nombre de bugs sémantiques détectés par qa-llm (Sonnet 4.6).
-            Source : <code>docs/raw/qa-llm.json</code>.
+            <strong>PASS</strong> = clean. <strong>WARN</strong> = 2-3 issues visibles. <strong>HEAVY</strong> = ≥4 issues visibles (presque cassée). <strong>BLOCK</strong> = ≥1 P0 (sections vides, contenu manquant). Cliquer sur "voir détails" pour lire les descriptions exactes des issues. Source : <code>docs/raw/qa-llm.json</code>.
           </Text>
         </header>
 
